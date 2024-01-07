@@ -1,0 +1,144 @@
+{
+  "id": 2,
+  "subject": "This time of the year can be difficult.",
+  "thumbnail": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/72d8a0e6-19ad-49c7-9f41-c5085931e5d5.png",
+  "content": {
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      }
+    },
+    "type": "page",
+    "children": [
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "width": "66px",
+                  "src": "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070514/easy-email-pro-test/vwxrgxhvk0hfdnnimldj.png"
+                },
+                "children": [{ "text": "" }]
+              },
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070552/easy-email-pro-test/ruzh6f0tagjhfp9motye.png",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px"
+                },
+                "children": [{ "text": "" }]
+              },
+              {
+                "name": "Text",
+                "type": "standard-h1",
+                "data": {},
+                "attributes": {
+                  "font-weight": "500",
+                  "padding-top": "20px",
+                  "padding-bottom": "20px",
+                  "align": "left",
+                  "padding-left": "20px",
+                  "padding-right": "20px"
+                },
+                "children": [
+                  { "text": "This time of the year" },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [{ "text": "" }]
+                  },
+                  { "text": "can be difficult." }
+                ]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "left",
+                  "padding-left": "20px",
+                  "padding-right": "20px"
+                },
+                "children": [
+                  { "text": "Hi friends," },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [{ "text": "" }]
+                  },
+                  { "text": "" },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [{ "text": "" }]
+                  },
+                  {
+                    "text": "We know Father's Day can be a sensitive time for many of us. If you'd prefer not to receive any Father's Day emails from us, you can opt out of them here."
+                  },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [{ "text": "" }]
+                  },
+                  { "text": "" },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [{ "text": "" }]
+                  },
+                  {
+                    "text": "Don't fret, you'll still be up to date on everything else."
+                  },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [{ "text": "" }]
+                  },
+                  { "text": "" },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [{ "text": "" }]
+                  },
+                  { "text": "Love," },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [{ "text": "" }]
+                  },
+                  { "text": "the Easy-email-pro team" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "content-background-color": "$var(content-background-color)",
+      "background-color": "$var(background-color)"
+    }
+  }
+}

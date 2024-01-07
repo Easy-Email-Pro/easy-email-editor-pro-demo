@@ -1,0 +1,16 @@
+{
+  "build": {
+    "env": {
+      "PNPM_VERSION": "6.0.0"
+    }
+  },
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+body {
+  --full-screen-width: calc(100vw - 20px); // scrollbar width
+}
+
+[data-slate-hover=true]:not([data-slate-selected=true], [data-slate-block="page"]) .element-tools-container {
+  background-color: rgba(114, 46, 209, 0.1)
+}
+
+[data-slate-selected=true] .element-tools-container,
+[data-slate-hover=true] [data-slate-selected=true] .element-tools-container {
+  outline: 2px solid var(--selected-color);
+  background-color: none;
+}
+
+.section-category-hover {
+  width: var(--full-screen-width);
+  transform: translate(calc(-0.5 * (var(--full-screen-width) - var(--page-width))), 0);
+}
+
+[data-is-section-category=true].element-tools-container {
+  width: var(--full-screen-width);
+  transform: translate(calc(-0.5 * (var(--full-screen-width) - var(--page-width))), 0);
+}
+
+[data-slate-dragover="true"] {
+  z-index: 2;
+
+  &::after {
+    height: 6px;
+  }
+}

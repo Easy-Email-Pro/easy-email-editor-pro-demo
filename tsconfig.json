@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "types": ["vite/client", "node"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "alwaysStrict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": false,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "mjml-browser": ["./node_modules/@types/mjml"],
+      // for development
+      "easy-email-pro-asset-manager": ["../packages/easy-email-pro-asset-manager"],
+      "easy-email-pro-plugins": ["../packages/easy-email-pro-plugins"],
+      "easy-email-pro-kit": ["../packages/easy-email-pro-kit"],
+      "easy-email-pro-core": ["../packages/easy-email-pro-core"],
+      "easy-email-pro-theme": ["../packages/easy-email-pro-theme"],
+      "easy-email-pro-editor": ["../packages/easy-email-pro-editor"]
+    }
+  },
+  "include": ["./src"]
+}

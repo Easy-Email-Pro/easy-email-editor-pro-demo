@@ -1,0 +1,103 @@
+{
+  "subject": "Blank",
+  "content": {
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      },
+      "blockAttributes": {
+        "standard-paragraph": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "type": "page",
+    "children": [
+      {
+        "type": "section_widget",
+        "title": "New widget",
+        "data": {
+          "name": "New widget",
+          "description": "Your custom widget",
+          "contentEditable": true,
+          "config": [
+            {
+              "label": "Primary color",
+              "name": "primary-color",
+              "helpText": "",
+              "type": "color",
+              "description": "Primary color"
+            },
+            {
+              "label": "Font Size",
+              "name": "font-size",
+              "helpText": "",
+              "type": "pixel"
+            }
+          ],
+          "input": {
+            "background-color": "red",
+            "primary-color": "#d3943c",
+            "font-size": "18px"
+          }
+        },
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-column",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/djnkpbshx/image/upload/v1696845725/easy-email-pro-test/bjnjpwmqdunbwhgs6jdf.jpg",
+                      "border-radius": "50px",
+                      "border-enabled": true,
+                      "border-style": "solid",
+                      "border-width": "5px",
+                      "border-color": "$var(primary-color)"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-button",
+                    "data": {
+                      "content": "Button"
+                    },
+                    "attributes": {
+                      "width": "100%",
+                      "background-color": "$var(primary-color)",
+                      "font-size": "$var(font-size)"
+                    },
+                    "children": [
+                      {
+                        "text": "Click"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "name": "Image with text"
+      }
+    ],
+    "attributes": {
+      "background-color": "#8C9A80",
+      "content-background-color": "#263D29"
+    }
+  }
+}

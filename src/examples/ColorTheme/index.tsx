@@ -1,0 +1,93 @@
+import { useMemo } from "react";
+import { EmailEditorProvider, EmailTemplate } from "easy-email-pro-editor";
+import { Retro } from "easy-email-pro-theme";
+import { EditorHeader } from "../../components/EditorHeader";
+import { useUpload } from "../../hooks/useUpload";
+import { Layout, Select, Space } from "@arco-design/web-react";
+import React from "react";
+import "easy-email-pro-theme/lib/style.css";
+import data from "./template.json";
+
+import retroStyle from "@arco-themes/react-easy-email-pro/css/arco.css?inline";
+import colorPurpleStyle from "@arco-themes/react-easy-email-pro-purple/css/arco.css?inline";
+import { useCompactMode } from "@/hooks/useCompactMode";
+
+export default function MyEditor() {
+  const [theme, setTheme] = React.useState<string>("purple");
+  const { upload } = useUpload();
+
+  const initialValues: EmailTemplate | null = useMemo(() => {
+    return {
+      subject: data.subject,
+      content: data.content as EmailTemplate["content"],
+    };
+  }, []);
+
+  const onUpload = (file: Blob): Promise<string> => {
+    return upload(file);
+  };
+
+  const onSubmit = async (values: EmailTemplate) => {
+    console.log(values);
+  };
+
+  const matchThemeStyle = useMemo(() => {
+    if (theme === "retro") {
+      return retroStyle;
+    }
+    if (theme === "purple") {
+      return colorPurpleStyle;
+    }
+    // if (theme === "cyan") {
+    //   return colorCyanStyle;
+    // }
+    // if (theme === "orange") {
+    //   return colorOrangeStyle;
+    // }
+    // if (theme === "red") {
+    //   return colorRedStyle;
+    // }
+    return "";
+  }, [theme]);
+
+  const compact = useCompactMode();
+  const config = Retro.useCreateConfig({
+    clientId: process.env.CLIENT_ID!,
+    onUpload,
+    initialValues: initialValues,
+    onSubmit: onSubmit,
+    height: "calc(100vh - 66px)",
+    unsplash: {
+      clientId: process.env.UNSPLASH_CLIENT_ID!,
+    },
+    showLayer: true,
+    compact,
+  });
+
+  return (
+    <EmailEditorProvider {...config}>
+      <EditorHeader
+        extra={
+          <Space>
+            <Select
+              value={theme}
+              onChange={setTheme}
+              options={[
+                { label: "Retro", value: "retro" },
+                { label: "Purple", value: "purple" },
+                // { label: "Cyan", value: "cyan" },
+                // { label: "Orange", value: "orange" },
+                // { label: "Red", value: "red" },
+              ]}
+            ></Select>
+          </Space>
+        }
+      />
+
+      <Layout.Content>
+        <Retro.Layout></Retro.Layout>
+      </Layout.Content>
+      <style>{matchThemeStyle}</style>
+    </EmailEditorProvider>
+  );
+}
