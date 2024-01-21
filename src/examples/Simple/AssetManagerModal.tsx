@@ -100,6 +100,14 @@ export const AssetManagerModal = ({
           type: "FOLDER",
           parentFolderId: null,
         },
+        {
+          id: uniqueId(),
+          url: "https://cdn.shopify.com/test.pdf",
+          thumbnail: "",
+          type: "FILE" as const,
+          name: `test`,
+          parentFolderId: null,
+        },
         ...new Array(count).fill(true).map((item, index) => {
           return {
             id: uniqueId(),
@@ -142,6 +150,7 @@ export const AssetManagerModal = ({
     <div>
       <AssetManager
         accept={accept}
+        showUnacceptedFile
         setVisible={setVisible}
         visible={visible}
         request={fetchData}
