@@ -10,10 +10,13 @@ import data from "./template.json";
 
 import retroStyle from "@arco-themes/react-easy-email-pro/css/arco.css?inline";
 import colorPurpleStyle from "@arco-themes/react-easy-email-pro-purple/css/arco.css?inline";
+import colorRedStyle from "@arco-themes/react-easy-email-pro-red/css/arco.css?inline";
+import colorBlueStyle from "@arco-themes/react-easy-email-pro-blue/css/arco.css?inline";
+import colorGreenStyle from "@arco-themes/react-easy-email-pro-green/css/arco.css?inline";
 import { useCompactMode } from "@/hooks/useCompactMode";
 
 export default function MyEditor() {
-  const [theme, setTheme] = React.useState<string>("purple");
+  const [theme, setTheme] = React.useState<string>("red");
   const { upload } = useUpload();
 
   const initialValues: EmailTemplate | null = useMemo(() => {
@@ -38,15 +41,15 @@ export default function MyEditor() {
     if (theme === "purple") {
       return colorPurpleStyle;
     }
-    // if (theme === "cyan") {
-    //   return colorCyanStyle;
-    // }
-    // if (theme === "orange") {
-    //   return colorOrangeStyle;
-    // }
-    // if (theme === "red") {
-    //   return colorRedStyle;
-    // }
+    if (theme === "green") {
+      return colorGreenStyle;
+    }
+    if (theme === "blue") {
+      return colorBlueStyle;
+    }
+    if (theme === "red") {
+      return colorRedStyle;
+    }
     return "";
   }, [theme]);
 
@@ -70,14 +73,15 @@ export default function MyEditor() {
         extra={
           <Space>
             <Select
+              style={{ width: 120 }}
               value={theme}
               onChange={setTheme}
               options={[
                 { label: "Retro", value: "retro" },
                 { label: "Purple", value: "purple" },
-                // { label: "Cyan", value: "cyan" },
-                // { label: "Orange", value: "orange" },
-                // { label: "Red", value: "red" },
+                { label: "Blue", value: "blue" },
+                { label: "Green", value: "green" },
+                { label: "Red", value: "red" },
               ]}
             ></Select>
           </Space>
