@@ -456,7 +456,6 @@ const categories: ThemeConfigProps["categories"] = [
 
 const hoveringToolbar: ThemeConfigProps["hoveringToolbar"] = {
   list({ isCollapsed, selection, isFocus }) {
-    console.log(isFocus);
     if (!isFocus) return [];
     return [
       TextFormat.FONT_FAMILY,

@@ -21,13 +21,13 @@ specifiers:
   '@vercel/node': ^2.14.3
   '@vitejs/plugin-react': ^3.1.0
   axios: ^1.4.0
-  easy-email-pro-asset-manager: ^1.14.2
-  easy-email-pro-core: ^1.14.2
-  easy-email-pro-editor: ^1.14.2
-  easy-email-pro-kit: ^1.14.2
-  easy-email-pro-localization: ^1.14.2
-  easy-email-pro-plugins: ^1.14.2
-  easy-email-pro-theme: ^1.14.2
+  easy-email-pro-asset-manager: ^1.14.3
+  easy-email-pro-core: ^1.14.3
+  easy-email-pro-editor: ^1.14.3
+  easy-email-pro-kit: ^1.14.3
+  easy-email-pro-localization: ^1.14.3
+  easy-email-pro-plugins: ^1.14.3
+  easy-email-pro-theme: ^1.14.3
   file-saver: ^2.0.5
   he: ^1.2.0
   html2canvas: ^1.4.1
@@ -69,13 +69,13 @@ dependencies:
   '@types/mjml': 4.7.1
   '@vercel/node': 2.15.3
   axios: 1.4.0
-  easy-email-pro-asset-manager: 1.14.2_biqbaboplfbrettd7655fr4n2y
-  easy-email-pro-core: 1.14.2_i3tt4d7oqnh2owhmgwm2v4jjtq
-  easy-email-pro-editor: 1.14.2_biqbaboplfbrettd7655fr4n2y
-  easy-email-pro-kit: 1.14.2_biqbaboplfbrettd7655fr4n2y
-  easy-email-pro-localization: 1.14.2
-  easy-email-pro-plugins: 1.14.2_biqbaboplfbrettd7655fr4n2y
-  easy-email-pro-theme: 1.14.2_cthcpn55gjbcftcexr3eka32fm
+  easy-email-pro-asset-manager: 1.14.3_biqbaboplfbrettd7655fr4n2y
+  easy-email-pro-core: 1.14.3_i3tt4d7oqnh2owhmgwm2v4jjtq
+  easy-email-pro-editor: 1.14.3_biqbaboplfbrettd7655fr4n2y
+  easy-email-pro-kit: 1.14.3_biqbaboplfbrettd7655fr4n2y
+  easy-email-pro-localization: 1.14.3
+  easy-email-pro-plugins: 1.14.3_biqbaboplfbrettd7655fr4n2y
+  easy-email-pro-theme: 1.14.3_cthcpn55gjbcftcexr3eka32fm
   file-saver: 2.0.5
   he: 1.2.0
   html2canvas: 1.4.1
@@ -1862,8 +1862,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /easy-email-pro-asset-manager/1.14.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-CM46NZ799bys7SwG3H769LUtml6DJhz/NzaLhA0WUx27mwuLobcYYKK5lKRCtUvriifndESJdouHO7+5R4ubOw==}
+  /easy-email-pro-asset-manager/1.14.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-h8CwLXQN2w+KHUh7raVwFdqi8RdUvP+AFkb6Rw+daRwd4HBSn5kDbmZTuWyxyPylD8mCr/Os+90RQ/nTOFtfAw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1874,8 +1874,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /easy-email-pro-core/1.14.2_i3tt4d7oqnh2owhmgwm2v4jjtq:
-    resolution: {integrity: sha512-CcrVrzQFqvl40ouxY5bnaQSvM8g4WVzB1lOdjsDVaVV4GUgDH/BY2v7cQSGeeAuVLB+WzyYYuZ0nlEOXDqKZvw==}
+  /easy-email-pro-core/1.14.3_i3tt4d7oqnh2owhmgwm2v4jjtq:
+    resolution: {integrity: sha512-S2mFVvQFp/hT1nwvtzDiAfA2hVheg+g7oBwS6gw6YjyJcl2If9cao43TY5dtqglhiovSsufRTzOF9OwjtvmEuw==}
     peerDependencies:
       axios: ^1.4.0
       react: ^18.2.0
@@ -1895,8 +1895,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /easy-email-pro-editor/1.14.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-GzOuyIDDvdvJyITHumshtpIRQ8+3oaQTP4dJ920hJ1lAdh2khLCzjnKwcbPjphmdV2W0CPiDtB1oDFF3vDXQzA==}
+  /easy-email-pro-editor/1.14.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-aGZqardliBP+6RmFIMGOkBX9DefQtVtuyl3YXy3z5qPSTJUoMf37RAxU7fsI/6BINCsmWsW1b0yDsyaHqeRmHw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1916,8 +1916,8 @@ packages:
       - debug
     dev: false
 
-  /easy-email-pro-kit/1.14.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-Z3tyaHFSyTanFyZ9+joqtRfO699ueHbF7sWCTjPxyVgrq42sjmz0zEfPSOeMX7bCP2+rCumS1untPcntyEyTCA==}
+  /easy-email-pro-kit/1.14.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-q24XMZsgjhSLBuVxeXL208qpOtZO4MZAcWm740FmOfleRSnhVEt+pK8f1Dik6WxxN4z1uMIzyUaiHTCtP6r1cw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1931,12 +1931,12 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /easy-email-pro-localization/1.14.2:
-    resolution: {integrity: sha512-X17zFNKCD+T3dDxb2PWrZDQ5Z3SbP/XNFCWA3YR6AqY+y25n8fJJKSSbxyWENOWr2O429dK7VupMKBSaZs3SMQ==}
+  /easy-email-pro-localization/1.14.3:
+    resolution: {integrity: sha512-YsReANujiDPYRt4dt2fqURIVvRaGg6MAhhfD+8gL5+OMJ6lGgB0ByoN7Ul5506mrRITvFE8VwnstEg+CeT6+VA==}
     dev: false
 
-  /easy-email-pro-plugins/1.14.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-jk1v0mqMuyqXHw+Ag8NjgvIIgrRmzcplN7ki50A3PLafw6/BmquFBrioojb3CmrP8wqi7DFqwRJ4y8fWa7OQNg==}
+  /easy-email-pro-plugins/1.14.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-MaUjsPLZjmKXE4sTtymMXXtvnjTyQdglHHo+fReBRR+V/RGysnRtHSQw1iScj9J7KSfLEvGJdZAC6hRwPp7POA==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1948,8 +1948,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /easy-email-pro-theme/1.14.2_cthcpn55gjbcftcexr3eka32fm:
-    resolution: {integrity: sha512-2T5hJYlC1zWdQHoEXDPMcxzlA4NCHEAszpSWIwMOdS2YcdWzCsvBKmAB77D4KD5RKf6vqbd8M2g9CaGQ66TvYg==}
+  /easy-email-pro-theme/1.14.3_cthcpn55gjbcftcexr3eka32fm:
+    resolution: {integrity: sha512-4vARS97C946ZLYHRPuhJlq7YENB2e29tURT3Ver5LVFi9OwUH6Y6gTLCm+7+o2jitWetJRwK02GXALBNc/tgCw==}
     peerDependencies:
       '@arco-design/web-react': ^2.46.3
       mjml-browser: ^4.14.1
