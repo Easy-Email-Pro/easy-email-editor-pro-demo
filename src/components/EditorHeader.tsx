@@ -20,6 +20,7 @@ import AutoSaveAndRestore from "./AutoSaveAndRestore/AutoSaveAndRestore";
 import mjml from "mjml-browser";
 import { saveAs } from "file-saver";
 import { Uploader } from "@/utils/Uploader";
+import { pick } from "lodash";
 
 export const EditorHeader = (props: {
   extra?: React.ReactNode;
@@ -70,7 +71,10 @@ export const EditorHeader = (props: {
   const onExportJSON = () => {
     navigator.clipboard.writeText(JSON.stringify(values, null, 2));
     saveAs(
-      new Blob([JSON.stringify(values, null, 2)], { type: "application/json" }),
+      new Blob(
+        [JSON.stringify(pick(values, ["content", "subject"]), null, 2)],
+        { type: "application/json" }
+      ),
       "easy-email-pro.json"
     );
   };

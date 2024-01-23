@@ -42,6 +42,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+const Full = React.lazy(() => import("./examples/Full/index"));
 const Simple = React.lazy(() => import("./examples/Simple/index"));
 const Customize = React.lazy(() => import("./examples/Customize/index"));
 const SideBar = React.lazy(() => import("./examples/SideBar/index"));
@@ -82,6 +83,11 @@ export const navigation = [
     name: "Simple",
     path: "/simple",
     element: <Simple />,
+  },
+  {
+    name: "Full",
+    path: "/full",
+    element: <Full />,
   },
   {
     name: "Customize",

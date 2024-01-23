@@ -21,11 +21,3 @@ body {
   width: var(--full-screen-width);
   transform: translate(calc(-0.5 * (var(--full-screen-width) - var(--page-width))), 0);
 }
-
-[data-slate-dragover="true"] {
-  z-index: 2;
-
-  &::after {
-    height: 6px;
-  }
-}

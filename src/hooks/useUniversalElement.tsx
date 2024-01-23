@@ -99,7 +99,7 @@ const defaultEmailElements: Array<UniversalElement> = [
                 "padding-bottom": "25px",
                 "padding-left": "25px",
                 "padding-right": "25px",
-                src: "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070395/easy-email-pro-test/i1iq6togtsqh6pvfigcw.png",
+                src: "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006848/easy-email-pro-test/lm6rpd3kbmwzkmjtzmp0.jpg",
               },
               children: [
                 {

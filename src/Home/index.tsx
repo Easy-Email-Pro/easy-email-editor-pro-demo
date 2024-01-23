@@ -32,6 +32,11 @@ import "./index.less";
 
 const features = [
   {
+    subject: "Full",
+    thumbnail: SimpleImg,
+    url: "/full",
+  },
+  {
     subject: "Simple",
     thumbnail: SimpleImg,
     url: "/simple",
