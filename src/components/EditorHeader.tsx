@@ -252,9 +252,7 @@ export const EditorHeader = (props: {
                     </Button>
                   </Dropdown>
                 )}
-                <Button href="https://www.easyemail.pro/?utm_source=demo">
-                  <strong>View Website</strong>
-                </Button>
+
                 <div />
               </Space>
             </div>

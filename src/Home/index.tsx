@@ -135,24 +135,6 @@ export const Home = () => {
               <Logo className="logo" height={36} width={175} />
             </a>
           </h1>
-          <ul className="flex space-x-10 text-lg font-semibold">
-            <li key={3}>
-              <a
-                className=" hover:underline"
-                href="https://www.easyemail.pro?utm_source=demo"
-              >
-                Home
-              </a>
-            </li>
-            <li key={2}>
-              <a
-                className=" hover:underline"
-                href="https://www.easyemail.pro?utm_source=demo#pricing"
-              >
-                Pricing
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
       <Layout.Content style={{ padding: 20 }}>
