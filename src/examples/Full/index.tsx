@@ -551,6 +551,9 @@ export default function MyEditor() {
     handleUploadClick,
     universalElementSetting,
     localeData: get(localsData, lang),
+    showDragMoveIcon: true,
+    showInsertTips: true,
+
     // emptyPageElement: data2.content,
   });
 

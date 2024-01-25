@@ -283,6 +283,8 @@ export default function MyEditor() {
     },
     compact,
     showLayer: true,
+    showDragMoveIcon: true,
+    showInsertTips: true,
   });
 
   return (

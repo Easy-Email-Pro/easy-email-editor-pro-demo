@@ -47,6 +47,8 @@ export default function MyEditor() {
     },
     showLayer: true,
     compact: false,
+    showDragMoveIcon: true,
+    showInsertTips: true,
   });
 
   return (

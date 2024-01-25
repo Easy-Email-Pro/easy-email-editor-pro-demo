@@ -1,5 +1,5 @@
 body {
-  --full-screen-width: calc(100vw - 20px); // scrollbar width
+  --full-screen-width: calc(100vw - 20px - 40px); // scrollbar width 20px
 }
 
 [data-slate-hover=true]:not([data-slate-selected=true], [data-slate-block="page"]) .element-tools-container {
@@ -20,4 +20,8 @@ body {
 [data-is-section-category=true].element-tools-container {
   width: var(--full-screen-width);
   transform: translate(calc(-0.5 * (var(--full-screen-width) - var(--page-width))), 0);
+}
+
+.dragover-line {
+  height: 8px !important;
 }

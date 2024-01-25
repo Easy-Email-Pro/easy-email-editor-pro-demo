@@ -354,6 +354,8 @@ export default function TemplateEditor() {
     showSourceCode: true,
     showLayer: true,
     compact,
+    showDragMoveIcon: true,
+    showInsertTips: true,
   });
 
   return (

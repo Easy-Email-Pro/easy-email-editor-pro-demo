@@ -45,6 +45,8 @@ export default function MyEditor() {
     onSubmit: onSubmit,
     localeData: get(localsData, lang),
     ElementToolsInner: ElementToolsInner,
+    showDragMoveIcon: true,
+    showInsertTips: true,
   });
 
   return (

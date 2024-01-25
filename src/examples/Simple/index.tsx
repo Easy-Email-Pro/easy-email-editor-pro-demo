@@ -228,6 +228,8 @@ export default function MyEditor() {
     showSidebar: true,
     showSelectFileButton: true,
     compact: false,
+    showDragMoveIcon: true,
+    showInsertTips: true,
   });
 
   return (

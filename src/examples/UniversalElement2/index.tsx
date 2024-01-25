@@ -45,6 +45,8 @@ export default function MyEditor() {
     universalElementSetting,
     compact,
     showLayer: true,
+    showDragMoveIcon: true,
+    showInsertTips: true,
   });
 
   return (
