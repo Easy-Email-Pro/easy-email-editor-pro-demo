@@ -50,7 +50,7 @@ const features = [
   {
     subject: "Nextjs integration example",
     thumbnail: nextjsImg,
-    url: "https://www.easyemail.pro/",
+    url: "https://admin.easyemail.pro/utm_souce=demo",
   },
   {
     subject: "Studio",
