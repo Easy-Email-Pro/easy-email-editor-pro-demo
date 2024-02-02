@@ -25,9 +25,9 @@ import DynamicDataImg from "./images/dynamic-data.png";
 import ResponsiveViewImg from "./images/responsive.png";
 import DynamicCustomBlock from "./images/dynamic-block.png";
 import frozenImg from "./images/frozen.png";
-import readonlyImg from "./images/readonly.png";
 import studioImg from "./images/studio.png";
 import nextjsImg from "./images/nextjs.png";
+import readonlyImg from "./images/readonly.png";
 import "./index.less";
 
 const features = [

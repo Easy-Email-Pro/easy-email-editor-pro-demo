@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import {
-  EmailEditor,
   EmailEditorProvider,
   EmailTemplate,
   useEditorProps,
