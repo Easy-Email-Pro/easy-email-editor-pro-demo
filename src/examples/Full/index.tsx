@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import {
   EmailEditorProvider,
   EmailTemplate,
@@ -27,7 +27,7 @@ import {
   CommonType,
   ImageWithText,
 } from "easy-email-pro-kit";
-import { ElementType, PluginManager, t } from "easy-email-pro-core";
+import { EditorCore, ElementType, PluginManager, t } from "easy-email-pro-core";
 import { useState } from "react";
 import { useRef } from "react";
 
@@ -38,6 +38,7 @@ import { AssetManagerModal } from "./AssetManagerModal";
 import { Space } from "@arco-design/web-react";
 import { useUniversalElement } from "@/hooks/useUniversalElement";
 import customizeCss from "./customize.scss?inline";
+import FullScreenLoading from "@/components/FullScreenLoading";
 console.log(localsData);
 
 PluginManager.registerPlugins([
@@ -487,6 +488,10 @@ export default function MyEditor() {
     //
   });
 
+  const [authState, setAuthState] = useState<"pending" | "success" | "fail">(
+    "pending"
+  );
+
   const initialValues: EmailTemplate | null = useMemo(() => {
     return {
       subject: data.subject,
@@ -530,6 +535,16 @@ export default function MyEditor() {
     console.log(values);
   };
 
+  useEffect(() => {
+    EditorCore.auth(process.env.CLIENT_ID!)
+      .then(() => {
+        setAuthState("success");
+      })
+      .catch(() => {
+        setAuthState("fail");
+      });
+  }, []);
+
   const config = Retro.useCreateConfig({
     clientId: process.env.CLIENT_ID!,
     height: "calc(100vh - 66px)",
@@ -557,6 +572,13 @@ export default function MyEditor() {
 
     // emptyPageElement: data2.content,
   });
+
+  if (authState === "pending") {
+    return <FullScreenLoading isFullScreen />;
+  }
+  if (authState === "fail") {
+    return <div>Fail to load editor</div>;
+  }
 
   return (
     <EmailEditorProvider {...config}>
