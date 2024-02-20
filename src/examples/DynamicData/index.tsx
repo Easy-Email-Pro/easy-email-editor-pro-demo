@@ -13,6 +13,24 @@ import { useCompactMode } from "@/hooks/useCompactMode";
 
 const mergetags = [
   {
+    label: "Color",
+    value: "",
+    children: [
+      {
+        label: "Red",
+        value: "colors.red",
+      },
+      {
+        label: "Yellow",
+        value: "colors.yellow",
+      },
+      {
+        label: "Blue",
+        value: "colors.blue",
+      },
+    ],
+  },
+  {
     label: "Order",
     value: "",
     children: [
@@ -40,6 +58,22 @@ const mergetags = [
       },
     ],
   },
+  {
+    label: "Common",
+    value: "",
+    children: [
+      {
+        label: "Unsubscribe link",
+        value: "common.unsubscribe",
+        type: "link",
+      },
+      {
+        label: "Company logo",
+        value: "common.logo",
+        type: "image",
+      },
+    ],
+  },
 ];
 
 const mergetagsData = {
@@ -51,21 +85,28 @@ const mergetagsData = {
     name: "Ryan",
     email: "easy-email-pro@example.com",
   },
-
   products: [
     {
       title: "#product 1",
       image:
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116371/easy-email-pro/as41p2ahhff377y8c9s8.png",
+        "https://res.cloudinary.com/dwkp0e1yo/image/upload/v1683815715/nqqreectuzi3lxv7dxsp.png",
     },
     {
       title: "#product 2",
       image:
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116331/easy-email-pro/mrzhiom54uhmxu5fqfs8.png",
+        "https://res.cloudinary.com/dwkp0e1yo/image/upload/v1683815875/mevpkdxft8z6cyjicnd6.png",
     },
   ],
+  colors: {
+    red: "#ff0000",
+    yellow: "#ffff00",
+    blue: "#0000ff",
+  },
+  common: {
+    unsubscribe: "http://www.easyemail.pro",
+    logo: "http://res.cloudinary.com/djnkpbshx/image/upload/v1708400352/easy-email-pro-test/ty7rqkcktrwdvs5v39wv.png",
+  },
 };
-
 export default function MyEditor() {
   const { upload } = useUpload();
 

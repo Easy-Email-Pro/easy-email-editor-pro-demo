@@ -96,6 +96,22 @@ const mergetags = [
       },
     ],
   },
+  {
+    label: "Common",
+    value: "",
+    children: [
+      {
+        label: "Unsubscribe link",
+        value: "common.unsubscribe",
+        type: "link",
+      },
+      {
+        label: "Company logo",
+        value: "common.logo",
+        type: "image",
+      },
+    ],
+  },
 ];
 
 const mergetagsData = {
@@ -123,6 +139,10 @@ const mergetagsData = {
     red: "#ff0000",
     yellow: "#ffff00",
     blue: "#0000ff",
+  },
+  common: {
+    unsubscribe: "http://www.easyemail.pro",
+    logo: "http://res.cloudinary.com/djnkpbshx/image/upload/v1708400352/easy-email-pro-test/ty7rqkcktrwdvs5v39wv.png",
   },
 };
 

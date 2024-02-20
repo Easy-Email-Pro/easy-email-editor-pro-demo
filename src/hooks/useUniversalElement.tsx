@@ -177,7 +177,7 @@ const defaultEmailElements: Array<UniversalElement> = [
       ],
     },
     thumbnail:
-      "https://res.cloudinary.com/djnkpbshx/image/upload/v1689071193/easy-email-pro-test/crzjtbeqe5hspp8quq9q.png",
+      "http://res.cloudinary.com/djnkpbshx/image/upload/v1708425123/easy-email-pro-test/an5h4wm1i8gehgs5m7uc.png",
   },
 ];
 
