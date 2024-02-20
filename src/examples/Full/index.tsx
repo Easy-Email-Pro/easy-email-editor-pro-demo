@@ -110,6 +110,11 @@ const mergetags = [
         value: "common.logo",
         type: "image",
       },
+      {
+        label: "Website",
+        value: "common.website",
+        type: "image",
+      },
     ],
   },
 ];
@@ -142,6 +147,7 @@ const mergetagsData = {
   },
   common: {
     unsubscribe: "http://www.easyemail.pro",
+    website: "http://www.easyemail.pro",
     logo: "http://res.cloudinary.com/djnkpbshx/image/upload/v1708400352/easy-email-pro-test/ty7rqkcktrwdvs5v39wv.png",
   },
 };
