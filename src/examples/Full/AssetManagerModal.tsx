@@ -1,6 +1,6 @@
 import { useUpload } from "@/hooks/useUpload";
 import { useCallback } from "react";
-import { random, uniqueId } from "lodash";
+import { cloneDeep, random, uniqueId } from "lodash";
 import React from "react";
 import { Node } from "slate";
 import { ReactEditor, useSlate } from "slate-react";
@@ -13,6 +13,8 @@ import {
 } from "easy-email-pro-asset-manager";
 import "easy-email-pro-asset-manager/lib/style.css";
 import { Element, NodeUtils } from "easy-email-pro-core";
+
+const assetMap = new Map<string, Array<FileItem | FolderItem>>();
 
 export const AssetManagerModal = ({
   visible,
@@ -32,51 +34,86 @@ export const AssetManagerModal = ({
 
   const onCreateFile: AssetManagerProps["onCreateFile"] = useCallback(
     async (item) => {
-      return {
+      const newItem = {
         id: "new" + uniqueId(),
         type: "FILE",
         ...item,
         thumbnail: item.url + `?w=200`, // as thumbnail
-      };
+      } as FileItem;
+      const parent = assetMap.get(item.parentFolderId || "root");
+      if (parent) {
+        parent.push(newItem);
+        assetMap.set(item.parentFolderId || "root", [...parent]);
+        assetMap.set(item.parentFolderId || "root", [...parent]);
+      }
+
+      return newItem;
     },
     []
   );
 
   const onUpdateFile: AssetManagerProps["onUpdateFile"] = useCallback(
     async (item) => {
-      return {
+      const newFile = {
         ...item,
         thumbnail: item.url + `?w=200`, // as thumbnail
       };
+      const parent = assetMap.get(item.parentFolderId || "root");
+      parent?.forEach((item, index) => {
+        if (item.id === newFile.id) {
+          parent[index] = newFile;
+          assetMap.set(item.parentFolderId || "root", [...parent]);
+        }
+      });
+      return newFile;
     },
     []
   );
 
   const onUpdateFolder: AssetManagerProps["onUpdateFolder"] = useCallback(
     async (item) => {
-      return {
+      const newFolder = {
         ...item,
       };
+      const parent = assetMap.get(item.parentFolderId || "root");
+      parent?.forEach((item, index) => {
+        if (item.id === newFolder.id) {
+          parent[index] = newFolder;
+          assetMap.set(item.parentFolderId || "root", [...parent]);
+        }
+      });
+      return newFolder;
     },
     []
   );
 
   const onCreateFolder: AssetManagerProps["onCreateFolder"] = useCallback(
     async (item) => {
-      return {
+      const newFolder = {
         id: "new-folder" + uniqueId(),
         type: "FOLDER",
         parentFolderId: item.parentFolderId,
         name: item.name,
-      };
+      } as FolderItem;
+      const parent = assetMap.get(item.parentFolderId || "root");
+      if (parent) {
+        parent.push(newFolder);
+
+        assetMap.set(item.parentFolderId || "root", [...parent]);
+        assetMap.set(newFolder.id, []);
+      }
+
+      return newFolder;
     },
     []
   );
 
-  const onDeleteFile: AssetManagerProps["onDeleteFile"] =
-    useCallback(async () => {
+  const onDeleteFile: AssetManagerProps["onDeleteFile"] = useCallback(
+    async (item) => {
       return true;
-    }, []);
+    },
+    []
+  );
 
   const onDeleteFolder: AssetManagerProps["onDeleteFolder"] =
     useCallback(async () => {
@@ -92,8 +129,12 @@ export const AssetManagerModal = ({
         }, 1000)
       );
 
+      if (assetMap.get(folderId || "root")) {
+        return cloneDeep(assetMap.get(folderId || "root")!);
+      }
+
       const count = random(2, 5, false);
-      return [
+      const resData = [
         {
           id: uniqueId(),
           name: `Folder${folderId ? `-${folderId}` : ""} `,
@@ -119,7 +160,9 @@ export const AssetManagerModal = ({
             parentFolderId: null,
           };
         }),
-      ];
+      ] as Array<FileItem | FolderItem>;
+      assetMap.set(folderId || "root", resData);
+      return cloneDeep(resData);
     },
     []
   );
