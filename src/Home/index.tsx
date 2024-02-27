@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "@arco-design/web-react";
+import { Card } from "@arco-design/web-react";
 import { Layout } from "@arco-design/web-react";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 import { Space } from "@arco-design/web-react";
@@ -140,13 +140,13 @@ export const Home = () => {
               <Logo className="logo" height={36} width={175} />
             </a>
           </h1>
-          <Button
+          {/* <Button
             type="primary"
             target="_blank"
             href="https://www.easyemail.pro/?utm_source=demo"
           >
             <strong>View Website</strong>
-          </Button>
+          </Button> */}
         </div>
       </div>
       <Layout.Content style={{ padding: 20 }}>

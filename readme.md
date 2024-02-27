@@ -13,7 +13,7 @@ Build marketing campaigns, newsletters, or transactional emails effortlessly wit
 
 ## Live Demo
 
-Check out the live demo here https://demo.easy-email-pro.com
+Check out the live demo here https://demo.easyemail.pro/full
 
 ## Getting started
 
@@ -60,7 +60,11 @@ const config = Retro.useCreateConfig({
   onUpload,
   initialValues: initialValues,
   onSubmit: onSubmit,
-  clientId: "",
+  clientId: process.env.CLIENT_ID,
+  showSourceCode: true,
+  showLayer: true,
+  showPreview: true,
+  showSidebar: true,
 })
 
   return (
@@ -75,4 +79,4 @@ const config = Retro.useCreateConfig({
 
 ## Docs
 
-Check out docs here: https://docs.easy-email-pro.com
+Check out docs here: https://docs.easyemail.pro/docs/intro
