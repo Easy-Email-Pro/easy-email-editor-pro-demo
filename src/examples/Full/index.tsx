@@ -148,7 +148,7 @@ const mergetagsData = {
   common: {
     unsubscribe: "http://www.easyemail.pro",
     website: "http://www.easyemail.pro",
-    logo: "http://res.cloudinary.com/djnkpbshx/image/upload/v1708400352/easy-email-pro-test/ty7rqkcktrwdvs5v39wv.png",
+    logo: "http://res.cloudinary.com/djnkpbshx/image/upload/v1704018909/easy-email-pro-test/n3lcl4bo8lkezrtsgxz6.png?w=575",
   },
 };
 
@@ -585,7 +585,7 @@ export default function MyEditor() {
     },
     hoveringToolbar: hoveringToolbar,
     showSourceCode: true,
-    showLayer: false,
+    showLayer: true,
     showPreview: true,
     showSidebar: true,
     showSelectFileButton: true,
