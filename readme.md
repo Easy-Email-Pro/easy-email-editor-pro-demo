@@ -15,6 +15,10 @@ Build marketing campaigns, newsletters, or transactional emails effortlessly wit
 
 Check out the live demo here https://demo.easyemail.pro/full
 
+## Nextjs Demo
+
+https://github.com/Easy-Email-Pro/easy-email-pro-nextjs-demo
+
 ## Getting started
 
 ```bash
