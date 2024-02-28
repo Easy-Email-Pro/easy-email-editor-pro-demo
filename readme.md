@@ -19,6 +19,10 @@ Check out the live demo here https://demo.easyemail.pro/full
 
 https://github.com/Easy-Email-Pro/easy-email-pro-nextjs-demo
 
+## Check out plans
+
+[Plans](https://www.easyemail.pro/?utm_source=demo-repo#pricing)
+
 ## Getting started
 
 ```bash
