@@ -3,7 +3,6 @@ import { EmailEditorProvider, EmailTemplate } from "easy-email-pro-editor";
 import { IconFont, Retro, ThemeConfigProps } from "easy-email-pro-theme";
 import "easy-email-pro-theme/lib/style.css";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
-
 import data from "./template.json";
 import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
@@ -216,17 +215,16 @@ export default function MyEditor() {
   };
 
   const config = Retro.useCreateConfig({
-    clientId: process.env.CLIENT_ID!,
+    clientId: "FREE",
     height: "calc(100vh - 66px)",
     onUpload,
     initialValues: initialValues,
     onSubmit: onSubmit,
     categories,
     showSourceCode: true,
-    showLayer: false,
+    showLayer: true,
     showPreview: true,
     showSidebar: true,
-    showSelectFileButton: true,
     compact: false,
     showDragMoveIcon: true,
     showInsertTips: true,

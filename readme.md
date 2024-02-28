@@ -42,7 +42,7 @@ export default function MyEditor() {
   // You can fetch data from the server.
   const initialValues: EmailTemplate | null = useMemo(() => {
     return {
-      subject: 'Welcome to Easy-email-pro mail',
+      subject: 'Welcome to Easy Email Pro',
       content: BlockManager.getBlockByType(ElementType.PAGE).create(),
     };
   }, []);
@@ -57,14 +57,18 @@ export default function MyEditor() {
  }
 
 const config = Retro.useCreateConfig({
-  onUpload,
-  initialValues: initialValues,
-  onSubmit: onSubmit,
-  clientId: process.env.CLIENT_ID,
-  showSourceCode: true,
-  showLayer: true,
-  showPreview: true,
-  showSidebar: true,
+    clientId: "FREE",
+    height: "calc(100vh - 66px)",
+    onUpload,
+    initialValues: initialValues,
+    onSubmit: onSubmit,
+    showSourceCode: true,
+    showLayer: true,
+    showPreview: true,
+    showSidebar: true,
+    compact: false,
+    showDragMoveIcon: true,
+    showInsertTips: true,
 })
 
   return (
