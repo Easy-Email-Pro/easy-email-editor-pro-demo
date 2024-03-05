@@ -55,6 +55,7 @@ const UniversalElement2 = React.lazy(
 const ColorTheme = React.lazy(() => import("./examples/ColorTheme/index"));
 const Localization = React.lazy(() => import("./examples/Localization/index"));
 const DynamicData = React.lazy(() => import("./examples/DynamicData/index"));
+const AIAssistant = React.lazy(() => import("./examples/AIAssistant/index"));
 const CustomTemplateEngine = React.lazy(
   () => import("./examples/CustomTemplateEngine/index")
 );
@@ -128,6 +129,11 @@ export const navigation = [
     name: "Dynamic data",
     path: "/dynamic-data",
     element: <DynamicData />,
+  },
+  {
+    name: "AI Assistant demo",
+    path: "/ai-assistant",
+    element: <AIAssistant />,
   },
   {
     name: "Responsive view",
