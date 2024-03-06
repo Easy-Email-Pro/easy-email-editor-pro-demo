@@ -7,7 +7,7 @@ import {
   Tooltip,
 } from "@arco-design/web-react";
 import React, { useRef } from "react";
-import { Editor, Node, Transforms } from "slate";
+import { Editor, Transforms } from "slate";
 import { useSlate } from "slate-react";
 import { ElementType, classnames, t } from "easy-email-pro-core";
 import MagicIcon from "./magic.svg";
@@ -38,41 +38,9 @@ export function AIAssistantPlugin({ isCollapsed }: { isCollapsed?: boolean }) {
   const ref = useRef<HTMLElement | null>(null);
 
   const onGenerate = async () => {
-    const replay = `Easy-email-pro simplifies the creation of responsive email templates by combining the editing capabilities of SlateJS with the compatibility of MJML. With drag-and-drop functionality, inline editing, and keyboard shortcuts, users can easily design visually appealing and feature-rich email templates.\nBuild marketing campaigns, newsletters, or transactional emails effortlessly with Easy-email-pro. Create professional-grade responsive email templates efficiently.`;
+    const replay = `Effortless Email Template Creation with EasyEmailPro\nEasy-email-pro simplifies the creation of responsive email templates by combining the editing capabilities of SlateJS with the compatibility of MJML. With drag-and-drop functionality, inline editing, and keyboard shortcuts, users can easily design visually appealing and feature-rich email templates.\nBuild marketing campaigns, newsletters, or transactional emails effortlessly with Easy-email-pro. Create professional-grade responsive email templates efficiently.`;
 
     const textList = replay.split("\n");
-
-    const nodes: Node[] = [
-      {
-        type: ElementType.LINE_BREAK,
-        data: {},
-        attributes: {},
-        children: [{ text: "" }],
-      },
-      {
-        type: ElementType.LINE_BREAK,
-        data: {},
-        attributes: {},
-        children: [{ text: "" }],
-      },
-    ];
-    // textList.forEach((text, index) => {
-    //   nodes.push({ text, color: "red", bold: true }); // text format example
-    //   if (index !== textList.length - 1) {
-    //     nodes.push({
-    //       type: ElementType.LINE_BREAK,
-    //       data: {},
-    //       attributes: {},
-    //       children: [{ text: "" }],
-    //     });
-    //   }
-    // });
-
-    // // overwrite text content
-    // // setFieldValue(selectedNodePath, "children", nodes);
-
-    // // append text content
-    // Transforms.insertNodes(editor, nodes);
 
     const delay = (timeout: number) => {
       return new Promise((resolve) => {
@@ -83,20 +51,28 @@ export function AIAssistantPlugin({ isCollapsed }: { isCollapsed?: boolean }) {
     };
     const delayTime = 20; // 延迟时间，单位是毫秒
     const chunkSize = 3;
+
+    // insert blank line
+    Transforms.insertNodes(editor, [
+      {
+        type: ElementType.LINE_BREAK,
+        data: {},
+        attributes: {},
+        children: [{ text: "" }],
+      },
+    ]);
     for (let i = 0; i < textList.length; i++) {
       const currentText = textList[i];
       for (let index = 0; index < currentText.length; index += chunkSize) {
         const chunk = currentText.slice(index, index + chunkSize);
         console.log(chunk);
         await delay(delayTime);
-        editor.insertText(chunk);
-        // setTimeout(
-        //   () => {
-        //     // 这里的 `insertText` 是一个SlateJS的方法，用于插入文本
-        //     editor.insertText(chunk);
-        //   },
-        //   i * currentText.length * delayTime + index * delayTime
-        // );
+        // first line as title
+        if (i === 0) {
+          editor.insertNode({ text: chunk, bold: true });
+        } else {
+          editor.insertText(chunk);
+        }
       }
 
       if (i !== textList.length - 1) {
@@ -107,6 +83,15 @@ export function AIAssistantPlugin({ isCollapsed }: { isCollapsed?: boolean }) {
             attributes: {},
             children: [{ text: "" }],
           },
+          {
+            type: ElementType.LINE_BREAK,
+            data: {},
+            attributes: {},
+            children: [{ text: "" }],
+          },
+        ]);
+      } else {
+        Transforms.insertNodes(editor, [
           {
             type: ElementType.LINE_BREAK,
             data: {},
