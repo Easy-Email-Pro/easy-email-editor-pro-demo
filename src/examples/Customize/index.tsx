@@ -1,6 +1,10 @@
 import { useMemo } from "react";
-import { EmailEditorProvider, EmailTemplate } from "easy-email-pro-editor";
-import { Retro } from "easy-email-pro-theme";
+import {
+  EmailEditorProvider,
+  EmailTemplate,
+  TextFormat,
+} from "easy-email-pro-editor";
+import { Retro, ThemeConfigProps } from "easy-email-pro-theme";
 import "easy-email-pro-theme/lib/style.css";
 import "@arco-themes/react-easy-email-pro-purple/css/arco.css";
 
@@ -17,6 +21,20 @@ import { get } from "lodash";
 
 import customizeCss from "./customize.scss?inline";
 import { ElementToolsInner } from "./ElementToolsInner";
+import { EditorTopBar } from "./EditorTopBar";
+
+const hoveringToolbar: ThemeConfigProps["hoveringToolbar"] = {
+  list({ isCollapsed, selection, isFocus }) {
+    if (isCollapsed) return [];
+    return [
+      TextFormat.BOLD,
+      TextFormat.ITALIC,
+      TextFormat.UNDERLINE,
+      TextFormat.STRIKETHROUGH,
+      TextFormat.LINK,
+    ];
+  },
+};
 
 export default function MyEditor() {
   const { upload } = useUpload();
@@ -47,6 +65,7 @@ export default function MyEditor() {
     ElementToolsInner: ElementToolsInner,
     showDragMoveIcon: true,
     showInsertTips: true,
+    hoveringToolbar,
   });
 
   return (
@@ -68,7 +87,7 @@ export default function MyEditor() {
       />
 
       <Layout.Content>
-        <Retro.Layout>
+        <Retro.Layout header={<EditorTopBar />}>
           <style id="customize-css">{customizeCss}</style>
         </Retro.Layout>
       </Layout.Content>

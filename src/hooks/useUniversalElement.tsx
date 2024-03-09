@@ -185,7 +185,7 @@ export const useUniversalElement = () => {
   const [universalElements, setUniversalElements] = useLocalStorage<
     UniversalElement[]
   >("customElements", defaultEmailElements);
-  console.log("universalElements", universalElements);
+
   const customElements = useMemo(() => {
     const customElements =
       universalElements?.reduce(

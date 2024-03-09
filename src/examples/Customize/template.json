@@ -2,27 +2,22 @@
   "0": {
     "children": [
       null,
+      null,
+      null,
       {
         "children": [
           {
-            "children": [
-              null,
-              {
-                "attributes": {
-                  "padding-top": "3px",
-                  "padding-left": "25px",
-                  "font-family": "Arial, sans-serif",
-                  "font-size": "36px",
-                  "color": "#FFFFFF",
-                  "line-height": "130%",
-                  "font-weight": "normal",
-                  "letter-spacing": "0px",
-                  "align": "center"
-                }
-              }
-            ]
+            "attributes": {
+              "width": "100%"
+            }
           }
-        ]
+        ],
+        "attributes": {
+          "direction": "ltr",
+          "vertical-align": "top",
+          "padding-top": "0px",
+          "padding-left": "0px"
+        }
       }
     ]
   },
@@ -45,7 +40,9 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "background-color": "#FFFFFF"
+          "background-color": "#FFFFFF",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
         },
         "children": [
           {
@@ -130,33 +127,16 @@
                 "name": "Text",
                 "type": "standard-paragraph",
                 "data": {},
-                "attributes": {},
-                "children": [
-                  {
-                    "text": "JOIN US FOR A FEAST ON"
-                  }
-                ]
-              },
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
                 "attributes": {
-                  "font-size": "36px"
+                  "align": "left",
+                  "padding-left": "20px",
+                  "padding-right": "20px",
+                  "padding-top": "10px",
+                  "padding-bottom": "10px"
                 },
                 "children": [
                   {
-                    "text": "St. "
-                  },
-                  {
-                    "text": "Patrick's",
-                    "link": {
-                      "href": "http://127.0.0.1:5173/simple",
-                      "blank": true
-                    }
-                  },
-                  {
-                    "text": " Day"
+                    "text": "JOIN US FOR A FEAST ON"
                   }
                 ]
               }
@@ -173,9 +153,7 @@
         "children": [
           {
             "type": "standard-column",
-            "attributes": {
-              "width": "480px"
-            },
+            "attributes": {},
             "data": {},
             "children": [
               {
@@ -184,7 +162,10 @@
                 "data": {},
                 "attributes": {
                   "padding-left": "20px",
-                  "padding-right": "20px"
+                  "padding-right": "20px",
+                  "align": "left",
+                  "padding-top": "10px",
+                  "padding-bottom": "10px"
                 },
                 "children": [
                   {

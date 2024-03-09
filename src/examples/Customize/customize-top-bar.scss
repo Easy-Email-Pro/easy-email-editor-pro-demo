@@ -1,0 +1,29 @@
+.EditorTopBar {
+  #RichTextBar {
+    .formatButton {
+      font-size: 16px;
+
+      .iconfont {
+        font-size: 16px;
+      }
+    }
+
+  }
+
+  .controller-item {
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(34, 47, 62);
+    margin-right: 9px;
+
+    button {
+      padding: 0 8px !important;
+    }
+  }
+
+  [data-enable="false"] {
+    color: rgba(34, 47, 62, 0.5);
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
