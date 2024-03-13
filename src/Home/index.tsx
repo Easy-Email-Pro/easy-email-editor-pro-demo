@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "@arco-design/web-react";
+import { Button, Card } from "@arco-design/web-react";
 import { Layout } from "@arco-design/web-react";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 import { Space } from "@arco-design/web-react";
@@ -19,11 +19,11 @@ import { Grid } from "@arco-design/web-react";
 
 import SimpleImg from "./images/simple.png";
 import UniversalImg from "./images/universal.png";
-import ColorThemeImg from "./images/color-theme.png";
 import LocalizationImg from "./images/localization.png";
 import DynamicDataImg from "./images/dynamic-data.png";
 import ResponsiveViewImg from "./images/responsive.png";
 import DynamicCustomBlock from "./images/dynamic-block.png";
+import CustomizeImage from "./images/customize.png";
 import frozenImg from "./images/frozen.png";
 import studioImg from "./images/studio.png";
 import nextjsImg from "./images/nextjs.png";
@@ -43,14 +43,14 @@ const features = [
   },
 
   {
-    subject: "Color theme",
-    thumbnail: ColorThemeImg,
-    url: "/color-theme",
+    subject: "Customize",
+    thumbnail: CustomizeImage,
+    url: "/customize",
   },
   {
     subject: "Nextjs integration example",
     thumbnail: nextjsImg,
-    url: "https://admin.easyemail.pro/utm_souce=demo",
+    url: "https://admin.easyemail.pro?utm_souce=demo",
   },
   {
     subject: "Studio",
@@ -140,13 +140,22 @@ export const Home = () => {
               <Logo className="logo" height={36} width={175} />
             </a>
           </h1>
-          {/* <Button
-            type="primary"
-            target="_blank"
-            href="https://www.easyemail.pro/?utm_source=demo"
-          >
-            <strong>View Website</strong>
-          </Button> */}
+          <Space>
+            <Button
+              type="primary"
+              target="_blank"
+              href="https://www.easyemail.pro/?utm_source=demo"
+            >
+              <strong>View Website</strong>
+            </Button>
+            <Button
+              type="primary"
+              target="_blank"
+              href="https://admin.easyemail.pro/?utm_souce=demo"
+            >
+              <strong>Write Email</strong>
+            </Button>
+          </Space>
         </div>
       </div>
       <Layout.Content style={{ padding: 20 }}>
