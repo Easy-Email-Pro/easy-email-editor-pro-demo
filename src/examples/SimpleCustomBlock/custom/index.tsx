@@ -9,7 +9,7 @@ import { ElementCategory } from "easy-email-pro-core";
 import React from "react";
 import { SimpleCustomElement } from "@/custom-types";
 
-const { Button, Section, Column, Image } = components;
+const { Button, Wrapper, Section, Column, Image, Code, Table } = components;
 
 const defaultData = {
   attributes: {
@@ -47,14 +47,52 @@ export const SimpleCustomBlock = createCustomBlock<SimpleCustomElement>({
     const { data, attributes } = node;
 
     return (
-      <Section idx={params.idx} {...node.attributes} data={node.data}>
-        <Column>
-          <Image padding="0px 0px 0px 0px" width="100px" src={attributes.src} />
-          <Button background-color={attributes["button-color"]} href="#">
-            {data.buttonText}
-          </Button>
-        </Column>
-      </Section>
+      <Wrapper idx={params.idx} {...node.attributes} data={node.data}>
+        <Section>
+          <Column>
+            <Image
+              padding="0px 0px 0px 0px"
+              width="100px"
+              src={attributes.src}
+            />
+            <Button background-color={attributes["button-color"]} href="#">
+              {data.buttonText}
+            </Button>
+          </Column>
+        </Section>
+        <Section>
+          <Column>
+            <Code>
+              {`
+                <p style="color:red;font-size:40px">dangerous code</p>
+              `}
+            </Code>
+          </Column>
+        </Section>
+        <Section>
+          <Column>
+            <Table>
+              {`
+               <tr style="border-bottom:1px solid #ecedee;text-align:left;padding:15px 0;">
+                  <th style="padding: 0 15px 0 0;">Year</th>
+                  <th style="padding: 0 15px;">Language</th>
+                  <th style="padding: 0 0 0 15px;">Inspired from</th>
+                </tr>
+                <tr>
+                  <td style="padding: 0 15px 0 0;">1995</td>
+                  <td style="padding: 0 15px;">PHP</td>
+                  <td style="padding: 0 0 0 15px;">C, Shell Unix</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 15px 0 0;">1995</td>
+                  <td style="padding: 0 15px;">JavaScript</td>
+                  <td style="padding: 0 0 0 15px;">Scheme, Self</td>
+                </tr>
+              `}
+            </Table>
+          </Column>
+        </Section>
+      </Wrapper>
     );
   },
 });
