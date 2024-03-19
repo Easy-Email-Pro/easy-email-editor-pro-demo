@@ -1,26 +1,4 @@
 {
-  "0": {
-    "children": [
-      null,
-      null,
-      null,
-      {
-        "children": [
-          {
-            "attributes": {
-              "width": "100%"
-            }
-          }
-        ],
-        "attributes": {
-          "direction": "ltr",
-          "vertical-align": "top",
-          "padding-top": "0px",
-          "padding-left": "0px"
-        }
-      }
-    ]
-  },
   "subject": "Blank",
   "content": {
     "data": {

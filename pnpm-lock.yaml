@@ -32,6 +32,9 @@ dependencies:
   '@sentry/vite-plugin':
     specifier: ^2.10.0
     version: 2.10.0
+  '@types/markdown-it':
+    specifier: ^13.0.7
+    version: 13.0.7
   '@types/mjml':
     specifier: ^4.7.0
     version: 4.7.1
@@ -41,27 +44,30 @@ dependencies:
   axios:
     specifier: ^1.4.0
     version: 1.4.0
+  browser-image-compression:
+    specifier: ^2.0.2
+    version: 2.0.2
   easy-email-pro-asset-manager:
-    specifier: ^1.21.0
-    version: 1.21.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.24.0
+    version: 1.24.0(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-core:
-    specifier: ^1.21.0
-    version: 1.21.0(axios@1.4.0)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.24.0
+    version: 1.24.0(axios@1.4.0)(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-editor:
-    specifier: ^1.21.0
-    version: 1.21.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.24.0
+    version: 1.24.0(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-kit:
-    specifier: ^1.21.0
-    version: 1.21.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.24.0
+    version: 1.24.0(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-localization:
-    specifier: ^1.21.0
-    version: 1.21.0
+    specifier: ^1.24.0
+    version: 1.24.0
   easy-email-pro-plugins:
-    specifier: ^1.21.0
-    version: 1.21.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.24.0
+    version: 1.24.0(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-theme:
-    specifier: ^1.21.0
-    version: 1.21.0(@arco-design/web-react@2.49.2)(mjml-browser@4.14.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.24.0
+    version: 1.24.0(@arco-design/web-react@2.49.2)(mjml-browser@4.14.1)(react-dom@18.2.0)(react@18.2.0)
   file-saver:
     specifier: ^2.0.5
     version: 2.0.5
@@ -74,6 +80,9 @@ dependencies:
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
+  markdown-it:
+    specifier: ^14.1.0
+    version: 14.1.0
   mjml:
     specifier: ^4.14.1
     version: 4.14.1
@@ -1243,12 +1252,27 @@ packages:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
     dev: false
 
+  /@types/linkify-it@3.0.5:
+    resolution: {integrity: sha512-yg6E+u0/+Zjva+buc3EIb+29XEg4wltq7cSmd4Uc2EE/1nUVmxyzpX6gUXD0V8jIrG0r7YeOGVIbYRkxeooCtw==}
+    dev: false
+
   /@types/lodash@4.14.195:
     resolution: {integrity: sha512-Hwx9EUgdwf2GLarOjQp5ZH8ZmblzcbTBC2wtQWNKARBSxM9ezRIAUpeDTgoQRAFB0+8CNWXVA9+MaSOzOF3nPg==}
     dev: true
 
   /@types/lodash@4.14.202:
     resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
+    dev: false
+
+  /@types/markdown-it@13.0.7:
+    resolution: {integrity: sha512-U/CBi2YUUcTHBt5tjO2r5QV/x0Po6nsYwQU4Y04fBS6vfoImaiZ6f8bi3CjTCxBPQSO1LMyUqkByzi8AidyxfA==}
+    dependencies:
+      '@types/linkify-it': 3.0.5
+      '@types/mdurl': 1.0.5
+    dev: false
+
+  /@types/mdurl@1.0.5:
+    resolution: {integrity: sha512-6L6VymKTzYSrEf4Nev4Xa1LCHKrlTlYCBMTlQKFuddo1CvQcE52I0mwfOJayueUC7MJuXOeHTcIU683lzd0cUA==}
     dev: false
 
   /@types/mjml-core@4.7.1:
@@ -1444,6 +1468,10 @@ packages:
     resolution: {integrity: sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==}
     dev: false
 
+  /argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+    dev: false
+
   /async-listen@3.0.0:
     resolution: {integrity: sha512-V+SsTpDqkrWTimiotsyl33ePSjA5/KrithwupuvJ6ztsqPvGv6ge4OredFhPffVXiLN/QUWvE0XcqJaYgt6fOg==}
     engines: {node: '>= 14'}
@@ -1517,6 +1545,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       fill-range: 7.0.1
+
+  /browser-image-compression@2.0.2:
+    resolution: {integrity: sha512-pBLlQyUf6yB8SmmngrcOw3EoS4RpQ1BcylI3T9Yqn7+4nrQTXJD4sJDe5ODnJdrvNMaio5OicFo75rDyJD2Ucw==}
+    dependencies:
+      uzip: 0.20201231.0
+    dev: false
 
   /browserslist@4.21.9:
     resolution: {integrity: sha512-M0MFoZzbUrRU4KNfCrDLnvyE7gub+peetoTid3TBIqtunaDJyXlwhakT+/VkvSXcfIzFfK/nkCs4nmyTmxdNSg==}
@@ -1928,8 +1962,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /easy-email-pro-asset-manager@1.21.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-PhE+YwDgdOC07KUls6yM9kBlXNxe2tZZJNLLTZ1exYgQ2YUWfKL0CSDsfKez1VsMpFKqqtlg7ZSa6FagzA09pg==}
+  /easy-email-pro-asset-manager@1.24.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Q5kfk9gtLXxj9Pokh/3zUcwIPT9+9433TN/nS79ZAFz6b3dylfAB9ugosPBHyKuE3NT5YlNlR2+NPCCl7nmPBA==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1940,8 +1974,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /easy-email-pro-core@1.21.0(axios@1.4.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-sdpkNV1czEz7oQASPCkQ1ntMX1XY+cPKULu/HPAE83j64AR1J96TJpYPv/vWtp7NFUj3bnCF9ntrE+0P3YNqtA==}
+  /easy-email-pro-core@1.24.0(axios@1.4.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-a5oVqQctkFJWfORJxMwL6jGgM9YfLbUAlOblxjJe/X6+Hic9aRwCGk/8+RBbTy7yiAi+rcHeis9H28n0XhTLaA==}
     peerDependencies:
       axios: ^1.4.0
       react: ^18.2.0
@@ -1961,8 +1995,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /easy-email-pro-editor@1.21.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-UIOhnGlD6K/LNsbHgvYHa7QWR6qx3m1hN/f2qrW+Sv5AXGsBhIlcj/KyzVkjo1445RNWZC+JpaLYFj2gyMIfvQ==}
+  /easy-email-pro-editor@1.24.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-isLzY1xdQWHvtzaQnE5NN6J1NWQlwHE4bHaYE+X1x7KOGfFY+8UaFurhB9pvg2fDr2+V8POHGF+t2WjGr6QN6A==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1982,8 +2016,8 @@ packages:
       - debug
     dev: false
 
-  /easy-email-pro-kit@1.21.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-52Omps+BWWVs+oE/8Md0WwH7pqPCIfOK4T5yLmOFYridFK0gUfOBTO/ZbUgK1NEMhU5t/1pHqF+4Q2h9t5IIug==}
+  /easy-email-pro-kit@1.24.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-XJnIBr86c6mGeX9ddlXNxd3jsLxK/+NgAgx9J/gM7QkhLlj1PJNbAFusqbXjsAKL0eZbdStVqhthnJEYEZoezg==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1997,12 +2031,12 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /easy-email-pro-localization@1.21.0:
-    resolution: {integrity: sha512-fN+LSTDgzgJtjKABIAeXhQ1VPHAeDYCpXBGRSRatACP74rSh4Jt5OhqdEPBxOXyz/WUJjOmQOHN9gSoBLcUrfg==}
+  /easy-email-pro-localization@1.24.0:
+    resolution: {integrity: sha512-9wb0eAXJOpcy4XhefuyWitM7FQu5nmNVPJYQbkKhCpJuXUYylIJ6hl7JASOcp+g+kr5zYgRxT1oUSJfUow0Vtw==}
     dev: false
 
-  /easy-email-pro-plugins@1.21.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-FRM+fsF5R+ZqwF03qQP7rZhq+ckLbTzpYrHpN0cHoL27DggC7f38v+zch9z6YLjjO2nVz9gj91XtqOsvyEVkaQ==}
+  /easy-email-pro-plugins@1.24.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-kTsN7+Uo0lf5eBRAQC/eII0xtoLA8CROAwJWWX4MD/82tfJh212weqrwaxAKvi6ATYK5hI/mItkdL8IiYwR5sw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -2014,8 +2048,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /easy-email-pro-theme@1.21.0(@arco-design/web-react@2.49.2)(mjml-browser@4.14.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-826Q0Gg9bPRJwCeInU3EcvvCsvOX9ozCuTp5faNQolwP6o4h0+ZnYyRpWOlNeDKMryhN6ECPH4K7fTt/J+YIYw==}
+  /easy-email-pro-theme@1.24.0(@arco-design/web-react@2.49.2)(mjml-browser@4.14.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-APJL1wrXZ/WvgjULRQzlOf5neWPhZ09u8yAwhTOszL3ZrrjhfLvO59xrBjPdGmd9QSssSO7lRTb5yV/8M6XonA==}
     peerDependencies:
       '@arco-design/web-react': ^2.46.3
       mjml-browser: ^4.14.1
@@ -2829,6 +2863,12 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
+  /linkify-it@5.0.0:
+    resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
+    dependencies:
+      uc.micro: 2.1.0
+    dev: false
+
   /liquidjs@10.8.3:
     resolution: {integrity: sha512-LqHLYtH3vrkT3LyfOhPU0FJX5KPO4aB6SzGa4HRI29yz8pS0ZxqIe/fWtic8qiust1+qrHI92J67tdt92V4WOA==}
     engines: {node: '>=14'}
@@ -2905,6 +2945,18 @@ packages:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
     dev: false
 
+  /markdown-it@14.1.0:
+    resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+      entities: 4.5.0
+      linkify-it: 5.0.0
+      mdurl: 2.0.0
+      punycode.js: 2.3.1
+      uc.micro: 2.1.0
+    dev: false
+
   /masonry-layout@4.2.2:
     resolution: {integrity: sha512-iGtAlrpHNyxaR19CvKC3npnEcAwszXoyJiI8ARV2ePi7fmYhIud25MHK8Zx4P0LCC4d3TNO9+rFa1KoK1OEOaA==}
     dependencies:
@@ -2914,6 +2966,10 @@ packages:
 
   /mdn-data@2.0.14:
     resolution: {integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==}
+    dev: false
+
+  /mdurl@2.0.0:
+    resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
     dev: false
 
   /memoize-one@5.2.1:
@@ -3733,6 +3789,11 @@ packages:
     resolution: {integrity: sha512-b/YwNhb8lk1Zz2+bXXpS/LK9OisiZZ1SNsSLxN1x2OXVEhW2Ckr/7mWE5vrC1ZTiJlD9g19jWszTmJsB+oEpFQ==}
     dev: false
 
+  /punycode.js@2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
+    dev: false
+
   /punycode@2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
@@ -4342,6 +4403,10 @@ packages:
     hasBin: true
     dev: false
 
+  /uc.micro@2.1.0:
+    resolution: {integrity: sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==}
+    dev: false
+
   /uglify-js@3.17.4:
     resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
     engines: {node: '>=0.8.0'}
@@ -4421,6 +4486,10 @@ packages:
     resolution: {integrity: sha512-1MLa5ouZiOmQzUbjbu9VmjLzn1QLXBhwpUa7kdLUQK+KQ5KA9I1vk5U4YHe/X2Ch7PYnJfWuWT+VbuxbGwljhw==}
     dependencies:
       base64-arraybuffer: 1.0.2
+
+  /uzip@0.20201231.0:
+    resolution: {integrity: sha512-OZeJfZP+R0z9D6TmBgLq2LHzSSptGMGDGigGiEe0pr8UBe/7fdflgHlHBNDASTXB5jnFuxHpNaJywSg8YFeGng==}
+    dev: false
 
   /v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}

@@ -1,0 +1,66 @@
+.markdown-table table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.markdown-table td,
+.markdown-table th {
+  padding: 0;
+}
+
+.markdown-table dl {
+  padding: 0;
+}
+
+.markdown-table dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-table dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-table table th {
+  font-weight: 600;
+}
+
+.markdown-table table th,
+.markdown-table table td {
+  padding: 6px 13px;
+  border: 1px solid #d0d7de;
+}
+
+.markdown-table table td > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-table table tr {
+  background-color: #ffffff;
+  border-top: 1px solid rgb(216, 222, 228);
+}
+
+.markdown-table table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li > p {
+  margin-top: 16px;
+}
+
+.markdown-body li + li {
+  margin-top: 0.25em;
+}

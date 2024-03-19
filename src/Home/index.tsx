@@ -23,6 +23,7 @@ import LocalizationImg from "./images/localization.png";
 import DynamicDataImg from "./images/dynamic-data.png";
 import ResponsiveViewImg from "./images/responsive.png";
 import DynamicCustomBlock from "./images/dynamic-block.png";
+import NotionBlockImg from "./images/notion-like.png";
 import CustomizeImage from "./images/customize.png";
 import frozenImg from "./images/frozen.png";
 import studioImg from "./images/studio.png";
@@ -31,6 +32,11 @@ import readonlyImg from "./images/readonly.png";
 import "./index.less";
 
 const features = [
+  {
+    subject: "Notion",
+    thumbnail: NotionBlockImg,
+    url: "/notion-like",
+  },
   {
     subject: "Full",
     thumbnail: SimpleImg,

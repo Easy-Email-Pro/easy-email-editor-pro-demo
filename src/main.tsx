@@ -70,6 +70,7 @@ const DynamicCustomBlock = React.lazy(
 const FrozenBlock = React.lazy(() => import("./examples/FrozenBlock/index"));
 const ReadOnly = React.lazy(() => import("./examples/ReadOnly/index"));
 const Minimalist = React.lazy(() => import("./examples/Minimalist/index"));
+const Markdown = React.lazy(() => import("./examples/Markdown/index"));
 const GlobalVariables = React.lazy(
   () => import("./examples/GlobalVariables/index")
 );
@@ -80,14 +81,25 @@ const Studio = React.lazy(() => import("./examples/Studio/index"));
 
 export const navigation = [
   {
-    name: "Simple",
-    path: "/simple",
-    element: <Simple />,
-  },
-  {
     name: "Full",
     path: "/full",
     element: <Full />,
+  },
+
+  {
+    name: "Markdown",
+    path: "/markdown",
+    element: <Markdown />,
+  },
+  {
+    name: "Notion-like(processing)",
+    path: "/notion-like",
+    element: <Minimalist />,
+  },
+  {
+    name: "Simple",
+    path: "/simple",
+    element: <Simple />,
   },
   {
     name: "Customize",
@@ -174,16 +186,13 @@ const router = createBrowserRouter([
   //   path: "/template-engine",
   //   element: <CustomTemplateEngine />,
   // },
-  {
-    name: "Notion-like(processing)",
-    path: "/notion-like",
-    element: <Minimalist />,
-  },
+
   {
     name: "Template",
     path: "/template",
     element: <TemplateEditor />,
   },
+
   {
     name: "Studio",
     path: "/studio",

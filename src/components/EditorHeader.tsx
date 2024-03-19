@@ -16,7 +16,6 @@ import { EmailTemplate, useEditorProps } from "easy-email-pro-editor";
 import { mjmlToJson, useEditorContext } from "easy-email-pro-theme";
 import { EditorCore, PluginManager } from "easy-email-pro-core";
 import { navigation } from "../main";
-import AutoSaveAndRestore from "./AutoSaveAndRestore/AutoSaveAndRestore";
 import mjml from "mjml-browser";
 import { saveAs } from "file-saver";
 import { Uploader } from "@/utils/Uploader";
@@ -69,7 +68,9 @@ export const EditorHeader = (props: {
   };
 
   const onExportJSON = () => {
-    navigator.clipboard.writeText(JSON.stringify(values, null, 2));
+    navigator.clipboard.writeText(
+      JSON.stringify(pick(values, ["subject", "content"]), null, 2)
+    );
     saveAs(
       new Blob(
         [JSON.stringify(pick(values, ["content", "subject"]), null, 2)],
@@ -315,7 +316,7 @@ export const EditorHeader = (props: {
       >
         <Input.TextArea value={text} onChange={setText} rows={10} />
       </Modal>
-      <AutoSaveAndRestore name="temp" />
+      {/* <AutoSaveAndRestore name="temp" /> */}
     </>
   );
 };

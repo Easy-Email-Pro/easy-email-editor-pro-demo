@@ -7,23 +7,37 @@
         "font-family": "Arial, sans-serif"
       },
       "blockAttributes": {
+        "standard-divider": {
+          "padding-left": "0px",
+          "padding-right": "0px"
+        },
+        "standard-text-list": {
+          "align": "left",
+          "padding-left": "2px",
+          "padding-right": "2px"
+        },
         "standard-paragraph": {
+          "align": "left",
           "padding-left": "2px",
           "padding-right": "2px"
         },
         "standard-h1": {
+          "align": "left",
           "padding-left": "2px",
           "padding-right": "2px"
         },
         "standard-h2": {
+          "align": "left",
           "padding-left": "2px",
           "padding-right": "2px"
         },
         "standard-h3": {
+          "align": "left",
           "padding-left": "2px",
           "padding-right": "2px"
         },
         "standard-h4": {
+          "align": "left",
           "padding-left": "2px",
           "padding-right": "2px"
         },
@@ -74,20 +88,195 @@
             "attributes": {},
             "children": [
               {
-                "name": "Text",
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1711379245/easy-email-pro-test/gjt5ku2vogqpsxanns58.png",
+                  "width": "210px",
+                  "align": "left"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
                 "type": "standard-paragraph",
                 "data": {},
                 "attributes": {},
                 "children": [
                   {
-                    "text": "This is a text block. Click here to "
+                    "text": ""
                   }
                 ]
               },
               {
-                "type": "standard-divider",
+                "type": "standard-paragraph",
                 "data": {},
                 "attributes": {},
+                "children": [
+                  {
+                    "text": "Dear friends,"
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "I hope this email finds you well. I am delighted to introduce our Email Editor, a robust solution powered by MJML and Slate.js. Our Editor provides an unparalleled email editing experience, highlighting outstanding performance, extensibility, and compatibility."
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "Our Email Editor offers a range of unique features to enhance your business productivity and customer engagement:"
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "standard-text-list",
+                "data": {},
+                "attributes": {
+                  "list-style": "circle",
+                  "line-height": "1.5"
+                },
+                "children": [
+                  {
+                    "type": "standard-text-list-item",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": "Responsive Design",
+                        "bold": true
+                      },
+                      {
+                        "text": ": Our Email Editor is designed to support different user interfaces for desktop and mobile devices, ensuring an optimized viewing experience across all platforms."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-text-list-item",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": "Dynamic Rendering",
+                        "bold": true
+                      },
+                      {
+                        "text": ": Utilize various template engines to inject data and generate unique emails tailored to your needs."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-text-list-item",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": "Universal Blocks",
+                        "bold": true
+                      },
+                      {
+                        "text": ": Save basic elements such as headers or footers for reuse in all your email templates, saving time and maintaining consistency."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-text-list-item",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": "Email Studio",
+                        "bold": true
+                      },
+                      {
+                        "text": ": Create custom blocks and configuration panels through intuitive drag-and-drop editing, eliminating the need for coding."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-text-list-item",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": "File Manager",
+                        "bold": true
+                      },
+                      {
+                        "text": ": Efficiently manage user-uploaded files. Our File Manager helps users easily organize, view, and manage their uploaded files."
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "standard-spacer",
+                "data": {},
+                "attributes": {
+                  "height": "20px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "50%"
+            },
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1704022640/easy-email-pro-test/x3lpcukh09nksccffjap.png",
+                  "width": "244px",
+                  "border-radius": "0px"
+                },
                 "children": [
                   {
                     "text": ""
@@ -101,17 +290,228 @@
                 "attributes": {},
                 "children": [
                   {
-                    "text": "edit it..."
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "50%"
+            },
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "Responsive Desig"
                   }
                 ]
               },
               {
-                "type": "standard-image",
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "Supports displaying different user interfaces for desktop and mobile devices."
+                  }
+                ]
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "background-color": "#184352",
+                  "width": "100%"
+                },
+                "children": [
+                  {
+                    "text": "TRY NOW"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "width": "138px",
+                  "background-color": "#000000",
+                  "href": "www.easyemail.pro"
+                },
+                "children": [
+                  {
+                    "text": "Check Now"
+                  }
+                ]
+              },
+              {
+                "type": "standard-divider",
                 "data": {},
                 "attributes": {
-                  "src": "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070552/easy-email-pro-test/ruzh6f0tagjhfp9motye.png",
-                  "width": "549px"
+                  "width": "439px",
+                  "border-width": "4px"
                 },
+                "children": [
+                  {
+                    "text": "123"
+                  }
+                ],
+                "mobileAttributes": {
+                  "width": "100%"
+                }
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "We are confident that our advanced Email Editor can supercharge your business operations and invite you to explore its capabilities."
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "Please feel free to contact us if you have any questions or need further information."
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "Best Regards,"
+                  }
+                ]
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "Ryan"
+                  }
+                ]
+              },
+              {
+                "type": "standard-social",
+                "data": {},
+                "attributes": {
+                  "spacing": "20px",
+                  "icon-size": "30px"
+                },
+                "children": [
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
+                      "href": "http://res.cloudinary.com/djnkpbshx/image/upload/v1709028268/easy-email-pro-test/kjmrd2fqpubc8hxmckki.png",
+                      "padding-left": "0px",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
+                      "href": "",
+                      "padding-left": "20px",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908543/clgnivsuj0018z9ltiixmxf6k/wtefhsfwaapcdbz7knqw.png",
+                      "href": "",
+                      "padding-left": "20px",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Text",
+                "type": "standard-text-list-item",
+                "data": {},
+                "attributes": {},
                 "children": [
                   {
                     "text": ""
@@ -125,7 +525,9 @@
     ],
     "attributes": {
       "background-color": "#f5f5f5",
-      "content-background-color": "#ffffff"
+      "content-background-color": "#ffffff",
+      "margin-top": "30px",
+      "margin-bottom": "30px"
     }
   }
 }

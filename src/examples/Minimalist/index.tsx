@@ -33,12 +33,10 @@ export default function MyEditor() {
     onUpload,
     initialValues: initialValues,
     onSubmit: onSubmit,
-    showSourceCode: false,
-    showSidebar: true,
-    showLayer: true,
-    unsplash: {
-      clientId: process.env.UNSPLASH_CLIENT_ID!,
-    },
+    showSidebar: false,
+    showInsertTips: true,
+    newLineWithBr: false,
+    // hoveringToolbar,
   });
 
   return (
