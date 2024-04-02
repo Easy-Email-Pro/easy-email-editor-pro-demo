@@ -1,15 +1,10 @@
 {
-  "subject": "Blank",
+  "subject": "CYBER MONDAY DEALS",
   "content": {
     "data": {
       "breakpoint": "480px",
       "globalAttributes": {
         "font-family": "Arial, sans-serif"
-      },
-      "blockAttributes": {
-        "standard-paragraph": {
-          "color": "#FFFFFF"
-        }
       }
     },
     "type": "page",
@@ -18,7 +13,8 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "background-color": "#FFFFFF"
+          "padding-top": "0px",
+          "padding-bottom": "0px"
         },
         "children": [
           {
@@ -27,57 +23,31 @@
             "attributes": {},
             "children": [
               {
-                "type": "standard-navbar",
+                "type": "standard-image",
                 "data": {},
-                "attributes": {},
+                "attributes": {
+                  "width": "66px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/aq1_op7rdlrvr9szkal_e_image.png"
+                },
                 "children": [
                   {
-                    "data": {},
-                    "type": "standard-navbar-link",
-                    "children": [
-                      {
-                        "text": "Shop"
-                      }
-                    ],
-                    "attributes": {
-                      "href": ""
-                    }
-                  },
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/i7fwtcrzr8rwyf89_mzep_image.png",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px"
+                },
+                "children": [
                   {
-                    "data": {},
-                    "type": "standard-navbar-link",
-                    "children": [
-                      {
-                        "text": "About"
-                      }
-                    ],
-                    "attributes": {
-                      "href": ""
-                    }
-                  },
-                  {
-                    "data": {},
-                    "type": "standard-navbar-link",
-                    "children": [
-                      {
-                        "text": "Contact"
-                      }
-                    ],
-                    "attributes": {
-                      "href": ""
-                    }
-                  },
-                  {
-                    "data": {},
-                    "type": "standard-navbar-link",
-                    "children": [
-                      {
-                        "text": "Blog"
-                      }
-                    ],
-                    "attributes": {
-                      "href": ""
-                    }
+                    "text": ""
                   }
                 ]
               }
@@ -89,13 +59,39 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "padding-bottom": "0px"
+          "background-repeat": "no-repeat",
+          "background-color": "#F63F3F"
         },
         "children": [
           {
             "type": "standard-column",
             "attributes": {
-              "width": "100%"
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-h1",
+                "data": {},
+                "attributes": {
+                  "font-size": "40px",
+                  "color": "#FFFFFF",
+                  "padding-top": "3px",
+                  "padding-bottom": "3px"
+                },
+                "children": [
+                  {
+                    "text": "CYBER MONDAY DEALS"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
             },
             "data": {},
             "children": [
@@ -103,33 +99,55 @@
                 "name": "Text",
                 "type": "standard-paragraph",
                 "data": {},
-                "attributes": {},
-                "children": [
-                  {
-                    "text": "JOIN US FOR A FEAST ON"
-                  }
-                ]
-              },
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
                 "attributes": {
-                  "font-size": "36px"
+                  "color": "#FFFFFF"
                 },
                 "children": [
                   {
-                    "text": "St. "
+                    "text": "There's still time to save! "
                   },
                   {
-                    "text": "Patrick's",
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Up to 65% off while supplies last."
+                  },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "type": "line-break",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Browse Deals",
                     "link": {
-                      "href": "http://127.0.0.1:5173/simple",
+                      "href": "https://www.easyemail.pro/",
                       "blank": true
                     }
-                  },
-                  {
-                    "text": " Day"
                   }
                 ]
               }
@@ -141,13 +159,15 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "padding-top": "0px"
+          "background-repeat": "no-repeat",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
         },
         "children": [
           {
             "type": "standard-column",
             "attributes": {
-              "width": "480px"
+              "width": "50%"
             },
             "data": {},
             "children": [
@@ -156,80 +176,15 @@
                 "type": "standard-paragraph",
                 "data": {},
                 "attributes": {
-                  "padding-left": "20px",
-                  "padding-right": "20px"
+                  "padding-top": "40px",
+                  "padding-bottom": "20px",
+                  "font-size": "28px",
+                  "align": "left"
                 },
                 "children": [
                   {
-                    "text": "From hearty stews and comforting shepherd's pie to classic fish and chips, we have something to satisfy every appetite."
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-image",
-                "data": {},
-                "attributes": {
-                  "padding": "0px 0px 0px 0px",
-                  "src": "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070411/easy-email-pro-test/nngijy1haqxwuzamw4oh.png",
-                  "padding-top": "0px",
-                  "padding-bottom": "0px",
-                  "padding-left": "0px",
-                  "padding-right": "0px"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {},
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-button",
-                "data": {
-                  "content": "Button"
-                },
-                "attributes": {
-                  "background-color": "#C5900C",
-                  "width": "100%",
-                  "font-size": "16px"
-                },
-                "children": [
-                  {
-                    "text": "Book a table"
+                    "text": "New deals added every hour.",
+                    "bold": true
                   }
                 ]
               },
@@ -239,81 +194,15 @@
                   "content": "Button"
                 },
                 "attributes": {
-                  "background-color": "#FCF0D3",
+                  "background-color": "#F63F3F",
                   "width": "100%",
-                  "font-size": "16px",
-                  "color": "#C5900C",
-                  "border-enabled": true,
-                  "border-color": "#C5900C",
-                  "border-width": "3px"
+                  "inner-padding-top": "15px",
+                  "inner-padding-bottom": "15px",
+                  "padding-bottom": "30px"
                 },
                 "children": [
                   {
-                    "text": "Book a table"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-color": "#FFFFFF",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {
-                  "align": "left",
-                  "color": "#000000",
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px"
-                },
-                "children": [
-                  {
-                    "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
-                    "text": ""
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
-                    "text": "View drink menu",
+                    "text": "See More Savings ➜",
                     "bold": true
                   }
                 ]
@@ -331,17 +220,20 @@
                 "type": "standard-image",
                 "data": {},
                 "attributes": {
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px",
-                  "src": "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070395/easy-email-pro-test/i1iq6togtsqh6pvfigcw.png"
+                  "width": "596px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/fhvqb2kbcr0jvozklocd_image.png",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "fluid-on-mobile": "true"
                 },
                 "children": [
                   {
                     "text": ""
                   }
-                ]
+                ],
+                "mobileAttributes": {}
               }
             ]
           }
@@ -351,7 +243,7 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "background-color": "#ffffff",
+          "background-repeat": "no-repeat",
           "padding-top": "0px",
           "padding-bottom": "0px"
         },
@@ -364,9 +256,15 @@
             "data": {},
             "children": [
               {
-                "type": "standard-divider",
+                "type": "standard-image",
                 "data": {},
-                "attributes": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/o_6sl7iartvwcmymd4egh_image.png",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px"
+                },
                 "children": [
                   {
                     "text": ""
@@ -381,97 +279,8 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "background-color": "#FFFFFF",
-          "direction": "rtl",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
+          "background-repeat": "no-repeat"
         },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {
-                  "align": "left",
-                  "color": "#000000",
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px"
-                },
-                "children": [
-                  {
-                    "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
-                    "text": ""
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
-                    "text": "View drink menu",
-                    "bold": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-image",
-                "data": {},
-                "attributes": {
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px",
-                  "src": "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070465/easy-email-pro-test/p6cwe8upyld7bw65hjri.png"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {},
         "children": [
           {
             "type": "standard-column",
@@ -504,8 +313,8 @@
       }
     ],
     "attributes": {
-      "background-color": "#8C9A80",
-      "content-background-color": "#263D29"
+      "background-color": "#f5f5f5",
+      "content-background-color": "#ffffff"
     }
   }
 }

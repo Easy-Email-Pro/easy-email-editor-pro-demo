@@ -1,15 +1,8 @@
 import { CustomBlockType } from "@/examples/constant";
-import {
-  createCustomBlock,
-  t,
-  components,
-  mergeBlock,
-} from "easy-email-pro-core";
+import { createCustomBlock, t, mergeBlock } from "easy-email-pro-core";
 import { ElementCategory } from "easy-email-pro-core";
 import React from "react";
 import { SimpleCustomElement } from "@/custom-types";
-
-const { Button, Wrapper, Section, Column, Image, Code, Table } = components;
 
 const defaultData = {
   attributes: {
@@ -47,31 +40,29 @@ export const SimpleCustomBlock = createCustomBlock<SimpleCustomElement>({
     const { data, attributes } = node;
 
     return (
-      <Wrapper idx={params.idx} {...node.attributes} data={node.data}>
-        <Section>
-          <Column>
-            <Image
+      <mj-wrapper {...node.attributes}>
+        <mj-section>
+          <mj-column>
+            <mj-image
               padding="0px 0px 0px 0px"
               width="100px"
               src={attributes.src}
             />
-            <Button background-color={attributes["button-color"]} href="#">
+            <mj-button background-color={attributes["button-color"]} href="#">
               {data.buttonText}
-            </Button>
-          </Column>
-        </Section>
-        <Section>
-          <Column>
-            <Code>
-              {`
-                <p style="color:red;font-size:40px">dangerous code</p>
-              `}
-            </Code>
-          </Column>
-        </Section>
-        <Section>
-          <Column>
-            <Table>
+            </mj-button>
+          </mj-column>
+        </mj-section>
+        <mj-section>
+          <mj-column>
+            <mj-text>
+              <p style={{ color: "red", fontSize: 40 }}>dangerous code</p>
+            </mj-text>
+          </mj-column>
+        </mj-section>
+        <mj-section>
+          <mj-column>
+            <mj-table>
               {`
                <tr style="border-bottom:1px solid #ecedee;text-align:left;padding:15px 0;">
                   <th style="padding: 0 15px 0 0;">Year</th>
@@ -89,10 +80,10 @@ export const SimpleCustomBlock = createCustomBlock<SimpleCustomElement>({
                   <td style="padding: 0 0 0 15px;">Scheme, Self</td>
                 </tr>
               `}
-            </Table>
-          </Column>
-        </Section>
-      </Wrapper>
+            </mj-table>
+          </mj-column>
+        </mj-section>
+      </mj-wrapper>
     );
   },
 });

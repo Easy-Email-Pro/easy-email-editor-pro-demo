@@ -44,7 +44,8 @@ const features = [
   },
   {
     subject: "Simple",
-    thumbnail: SimpleImg,
+    thumbnail:
+      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/xhqkdj1da7ssf7m-z8rbj_simple.png",
     url: "/simple",
   },
 

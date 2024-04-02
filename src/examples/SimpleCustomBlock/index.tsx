@@ -283,6 +283,7 @@ export default function MyEditor() {
     },
     compact,
     showLayer: true,
+    showSourceCode: true,
     showDragMoveIcon: true,
     showInsertTips: true,
   });

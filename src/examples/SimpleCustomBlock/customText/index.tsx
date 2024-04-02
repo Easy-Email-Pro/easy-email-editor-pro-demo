@@ -4,12 +4,13 @@ import {
   t,
   components,
   mergeBlock,
+  TextNode,
 } from "easy-email-pro-core";
 import { ElementCategory } from "easy-email-pro-core";
 import React from "react";
 import { SimpleCustomTextElement } from "@/custom-types";
 
-const { Text } = components;
+const { ContentLeaf } = components;
 
 const defaultData = {
   attributes: {},
@@ -23,7 +24,7 @@ export const SimpleTextCustomBlock = createCustomBlock<SimpleCustomTextElement>(
     },
     defaultData: defaultData,
     type: CustomBlockType.SIMPLE_TEXT_CUSTOM_BLOCK,
-    void: true,
+    void: false,
     create: (payload) => {
       const data: SimpleCustomTextElement = {
         type: CustomBlockType.SIMPLE_TEXT_CUSTOM_BLOCK,
@@ -47,7 +48,14 @@ export const SimpleTextCustomBlock = createCustomBlock<SimpleCustomTextElement>(
 
       const { data, attributes } = node;
 
-      return <Text idx={params.idx} {...attributes} children={node.children} />;
+      return (
+        <mj-text
+          {...attributes}
+          children={node.children.map((item) => (
+            <ContentLeaf node={item as TextNode} />
+          ))}
+        />
+      );
     },
   }
 );

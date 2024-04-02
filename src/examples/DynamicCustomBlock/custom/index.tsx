@@ -12,18 +12,7 @@ import { get } from "lodash";
 import * as React from "react";
 import { DynamicCustomElement } from "src/custom-types";
 
-const {
-  Wrapper,
-  Button,
-  Section,
-  Column,
-  Image,
-  ForEach,
-  Show,
-  Text,
-  Group,
-  SlateNodePlaceholder,
-} = components;
+const { Show, ForEach, SlateNodePlaceholder } = components;
 
 export interface ProductItem {
   id: string;
@@ -103,66 +92,64 @@ export const DynamicCustomBlock = createCustomBlock<DynamicCustomElement>({
     const { attributes, data } = node;
     const RenderList = ({ item }: { item: ProductItem }) => {
       return (
-        <Column width="50%">
-          <Image
+        <mj-column width="50%">
+          <mj-image
             border-radius={attributes["image-border-radius"]}
             padding="10px"
             src={item.image}
           />
           {showTitle && (
-            <Text
+            <mj-text
               font-size={attributes["title-font-size"]}
               align="center"
               padding="10px 0px 0px 0px"
               color={attributes["product-name-color"]}
             >
               {item.title}
-            </Text>
+            </mj-text>
           )}
-          <Text
+          <mj-text
             align="center"
             padding="10px 0px 0px 0px"
             color={attributes["product-price-color"]}
           >
             {item.price}
-          </Text>
+          </mj-text>
           {showComparePrice && (
-            <Text
+            <mj-text
               align="center"
-              text-decoration="line-through"
+              mj-text-decoration="line-through"
               color={attributes["product-compare-price-color"]}
               padding="10px 0px 0px 0px"
             >
               {item.comparePrice}
-            </Text>
+            </mj-text>
           )}
-          <Button
+          <mj-button
             href="#"
             background-color={attributes["button-color"]}
             color={attributes["button-text-color"]}
           >
             Buy now
-          </Button>
-        </Column>
+          </mj-button>
+        </mj-column>
       );
     };
     return (
-      <Wrapper
-        idx={params.idx}
-        data={node.data}
+      <mj-wrapper
         background-color={attributes["background-color"]}
         padding-top={attributes["padding-top"]}
         padding-bottom={attributes["padding-bottom"]}
         padding-left={attributes["padding-left"]}
         padding-right={attributes["padding-right"]}
       >
-        <Section padding="0px">
-          <Column padding="0px" border="none" vertical-align="top">
+        <mj-section padding="0px">
+          <mj-column padding="0px" border="none" vertical-align="top">
             <SlateNodePlaceholder node={node.children[0] as TextElement} />
-          </Column>
-        </Section>
-        <Section padding="0px">
-          <Group>
+          </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+          <mj-group>
             {mode === "testing" ? (
               products.map((item, index) => (
                 <RenderList item={item} key={index} />
@@ -180,9 +167,9 @@ export const DynamicCustomBlock = createCustomBlock<DynamicCustomElement>({
                 />
               </ForEach>
             )}
-          </Group>
-        </Section>
-      </Wrapper>
+          </mj-group>
+        </mj-section>
+      </mj-wrapper>
     );
   },
 });

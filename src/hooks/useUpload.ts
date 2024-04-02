@@ -11,7 +11,7 @@ export function useUpload() {
     }
 
     let file = blob;
-    if (!blob.type.includes("gif")) {
+    if (!(blob.type.includes("gif") || get(blob, "name", "").includes("gif"))) {
       file = await (
         await imageCompression
       ).default(blob as File, {
