@@ -3,6 +3,7 @@ import styles from "./index.module.less";
 
 export interface EmailItemProps {
   item: {
+    id: string;
     subject: string;
     thumbnail: string;
     url?: string;
@@ -10,7 +11,11 @@ export interface EmailItemProps {
 }
 export const EmailItem = ({ item }: EmailItemProps) => {
   return (
-    <a href={item.url} target="_blank" style={{ color: "#000" }}>
+    <a
+      href={item.url ? item.url : `/template?id=${item.id}`}
+      target="_blank"
+      style={{ color: "#000" }}
+    >
       <div
         className={styles.wrapItem}
         style={{

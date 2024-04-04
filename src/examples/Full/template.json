@@ -1,48 +1,88 @@
 {
-  "subject": "Blank",
+  "subject": "IS IT TIME TO TRY EASY EMAIL PRO",
   "content": {
     "data": {
+      "fonts": [
+        {
+          "href": "https://fonts.googleapis.com/css?family=Tangerine",
+          "name": "Tangerine"
+        }
+      ],
       "breakpoint": "480px",
+      "blockAttributes": {
+        "standard-paragraph": {
+          "align": "center",
+          "padding-right": "2px",
+          "padding-bottom": "3px"
+        }
+      },
+      "classAttributes": {},
       "globalAttributes": {
         "font-family": "Arial, sans-serif"
       },
-      "blockAttributes": {
-        "standard-paragraph": {
-          "color": "#FFFFFF"
+      "categoryAttributes": {
+        "BUTTON": {
+          "padding-right": "25px",
+          "padding-bottom": "10px"
         }
       }
     },
     "type": "page",
     "children": [
       {
-        "type": "standard-section",
         "data": {},
-        "attributes": {
-          "background-color": "#FFFFFF",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
+        "type": "standard-section",
         "children": [
           {
-            "type": "standard-column",
             "data": {},
-            "attributes": {},
+            "type": "standard-column",
             "children": [
               {
-                "type": "standard-navbar",
                 "data": {},
-                "attributes": {},
+                "type": "standard-image",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "attributes": {
+                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1704018909/easy-email-pro-test/n3lcl4bo8lkezrtsgxz6.png?w=575",
+                  "href": "https://www.easyemail.pro/?utm_source=email",
+                  "width": "200px"
+                }
+              }
+            ],
+            "attributes": {}
+          }
+        ],
+        "attributes": {
+          "padding-right": "25px",
+          "padding-bottom": "10px"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
+        "children": [
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "type": "standard-navbar",
                 "children": [
                   {
                     "data": {},
                     "type": "standard-navbar-link",
                     "children": [
                       {
-                        "text": "Shop"
+                        "text": "Home"
                       }
                     ],
                     "attributes": {
-                      "href": ""
+                      "href": "https://www.easyemail.pro/?utm_source=marketing",
+                      "color": "#FFFFFF"
                     }
                   },
                   {
@@ -50,11 +90,12 @@
                     "type": "standard-navbar-link",
                     "children": [
                       {
-                        "text": "About"
+                        "text": "Live Demo"
                       }
                     ],
                     "attributes": {
-                      "href": ""
+                      "href": "https://demo.easyemail.pro/",
+                      "color": "#FFFFFF"
                     }
                   },
                   {
@@ -66,7 +107,8 @@
                       }
                     ],
                     "attributes": {
-                      "href": ""
+                      "href": "mailto:ch.mao@qq.com",
+                      "color": "#FFFFFF"
                     }
                   },
                   {
@@ -74,566 +116,992 @@
                     "type": "standard-navbar-link",
                     "children": [
                       {
-                        "text": "Blog"
+                        "text": "Pricing"
                       }
                     ],
                     "attributes": {
-                      "href": ""
+                      "href": "https://www.easyemail.pro/?#pricing",
+                      "color": "#FFFFFF"
                     }
                   }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
-            "data": {},
-            "children": [
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {},
-                "children": [
-                  {
-                    "text": "JOIN US FOR A FEAST ON"
-                  }
-                ]
+                ],
+                "attributes": {
+                  "color": "#FFFFFF",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px"
+                }
               },
               {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
+                "type": "marketing-countdown",
+                "data": {
+                  "remainingTime": 24,
+                  "unit": "hour"
+                },
                 "attributes": {
-                  "font-size": "36px"
+                  "color": "#ffffff",
+                  "padding-top": "20px",
+                  "padding-bottom": "20px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "background-color": "#3e84a7",
+                  "grid-color": "#3182aa",
+                  "shadow-color": "#24495c",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lx52sanr05cue5_d1hftk_countdown.gif",
+                  "font-size": "48px"
                 },
                 "children": [
                   {
-                    "text": "Hi, "
-                  },
-                  {
-                    "type": "mergetag",
+                    "type": "text",
                     "data": {},
-                    "attributes": {},
+                    "attributes": {
+                      "color": "#ffffff",
+                      "font-size": "32px",
+                      "align": "center",
+                      "line-height": "1.2"
+                    },
                     "children": [
                       {
-                        "text": "customer.name"
+                        "text": "IS IT TIME TO TRY",
+                        "fontSize": "48px"
                       }
                     ]
                   },
                   {
-                    "text": " "
+                    "type": "text",
+                    "data": {},
+                    "attributes": {
+                      "color": "#ffffff",
+                      "font-size": "64px",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "text": "EASY EMAIL PRO",
+                        "italic": true
+                      }
+                    ]
                   }
                 ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "padding-top": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "480px"
-            },
-            "data": {},
-            "children": [
+              },
               {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
                 "attributes": {
-                  "padding-left": "20px",
-                  "padding-right": "20px"
+                  "width": "100%",
+                  "inner-padding-top": "15px",
+                  "inner-padding-bottom": "15px",
+                  "border-radius": "999px",
+                  "background-color": "#184352",
+                  "font-weight": "bold",
+                  "font-size": "16px",
+                  "href": "https://www.easyemail.pro/?utm_source=email"
                 },
                 "children": [
                   {
-                    "text": "From hearty stews and comforting shepherd's pie to classic fish and chips, we have something to satisfy every appetite."
+                    "text": "TRY NOW"
                   }
                 ]
               }
-            ]
+            ],
+            "attributes": {}
           }
-        ]
+        ],
+        "attributes": {
+          "padding-bottom": "10px",
+          "background-color": "#3e84a8"
+        }
       },
       {
-        "type": "standard-section",
         "data": {},
-        "attributes": {
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
+        "type": "standard-section",
         "children": [
           {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
             "data": {},
+            "type": "standard-column",
             "children": [
               {
-                "type": "standard-image",
                 "data": {},
+                "type": "standard-image",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
                 "attributes": {
-                  "padding": "0px 0px 0px 0px",
-                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006437/easy-email-pro-test/u7tvjqdbjtxqkykaazra.jpg",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jq9p4isilj-w4xmidj9rg_image.png",
                   "padding-top": "0px",
-                  "padding-bottom": "0px",
+                  "padding-left": "24px",
+                  "padding-right": "0px",
+                  "padding-bottom": "0px"
+                },
+                "mobileAttributes": {
+                  "padding-left": "0px",
+                  "padding-bottom": "20px",
+                  "fluid-on-mobile": "true"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "50%"
+            }
+          },
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Responsive Design"
+                  }
+                ],
+                "attributes": {
+                  "align": "left",
+                  "font-size": "24px",
+                  "font-weight": "bold"
+                }
+              },
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Supports displaying different user interfaces for desktop and mobile devices."
+                  }
+                ],
+                "attributes": {
+                  "align": "left"
+                }
+              },
+              {
+                "data": {
+                  "content": "Button"
+                },
+                "type": "standard-button",
+                "children": [
+                  {
+                    "text": "TRY NOW"
+                  }
+                ],
+                "attributes": {
+                  "href": "https://www.easyemail.pro/?utm_source=email",
+                  "width": "100%",
+                  "font-weight": "bold",
+                  "padding-top": "10px",
+                  "padding-right": "25px",
+                  "padding-bottom": "10px",
+                  "background-color": "#184352",
+                  "inner-padding-top": "10px",
+                  "inner-padding-left": "35px",
+                  "inner-padding-right": "35px",
+                  "inner-padding-bottom": "10px"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "50%"
+            }
+          }
+        ],
+        "attributes": {
+          "background-repeat": "no-repeat"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
+        "children": [
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "type": "standard-divider",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "attributes": {
+                  "border-color": "#9b9b9b",
+                  "border-width": "1px",
                   "padding-left": "0px",
                   "padding-right": "0px"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
+                }
               }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {},
-        "children": [
-          {
-            "type": "standard-column",
+            ],
             "attributes": {
               "width": "100%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-button",
-                "data": {
-                  "content": "Button"
-                },
-                "attributes": {
-                  "background-color": "#C5900C",
-                  "width": "100%",
-                  "font-size": "16px"
-                },
-                "children": [
-                  {
-                    "text": "Book a table"
-                  }
-                ]
-              },
-              {
-                "type": "standard-button",
-                "data": {
-                  "content": "Button"
-                },
-                "attributes": {
-                  "background-color": "#FCF0D3",
-                  "width": "100%",
-                  "font-size": "16px",
-                  "color": "#C5900C",
-                  "border-enabled": true,
-                  "border-color": "#C5900C",
-                  "border-width": "3px"
-                },
-                "children": [
-                  {
-                    "text": "Book a table"
-                  }
-                ]
-              }
-            ]
+            }
           }
-        ]
+        ],
+        "attributes": {
+          "padding-top": "1px",
+          "padding-bottom": "1px",
+          "background-repeat": "no-repeat"
+        }
       },
       {
-        "type": "standard-section",
         "data": {},
-        "attributes": {
-          "background-color": "#FFFFFF",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
+        "type": "standard-section",
         "children": [
           {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
             "data": {},
+            "type": "standard-column",
             "children": [
               {
-                "name": "Text",
-                "type": "standard-paragraph",
                 "data": {},
-                "attributes": {
-                  "align": "left",
-                  "color": "#000000",
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px"
-                },
+                "type": "standard-image",
                 "children": [
                   {
-                    "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
                     "text": ""
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
-                    "text": "View drink menu",
-                    "bold": true
                   }
-                ]
+                ],
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/x2zr3zkg5oaf49h-pz0ym_image.png",
+                  "padding-top": "0px",
+                  "padding-left": "24px",
+                  "padding-right": "0px",
+                  "padding-bottom": "0px"
+                },
+                "mobileAttributes": {
+                  "padding-left": "0px",
+                  "padding-bottom": "20px",
+                  "fluid-on-mobile": "true"
+                }
               }
-            ]
+            ],
+            "attributes": {
+              "width": "50%"
+            }
           },
           {
+            "data": {},
             "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Custom block"
+                  }
+                ],
+                "attributes": {
+                  "align": "left",
+                  "font-size": "24px",
+                  "font-weight": "bold"
+                }
+              },
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Writing Custom block is as simple as writing MJML code! Easily create your exclusive business components that are deeply integrated with your brand"
+                  }
+                ],
+                "attributes": {
+                  "align": "left"
+                }
+              },
+              {
+                "data": {
+                  "content": "Button"
+                },
+                "type": "standard-button",
+                "children": [
+                  {
+                    "text": "TRY NOW"
+                  }
+                ],
+                "attributes": {
+                  "href": "https://www.easyemail.pro/?utm_source=email",
+                  "width": "100%",
+                  "font-weight": "bold",
+                  "padding-top": "10px",
+                  "padding-right": "25px",
+                  "padding-bottom": "10px",
+                  "background-color": "#184352",
+                  "inner-padding-top": "10px",
+                  "inner-padding-left": "35px",
+                  "inner-padding-right": "35px",
+                  "inner-padding-bottom": "10px"
+                }
+              }
+            ],
             "attributes": {
               "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-image",
-                "data": {},
-                "attributes": {
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px",
-                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006465/easy-email-pro-test/ehhmyj7sq1ilbcojx9zr.jpg"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
+            }
           }
-        ]
+        ],
+        "attributes": {
+          "background-repeat": "no-repeat",
+          "direction": "rtl"
+        }
       },
       {
-        "type": "standard-section",
         "data": {},
-        "attributes": {
-          "background-color": "#ffffff",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
+        "type": "standard-section",
         "children": [
           {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
             "data": {},
+            "type": "standard-column",
             "children": [
               {
-                "type": "standard-divider",
                 "data": {},
-                "attributes": {},
+                "type": "standard-divider",
                 "children": [
                   {
                     "text": ""
                   }
-                ]
+                ],
+                "attributes": {
+                  "border-color": "#9b9b9b",
+                  "border-width": "1px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                }
               }
-            ]
+            ],
+            "attributes": {
+              "width": "100%"
+            }
           }
-        ]
+        ],
+        "attributes": {
+          "padding-top": "1px",
+          "padding-bottom": "1px",
+          "background-repeat": "no-repeat"
+        }
       },
       {
-        "type": "standard-section",
         "data": {},
+        "type": "standard-section",
+        "children": [
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "type": "standard-image",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "attributes": {
+                  "src": "http://localhost:8055/_next/static/media/logical-rendering.f373c027.png",
+                  "padding-top": "0px",
+                  "padding-left": "24px",
+                  "padding-right": "0px",
+                  "padding-bottom": "0px"
+                },
+                "mobileAttributes": {
+                  "padding-left": "0px",
+                  "padding-bottom": "20px",
+                  "fluid-on-mobile": "true"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "50%"
+            }
+          },
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Logical rendering"
+                  }
+                ],
+                "attributes": {
+                  "align": "left",
+                  "font-size": "24px",
+                  "font-weight": "bold"
+                }
+              },
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Built-in variable syntax, conditional rendering, iteration, and other advanced logic make it easy to customize dynamic templates."
+                  }
+                ],
+                "attributes": {
+                  "align": "left"
+                }
+              },
+              {
+                "data": {
+                  "content": "Button"
+                },
+                "type": "standard-button",
+                "children": [
+                  {
+                    "text": "TRY NOW"
+                  }
+                ],
+                "attributes": {
+                  "href": "https://www.easyemail.pro/?utm_source=email",
+                  "width": "100%",
+                  "font-weight": "bold",
+                  "padding-top": "10px",
+                  "padding-right": "25px",
+                  "padding-bottom": "10px",
+                  "background-color": "#184352",
+                  "inner-padding-top": "10px",
+                  "inner-padding-left": "35px",
+                  "inner-padding-right": "35px",
+                  "inner-padding-bottom": "10px"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "50%"
+            }
+          }
+        ],
         "attributes": {
-          "background-color": "#FFFFFF",
+          "background-repeat": "no-repeat",
+          "direction": "ltr"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
+        "children": [
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "type": "standard-divider",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "attributes": {
+                  "border-color": "#9b9b9b",
+                  "border-width": "1px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "100%"
+            }
+          }
+        ],
+        "attributes": {
+          "padding-top": "1px",
+          "padding-bottom": "1px",
+          "background-repeat": "no-repeat"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
+        "children": [
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "type": "standard-image",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/mrcjmjlna72gojo2atvp1_image.png",
+                  "padding-top": "0px",
+                  "padding-left": "24px",
+                  "padding-right": "0px",
+                  "padding-bottom": "0px"
+                },
+                "mobileAttributes": {
+                  "padding-left": "0px",
+                  "padding-bottom": "20px",
+                  "fluid-on-mobile": "true"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "50%"
+            }
+          },
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Dynamic rendering"
+                  }
+                ],
+                "attributes": {
+                  "align": "left",
+                  "font-size": "24px",
+                  "font-weight": "bold"
+                }
+              },
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Utilizing various template engines to inject data and generate different emails."
+                  }
+                ],
+                "attributes": {
+                  "align": "left"
+                }
+              },
+              {
+                "data": {
+                  "content": "Button"
+                },
+                "type": "standard-button",
+                "children": [
+                  {
+                    "text": "TRY NOW"
+                  }
+                ],
+                "attributes": {
+                  "href": "https://www.easyemail.pro/?utm_source=email",
+                  "width": "100%",
+                  "font-weight": "bold",
+                  "padding-top": "10px",
+                  "padding-right": "25px",
+                  "padding-bottom": "10px",
+                  "background-color": "#184352",
+                  "inner-padding-top": "10px",
+                  "inner-padding-left": "35px",
+                  "inner-padding-right": "35px",
+                  "inner-padding-bottom": "10px"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "50%"
+            }
+          }
+        ],
+        "attributes": {
           "direction": "rtl",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
+          "background-repeat": "no-repeat"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
         "children": [
           {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
             "data": {},
+            "type": "standard-column",
             "children": [
               {
-                "name": "Text",
-                "type": "standard-paragraph",
                 "data": {},
-                "attributes": {
-                  "align": "left",
-                  "color": "#000000",
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px"
-                },
+                "type": "standard-image",
                 "children": [
                   {
-                    "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
                     "text": ""
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
-                    "text": "View drink menu",
-                    "bold": true
                   }
-                ]
+                ],
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ffvxf5y7u5n3exktgi-mx_image.png",
+                  "padding-top": "0px",
+                  "padding-left": "24px",
+                  "padding-right": "0px",
+                  "padding-bottom": "0px"
+                },
+                "mobileAttributes": {
+                  "padding-left": "0px",
+                  "padding-bottom": "20px",
+                  "fluid-on-mobile": "true"
+                }
               }
-            ]
+            ],
+            "attributes": {
+              "width": "50%"
+            }
           },
           {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
             "data": {},
+            "type": "standard-column",
             "children": [
               {
-                "type": "standard-image",
                 "data": {},
-                "attributes": {
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px",
-                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006491/easy-email-pro-test/upr1qet7cymnw3svunss.jpg"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-color": "#ffffff",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-divider",
-                "data": {},
-                "attributes": {},
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "uid": "P4Mbzw-iMJd-BqFjlk8st",
-        "title": "Text with image",
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-color": "#FFFFFF",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
+                "name": "Text",
                 "type": "standard-paragraph",
-                "data": {},
+                "children": [
+                  {
+                    "text": "Email Studio"
+                  }
+                ],
                 "attributes": {
                   "align": "left",
-                  "color": "#000000",
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px"
-                },
-                "children": [
-                  {
-                    "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
-                    "text": "",
-                    "bold": true
-                  }
-                ]
+                  "font-size": "24px",
+                  "font-weight": "bold"
+                }
               },
               {
-                "type": "standard-button",
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Creating custom blocks and configuration panels through drag-and-drop editing."
+                  }
+                ],
+                "attributes": {
+                  "align": "left"
+                }
+              },
+              {
                 "data": {
                   "content": "Button"
                 },
-                "attributes": {
-                  "line-height": "130%",
-                  "background-color": "#000000"
-                },
+                "type": "standard-button",
                 "children": [
                   {
-                    "text": "VIEW DRINK"
+                    "text": "TRY NOW"
                   }
-                ]
+                ],
+                "attributes": {
+                  "href": "https://www.easyemail.pro/?utm_source=email",
+                  "width": "100%",
+                  "font-weight": "bold",
+                  "padding-top": "10px",
+                  "padding-right": "25px",
+                  "padding-bottom": "10px",
+                  "background-color": "#184352",
+                  "inner-padding-top": "10px",
+                  "inner-padding-left": "35px",
+                  "inner-padding-right": "35px",
+                  "inner-padding-bottom": "10px"
+                }
               }
-            ]
-          },
-          {
-            "type": "standard-column",
+            ],
             "attributes": {
               "width": "50%"
-            },
+            }
+          }
+        ],
+        "attributes": {
+          "direction": "ltr",
+          "background-repeat": "no-repeat"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
+        "children": [
+          {
             "data": {},
+            "type": "standard-column",
             "children": [
               {
-                "type": "standard-image",
                 "data": {},
-                "attributes": {
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px",
-                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006848/easy-email-pro-test/lm6rpd3kbmwzkmjtzmp0.jpg"
-                },
+                "type": "standard-divider",
                 "children": [
                   {
                     "text": ""
                   }
-                ]
+                ],
+                "attributes": {
+                  "border-color": "#9b9b9b",
+                  "border-width": "1px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                }
               }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {},
-        "children": [
-          {
-            "type": "standard-column",
+            ],
             "attributes": {
               "width": "100%"
-            },
+            }
+          }
+        ],
+        "attributes": {
+          "padding-top": "1px",
+          "padding-bottom": "1px",
+          "background-repeat": "no-repeat"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
+        "children": [
+          {
             "data": {},
+            "type": "standard-column",
             "children": [
               {
-                "name": "Text",
-                "type": "standard-paragraph",
                 "data": {},
-                "attributes": {},
+                "type": "standard-image",
                 "children": [
                   {
-                    "text": "No longer want to receive these emails? "
+                    "text": ""
+                  }
+                ],
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/okepsmskftyg58hoqysri_image.png",
+                  "padding-top": "0px",
+                  "padding-left": "24px",
+                  "padding-right": "0px",
+                  "padding-bottom": "0px"
+                },
+                "mobileAttributes": {
+                  "padding-left": "0px",
+                  "padding-bottom": "20px",
+                  "fluid-on-mobile": "true"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "50%"
+            }
+          },
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "File Manager"
+                  }
+                ],
+                "attributes": {
+                  "align": "left",
+                  "font-size": "24px",
+                  "font-weight": "bold"
+                }
+              },
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "File Manager is a tool used to efficiently manage user-uploaded files, helping users easily organize, view, and manage their uploaded files."
+                  }
+                ],
+                "attributes": {
+                  "align": "left"
+                }
+              },
+              {
+                "data": {
+                  "content": "Button"
+                },
+                "type": "standard-button",
+                "children": [
+                  {
+                    "text": "TRY NOW"
+                  }
+                ],
+                "attributes": {
+                  "href": "https://www.easyemail.pro/?utm_source=email",
+                  "width": "100%",
+                  "font-weight": "bold",
+                  "padding-top": "10px",
+                  "padding-right": "25px",
+                  "padding-bottom": "10px",
+                  "background-color": "#184352",
+                  "inner-padding-top": "10px",
+                  "inner-padding-left": "35px",
+                  "inner-padding-right": "35px",
+                  "inner-padding-bottom": "10px"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "50%"
+            }
+          }
+        ],
+        "attributes": {
+          "direction": "rtl",
+          "background-repeat": "no-repeat"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
+        "children": [
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "type": "standard-spacer",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "attributes": {
+                  "height": "10px",
+                  "container-background-color": "#053141"
+                }
+              }
+            ],
+            "attributes": {
+              "width": "100%"
+            }
+          }
+        ],
+        "attributes": {
+          "padding-top": "0px",
+          "padding-left": "0px",
+          "padding-right": "0px",
+          "padding-bottom": "0px"
+        },
+        "mobileAttributes": {
+          "padding-right": "0px",
+          "padding-bottom": "0px"
+        }
+      },
+      {
+        "data": {},
+        "type": "standard-section",
+        "children": [
+          {
+            "data": {},
+            "type": "standard-column",
+            "children": [
+              {
+                "data": {},
+                "name": "Text",
+                "type": "standard-paragraph",
+                "children": [
+                  {
+                    "text": "Questions?"
                   },
                   {
-                    "text": "unsubscribe",
-                    "link": {
-                      "href": "#",
-                      "blank": true
+                    "data": {},
+                    "type": "line-break",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {}
+                  },
+                  {
+                    "text": "Check out our FAQs or send us a note here."
+                  }
+                ],
+                "attributes": {
+                  "font-size": "12px",
+                  "padding-top": "3px",
+                  "padding-left": "3px",
+                  "padding-right": "3px",
+                  "padding-bottom": "3px"
+                }
+              },
+              {
+                "data": {},
+                "type": "standard-social",
+                "children": [
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1709028268/easy-email-pro-test/kjmrd2fqpubc8hxmckki.png",
+                      "href": "https://twitter.com/ProEmail33886",
+                      "padding-top": "0px",
+                      "padding-left": "0px",
+                      "padding-right": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1704125989/easy-email-pro-test/trvuiuuhsrei9mhng2fi.png",
+                      "href": "mailto:ryan@easyemail.pro",
+                      "padding-top": "0px",
+                      "padding-left": "15px",
+                      "padding-right": "0px",
+                      "padding-bottom": "0px"
                     }
                   }
-                ]
+                ],
+                "attributes": {
+                  "spacing": "15px",
+                  "icon-size": "30px",
+                  "padding-bottom": "0px"
+                },
+                "mobileAttributes": {
+                  "padding-bottom": "0px"
+                }
               }
-            ]
+            ],
+            "attributes": {
+              "width": "100%"
+            }
           }
-        ]
+        ],
+        "attributes": {
+          "padding-top": "20px",
+          "padding-right": "25px",
+          "padding-bottom": "20px",
+          "background-color": "rgb(191, 212, 217)"
+        }
       }
     ],
     "attributes": {
-      "background-color": "#8C9A80",
-      "content-background-color": "#263D29"
+      "width": "600px",
+      "margin-top": "20px",
+      "margin-bottom": "20px",
+      "background-color": "#f3f2f2",
+      "content-background-color": "#FFFFFF"
     }
   }
 }

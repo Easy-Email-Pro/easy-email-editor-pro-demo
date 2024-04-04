@@ -1,4 +1,5 @@
 import {
+  Alert,
   Button,
   Dropdown,
   Input,
@@ -10,16 +11,21 @@ import {
   Space,
   Typography,
 } from "@arco-design/web-react";
-import { IconLeft, IconMenu } from "@arco-design/web-react/icon";
+import { IconClose, IconLeft, IconMenu } from "@arco-design/web-react/icon";
 import React from "react";
 import { EmailTemplate, useEditorProps } from "easy-email-pro-editor";
-import { mjmlToJson, useEditorContext } from "easy-email-pro-theme";
+import {
+  easyEmailToEasyEmailPro,
+  mjmlToJson,
+  useEditorContext,
+} from "easy-email-pro-theme";
 import { EditorCore, PluginManager } from "easy-email-pro-core";
 import { navigation } from "../main";
 import mjml from "mjml-browser";
 import { saveAs } from "file-saver";
 import { Uploader } from "@/utils/Uploader";
 import { pick } from "lodash";
+import { useLocalStorage } from "react-use";
 
 export const EditorHeader = (props: {
   extra?: React.ReactNode;
@@ -31,6 +37,7 @@ export const EditorHeader = (props: {
   const [visible, setVisible] = React.useState(false);
   const { values, submit, setFieldValue, mergetagsData } = useEditorContext();
   const { reset } = useEditorContext();
+  const [hidden, setHidden] = useLocalStorage("alert-banner", false);
 
   const onChange = (text: string) => {
     setFieldValue(null, "subject", text);
@@ -171,6 +178,49 @@ export const EditorHeader = (props: {
     });
   };
 
+  const onImportEasyEmailJSON = async () => {
+    const uploader = new Uploader(() => Promise.resolve(""), {
+      accept: "application/json",
+      limit: 1,
+    });
+
+    const [file] = await uploader.chooseFile();
+    const reader = new FileReader();
+    const emailTemplate = await new Promise<EmailTemplate>(
+      (resolve, reject) => {
+        reader.onload = function (evt) {
+          if (!evt.target) {
+            reject();
+            return;
+          }
+          try {
+            const template = JSON.parse(evt.target.result as any);
+            const content = easyEmailToEasyEmailPro(template.content);
+            if (!template.content) {
+              Message.error(`Invalid template, need content params`);
+              reject();
+              return;
+            }
+
+            resolve({
+              subject: template.subject,
+              content: content,
+            });
+          } catch (error) {
+            console.log(error);
+            reject();
+          }
+        };
+        reader.readAsText(file);
+      }
+    );
+
+    reset({
+      subject: emailTemplate.subject,
+      content: emailTemplate.content,
+    });
+  };
+
   return (
     <>
       <div style={{ position: "relative" }}>
@@ -223,6 +273,12 @@ export const EditorHeader = (props: {
 
                         <Menu.Item key="JSON" onClick={onImportJSON}>
                           Import from JSON
+                        </Menu.Item>
+                        <Menu.Item
+                          key="Easy Email JSON"
+                          onClick={onImportEasyEmailJSON}
+                        >
+                          Import from Easy Email JSON
                         </Menu.Item>
                       </Menu>
                     }
@@ -302,6 +358,29 @@ export const EditorHeader = (props: {
         </Layout.Sider>
       </div>
 
+      {!hidden && (
+        <Alert
+          closeElement={<Button type="primary" icon={<IconClose />}></Button>}
+          closable
+          onClose={() => setHidden(true)}
+          showIcon={false}
+          content={
+            <div style={{ fontSize: 16, paddingLeft: 50, paddingRight: 50 }}>
+              In our latest edition, we're delighted to inform you that we've
+              incorporated the MJML syntax! 😃 There's no need for any
+              additional imports. Check out the freshest way to write custom
+              blocks right here! 👀👇{" "}
+              <Button
+                type="secondary"
+                href="https://docs.easyemail.pro/docs/advanced/custom-block?utm_source=demo-banner"
+                target="_blank"
+              >
+                Check
+              </Button>
+            </div>
+          }
+        ></Alert>
+      )}
       <style>{`
       .editor-header .arco-page-header-back { color: var(--color-white); }
       .editor-header .arco-page-header-back:hover:before { background-color: transparent !important; }

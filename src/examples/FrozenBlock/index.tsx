@@ -5,11 +5,12 @@ import "easy-email-pro-theme/lib/style.css";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 
 import data from "./template.json";
+import emptyData from "./empty.json";
 import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
 import { Layout } from "@arco-design/web-react";
 import React from "react";
-import { BlockManager } from "easy-email-pro-core";
+import { BlockManager, PageElement } from "easy-email-pro-core";
 import { FrozenHeader } from "./FrozenHeader";
 import { FrozenFooter } from "./FrozenFooter";
 import { useCompactMode } from "@/hooks/useCompactMode";
@@ -49,6 +50,7 @@ export default function MyEditor() {
     compact: false,
     showDragMoveIcon: true,
     showInsertTips: true,
+    emptyPageElement: emptyData as PageElement,
   });
 
   return (

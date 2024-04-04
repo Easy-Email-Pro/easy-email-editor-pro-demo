@@ -1,19 +1,10 @@
 import React from "react";
-import { Button, Card } from "@arco-design/web-react";
+import { Alert, Button, Card, Tabs } from "@arco-design/web-react";
 import { Layout } from "@arco-design/web-react";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 import { Space } from "@arco-design/web-react";
 import Logo from "./easy-email-pro.svg";
 
-import template1 from "./templates/template1.json";
-import template2 from "./templates/template2.json";
-import template3 from "./templates/template3.json";
-import template4 from "./templates/template4.json";
-import template5 from "./templates/template5.json";
-import template6 from "./templates/template6.json";
-import template7 from "./templates/template7.json";
-import template8 from "./templates/template8.json";
-import template9 from "./templates/template9.json";
 import { EmailItem } from "./EmailItem";
 import { Grid } from "@arco-design/web-react";
 
@@ -27,9 +18,15 @@ import NotionBlockImg from "./images/notion-like.png";
 import CustomizeImage from "./images/customize.png";
 import frozenImg from "./images/frozen.png";
 import studioImg from "./images/studio.png";
-import nextjsImg from "./images/nextjs.png";
 import readonlyImg from "./images/readonly.png";
 import "./index.less";
+import { IconClose } from "@arco-design/web-react/icon";
+import { useLocalStorage } from "react-use";
+import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
+import { PageElement } from "easy-email-pro-core";
+import FullScreenLoading from "@/components/FullScreenLoading";
 
 const features = [
   {
@@ -55,14 +52,20 @@ const features = [
     url: "/customize",
   },
   {
-    subject: "Nextjs integration example",
-    thumbnail: nextjsImg,
-    url: "https://admin.easyemail.pro?utm_souce=demo",
+    subject: "Markdown",
+    thumbnail:
+      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/tdtfl1cwkpgpyan4jejni_image.png",
+    url: "/markdown",
   },
   {
     subject: "Studio",
     thumbnail: studioImg,
     url: "/studio",
+  },
+  {
+    subject: "Responsive view",
+    thumbnail: ResponsiveViewImg,
+    url: "/responsive-view",
   },
   {
     subject: "Localization",
@@ -74,15 +77,16 @@ const features = [
     thumbnail: DynamicDataImg,
     url: "/dynamic-data",
   },
-  {
-    subject: "Responsive view",
-    thumbnail: ResponsiveViewImg,
-    url: "/responsive-view",
-  },
+
   {
     subject: "Dynamic custom block",
     thumbnail: DynamicCustomBlock,
     url: "/dynamic-custom-block",
+  },
+  {
+    subject: "Frozen Header and Footer",
+    thumbnail: frozenImg,
+    url: "/frozen-block",
   },
   {
     subject: "Single side bar / Double side bar",
@@ -110,34 +114,35 @@ const features = [
     thumbnail: readonlyImg,
     url: "/read-only",
   },
-  {
-    subject: "Frozen Header and Footer",
-    thumbnail: frozenImg,
-    url: "/frozen-block",
-  },
 ];
 
-export const list = [
-  template1,
-  template2,
-  template3,
-  template4,
-  template5,
-  template6,
-  template7,
-  template8,
-  template9,
-].map((item) => {
-  return {
-    id: item.id,
-    subject: item.subject,
-    thumbnail: item.thumbnail,
-    content: item.content,
-    url: "/template?id=" + item.id,
-  };
-});
-
 export const Home = () => {
+  const [hidden, setHidden] = useLocalStorage("alert-banner", false);
+
+  const [list, setList] = useState<
+    Array<{
+      id: string;
+      createdAt: string;
+      updatedAt: string;
+      thumbnail: string;
+      subject: string;
+      content: PageElement;
+    }>
+  >([]);
+
+  useEffect(() => {
+    axios
+      .get("https://admin.easyemail.pro/api/email-template", {
+        params: {
+          user_id: "clnl5a07900065zltiqvalojp",
+        },
+      })
+      .then(({ data }) => {
+        console.log(data);
+        setList(data);
+      });
+  }, []);
+
   return (
     <div>
       <div className="header border-solid border-b border-b-slate-200">
@@ -147,6 +152,7 @@ export const Home = () => {
               <Logo className="logo" height={36} width={175} />
             </a>
           </h1>
+
           <Space>
             <Button
               type="primary"
@@ -165,31 +171,71 @@ export const Home = () => {
           </Space>
         </div>
       </div>
+      {!hidden && (
+        <Alert
+          closeElement={<Button type="primary" icon={<IconClose />}></Button>}
+          showIcon={false}
+          closable
+          onClose={() => setHidden(true)}
+          content={
+            <div style={{ fontSize: 16, paddingLeft: 50, paddingRight: 50 }}>
+              In our latest edition, we're delighted to inform you that we've
+              incorporated the MJML syntax! 😃 There's no need for any
+              additional imports. Check out the freshest way to write custom
+              blocks right here! 👀👇{" "}
+              <Button
+                type="secondary"
+                href="https://docs.easyemail.pro/docs/advanced/custom-block?utm_source=demo-banner"
+                target="_blank"
+              >
+                Check
+              </Button>
+            </div>
+          }
+        ></Alert>
+      )}
       <Layout.Content style={{ padding: 20 }}>
         <Space direction="vertical" size="large" style={{ width: "100%" }}>
-          <Card style={{ backgroundColor: "#fff" }} title="Features">
-            <Grid.Row>
-              {features.map((item, index) => {
-                return (
-                  <Grid.Col xs={1} sm={1} md={4} lg={6}>
-                    <EmailItem item={item} />
-                  </Grid.Col>
-                );
-              })}
-            </Grid.Row>
-          </Card>
-
-          <Card style={{ backgroundColor: "#fff" }} title="Templates">
-            <Grid.Row>
-              {list.map((item, index) => {
-                return (
-                  <Grid.Col key={index} xs={1} sm={1} md={4} lg={6}>
-                    <EmailItem item={item} />
-                  </Grid.Col>
-                );
-              })}
-            </Grid.Row>
-          </Card>
+          <Tabs defaultActiveTab="Feature">
+            <Tabs.TabPane key={"Feature"} title={"Feature"}>
+              <Card style={{ backgroundColor: "#fff" }} title="Features">
+                <Grid.Row>
+                  {features.map((item, index) => {
+                    return (
+                      <Grid.Col xs={1} sm={1} md={4} lg={6}>
+                        <EmailItem item={item} />
+                      </Grid.Col>
+                    );
+                  })}
+                </Grid.Row>
+              </Card>
+            </Tabs.TabPane>
+            <Tabs.TabPane key={"Templates"} title={"Template"}>
+              <Card
+                style={{ backgroundColor: "#fff" }}
+                title={
+                  <div>
+                    <span>
+                      The following templates are the replica of the Klaviyo
+                      email template by Easy Email Pro Editor, please do not use
+                      it for commercial purposes.
+                    </span>
+                  </div>
+                }
+              >
+                <Grid.Row>
+                  {list.map((item, index) => {
+                    return (
+                      <Grid.Col key={index} xs={1} sm={1} md={4} lg={6}>
+                        <EmailItem item={item} />
+                      </Grid.Col>
+                    );
+                  })}
+                  {list.length === 0 && <FullScreenLoading size={64} />}
+                </Grid.Row>
+              </Card>
+            </Tabs.TabPane>
+          </Tabs>
         </Space>
       </Layout.Content>
     </div>

@@ -9,15 +9,23 @@ import { useUpload } from "../../hooks/useUpload";
 import { Layout } from "@arco-design/web-react";
 import React from "react";
 import { useSearchParams } from "react-router-dom";
-import { list } from "@/Home";
 import {
   Countdown,
   Shopwindow,
   QRCode,
   MarketingType,
 } from "easy-email-pro-kit";
-import { ElementType, PluginManager, t } from "easy-email-pro-core";
+import {
+  ElementType,
+  PageElement,
+  PluginManager,
+  t,
+} from "easy-email-pro-core";
 import { useCompactMode } from "@/hooks/useCompactMode";
+import { useEffect } from "react";
+import axios from "axios";
+import { useState } from "react";
+import FullScreenLoading from "@/components/FullScreenLoading";
 
 PluginManager.registerPlugins([Countdown, Shopwindow, QRCode]);
 
@@ -315,20 +323,19 @@ const categories: ThemeConfigProps["categories"] = [
   },
 ];
 
-export default function TemplateEditor() {
+const TemplateEditor = ({
+  data,
+}: {
+  data: { content: EmailTemplate["content"]; subject: string };
+}) => {
   const { upload } = useUpload();
-  const [params] = useSearchParams();
-
-  const id = params.get("id") || "";
-
-  const data = list.find((item) => item.id.toString() === id)!;
 
   const initialValues: EmailTemplate | null = useMemo(() => {
     return {
       subject: data.subject,
       content: data.content as EmailTemplate["content"],
     };
-  }, [data.content, data.subject]);
+  }, [data]);
 
   const onUpload = (file: Blob): Promise<string> => {
     return upload(file);
@@ -367,4 +374,33 @@ export default function TemplateEditor() {
       </Layout.Content>
     </EmailEditorProvider>
   );
-}
+};
+
+const TemplateEditorContainer = () => {
+  const [params] = useSearchParams();
+
+  const [data, setData] = useState<{
+    subject: string;
+    content: PageElement;
+  } | null>(null);
+
+  const id = params.get("id") || "";
+
+  useEffect(() => {
+    axios
+      .get(`https://admin.easyemail.pro/api/email-template/${id}`, {
+        params: {
+          user_id: "clnl5a07900065zltiqvalojp",
+        },
+      })
+      .then(({ data }) => {
+        console.log(data);
+        setData(data);
+      });
+  }, [id]);
+
+  if (!data) return <FullScreenLoading isFullScreen></FullScreenLoading>;
+  return <TemplateEditor data={data} />;
+};
+
+export default TemplateEditorContainer;

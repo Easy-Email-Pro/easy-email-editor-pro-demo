@@ -24,7 +24,7 @@ export default defineConfig({
     emptyOutDir: true,
     minify: false,
     manifest: false,
-    sourcemap: true,
+    sourcemap: false,
   },
 
   resolve: {
