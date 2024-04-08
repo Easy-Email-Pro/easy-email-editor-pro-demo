@@ -146,7 +146,7 @@
                   "background-color": "#3e84a7",
                   "grid-color": "#3182aa",
                   "shadow-color": "#24495c",
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lx52sanr05cue5_d1hftk_countdown.gif",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/tnexjv2a2rqj2nrafgqzv_countdown.gif",
                   "font-size": "48px"
                 },
                 "children": [
@@ -155,14 +155,13 @@
                     "data": {},
                     "attributes": {
                       "color": "#ffffff",
-                      "font-size": "32px",
+                      "font-size": "48px",
                       "align": "center",
                       "line-height": "1.2"
                     },
                     "children": [
                       {
-                        "text": "IS IT TIME TO TRY",
-                        "fontSize": "48px"
+                        "text": "IS IT TIME TO TRY"
                       }
                     ]
                   },
@@ -172,12 +171,12 @@
                     "attributes": {
                       "color": "#ffffff",
                       "font-size": "64px",
-                      "align": "center"
+                      "align": "center",
+                      "font-style": "italic"
                     },
                     "children": [
                       {
-                        "text": "EASY EMAIL PRO",
-                        "italic": true
+                        "text": "EASY EMAIL PRO"
                       }
                     ]
                   }
@@ -501,7 +500,7 @@
                   }
                 ],
                 "attributes": {
-                  "src": "http://localhost:8055/_next/static/media/logical-rendering.f373c027.png",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ztyudxhf6mxre05pmcs_i_image.png",
                   "padding-top": "0px",
                   "padding-left": "24px",
                   "padding-right": "0px",

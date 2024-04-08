@@ -30,11 +30,6 @@ import FullScreenLoading from "@/components/FullScreenLoading";
 
 const features = [
   {
-    subject: "Notion",
-    thumbnail: NotionBlockImg,
-    url: "/notion-like",
-  },
-  {
     subject: "Full",
     thumbnail: SimpleImg,
     url: "/full",
@@ -113,6 +108,11 @@ const features = [
     subject: "ReadOnly Mode",
     thumbnail: readonlyImg,
     url: "/read-only",
+  },
+  {
+    subject: "Notion",
+    thumbnail: NotionBlockImg,
+    url: "/notion-like",
   },
 ];
 
