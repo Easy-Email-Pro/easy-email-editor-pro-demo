@@ -1,12 +1,17 @@
 import { useMemo } from "react";
 import { EmailEditorProvider, EmailTemplate } from "easy-email-pro-editor";
-import { IconFont, Retro, ThemeConfigProps } from "easy-email-pro-theme";
+import {
+  IconFont,
+  Retro,
+  ThemeConfigProps,
+  useEditorContext,
+} from "easy-email-pro-theme";
 import "easy-email-pro-theme/lib/style.css";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 
 import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
-import { Layout } from "@arco-design/web-react";
+import { Button, Layout, Message } from "@arco-design/web-react";
 import React from "react";
 import { useSearchParams } from "react-router-dom";
 import {
@@ -367,12 +372,69 @@ const TemplateEditor = ({
 
   return (
     <EmailEditorProvider {...config}>
-      <EditorHeader />
+      <EditorHeader extra={<SaveAndShareButton />} />
 
       <Layout.Content>
         <Retro.Layout></Retro.Layout>
       </Layout.Content>
     </EmailEditorProvider>
+  );
+};
+
+const SaveAndShareButton = () => {
+  const isShare = location.pathname === "/share";
+  const [params] = useSearchParams();
+  const [loading, setLoading] = useState(false);
+
+  const id = params.get("id") || "";
+  const { values, reset } = useEditorContext();
+
+  const onShare = async () => {
+    try {
+      setLoading(true);
+      if (!id) {
+        const { data } = await axios.post(
+          `https://admin.easyemail.pro/api/email-template`,
+          {
+            subject: values.subject,
+            content: values.content,
+            thumbnail:
+              "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/73aba2b0-4d98-4314-8a98-654598279ced.png",
+          },
+          {
+            params: {
+              user_id: "clnu5hbaj000608mk27gof0y4",
+            },
+          }
+        );
+
+        window.location.replace(`/share?id=${data.id}`);
+      } else {
+        const { data } = await axios.patch(
+          `https://admin.easyemail.pro/api/email-template/${id}`,
+          {
+            subject: values.subject,
+            content: values.content,
+          },
+          {
+            params: {
+              user_id: "clnu5hbaj000608mk27gof0y4",
+            },
+          }
+        );
+      }
+      await navigator.clipboard.writeText(location.href);
+      Message.success(`The link has been copied to the clipboard`);
+    } catch (error) {
+      Message.error(String(error));
+    }
+    setLoading(false);
+  };
+  if (!isShare) return null;
+  return (
+    <Button loading={loading} onClick={onShare}>
+      <strong>Save and share</strong>
+    </Button>
   );
 };
 
@@ -387,10 +449,58 @@ const TemplateEditorContainer = () => {
   const id = params.get("id") || "";
 
   useEffect(() => {
+    if (!id) {
+      setData({
+        subject: "Blank",
+        content: {
+          data: {
+            breakpoint: "480px",
+            globalAttributes: {
+              "font-family": "Arial, sans-serif",
+            },
+          },
+          type: "page",
+          children: [
+            {
+              type: "standard-section",
+              data: {},
+              attributes: {},
+              children: [
+                {
+                  type: "standard-column",
+                  data: {},
+                  attributes: {},
+                  children: [
+                    {
+                      type: "placeholder",
+                      data: {},
+                      attributes: {},
+                      children: [
+                        {
+                          text: "",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+          attributes: {
+            "background-color": "#f5f5f5",
+            "content-background-color": "#ffffff",
+          },
+        },
+      });
+      return;
+    }
     axios
       .get(`https://admin.easyemail.pro/api/email-template/${id}`, {
         params: {
-          user_id: "clnl5a07900065zltiqvalojp",
+          user_id:
+            location.pathname === "/share"
+              ? "clnu5hbaj000608mk27gof0y4"
+              : "clnl5a07900065zltiqvalojp",
         },
       })
       .then(({ data }) => {

@@ -1,5 +1,4 @@
 import {
-  Alert,
   Button,
   Dropdown,
   Input,
@@ -11,7 +10,7 @@ import {
   Space,
   Typography,
 } from "@arco-design/web-react";
-import { IconClose, IconLeft, IconMenu } from "@arco-design/web-react/icon";
+import { IconLeft, IconMenu } from "@arco-design/web-react/icon";
 import React from "react";
 import { EmailTemplate, useEditorProps } from "easy-email-pro-editor";
 import {
@@ -19,6 +18,7 @@ import {
   mjmlToJson,
   useEditorContext,
 } from "easy-email-pro-theme";
+import Logo from "../Home/easy-email-pro.svg";
 import { EditorCore, PluginManager } from "easy-email-pro-core";
 import { navigation } from "../main";
 import mjml from "mjml-browser";
@@ -229,7 +229,11 @@ export const EditorHeader = (props: {
           onBack={() => setCollapsed(!collapsed)}
           className="editor-header"
           title={
-            <span style={{ color: "var(--color-white)" }}>Easy-email-pro</span>
+            <div style={{ cursor: "pointer" }}>
+              <a href="https://www.easyemail.pro/">
+                <Logo className="logo" height={36} width={175} />
+              </a>
+            </div>
           }
           style={{
             backgroundColor: "rgb(var(--primary-6))",
@@ -358,29 +362,6 @@ export const EditorHeader = (props: {
         </Layout.Sider>
       </div>
 
-      {!hidden && (
-        <Alert
-          closeElement={<Button type="primary" icon={<IconClose />}></Button>}
-          closable
-          onClose={() => setHidden(true)}
-          showIcon={false}
-          content={
-            <div style={{ fontSize: 16, paddingLeft: 50, paddingRight: 50 }}>
-              In our latest edition, we're delighted to inform you that we've
-              incorporated the MJML syntax! 😃 There's no need for any
-              additional imports. Check out the freshest way to write custom
-              blocks right here! 👀👇{" "}
-              <Button
-                type="secondary"
-                href="https://docs.easyemail.pro/docs/advanced/custom-block?utm_source=demo-banner"
-                target="_blank"
-              >
-                Check
-              </Button>
-            </div>
-          }
-        ></Alert>
-      )}
       <style>{`
       .editor-header .arco-page-header-back { color: var(--color-white); }
       .editor-header .arco-page-header-back:hover:before { background-color: transparent !important; }

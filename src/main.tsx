@@ -194,6 +194,12 @@ const router = createBrowserRouter([
   },
 
   {
+    name: "Share",
+    path: "/share",
+    element: <TemplateEditor />,
+  },
+
+  {
     name: "Studio",
     path: "/studio",
     element: <Studio />,

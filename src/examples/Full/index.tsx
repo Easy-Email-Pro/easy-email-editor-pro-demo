@@ -313,6 +313,44 @@ const categories: ThemeConfigProps["categories"] = [
         },
       },
       {
+        type: ElementType.STANDARD_TABLE,
+        icon: (
+          <IconFont
+            className={"block-list-grid-item-icon"}
+            iconName="icon-table"
+          />
+        ),
+        payload: {
+          type: "standard-table",
+          data: {
+            code: `<tr>
+          <th style="border: 1px solid #cccccc;">Item</th>
+          <th style="border: 1px solid #cccccc;">Description</th>
+          <th style="border: 1px solid #cccccc;">Price</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #cccccc;">Product 1</td>
+          <td style="border: 1px solid #cccccc;">Product 1 description</td>
+          <td style="border: 1px solid #cccccc;">$10</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid #cccccc;">Product 2</td>
+          <td style="border: 1px solid #cccccc;">Product 2 description</td>
+          <td style="border: 1px solid #cccccc;">$20</td>
+        </tr>`,
+          },
+          attributes: {
+            "padding-top": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "padding-right": "0px",
+            cellpadding: "10px",
+            "font-size": "16px",
+          },
+          children: [{ text: "" }],
+        },
+      },
+      {
         type: MarketingType.MARKETING_SHOPWINDOW,
         icon: (
           <IconFont
@@ -342,6 +380,17 @@ const categories: ThemeConfigProps["categories"] = [
         ),
       },
       {
+        type: CommonType.COMMON_IMAGE_WITH_TEXT,
+        icon: (
+          <div className={"block-list-grid-item-icon"}>
+            <IconFont
+              className={"block-list-grid-item-icon"}
+              iconName="icon-article"
+            />
+          </div>
+        ),
+      },
+      {
         type: CommonType.COMMON_VIDEO,
         icon: (
           <div className={"block-list-grid-item-icon"}>
@@ -353,7 +402,7 @@ const categories: ThemeConfigProps["categories"] = [
         ),
       },
       {
-        type: ElementType.SECTION_WIDGET,
+        type: ElementType.WRAPPER_WIDGET,
         icon: (
           <div
             style={{
@@ -374,7 +423,7 @@ const categories: ThemeConfigProps["categories"] = [
           </div>
         ),
         payload: {
-          type: "section_widget",
+          type: "wrapper_widget",
           title: "New widget",
           data: {
             name: "New widget",

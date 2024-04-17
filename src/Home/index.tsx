@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Button, Card, Tabs } from "@arco-design/web-react";
+import { Button, Card, Tabs } from "@arco-design/web-react";
 import { Layout } from "@arco-design/web-react";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 import { Space } from "@arco-design/web-react";
@@ -20,7 +20,6 @@ import frozenImg from "./images/frozen.png";
 import studioImg from "./images/studio.png";
 import readonlyImg from "./images/readonly.png";
 import "./index.less";
-import { IconClose } from "@arco-design/web-react/icon";
 import { useLocalStorage } from "react-use";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -46,12 +45,7 @@ const features = [
     thumbnail: CustomizeImage,
     url: "/customize",
   },
-  {
-    subject: "Markdown",
-    thumbnail:
-      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/tdtfl1cwkpgpyan4jejni_image.png",
-    url: "/markdown",
-  },
+
   {
     subject: "Studio",
     thumbnail: studioImg,
@@ -66,6 +60,12 @@ const features = [
     subject: "Localization",
     thumbnail: LocalizationImg,
     url: "/localization",
+  },
+  {
+    subject: "Markdown",
+    thumbnail:
+      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/tdtfl1cwkpgpyan4jejni_image.png",
+    url: "/markdown",
   },
   {
     subject: "Dynamic data",
@@ -148,7 +148,7 @@ export const Home = () => {
       <div className="header border-solid border-b border-b-slate-200">
         <div className="px-10 m-auto py-5 flex justify-between">
           <h1>
-            <a href="/">
+            <a href="https://www.easyemail.pro/">
               <Logo className="logo" height={36} width={175} />
             </a>
           </h1>
@@ -171,29 +171,6 @@ export const Home = () => {
           </Space>
         </div>
       </div>
-      {!hidden && (
-        <Alert
-          closeElement={<Button type="primary" icon={<IconClose />}></Button>}
-          showIcon={false}
-          closable
-          onClose={() => setHidden(true)}
-          content={
-            <div style={{ fontSize: 16, paddingLeft: 50, paddingRight: 50 }}>
-              In our latest edition, we're delighted to inform you that we've
-              incorporated the MJML syntax! 😃 There's no need for any
-              additional imports. Check out the freshest way to write custom
-              blocks right here! 👀👇{" "}
-              <Button
-                type="secondary"
-                href="https://docs.easyemail.pro/docs/advanced/custom-block?utm_source=demo-banner"
-                target="_blank"
-              >
-                Check
-              </Button>
-            </div>
-          }
-        ></Alert>
-      )}
       <Layout.Content style={{ padding: 20 }}>
         <Space direction="vertical" size="large" style={{ width: "100%" }}>
           <Tabs defaultActiveTab="Feature">
