@@ -565,6 +565,7 @@ const hoveringToolbar: ThemeConfigProps["hoveringToolbar"] = {
       TextFormat.TEXT_COLOR,
       TextFormat.BACKGROUND_COLOR,
       TextFormat.ALIGN,
+      TextFormat.LIST,
       TextFormat.LINK,
       () => <EmojiPlugin />,
       TextFormat.MERGETAG,
