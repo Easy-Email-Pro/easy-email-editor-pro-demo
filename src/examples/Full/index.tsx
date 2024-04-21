@@ -33,7 +33,6 @@ import { useRef } from "react";
 
 import localsData from "easy-email-pro-localization/locales/locales.json";
 import { get } from "lodash";
-import { EmojiPlugin } from "easy-email-pro-plugins";
 import { AssetManagerModal } from "./AssetManagerModal";
 import { Space } from "@arco-design/web-react";
 import { useUniversalElement } from "@/hooks/useUniversalElement";
@@ -154,12 +153,12 @@ const mergetagsData = {
     {
       title: "#product 1",
       image:
-        "https://res.cloudinary.com/dwkp0e1yo/image/upload/v1683815715/nqqreectuzi3lxv7dxsp.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jwbrgf-j9czz8k8qh3f2d_image.png",
     },
     {
       title: "#product 2",
       image:
-        "https://res.cloudinary.com/dwkp0e1yo/image/upload/v1683815875/mevpkdxft8z6cyjicnd6.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/3kcq5x39xga7wdbaprvb-_image.png",
     },
   ],
   colors: {
@@ -552,28 +551,6 @@ const categories: ThemeConfigProps["categories"] = [
   },
 ];
 
-const hoveringToolbar: ThemeConfigProps["hoveringToolbar"] = {
-  list({ isCollapsed, selection, isFocus }) {
-    // if (!isFocus) return [];
-    return [
-      TextFormat.FONT_FAMILY,
-      TextFormat.FONT_SIZE,
-      TextFormat.BOLD,
-      TextFormat.ITALIC,
-      TextFormat.UNDERLINE,
-      TextFormat.STRIKETHROUGH,
-      TextFormat.TEXT_COLOR,
-      TextFormat.BACKGROUND_COLOR,
-      TextFormat.ALIGN,
-      TextFormat.LIST,
-      TextFormat.LINK,
-      () => <EmojiPlugin />,
-      TextFormat.MERGETAG,
-      TextFormat.REMOVE_FORMAT,
-    ];
-  },
-};
-
 export default function MyEditor() {
   const [theme, setTheme] = React.useState<string>("retro");
   const [compact, setCompact] = useState(false);
@@ -582,6 +559,36 @@ export default function MyEditor() {
   const [accept, setAccept] = useState<string | undefined>(undefined);
   const [visible, setVisible] = useState(false);
   const { universalElementSetting } = useUniversalElement();
+  const [hoveringToolbarPosition, setHoveringToolbarPosition] =
+    useState<NonNullable<ThemeConfigProps["hoveringToolbar"]>["follow"]>(
+      "container"
+    );
+
+  const hoveringToolbar: ThemeConfigProps["hoveringToolbar"] = useMemo(() => {
+    return {
+      list({ isCollapsed, selection, isFocus }) {
+        // if (!isFocus) return [];
+        return [
+          TextFormat.FONT_FAMILY,
+          TextFormat.FONT_SIZE,
+          TextFormat.BOLD,
+          TextFormat.ITALIC,
+          TextFormat.UNDERLINE,
+          TextFormat.STRIKETHROUGH,
+          TextFormat.TEXT_COLOR,
+          TextFormat.BACKGROUND_COLOR,
+          TextFormat.ALIGN,
+          TextFormat.LIST,
+          TextFormat.LINK,
+          TextFormat.MERGETAG,
+          TextFormat.REMOVE_FORMAT,
+        ];
+      },
+      follow: hoveringToolbarPosition,
+      iconSize: 14,
+    };
+  }, [hoveringToolbarPosition]);
+
   const changeRef = useRef<(url: string) => void>(() => {
     //
   });
@@ -701,6 +708,17 @@ export default function MyEditor() {
                 </Space>
               </div>
             </Button>
+            <Select
+              style={{ width: 120 }}
+              value={hoveringToolbarPosition}
+              onChange={setHoveringToolbarPosition}
+              triggerElement={<Button>HoveringToolbar Position</Button>}
+              options={[
+                { label: "Selection", value: "selection" },
+                { label: "Container", value: "container" },
+                { label: "Page", value: "page" },
+              ]}
+            ></Select>
             <Select
               style={{ width: 120 }}
               value={theme}

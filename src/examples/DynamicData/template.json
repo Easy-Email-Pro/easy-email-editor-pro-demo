@@ -75,46 +75,54 @@
                 },
                 "children": [
                   {
-                    "text": "Order number: "
-                  },
-                  {
-                    "type": "mergetag",
-                    "data": {},
-                    "attributes": {},
+                    "type": "html-block-node",
                     "children": [
                       {
-                        "text": "order.number"
-                      }
-                    ]
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "type": "line-break",
-                    "children": [
+                        "text": "Order number: "
+                      },
                       {
-                        "text": ""
+                        "type": "mergetag",
+                        "data": {},
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "order.number"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
                       }
                     ],
-                    "data": {},
-                    "attributes": {}
-                  },
-                  {
-                    "text": "Order price: "
-                  },
-                  {
-                    "type": "mergetag",
-                    "data": {},
                     "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
+                  },
+                  {
+                    "type": "html-block-node",
                     "children": [
                       {
-                        "text": "order.total"
+                        "text": "Order price: "
+                      },
+                      {
+                        "type": "mergetag",
+                        "data": {},
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "order.total"
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
                       }
-                    ]
-                  },
-                  {
-                    "text": " "
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
                   }
                 ]
               }
@@ -131,50 +139,69 @@
         },
         "children": [
           {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
+            "type": "standard-group",
             "data": {},
+            "attributes": {},
             "children": [
               {
-                "type": "standard-image",
-                "data": {},
+                "type": "standard-column",
                 "attributes": {
-                  "padding": "0px 0px 0px 0px",
-                  "padding-bottom": "10px",
-                  "padding-right": "25px",
-                  "src": "{{item.image}}"
+                  "width": "50%"
                 },
+                "data": {},
                 "children": [
                   {
-                    "text": ""
-                  }
-                ]
-              },
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {
-                  "padding-bottom": "3px",
-                  "padding-right": "2px"
-                },
-                "children": [
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "padding": "0px 0px 0px 0px",
+                      "padding-bottom": "10px",
+                      "padding-right": "10px",
+                      "src": "{{item.image}}",
+                      "padding-left": "10px",
+                      "padding-top": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
                   {
-                    "text": "{{item.title}}"
+                    "name": "Text",
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-bottom": "3px",
+                      "padding-right": "0px",
+                      "padding-left": "0px"
+                    },
+                    "children": [
+                      {
+                        "text": "{{item.title}}"
+                      }
+                    ]
                   }
-                ]
+                ],
+                "logic": {
+                  "iteration": {
+                    "enabled": true,
+                    "dataSource": "products",
+                    "itemName": "item",
+                    "limit": 9999,
+                    "mockQuantity": 1
+                  }
+                }
               }
-            ]
+            ],
+            "mobileAttributes": {}
           }
         ],
         "logic": {
           "iteration": {
-            "enabled": true,
-            "dataSource": "products",
-            "itemName": "item",
-            "limit": 9999,
+            "enabled": false,
+            "dataSource": "",
+            "itemName": "",
             "mockQuantity": 1
           }
         }

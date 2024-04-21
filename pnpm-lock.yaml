@@ -48,26 +48,26 @@ dependencies:
     specifier: ^2.0.2
     version: 2.0.2
   easy-email-pro-asset-manager:
-    specifier: ^1.27.0
-    version: 1.27.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.29.0
+    version: 1.29.0(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-core:
-    specifier: ^1.27.0
-    version: 1.27.0(axios@1.4.0)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.29.0
+    version: 1.29.0(axios@1.4.0)(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-editor:
-    specifier: ^1.27.0
-    version: 1.27.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.29.0
+    version: 1.29.0(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-kit:
-    specifier: ^1.27.0
-    version: 1.27.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.29.0
+    version: 1.29.0(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-localization:
-    specifier: ^1.27.0
-    version: 1.27.0
+    specifier: ^1.29.0
+    version: 1.29.0
   easy-email-pro-plugins:
-    specifier: ^1.27.0
-    version: 1.27.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.29.0
+    version: 1.29.0(react-dom@18.2.0)(react@18.2.0)
   easy-email-pro-theme:
-    specifier: ^1.27.0
-    version: 1.27.0(@arco-design/web-react@2.49.2)(mjml-browser@4.14.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.29.0
+    version: 1.29.0(@arco-design/web-react@2.49.2)(mjml-browser@4.14.1)(react-dom@18.2.0)(react@18.2.0)
   file-saver:
     specifier: ^2.0.5
     version: 2.0.5
@@ -1962,8 +1962,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /easy-email-pro-asset-manager@1.27.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-sb/9nsQJidQvEzVDDJtYOXsKAkJuSPLf4XrFt6ptoQzT9nvddXMQZ+ElnnG3V76Q0/bG1VKeLeeiA59v+x/uZw==}
+  /easy-email-pro-asset-manager@1.29.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ojBmHW6+DprCWOBH9RaAT/GQxhP6rTf8RxfqH3hJJHvClG6sY3SnMB63nU8H0XTf+yanBJ47izULNelot+oUQQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1974,8 +1974,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /easy-email-pro-core@1.27.0(axios@1.4.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ita4vWCeUkeUwZl9QlvOtJjT3emICaWQTwagouIWPI3ryl/ekT67mK2Ds5XXA3HmwwVyBUR2aJANKorWDoCDmQ==}
+  /easy-email-pro-core@1.29.0(axios@1.4.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-BSJxFbbuu+MxnPPUVDSOXEPAY/0HvcoYIpCiM1/eK1rYkI13G0HD45FQHWMU/aga9QOcWc2bD7VYuVsDULp2bw==}
     peerDependencies:
       axios: ^1.4.0
       react: ^18.2.0
@@ -1995,8 +1995,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /easy-email-pro-editor@1.27.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-I/V+V4WKd+7p5+fisMRTS7l8vLpOPY6ickIPiTLHJnFxYbtt4bAnBWZVQZHIRso3Jl0xtBmzbNHO740Rz9G3eQ==}
+  /easy-email-pro-editor@1.29.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-fWHWP+bFAZ+MMzlRdisqqGTO7lz9TocvhyUY7SkSC61Jpm64+Jpy8gFeVDxSFQSWkggUjl6g4gP2/SehME4Zaw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -2016,8 +2016,8 @@ packages:
       - debug
     dev: false
 
-  /easy-email-pro-kit@1.27.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-xlPsBHUcZ8stz9PBUWNyymeZSZRyEBrPEUlmo0059FC+uKm3HZ/2dWXOQ9v5sO9AUzTq3qOYG1up9NqlbuOh8g==}
+  /easy-email-pro-kit@1.29.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-nULA3lMihe9IaH4SA7Go4faJODPGhtHXhg5yeV5CMbXEkUpa8WjFd/3pqixTWMfATltmvIoXhFwq/zzDapuNCw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -2031,12 +2031,12 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /easy-email-pro-localization@1.27.0:
-    resolution: {integrity: sha512-UR2K4wBFpU/07cpxBeLAkmtFXyNiaugiRdn+A38mWkH+lS5RztICZxDke6oBv/JZtBehp3yDgml6J7nKIiUuEQ==}
+  /easy-email-pro-localization@1.29.0:
+    resolution: {integrity: sha512-DCB8Z+iKkMImGbzAuNFgHLpcziCwk6mAsJeYCp1TL8bUXZxxX43yBZJyVETObLeTthLVPdDA/bwzkI+LI4C38g==}
     dev: false
 
-  /easy-email-pro-plugins@1.27.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-PFk2fwOsVQ7t3R/KMa2zQNDs7BcmhrxYIJEudTQtJt+HQ/8rus1H7rtGKSPMET7mUcwQIbeXUb950VFkHKnI1w==}
+  /easy-email-pro-plugins@1.29.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-sXeqn7YW9SBS/nPpXNhBT8ViB+zQ+6MR8U7Wl6CEu1BnmDYlrYi1Q5wVNho3XDoyilRWPweViCmOooN4eYp5cA==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -2048,8 +2048,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /easy-email-pro-theme@1.27.0(@arco-design/web-react@2.49.2)(mjml-browser@4.14.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-J5F736O0bIZoIeeBEvvKerRAbl3l8f05YCg+iyRqwWkKLgaQi6ebwmG2mv6/QEFcQTtMnlk1NQrYvXPpEyKGtg==}
+  /easy-email-pro-theme@1.29.0(@arco-design/web-react@2.49.2)(mjml-browser@4.14.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-dMUdVL3QyxIqd68dpLn8a8XiG6QuE/Mfs5ygyl1tAqc3GfPDNe2mJZuYh84hcwpsnrMmYwV4/tW88jBo9CXddA==}
     peerDependencies:
       '@arco-design/web-react': ^2.46.3
       mjml-browser: ^4.14.1

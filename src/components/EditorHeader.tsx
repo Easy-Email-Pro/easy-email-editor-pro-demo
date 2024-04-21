@@ -238,6 +238,7 @@ export const EditorHeader = (props: {
           style={{
             backgroundColor: "rgb(var(--primary-6))",
             color: "#fff !important",
+            height: 66,
           }}
           subTitle={
             <div
@@ -317,12 +318,12 @@ export const EditorHeader = (props: {
                     </Button>
                   </Dropdown>
                 )}
-                {/* <Button
+                <Button
                   target="_blank"
-                  href="https://www.easyemail.pro/?utm_source=demo"
+                  href="https://www.easyemail.pro/?#trial?utm_source=demo"
                 >
-                  <strong>View Website</strong>
-                </Button> */}
+                  <strong>Start Trial</strong>
+                </Button>
                 <div />
               </Space>
             </div>

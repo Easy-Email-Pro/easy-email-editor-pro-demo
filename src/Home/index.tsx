@@ -157,9 +157,9 @@ export const Home = () => {
             <Button
               type="primary"
               target="_blank"
-              href="https://www.easyemail.pro/?utm_source=demo"
+              href="https://www.easyemail.pro/?#trial?utm_source=demo"
             >
-              <strong>View Website</strong>
+              <strong>Start Trial</strong>
             </Button>
             <Button
               type="primary"
