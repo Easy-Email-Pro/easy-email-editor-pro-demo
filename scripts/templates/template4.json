@@ -1,0 +1,953 @@
+{
+  "data": {
+    "value": {
+      "fonts": [],
+      "font-size": "15px",
+      "breakpoint": "480px",
+      "headStyles": [],
+      "responsive": true,
+      "text-color": "#000000",
+      "font-family": "'Lato', sans-serif",
+      "line-height": "1.8",
+      "headAttributes": "",
+      "content-background-color": "#ffffff"
+    }
+  },
+  "type": "page",
+  "children": [
+    {
+      "data": {
+        "value": {}
+      },
+      "type": "wrapper",
+      "children": [
+        {
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "content": "SHOPING"
+                    }
+                  },
+                  "type": "button",
+                  "children": [],
+                  "attributes": {
+                    "href": "#",
+                    "align": "center",
+                    "color": "#000000",
+                    "border": "2px solid #000",
+                    "target": "_blank",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "20px",
+                    "text-align": "center",
+                    "font-weight": "700",
+                    "line-height": "120%",
+                    "border-radius": "0px",
+                    "inner-padding": "10px 25px 10px 25px",
+                    "vertical-align": "middle",
+                    "background-color": "transparent"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "divider",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "padding": "10px 0px",
+                    "border-color": "#c2c2c2",
+                    "border-style": "solid",
+                    "border-width": "1px"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {
+                      "links": [
+                        {
+                          "href": "/gettings-started-onboard",
+                          "color": "#000000",
+                          "target": "_blank",
+                          "content": "HOME",
+                          "padding": "15px 10px 15px 10px",
+                          "font-size": "13px"
+                        },
+                        {
+                          "href": "/try-it-live",
+                          "color": "#000000",
+                          "target": "_blank",
+                          "content": "NEW",
+                          "padding": "15px 10px 15px 10px",
+                          "font-size": "13px"
+                        },
+                        {
+                          "href": "/templates",
+                          "color": "#000000",
+                          "target": "_blank",
+                          "content": "WOMEN",
+                          "padding": "15px 10px 15px 10px",
+                          "font-size": "13px"
+                        },
+                        {
+                          "href": "/components",
+                          "color": "#000000",
+                          "target": "_blank",
+                          "content": "KIDS",
+                          "padding": "15px 10px 15px 10px",
+                          "font-size": "13px"
+                        },
+                        {
+                          "href": "/components",
+                          "color": "#000000",
+                          "target": "_blank",
+                          "content": "BLOG",
+                          "padding": "15px 10px 15px 10px",
+                          "font-size": "13px"
+                        }
+                      ]
+                    }
+                  },
+                  "type": "navbar",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "base-url": "https://mjml.io"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "divider",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "padding": "10px 0px",
+                    "border-color": "#c2c2c2",
+                    "border-style": "solid",
+                    "border-width": "1px"
+                  }
+                }
+              ],
+              "attributes": {
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "content": "We Are Shopping Website That Gives You An Affordable <font color=\"#f85e9f\"><b>Prices </b></font>&amp; <font color=\"#f85e9f\"><b>Discount</b></font>"
+                    }
+                  },
+                  "type": "text",
+                  "children": [],
+                  "attributes": {
+                    "align": "left",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "30px",
+                    "font-weight": "300"
+                  }
+                }
+              ],
+              "attributes": {
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Young Woman Dress"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 25px 18px 25px",
+                        "font-size": "22px",
+                        "line-height": "1.4"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "color": "#979494",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "15px",
+                        "line-height": "1.4"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Shop now"
+                        }
+                      },
+                      "type": "button",
+                      "children": [],
+                      "attributes": {
+                        "href": "#",
+                        "align": "center",
+                        "color": "#ffffff",
+                        "border": "",
+                        "target": "_blank",
+                        "padding": "10px 25px 10px 25px",
+                        "font-size": "15px",
+                        "text-align": "center",
+                        "font-weight": "400",
+                        "line-height": "120%",
+                        "border-radius": "5px",
+                        "inner-padding": "10px 25px 10px 25px",
+                        "vertical-align": "middle",
+                        "background-color": "#f85e9f"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/d56e3068-0985-4b86-b94e-2f6b375a6735-image.png",
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/987f3337-ae63-41b4-a31b-d02f31c33061-image.png",
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Young Woman Dress"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 25px 18px 25px",
+                        "font-size": "22px",
+                        "line-height": "1.4"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "color": "#979494",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "15px",
+                        "line-height": "1.4"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Shop now"
+                        }
+                      },
+                      "type": "button",
+                      "children": [],
+                      "attributes": {
+                        "href": "#",
+                        "align": "center",
+                        "color": "#ffffff",
+                        "border": "",
+                        "target": "_blank",
+                        "padding": "10px 25px 10px 25px",
+                        "font-size": "15px",
+                        "text-align": "center",
+                        "font-weight": "400",
+                        "line-height": "120%",
+                        "border-radius": "5px",
+                        "inner-padding": "10px 25px 10px 25px",
+                        "vertical-align": "middle",
+                        "background-color": "#f85e9f"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Young Woman Dress"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 25px 18px 25px",
+                        "font-size": "22px",
+                        "line-height": "1.4"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "color": "#979494",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "15px",
+                        "line-height": "1.4"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Shop now"
+                        }
+                      },
+                      "type": "button",
+                      "children": [],
+                      "attributes": {
+                        "href": "#",
+                        "align": "center",
+                        "color": "#ffffff",
+                        "border": "",
+                        "target": "_blank",
+                        "padding": "10px 25px 10px 25px",
+                        "font-size": "15px",
+                        "text-align": "center",
+                        "font-weight": "400",
+                        "line-height": "120%",
+                        "border-radius": "5px",
+                        "inner-padding": "10px 25px 10px 25px",
+                        "vertical-align": "middle",
+                        "background-color": "#f85e9f"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/c4b825c3-89ba-46bc-9f1b-dc7a85b9dc68-image.png",
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/3da866d0-3ba8-4150-99fc-8ac4d7024621-image.png",
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Young Woman Dress"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 25px 18px 25px",
+                        "font-size": "22px",
+                        "line-height": "1.4"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "color": "#979494",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "15px",
+                        "line-height": "1.4"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Shop now"
+                        }
+                      },
+                      "type": "button",
+                      "children": [],
+                      "attributes": {
+                        "href": "#",
+                        "align": "center",
+                        "color": "#ffffff",
+                        "border": "",
+                        "target": "_blank",
+                        "padding": "10px 25px 10px 25px",
+                        "font-size": "15px",
+                        "text-align": "center",
+                        "font-weight": "400",
+                        "line-height": "120%",
+                        "border-radius": "5px",
+                        "inner-padding": "10px 25px 10px 25px",
+                        "vertical-align": "middle",
+                        "background-color": "#f85e9f"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "column",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "Start Shopping"
+                }
+              },
+              "type": "button",
+              "children": [],
+              "attributes": {
+                "href": "#",
+                "align": "center",
+                "color": "#000000",
+                "border": "2px solid #000",
+                "target": "_blank",
+                "padding": "10px 25px 10px 25px",
+                "font-size": "15px",
+                "text-align": "center",
+                "font-weight": "700",
+                "line-height": "120%",
+                "border-radius": "0px",
+                "inner-padding": "10px 25px 10px 25px",
+                "vertical-align": "middle",
+                "background-color": "#ffffff"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": true
+        }
+      },
+      "type": "section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "group",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "content": "Stay Updated On Our Shopping"
+                    }
+                  },
+                  "type": "text",
+                  "children": [],
+                  "attributes": {
+                    "align": "left",
+                    "padding": "0px 25px 0px 25px",
+                    "font-size": "20px",
+                    "font-weight": "400",
+                    "line-height": "36px"
+                  }
+                }
+              ],
+              "attributes": {
+                "width": "60%",
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              }
+            },
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "elements": [
+                        {
+                          "src": "https://assets.maocanhua.cn/b7cc7e4d-b6a3-45cb-a1a5-bec2fac278ad-image.png",
+                          "href": "#",
+                          "target": "_blank",
+                          "content": "",
+                          "icon-size": "20px"
+                        },
+                        {
+                          "src": "https://assets.maocanhua.cn/f8644f58-ea6d-4b68-90c4-7b871f7ad702-image.png",
+                          "href": "#",
+                          "target": "_blank",
+                          "content": "",
+                          "icon-size": "20px"
+                        },
+                        {
+                          "src": "https://assets.maocanhua.cn/fc295200-a262-4e3d-8310-e6dac278222e-image.png",
+                          "href": "",
+                          "target": "_blank",
+                          "content": "",
+                          "icon-size": "20px"
+                        }
+                      ]
+                    }
+                  },
+                  "type": "social",
+                  "children": [],
+                  "attributes": {
+                    "mode": "horizontal",
+                    "align": "center",
+                    "color": "#333333",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "13px",
+                    "icon-size": "20px",
+                    "font-weight": "normal",
+                    "line-height": "22px",
+                    "icon-padding": "0px",
+                    "text-padding": "4px 4px 4px 0px",
+                    "border-radius": "3px",
+                    "inner-padding": "4px 4px 4px 4px"
+                  }
+                }
+              ],
+              "attributes": {
+                "width": "40%",
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "middle"
+              }
+            }
+          ],
+          "attributes": {
+            "direction": "ltr",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "0px 0px 0px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "column",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "No longer want to receive these email? You can <a href=\"http://localhost:3000/editor?id=617\" target=\"_blank\" style=\"text-decoration: none;\"><font color=\"#5c5555\">Unsubscribe here</font></a>"
+                }
+              },
+              "type": "text",
+              "children": [],
+              "attributes": {
+                "align": "center",
+                "color": "#c7bdbd",
+                "padding": "10px 25px 10px 25px",
+                "font-size": "15px",
+                "line-height": "27px"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "10px 0px 10px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-color": "#fafafa",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    }
+  ],
+  "attributes": {
+    "width": "600px",
+    "background-color": "#efeeea"
+  }
+}

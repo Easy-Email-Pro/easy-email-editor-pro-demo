@@ -13,13 +13,13 @@ import {
 import { IconLeft, IconMenu } from "@arco-design/web-react/icon";
 import React from "react";
 import { EmailTemplate, useEditorProps } from "easy-email-pro-editor";
-import {
-  easyEmailToEasyEmailPro,
-  mjmlToJson,
-  useEditorContext,
-} from "easy-email-pro-theme";
+import { mjmlToJson, useEditorContext } from "easy-email-pro-theme";
 import Logo from "../Home/easy-email-pro.svg";
-import { EditorCore, PluginManager } from "easy-email-pro-core";
+import {
+  EditorCore,
+  PluginManager,
+  easyEmailToEasyEmailPro,
+} from "easy-email-pro-core";
 import { navigation } from "../main";
 import mjml from "mjml-browser";
 import { saveAs } from "file-saver";

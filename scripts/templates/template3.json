@@ -1,0 +1,753 @@
+{
+  "data": {
+    "value": {
+      "fonts": [],
+      "font-size": "14px",
+      "breakpoint": "480px",
+      "headStyles": [],
+      "responsive": true,
+      "text-color": "#000000",
+      "font-family": "lucida Grande,Verdana,Microsoft YaHei",
+      "line-height": "1.7",
+      "headAttributes": ""
+    }
+  },
+  "type": "page",
+  "children": [
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-black/Logo-Baseline-0.15x.png",
+                "href": "https://www.arturia.com",
+                "align": "center",
+                "width": "144px",
+                "height": "auto",
+                "padding": "10px 25px 10px 25px"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "middle"
+          }
+        },
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "NEWS<br />MARCH 2016"
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "padding": "10px 25px 10px 25px",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "line-height": "120%",
+                "text-decoration": "underline"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 0px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "vertical-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "Dear {firstname}, <br /><br /> You used to follow rhythm, now rhythm follows you, everywhere you go!<br /> Discover iSpark, the mobile transposition of our renowned beat-making solution Spark."
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "color": "#FFFFFE",
+                "padding": "0px 25px 0px 25px",
+                "font-size": "14px",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "line-height": "120%"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-color": "#000001",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/05.jpg",
+                "href": "https://www.arturia.com/products/ipad-synths/ispark/overview",
+                "align": "center",
+                "height": "auto",
+                "padding": "0px 0px 0px 0px"
+              }
+            },
+            {
+              "data": {
+                "value": {
+                  "content": "iSpark is a powerful mobile production tool allowing you to create and play rhythmic tracks, complex grooves and even complete songs. Its sonic strike force comes along with an unwavering workflow and a real flexibility."
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "padding": "25px 25px 25px 25px",
+                "font-size": "14px",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "line-height": "120%"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top",
+            "background-color": "#FFFFFE"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/06.jpg",
+                "href": "https://www.arturia.com/products/ipad-synths/ispark/overview",
+                "align": "center",
+                "height": "auto",
+                "padding": "0px 0px 0px 0px"
+              }
+            },
+            {
+              "data": {
+                "value": {
+                  "content": "Check out the iSpark introduction movie shot during the Arturia Experience event at the ADE featuring the Dutch beatmaker FilosofischeStilte."
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "padding": "25px 25px 25px 25px",
+                "font-size": "14px",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "line-height": "120%"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top",
+            "background-color": "#FFFFFE"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/07.jpg",
+                "href": "https://www.arturia.com/products/ipad-synths/ispark/details",
+                "align": "center",
+                "height": "auto",
+                "padding": "0px 0px 0px 0px"
+              }
+            },
+            {
+              "data": {
+                "value": {
+                  "content": "Follow Mauricio Garcia, Arturia Product Specialist, presenting you the many clever features of iSpark in this series of tutorials."
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "padding": "25px 25px 25px 25px",
+                "font-size": "14px",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "line-height": "120%"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top",
+            "background-color": "#FFFFFE"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/08.jpg",
+                "href": "https://www.arturia.com/products/ipad-synths/ispark/details",
+                "align": "center",
+                "height": "auto",
+                "padding": "0px 0px 0px 0px"
+              }
+            },
+            {
+              "data": {
+                "value": {
+                  "content": "iSpark includes a tremendous collection of factory kits and individual instruments covering most of the field of application of beat-making but it is also compatible with the existing Spark resources and Expansion Packs."
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "padding": "25px 25px 10px 25px",
+                "font-size": "14px",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "line-height": "120%"
+              }
+            },
+            {
+              "data": {
+                "value": {
+                  "content": "Learn more about iSpark"
+                }
+              },
+              "type": "advanced_button",
+              "children": [],
+              "attributes": {
+                "href": "https://www.arturia.com/products/ipad-synths/ispark/overview",
+                "align": "center",
+                "color": "#ffffff",
+                "border": "none",
+                "target": "_blank",
+                "padding": "10px 25px 25px 25px",
+                "font-size": "14px",
+                "text-align": "center",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "font-weight": "normal",
+                "line-height": "120%",
+                "border-radius": "8px",
+                "vertical-align": "middle",
+                "background-color": "#2DDCB4"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top",
+            "background-color": "#FFFFFE"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "Musically yours,<br /> The Arturia Team"
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "color": "#FFFFFE",
+                "padding": "10px 25px 10px 25px",
+                "font-size": "14px",
+                "font-family": "Helvetica,Arial,sans-serif"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-color": "#000001",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/facebook_arturia.png",
+                "href": "http://www.facebook.com/arturia2",
+                "align": "center",
+                "width": "86px",
+                "height": "auto",
+                "padding": "10px 25px 10px 25px"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        },
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/youtube.png",
+                "href": "http://www.youtube.com/arturiaweb",
+                "align": "center",
+                "width": "86px",
+                "height": "auto",
+                "padding": "10px 25px 10px 25px"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        },
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/Soundcloud.png",
+                "href": "http://soundcloud.com/arturia-official",
+                "align": "center",
+                "width": "86px",
+                "height": "auto",
+                "padding": "10px 25px 10px 25px"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        },
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_image",
+              "children": [],
+              "attributes": {
+                "alt": "",
+                "src": "https://www.arturia.com/images/newsletters/2016-02-ispark/twitter_arturia.png",
+                "href": "http://twitter.com/arturiaofficial",
+                "align": "center",
+                "width": "86px",
+                "height": "auto",
+                "padding": "10px 25px 10px 25px"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "0px 0px 0px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "See this email in your browser <a href=\"https://www.arturia.com/images/newsletters/2016-02-ispark/newsletter.html\" style=\"text-decoration:none;color:#2DDCB4\">here</a>"
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "center",
+                "padding": "0px 25px 10px 25px",
+                "font-family": "Helvetica,Arial,sans-serif"
+              }
+            },
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_divider",
+              "children": [],
+              "attributes": {
+                "align": "center",
+                "padding": "10px 0px 10px 0px",
+                "border-color": "#C9CCCF",
+                "border-style": "solid",
+                "border-width": "1px"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "0px 0px 0px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "advanced_section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "advanced_column",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "Your email address is on this list as a result of a subscription, information request, competition, or other correspondence you may have had with us in the past. If you would like to be removed from our list, check the email address this newsletter\n          was sent to and use the following link: <a href=\"https://www.arturia.com/index.php?option=com_myarturia&view=newsletter&task=unsubscribeFromEmail&email={email}&token={title}&utm_source=elasticemail&utm_medium=email&utm_campaign=arturia_unsubscribe_2016&utm_term=nl-ispark-launch&utm_content=unsubscribe_footer\"\n            style=\"text-decoration:none;color:#2DDCB4\">Unsubscribe</a>. Privacy policy available <a href=\"https://www.arturia.com/privacypolicy\" style=\"text-decoration:none;color:#2DDCB4\">here</a>."
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "padding": "0px 25px 0px 25px",
+                "font-size": "10px",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "line-height": "12px"
+              }
+            },
+            {
+              "data": {
+                "value": {
+                  "content": "ARTURIA: <a href=\"https://www.arturia.com\" style=\"text-decoration:none;color:#2DDCB4\">https://www.arturia.com</a> - Contact: <a href=\"mailto:info@arturia.com\" style=\"text-decoration:none;color:#2DDCB4\">info</a><br /> ARTURIA France: 30 chemin\n          du vieux chêne, 38240 Meylan - FRANCE<br /> ARTURIA US: : 5776-D Lindero Cyn Rd #239 -Westlake Village, CA 91362 - USA"
+                }
+              },
+              "type": "advanced_text",
+              "children": [],
+              "attributes": {
+                "align": "left",
+                "padding": "10px 25px 0px 25px",
+                "font-size": "10px",
+                "font-family": "Helvetica,Arial,sans-serif",
+                "line-height": "12px"
+              }
+            },
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "advanced_divider",
+              "children": [],
+              "attributes": {
+                "align": "center",
+                "padding": "10px 0px 10px 0px",
+                "border-color": "#C9CCCF",
+                "border-style": "solid",
+                "border-width": "1px"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "0px 0px 0px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    }
+  ],
+  "attributes": {
+    "width": "600px",
+    "background-color": "#F2F2F2"
+  }
+}

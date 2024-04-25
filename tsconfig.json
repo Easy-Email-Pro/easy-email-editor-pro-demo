@@ -24,7 +24,9 @@
       "@/*": ["./src/*"],
       "mjml-browser": ["./node_modules/@types/mjml"],
       // for development
-      "easy-email-pro-asset-manager": ["../packages/easy-email-pro-asset-manager"],
+      "easy-email-pro-asset-manager": [
+        "../packages/easy-email-pro-asset-manager"
+      ],
       "easy-email-pro-plugins": ["../packages/easy-email-pro-plugins"],
       "easy-email-pro-kit": ["../packages/easy-email-pro-kit"],
       "easy-email-pro-core": ["../packages/easy-email-pro-core"],

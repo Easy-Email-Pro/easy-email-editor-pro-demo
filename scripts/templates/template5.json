@@ -1,0 +1,1678 @@
+{
+  "data": {
+    "value": {
+      "fonts": [],
+      "font-size": "15px",
+      "breakpoint": "480px",
+      "headStyles": [],
+      "responsive": true,
+      "text-color": "#000000",
+      "font-family": "'Lato', sans-serif",
+      "line-height": "1.8",
+      "headAttributes": "",
+      "content-background-color": "#fafafa"
+    }
+  },
+  "type": "page",
+  "children": [
+    {
+      "data": {
+        "value": {}
+      },
+      "type": "wrapper",
+      "children": [
+        {
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "content": "Real Estate"
+                    }
+                  },
+                  "type": "text",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "30px",
+                    "font-family": "'Playfair Display', sans-serif",
+                    "font-weight": "700"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "divider",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "padding": "10px 0px",
+                    "border-color": "#807878",
+                    "border-style": "solid",
+                    "border-width": "1px"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {
+                      "links": [
+                        {
+                          "href": "/gettings-started-onboard",
+                          "color": "#000000",
+                          "target": "_blank",
+                          "content": "HOME",
+                          "padding": "15px 10px 15px 10px",
+                          "font-size": "13px"
+                        },
+                        {
+                          "href": "/try-it-live",
+                          "color": "#000000",
+                          "target": "_blank",
+                          "content": "PROPERTIES",
+                          "padding": "15px 10px 15px 10px",
+                          "font-size": "13px"
+                        },
+                        {
+                          "href": "/templates",
+                          "color": "#000000",
+                          "target": "_blank",
+                          "content": "CONTACT",
+                          "padding": "15px 10px 15px 10px",
+                          "font-size": "13px"
+                        }
+                      ]
+                    }
+                  },
+                  "type": "navbar",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "base-url": "https://mjml.io"
+                  }
+                }
+              ],
+              "attributes": {
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "hero",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "Real Estate"
+                }
+              },
+              "type": "text",
+              "children": [],
+              "attributes": {
+                "align": "center",
+                "color": "#ffffff",
+                "padding": "10px 25px 10px 25px",
+                "font-size": "45px",
+                "line-height": "45px"
+              }
+            },
+            {
+              "data": {
+                "value": {
+                  "content": "<div>A small river named Duden flows by their</div><div>place and supplies it with the necessary&nbsp;</div><div>regelialia.<br></div>"
+                }
+              },
+              "type": "text",
+              "children": [],
+              "attributes": {
+                "href": "#",
+                "align": "center",
+                "color": "#ffffff",
+                "border": "none",
+                "target": "_blank",
+                "padding": "10px 25px 10px 25px",
+                "font-size": "14px",
+                "text-align": "center",
+                "font-weight": "normal",
+                "line-height": "1.5",
+                "border-radius": "3px",
+                "inner-padding": "10px 25px 10px 25px",
+                "vertical-align": "middle",
+                "background-color": "#414141"
+              }
+            },
+            {
+              "data": {
+                "value": {
+                  "content": "Browse Properties"
+                }
+              },
+              "type": "button",
+              "children": [],
+              "attributes": {
+                "href": "#",
+                "align": "center",
+                "color": "#ffffff",
+                "border": "none",
+                "target": "_blank",
+                "padding": "10px 25px 10px 25px",
+                "font-size": "13px",
+                "text-align": "center",
+                "font-weight": "normal",
+                "line-height": "120%",
+                "border-radius": "5px",
+                "inner-padding": "10px 25px 10px 25px",
+                "vertical-align": "middle",
+                "background-color": "#feb062"
+              }
+            }
+          ],
+          "attributes": {
+            "mode": "fluid-height",
+            "padding": "100px 0px 100px 0px",
+            "background-url": "https://assets.maocanhua.cn/92a8e4ce-499a-4b7e-a0c6-38265f9589f2-image.png",
+            "vertical-align": "top",
+            "background-color": "#ffffff",
+            "background-position": "center center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "content": "Buy House in Best Price"
+                    }
+                  },
+                  "type": "text",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "34px",
+                    "font-weight": "300"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {
+                      "content": "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
+                    }
+                  },
+                  "type": "text",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "color": "#807878",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": ""
+                  }
+                },
+                {
+                  "data": {
+                    "value": {
+                      "content": "Browse Properties"
+                    }
+                  },
+                  "type": "button",
+                  "children": [],
+                  "attributes": {
+                    "href": "#",
+                    "align": "center",
+                    "color": "#ffffff",
+                    "border": "none",
+                    "target": "_blank",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "12px",
+                    "text-align": "center",
+                    "font-weight": "normal",
+                    "line-height": "120%",
+                    "border-radius": "0px",
+                    "inner-padding": "10px 25px 10px 25px",
+                    "vertical-align": "middle",
+                    "background-color": "#000"
+                  }
+                }
+              ],
+              "attributes": {
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 0px 20px 0px",
+        "direction": "ltr",
+        "text-align": "center"
+      }
+    },
+    {
+      "data": {
+        "value": {}
+      },
+      "type": "wrapper",
+      "children": [
+        {
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "content": "Our Services"
+                    }
+                  },
+                  "type": "text",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "28px",
+                    "font-weight": "400",
+                    "line-height": "1.4"
+                  }
+                }
+              ],
+              "attributes": {
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/2d1f8c3a-6c54-428a-9300-e171131001bd-image.png",
+                        "align": "center",
+                        "width": "100px",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Layout"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Far far away, behind the word mountains, far from the countries"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "10px 0px 10px 0px",
+                        "font-size": ""
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/0697f2b4-791a-4dc6-822d-59c6abec0faf-image.png",
+                        "align": "center",
+                        "width": "100px",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Design"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Far far away, behind the word mountains, far from the countries"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "10px 0px 10px 0px",
+                        "font-size": ""
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 25px 20px 25px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-color": "#fafafa"
+      }
+    },
+    {
+      "data": {
+        "value": {}
+      },
+      "type": "wrapper",
+      "children": [
+        {
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "content": "Properties For Sale"
+                    }
+                  },
+                  "type": "text",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "28px",
+                    "font-weight": "400",
+                    "line-height": "1.4"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {
+                      "content": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+                    }
+                  },
+                  "type": "text",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "color": "#807878",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": ""
+                  }
+                }
+              ],
+              "attributes": {
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/c2fa56dd-c6d0-4dce-9aa5-d1de563320aa-image.png",
+                        "align": "center",
+                        "width": "",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Residential House"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "10px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "100 sqft 2 Bed 2 bath"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "0px 0px 10px 0px",
+                        "font-size": ""
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "$1,000,000"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Far far away, behind the word mountains, far from the countries"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "10px 5px 10px 5px",
+                        "font-size": ""
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "width": "48%",
+                    "border": "1px solid #ccc",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [],
+                  "attributes": {
+                    "width": "4%",
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/8c8cca3a-d9c1-4ae4-bf49-1a0deca44c56-image.png",
+                        "align": "center",
+                        "width": "",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Residential House"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "10px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "100 sqft 2 Bed 2 bath"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "0px 0px 10px 0px",
+                        "font-size": ""
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "$1,000,000"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Far far away, behind the word mountains, far from the countries"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "10px 5px 10px 5px",
+                        "font-size": ""
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "width": "48%",
+                    "border": "1px solid #ccc",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/48d19e31-449f-453c-8c21-a10410575723-image.png",
+                        "align": "center",
+                        "width": "",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Residential House"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "10px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "100 sqft 2 Bed 2 bath"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "0px 0px 10px 0px",
+                        "font-size": ""
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "$1,000,000"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Far far away, behind the word mountains, far from the countries"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "10px 5px 10px 5px",
+                        "font-size": ""
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "width": "48%",
+                    "border": "1px solid #ccc",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [],
+                  "attributes": {
+                    "width": "4%",
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/214fa0fd-afec-483f-a134-cb78305cad72-image.png",
+                        "align": "center",
+                        "width": "",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Residential House"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "10px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "100 sqft 2 Bed 2 bath"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "0px 0px 10px 0px",
+                        "font-size": ""
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "$1,000,000"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "18px",
+                        "font-weight": "400"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Far far away, behind the word mountains, far from the countries"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#807878",
+                        "padding": "10px 5px 10px 5px",
+                        "font-size": ""
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "width": "48%",
+                    "border": "1px solid #ccc",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "20px 25px 20px 25px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-color": "#fafafa"
+      }
+    },
+    {
+      "data": {
+        "value": {}
+      },
+      "type": "wrapper",
+      "children": [
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "200"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#ffffff",
+                        "padding": "0px 25px 0px 25px",
+                        "font-size": "34px",
+                        "font-weight": "700"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Agents"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#ffffff",
+                        "padding": "0px 0px 0px 0px",
+                        "font-size": "16px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "1200"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#ffffff",
+                        "padding": "0px 0px 0px 0px",
+                        "font-size": "34px",
+                        "font-weight": "700"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "happy Clients"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#ffffff",
+                        "padding": "0px 0px 0px 0px",
+                        "font-size": "16px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "1000"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#ffffff",
+                        "padding": "0px 0px 0px 0px",
+                        "font-size": "34px",
+                        "font-weight": "700"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Sold Properties"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "center",
+                        "color": "#ffffff",
+                        "padding": "0px 0px 0px 0px",
+                        "font-size": "16px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "75px 0px 75px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-url": "https://assets.maocanhua.cn/ee1b8e88-a691-4ce5-ae45-b5b560f6cd13-image.png",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "0px 0px 0px 0px",
+        "direction": "ltr",
+        "text-align": "center"
+      }
+    },
+    {
+      "data": {
+        "value": {}
+      },
+      "type": "wrapper",
+      "children": [
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Our Features"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 25px 26px 0px",
+                        "font-size": "28px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Our Features"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 0px 0px 0px",
+                        "font-size": "18px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "A small river named Duden flows by their"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "color": "#807878",
+                        "padding": "0px 25px 20px 0px",
+                        "font-size": ""
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Modern Design"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 0px 0px 0px",
+                        "font-size": "18px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "A small river named Duden flows by their"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "color": "#807878",
+                        "padding": "0px 25px 20px 0px",
+                        "font-size": ""
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Minimal Design"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 0px 0px 0px",
+                        "font-size": "18px"
+                      }
+                    },
+                    {
+                      "data": {
+                        "value": {
+                          "content": "A small river named Duden flows by their"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "color": "#807878",
+                        "padding": "0px 25px 0px 0px",
+                        "font-size": ""
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {}
+                      },
+                      "type": "image",
+                      "children": [],
+                      "attributes": {
+                        "src": "https://assets.maocanhua.cn/e49e99e4-e1a4-4a14-a3f2-885e7279a4d2-image.png",
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "top"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {
+                      "content": "Start Browsing"
+                    }
+                  },
+                  "type": "button",
+                  "children": [],
+                  "attributes": {
+                    "href": "#",
+                    "align": "center",
+                    "color": "#000000",
+                    "border": "2px solid #000",
+                    "target": "_blank",
+                    "padding": "10px 25px 10px 25px",
+                    "font-size": "",
+                    "text-align": "center",
+                    "font-weight": "700",
+                    "line-height": "120%",
+                    "border-radius": "0px",
+                    "inner-padding": "10px 25px 10px 25px",
+                    "vertical-align": "middle",
+                    "background-color": "transparent"
+                  }
+                }
+              ],
+              "attributes": {
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "20px 0px 20px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "25px 25px 0px 25px",
+        "direction": "ltr",
+        "text-align": "center"
+      }
+    },
+    {
+      "data": {
+        "value": {}
+      },
+      "type": "wrapper",
+      "children": [
+        {
+          "data": {
+            "value": {
+              "noWrap": false
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "column",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "divider",
+                  "children": [],
+                  "attributes": {
+                    "align": "center",
+                    "padding": "10px 0px",
+                    "border-color": "#807878",
+                    "border-style": "solid",
+                    "border-width": "1px"
+                  }
+                }
+              ],
+              "attributes": {
+                "border": "none",
+                "padding": "0px 0px 0px 0px",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        },
+        {
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "type": "section",
+          "children": [
+            {
+              "data": {
+                "value": {}
+              },
+              "type": "group",
+              "children": [
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "content": "Stay Updated On Newest Properties"
+                        }
+                      },
+                      "type": "text",
+                      "children": [],
+                      "attributes": {
+                        "align": "left",
+                        "padding": "0px 0px 0px 15px",
+                        "font-size": "20px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "width": "60%",
+                    "border": "none",
+                    "padding": "0px 0px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                },
+                {
+                  "data": {
+                    "value": {}
+                  },
+                  "type": "column",
+                  "children": [
+                    {
+                      "data": {
+                        "value": {
+                          "elements": [
+                            {
+                              "src": "https://assets.maocanhua.cn/5738124c-7dd0-4cde-9f24-dc713423ee36-image.png",
+                              "href": "#",
+                              "target": "_blank",
+                              "content": "",
+                              "icon-size": "20px"
+                            },
+                            {
+                              "src": "https://assets.maocanhua.cn/fcce8406-c946-4ac5-a0cd-3982473be3e3-image.png",
+                              "href": "#",
+                              "target": "_blank",
+                              "content": "",
+                              "icon-size": "20px"
+                            },
+                            {
+                              "src": "https://assets.maocanhua.cn/2b845c8b-30d2-4326-a11f-48848dbadf7c-image.png",
+                              "href": "",
+                              "target": "_blank",
+                              "content": "",
+                              "icon-size": "20px"
+                            }
+                          ]
+                        }
+                      },
+                      "type": "social",
+                      "children": [],
+                      "attributes": {
+                        "mode": "horizontal",
+                        "align": "right",
+                        "color": "#333333",
+                        "padding": "0px10px 0px 10px 0px",
+                        "font-size": "13px",
+                        "icon-size": "20px",
+                        "font-weight": "normal",
+                        "line-height": "22px",
+                        "icon-padding": "0px",
+                        "text-padding": "4px 4px 4px 0px",
+                        "border-radius": "3px",
+                        "inner-padding": "4px 4px 4px 4px"
+                      }
+                    }
+                  ],
+                  "attributes": {
+                    "width": "40%",
+                    "border": "none",
+                    "padding": "0px 15px 0px 0px",
+                    "vertical-align": "middle"
+                  }
+                }
+              ],
+              "attributes": {
+                "direction": "ltr",
+                "vertical-align": "top"
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "direction": "ltr",
+            "text-align": "center",
+            "background-size": "auto",
+            "background-repeat": "repeat",
+            "background-position": "top center"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "0px 0px 0px 0px",
+        "direction": "ltr",
+        "text-align": "center"
+      }
+    },
+    {
+      "data": {
+        "value": {
+          "noWrap": false
+        }
+      },
+      "type": "section",
+      "children": [
+        {
+          "data": {
+            "value": {}
+          },
+          "type": "column",
+          "children": [
+            {
+              "data": {
+                "value": {
+                  "content": "No longer want to receive these email? You can <a href=\"#\" target=\"_blank\" style=\"text-decoration: none;\"><font color=\"#2c2a2a\">Unsubscribe here</font></a>"
+                }
+              },
+              "type": "text",
+              "children": [],
+              "attributes": {
+                "align": "center",
+                "color": "#807878",
+                "padding": "10px 25px 10px 25px",
+                "font-size": ""
+              }
+            }
+          ],
+          "attributes": {
+            "border": "none",
+            "padding": "0px 0px 0px 0px",
+            "vertical-align": "top"
+          }
+        }
+      ],
+      "attributes": {
+        "border": "none",
+        "padding": "0px 0px 0px 0px",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-size": "auto",
+        "background-color": "#fafafa",
+        "background-repeat": "repeat",
+        "background-position": "top center"
+      }
+    }
+  ],
+  "attributes": {
+    "width": "600px",
+    "background-color": "#efeeea"
+  }
+}
