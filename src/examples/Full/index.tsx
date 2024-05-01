@@ -16,7 +16,7 @@ import colorGreenStyle from "@arco-themes/react-easy-email-pro-green/css/arco.cs
 import data from "./template.json";
 import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
-import { Button, Layout, Select, Switch } from "@arco-design/web-react";
+import { Button, Layout, Select } from "@arco-design/web-react";
 import React from "react";
 import {
   Countdown,
@@ -48,7 +48,7 @@ PluginManager.registerPlugins([
   ImageWithText,
 ]);
 
-const mergetags = [
+const mergetags: ThemeConfigProps["mergetags"] = [
   {
     label: "Color",
     value: "",
@@ -134,7 +134,7 @@ const mergetags = [
   },
 ];
 
-const mergetagsData = {
+const mergetagsData: ThemeConfigProps["mergetagsData"] = {
   order: {
     number: "Shopify#1001",
     total: "$100.00",
@@ -636,8 +636,12 @@ export default function MyEditor() {
     return upload(file);
   };
 
-  const onSubmit = async (values: EmailTemplate) => {
-    console.log(values);
+  const onSubmit: ThemeConfigProps["onSubmit"] = async (values, editor) => {
+    console.log(values, editor);
+  };
+
+  const onChange: ThemeConfigProps["onChange"] = async (values, editor) => {
+    console.log("onChange", values);
   };
 
   useEffect(() => {
@@ -655,6 +659,7 @@ export default function MyEditor() {
     height: "calc(100vh - 66px)",
     onUpload,
     initialValues: initialValues,
+    onChange,
     onSubmit: onSubmit,
     mergetagsData: mergetagsData,
     mergetags: mergetags,
@@ -690,7 +695,7 @@ export default function MyEditor() {
       <EditorHeader
         extra={
           <Space>
-            <Button onClick={() => setCompact((v) => !v)}>
+            {/* <Button onClick={() => setCompact((v) => !v)}>
               <div
                 style={{
                   width: 150,
@@ -707,7 +712,7 @@ export default function MyEditor() {
                   />
                 </Space>
               </div>
-            </Button>
+            </Button> */}
             <Select
               style={{ width: 120 }}
               value={hoveringToolbarPosition}

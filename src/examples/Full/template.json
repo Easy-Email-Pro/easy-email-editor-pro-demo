@@ -1,10 +1,15 @@
 {
-  "subject": "IS IT TIME TO TRY EASY EMAIL PRO",
+  "subject": "JOIN US FOR A FEAST ON",
   "content": {
     "data": {
       "breakpoint": "480px",
       "globalAttributes": {
         "font-family": "Arial, sans-serif"
+      },
+      "blockAttributes": {
+        "standard-paragraph": {
+          "color": "#FFFFFF"
+        }
       }
     },
     "type": "page",
@@ -13,7 +18,166 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "background-repeat": "no-repeat",
+          "background-color": "#FFFFFF",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-navbar",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "Shop"
+                      }
+                    ],
+                    "attributes": {
+                      "href": ""
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "About"
+                      }
+                    ],
+                    "attributes": {
+                      "href": ""
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "Contact"
+                      }
+                    ],
+                    "attributes": {
+                      "href": ""
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "Blog"
+                      }
+                    ],
+                    "attributes": {
+                      "href": ""
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "100%"
+            },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": "JOIN US FOR A FEAST ON"
+                  }
+                ]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "font-size": "36px"
+                },
+                "children": [
+                  {
+                    "text": "Hi, "
+                  },
+                  {
+                    "type": "mergetag",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": "customer.name"
+                      }
+                    ]
+                  },
+                  {
+                    "text": " "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-top": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "480px"
+            },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-left": "20px",
+                  "padding-right": "20px"
+                },
+                "children": [
+                  {
+                    "text": "From hearty stews and comforting shepherd's pie to classic fish and chips, we have something to satisfy every appetite."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
           "padding-top": "0px",
           "padding-bottom": "0px"
         },
@@ -29,147 +193,12 @@
                 "type": "standard-image",
                 "data": {},
                 "attributes": {
-                  "width": "66px",
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/8yockiybos642krpfrksj_image.png"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-repeat": "no-repeat",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-divider",
-                "data": {},
-                "attributes": {
-                  "border-style": "dashed",
-                  "padding-left": "0px",
-                  "padding-right": "0px",
-                  "border-width": "2px"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              },
-              {
-                "type": "standard-navbar",
-                "data": {},
-                "attributes": {
+                  "padding": "0px 0px 0px 0px",
+                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006437/easy-email-pro-test/u7tvjqdbjtxqkykaazra.jpg",
                   "padding-top": "0px",
                   "padding-bottom": "0px",
-                  "font-weight": "600",
-                  "font-size": "16px",
-                  "padding-left": "15px",
-                  "padding-right": "15px",
-                  "item-padding-left": "15px",
-                  "item-padding-right": "15px"
-                },
-                "children": [
-                  {
-                    "data": {},
-                    "type": "standard-navbar-link",
-                    "children": [
-                      {
-                        "text": "NEW"
-                      }
-                    ],
-                    "attributes": {
-                      "href": "",
-                      "font-weight": "600",
-                      "font-size": "16px",
-                      "padding-left": "15px",
-                      "padding-right": "15px"
-                    },
-                    "mobileAttributes": {
-                      "href": "",
-                      "font-weight": "600",
-                      "font-size": "16px",
-                      "padding-left": "15px",
-                      "padding-right": "20px"
-                    }
-                  },
-                  {
-                    "data": {},
-                    "type": "standard-navbar-link",
-                    "children": [
-                      {
-                        "text": "ACCESSORIES"
-                      }
-                    ],
-                    "attributes": {
-                      "href": "",
-                      "font-weight": "600",
-                      "font-size": "16px",
-                      "padding-left": "15px",
-                      "padding-right": "15px"
-                    },
-                    "mobileAttributes": {
-                      "href": "",
-                      "font-weight": "600",
-                      "font-size": "16px",
-                      "padding-left": "15px",
-                      "padding-right": "20px"
-                    }
-                  },
-                  {
-                    "data": {},
-                    "type": "standard-navbar-link",
-                    "children": [
-                      {
-                        "text": "BIKES"
-                      }
-                    ],
-                    "attributes": {
-                      "href": "",
-                      "font-weight": "600",
-                      "font-size": "16px",
-                      "padding-left": "15px",
-                      "padding-right": "15px"
-                    },
-                    "mobileAttributes": {
-                      "href": "",
-                      "font-weight": "600",
-                      "font-size": "16px",
-                      "padding-left": "15px",
-                      "padding-right": "20px"
-                    }
-                  }
-                ],
-                "mobileAttributes": {
-                  "item-padding-left": "20px",
-                  "item-padding-right": "20px"
-                }
-              },
-              {
-                "type": "standard-divider",
-                "data": {},
-                "attributes": {
-                  "border-style": "dashed",
                   "padding-left": "0px",
-                  "padding-right": "0px",
-                  "border-width": "2px"
+                  "padding-right": "0px"
                 },
                 "children": [
                   {
@@ -188,382 +217,6 @@
         "children": [
           {
             "type": "standard-column",
-            "data": {},
-            "attributes": {},
-            "children": [
-              {
-                "type": "standard-image",
-                "data": {},
-                "attributes": {
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/p4a3rvefelgijwgsqfjre_image.png",
-                  "padding-left": "9px",
-                  "padding-right": "9px",
-                  "padding-top": "0px",
-                  "padding-bottom": "9px"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              },
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {
-                  "font-size": "20px"
-                },
-                "children": [
-                  {
-                    "text": "Glad you're here for the ride "
-                  },
-                  {
-                    "type": "mergetag",
-                    "data": {},
-                    "attributes": {},
-                    "children": [
-                      {
-                        "text": "customer.name"
-                      }
-                    ]
-                  },
-                  {
-                    "text": " "
-                  }
-                ]
-              },
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {
-                  "font-size": "16px",
-                  "padding-top": "10px",
-                  "padding-bottom": "10px",
-                  "align": "center",
-                  "padding-left": "18px",
-                  "padding-right": "18px"
-                },
-                "children": [
-                  {
-                    "text": "The moment a customer signs up for your newsletter is a special one. Use this space to welcome them to fold and turn first-time subscribers into long term customers."
-                  },
-                  {
-                    "type": "line-break",
-                    "data": {},
-                    "attributes": {},
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  },
-                  {
-                    "text": ""
-                  },
-                  {
-                    "type": "line-break",
-                    "data": {},
-                    "attributes": {},
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  },
-                  {
-                    "text": "Use this space below to highlight your newest products and offerings."
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-repeat": "no-repeat",
-          "vertical-align": "middle"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "33.33%",
-              "vertical-align": "middle"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-divider",
-                "data": {},
-                "attributes": {
-                  "border-style": "dashed",
-                  "padding-left": "10px",
-                  "padding-right": "10px",
-                  "border-width": "2px"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "33.33%",
-              "vertical-align": "middle"
-            },
-            "data": {},
-            "children": [
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {},
-                "children": [
-                  {
-                    "text": "DISCOVER MORE"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "33.33%",
-              "vertical-align": "middle"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-divider",
-                "data": {},
-                "attributes": {
-                  "border-style": "dashed",
-                  "padding-left": "10px",
-                  "padding-right": "10px",
-                  "border-width": "2px"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-repeat": "no-repeat",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-group",
-            "data": {},
-            "attributes": {},
-            "children": [
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lv7ttgjn14xidmtkbcifm_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "width": "200px",
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/z-rixhwceskyyrv0jp7fk_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "width": "200px",
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/h0czx_w_-r7tnlz5xyhl8_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "mobileAttributes": {}
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-repeat": "no-repeat",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-group",
-            "data": {},
-            "attributes": {},
-            "children": [
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "width": "200px",
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/1jy3ms45pgrkp4fjpkbm_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "width": "200px",
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/x5sdqknjtuaxpmgw_8k8l_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "width": "200px",
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/qcrg4gq2sbo7d_1atbaox_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "mobileAttributes": {}
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-repeat": "no-repeat"
-        },
-        "children": [
-          {
-            "type": "standard-column",
             "attributes": {
               "width": "100%"
             },
@@ -575,19 +228,33 @@
                   "content": "Button"
                 },
                 "attributes": {
+                  "background-color": "#C5900C",
                   "width": "100%",
-                  "background-color": "#FFFFFF",
-                  "border-enabled": true,
-                  "border-color": "#000000",
-                  "border-width": "3px",
-                  "color": "#000000",
-                  "font-size": "16px",
-                  "font-weight": "bold",
-                  "border-radius": "0px"
+                  "font-size": "16px"
                 },
                 "children": [
                   {
-                    "text": "View All"
+                    "text": "Book a table"
+                  }
+                ]
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "background-color": "#FCF0D3",
+                  "width": "100%",
+                  "font-size": "16px",
+                  "color": "#C5900C",
+                  "border-enabled": true,
+                  "border-color": "#C5900C",
+                  "border-width": "3px"
+                },
+                "children": [
+                  {
+                    "text": "Book a table"
                   }
                 ]
               }
@@ -599,40 +266,15 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "background-repeat": "no-repeat",
-          "vertical-align": "middle"
+          "background-color": "#FFFFFF",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
         },
         "children": [
           {
             "type": "standard-column",
             "attributes": {
-              "width": "33.33%",
-              "vertical-align": "middle"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-divider",
-                "data": {},
-                "attributes": {
-                  "border-style": "dashed",
-                  "padding-left": "10px",
-                  "padding-right": "10px",
-                  "border-width": "2px"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "33.33%",
-              "vertical-align": "middle"
+              "width": "50%"
             },
             "data": {},
             "children": [
@@ -640,10 +282,51 @@
                 "name": "Text",
                 "type": "standard-paragraph",
                 "data": {},
-                "attributes": {},
+                "attributes": {
+                  "align": "left",
+                  "color": "#000000",
+                  "padding-top": "25px",
+                  "padding-bottom": "25px",
+                  "padding-left": "25px",
+                  "padding-right": "25px"
+                },
                 "children": [
                   {
-                    "text": "HERE FOR YOU"
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
+                  },
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
+                  },
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "View drink menu",
+                        "bold": true
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
                   }
                 ]
               }
@@ -652,19 +335,19 @@
           {
             "type": "standard-column",
             "attributes": {
-              "width": "33.33%",
-              "vertical-align": "middle"
+              "width": "50%"
             },
             "data": {},
             "children": [
               {
-                "type": "standard-divider",
+                "type": "standard-image",
                 "data": {},
                 "attributes": {
-                  "border-style": "dashed",
-                  "padding-left": "10px",
-                  "padding-right": "10px",
-                  "border-width": "2px"
+                  "padding-top": "25px",
+                  "padding-bottom": "25px",
+                  "padding-left": "25px",
+                  "padding-right": "25px",
+                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006465/easy-email-pro-test/ehhmyj7sq1ilbcojx9zr.jpg"
                 },
                 "children": [
                   {
@@ -680,149 +363,9 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "background-repeat": "no-repeat",
+          "background-color": "#ffffff",
           "padding-top": "0px",
           "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-group",
-            "data": {},
-            "attributes": {},
-            "children": [
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "width": "32px",
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/yvmhzruw1-p4z84uuipku_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Text",
-                    "type": "standard-paragraph",
-                    "data": {},
-                    "attributes": {},
-                    "children": [
-                      {
-                        "text": "Free Shipping "
-                      }
-                    ],
-                    "mobileAttributes": {
-                      "padding-left": "0px",
-                      "padding-right": "0px"
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "width": "32px",
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/0nqgori9uklfii7hmynz_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Text",
-                    "type": "standard-paragraph",
-                    "data": {},
-                    "attributes": {},
-                    "children": [
-                      {
-                        "text": "Free Returns"
-                      }
-                    ],
-                    "mobileAttributes": {
-                      "padding-left": "0px",
-                      "padding-right": "0px"
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "standard-column",
-                "attributes": {
-                  "width": "33.33%"
-                },
-                "data": {},
-                "children": [
-                  {
-                    "type": "standard-image",
-                    "data": {},
-                    "attributes": {
-                      "width": "32px",
-                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/h3pjpjqyzkkyqai-m6zeu_image.png",
-                      "padding-left": "9px",
-                      "padding-right": "9px",
-                      "padding-top": "9px",
-                      "padding-bottom": "9px"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ]
-                  },
-                  {
-                    "name": "Text",
-                    "type": "standard-paragraph",
-                    "data": {},
-                    "attributes": {},
-                    "children": [
-                      {
-                        "text": "Satisfaction "
-                      }
-                    ],
-                    "mobileAttributes": {
-                      "padding-left": "0px",
-                      "padding-right": "0px"
-                    }
-                  }
-                ]
-              }
-            ],
-            "mobileAttributes": {}
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-repeat": "no-repeat"
         },
         "children": [
           {
@@ -833,74 +376,265 @@
             "data": {},
             "children": [
               {
-                "type": "standard-social",
+                "type": "standard-divider",
                 "data": {},
-                "attributes": {
-                  "spacing": "20px",
-                  "icon-size": "30px"
-                },
+                "attributes": {},
                 "children": [
                   {
-                    "data": {},
-                    "type": "standard-social-element",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "attributes": {
-                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
-                      "href": "",
-                      "padding-left": "0px",
-                      "padding-right": "0px",
-                      "padding-top": "0px",
-                      "padding-bottom": "0px"
-                    }
-                  },
-                  {
-                    "data": {},
-                    "type": "standard-social-element",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "attributes": {
-                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
-                      "href": "",
-                      "padding-left": "20px",
-                      "padding-right": "0px",
-                      "padding-top": "0px",
-                      "padding-bottom": "0px"
-                    }
-                  },
-                  {
-                    "data": {},
-                    "type": "standard-social-element",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "attributes": {
-                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908543/clgnivsuj0018z9ltiixmxf6k/wtefhsfwaapcdbz7knqw.png",
-                      "href": "",
-                      "padding-left": "20px",
-                      "padding-right": "0px",
-                      "padding-top": "0px",
-                      "padding-bottom": "0px"
-                    }
+                    "text": ""
                   }
                 ]
-              },
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#FFFFFF",
+          "direction": "rtl",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
               {
                 "name": "Text",
                 "type": "standard-paragraph",
                 "data": {},
                 "attributes": {
-                  "font-size": "14px",
-                  "color": "#9b9b9b"
+                  "align": "left",
+                  "color": "#000000",
+                  "padding-top": "25px",
+                  "padding-bottom": "25px",
+                  "padding-left": "25px",
+                  "padding-right": "25px"
                 },
+                "children": [
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
+                  },
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
+                  },
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "View drink menu",
+                        "bold": true
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "25px",
+                  "padding-bottom": "25px",
+                  "padding-left": "25px",
+                  "padding-right": "25px",
+                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006491/easy-email-pro-test/upr1qet7cymnw3svunss.jpg"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#ffffff",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "100%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-divider",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uid": "P4Mbzw-iMJd-BqFjlk8st",
+        "title": "Text with image",
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#FFFFFF",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "left",
+                  "color": "#000000",
+                  "padding-top": "25px",
+                  "padding-bottom": "25px",
+                  "padding-left": "25px",
+                  "padding-right": "25px"
+                },
+                "children": [
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
+                  },
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "",
+                        "bold": true
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "line-height": "130%",
+                  "background-color": "#000000"
+                },
+                "children": [
+                  {
+                    "text": "VIEW DRINK"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "25px",
+                  "padding-bottom": "25px",
+                  "padding-left": "25px",
+                  "padding-right": "25px",
+                  "src": "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006848/easy-email-pro-test/lm6rpd3kbmwzkmjtzmp0.jpg"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "100%"
+            },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
                 "children": [
                   {
                     "text": "No longer want to receive these emails? "
@@ -920,8 +654,8 @@
       }
     ],
     "attributes": {
-      "background-color": "#f5f5f5",
-      "content-background-color": "#ffffff"
+      "background-color": "#8C9A80",
+      "content-background-color": "#263D29"
     }
   }
 }

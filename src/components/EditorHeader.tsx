@@ -25,7 +25,6 @@ import mjml from "mjml-browser";
 import { saveAs } from "file-saver";
 import { Uploader } from "@/utils/Uploader";
 import { pick } from "lodash";
-import { useLocalStorage } from "react-use";
 
 export const EditorHeader = (props: {
   extra?: React.ReactNode;
@@ -35,9 +34,8 @@ export const EditorHeader = (props: {
   const [collapsed, setCollapsed] = React.useState(true);
   const [text, setText] = React.useState("");
   const [visible, setVisible] = React.useState(false);
-  const { values, submit, setFieldValue, mergetagsData } = useEditorContext();
-  const { reset } = useEditorContext();
-  const [hidden, setHidden] = useLocalStorage("alert-banner", false);
+  const { values, submit, setFieldValue, mergetagsData, reset, dirty } =
+    useEditorContext();
 
   const onChange = (text: string) => {
     setFieldValue(null, "subject", text);
@@ -264,7 +262,7 @@ export const EditorHeader = (props: {
             </div>
           }
           extra={
-            <div style={{ marginRight: 50 }}>
+            <div style={{ marginRight: 0 }}>
               <Space>
                 {props?.extra}
 
@@ -324,6 +322,9 @@ export const EditorHeader = (props: {
                 >
                   <strong>Start Trial</strong>
                 </Button>
+                <Button disabled={!dirty} onClick={() => submit()}>
+                  <strong>Submit</strong>
+                </Button>
                 <div />
               </Space>
             </div>
@@ -368,6 +369,7 @@ export const EditorHeader = (props: {
       .editor-header .arco-page-header-back:hover:before { background-color: transparent !important; }
       .editor-header .arco-typography-operation-edit { color: var(--color-white); }
       .editor-header .arco-typography-operation-edit { color: var(--color-white);background-color: transparent; }
+      .editor-header .arco-typography-operation-edit:hover { color: var(--color-white);background-color: transparent; }
       `}</style>
 
       <Modal
