@@ -672,6 +672,7 @@ export default function MyEditor() {
     showLayer: true,
     showPreview: true,
     showSidebar: true,
+    showTextHTMLMode: true,
     showSelectFileButton: true,
     compact: compact,
     handleUploadClick,
