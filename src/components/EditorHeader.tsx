@@ -25,6 +25,7 @@ import mjml from "mjml-browser";
 import { saveAs } from "file-saver";
 import { Uploader } from "@/utils/Uploader";
 import { pick } from "lodash";
+import { SendEmailModal } from "./SendEmailModal";
 
 export const EditorHeader = (props: {
   extra?: React.ReactNode;
@@ -316,14 +317,16 @@ export const EditorHeader = (props: {
                     </Button>
                   </Dropdown>
                 )}
+
+                {/* <Button disabled={!dirty} onClick={() => submit()}>
+                  <strong>Submit</strong>
+                </Button> */}
+                <SendEmailModal />
                 <Button
                   target="_blank"
                   href="https://www.easyemail.pro/?#trial?utm_source=demo"
                 >
                   <strong>Start Trial</strong>
-                </Button>
-                <Button disabled={!dirty} onClick={() => submit()}>
-                  <strong>Submit</strong>
                 </Button>
                 <div />
               </Space>

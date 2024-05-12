@@ -551,6 +551,78 @@ const categories: ThemeConfigProps["categories"] = [
   },
 ];
 
+const fonts = [
+  {
+    value: "Tangerine",
+    label: "Tangerine",
+    href: "https://fonts.googleapis.com/css?family=Tangerine",
+  },
+  {
+    value: "Arial",
+    label: "Arial",
+  },
+  {
+    value: "Tahoma",
+    label: "Tahoma",
+  },
+  {
+    value: "Verdana",
+    label: "Verdana",
+  },
+  {
+    value: "Times New Roman",
+    label: "Times New Roman",
+  },
+  {
+    value: "Courier New",
+    label: "Courier New",
+  },
+  {
+    value: "Georgia",
+    label: "Georgia",
+  },
+  {
+    value: "Lato",
+    label: "Lato",
+  },
+  {
+    value: "Montserrat",
+    label: "Montserrat",
+  },
+  {
+    value: "黑体",
+    label: "黑体",
+  },
+  {
+    value: "仿宋",
+    label: "仿宋",
+  },
+  {
+    value: "楷体",
+    label: "楷体",
+  },
+  {
+    value: "标楷体",
+    label: "标楷体",
+  },
+  {
+    value: "华文仿宋",
+    label: "华文仿宋",
+  },
+  {
+    value: "华文楷体",
+    label: "华文楷体",
+  },
+  {
+    value: "宋体",
+    label: "宋体",
+  },
+  {
+    value: "微软雅黑",
+    label: "微软雅黑",
+  },
+];
+
 export default function MyEditor() {
   const [theme, setTheme] = React.useState<string>("retro");
   const [compact, setCompact] = useState(false);
@@ -680,7 +752,7 @@ export default function MyEditor() {
     localeData: get(localsData, lang),
     showDragMoveIcon: true,
     showInsertTips: true,
-
+    fontList: fonts,
     // emptyPageElement: data2.content,
   });
 

@@ -22,6 +22,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
+      "react": ["./node_modules/@types/react"],
       "mjml-browser": ["./node_modules/@types/mjml"],
       // for development
       "easy-email-pro-asset-manager": [
