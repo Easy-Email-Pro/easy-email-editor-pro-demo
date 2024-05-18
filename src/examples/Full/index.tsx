@@ -4,7 +4,12 @@ import {
   EmailTemplate,
   TextFormat,
 } from "easy-email-pro-editor";
-import { IconFont, Retro, ThemeConfigProps } from "easy-email-pro-theme";
+import {
+  IconFont,
+  Retro,
+  ThemeConfigProps,
+  useEditorContext,
+} from "easy-email-pro-theme";
 import "easy-email-pro-theme/lib/style.css";
 
 import retroStyle from "@arco-themes/react-easy-email-pro/css/arco.css?inline";
@@ -16,7 +21,7 @@ import colorGreenStyle from "@arco-themes/react-easy-email-pro-green/css/arco.cs
 import data from "./template.json";
 import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
-import { Button, Layout, Select } from "@arco-design/web-react";
+import { Button, Layout, Message, Modal, Select } from "@arco-design/web-react";
 import React from "react";
 import {
   Countdown,
@@ -38,6 +43,7 @@ import { Space } from "@arco-design/web-react";
 import { useUniversalElement } from "@/hooks/useUniversalElement";
 import customizeCss from "./customize.scss?inline";
 import FullScreenLoading from "@/components/FullScreenLoading";
+import axios from "axios";
 console.log(localsData);
 
 PluginManager.registerPlugins([
@@ -809,7 +815,13 @@ export default function MyEditor() {
                 { label: "Red", value: "red" },
               ]}
             ></Select>
+            <TranslationSelect lang={lang} />
             <Select
+              triggerElement={
+                <Button>
+                  <strong>Localization</strong>
+                </Button>
+              }
               style={{ width: 120 }}
               value={lang}
               onChange={setLang}
@@ -840,3 +852,67 @@ export default function MyEditor() {
     </EmailEditorProvider>
   );
 }
+
+const TranslationSelect = ({ lang }: { lang: string }) => {
+  const langRef = useRef(lang);
+  const { values, reset } = useEditorContext();
+  const onTranslate = async (targetLang: string) => {
+    Message.loading(`Translating...`);
+    const modal = Modal.info({
+      style: {
+        backgroundColor: "transparent",
+      },
+      maskClosable: false,
+      maskStyle: {
+        backgroundColor: "transparent",
+      },
+      content: <div></div>,
+      closable: false,
+      footer: null,
+      focusLock: true,
+      icon: null,
+    });
+    const newTemplate = await EditorCore.translate({
+      template: {
+        subject: values.subject,
+        content: values.content,
+      },
+      async translate(words) {
+        const { data } = await axios.post<Record<string, string>>(
+          `https://easy-email-pro-translate-test.vercel.app/api/public/translate`,
+          {
+            source: langRef.current,
+            target: targetLang,
+            words,
+          }
+        );
+        console.log(data);
+        return data;
+      },
+    });
+
+    reset(newTemplate);
+    langRef.current = targetLang;
+    Message.clear();
+    modal.close();
+  };
+
+  return (
+    <Select
+      style={{ width: 150 }}
+      value={lang}
+      onChange={onTranslate}
+      triggerElement={
+        <Button>
+          <strong>Translation</strong>
+        </Button>
+      }
+      options={Object.keys(localsData).map((item) => {
+        return {
+          label: `${item}`,
+          value: item,
+        };
+      })}
+    ></Select>
+  );
+};

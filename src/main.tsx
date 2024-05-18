@@ -86,16 +86,16 @@ export const navigation = [
     element: <Full />,
   },
 
-  {
-    name: "Markdown",
-    path: "/markdown",
-    element: <Markdown />,
-  },
-  {
-    name: "Notion-like(processing)",
-    path: "/notion-like",
-    element: <Minimalist />,
-  },
+  // {
+  //   name: "Markdown",
+  //   path: "/markdown",
+  //   element: <Markdown />,
+  // },
+  // {
+  //   name: "Notion-like(processing)",
+  //   path: "/notion-like",
+  //   element: <Minimalist />,
+  // },
   {
     name: "Simple",
     path: "/simple",

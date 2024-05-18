@@ -14,7 +14,6 @@ import LocalizationImg from "./images/localization.png";
 import DynamicDataImg from "./images/dynamic-data.png";
 import ResponsiveViewImg from "./images/responsive.png";
 import DynamicCustomBlock from "./images/dynamic-block.png";
-import NotionBlockImg from "./images/notion-like.png";
 import CustomizeImage from "./images/customize.png";
 import frozenImg from "./images/frozen.png";
 import studioImg from "./images/studio.png";
@@ -61,12 +60,12 @@ const features = [
     thumbnail: LocalizationImg,
     url: "/localization",
   },
-  {
-    subject: "Markdown",
-    thumbnail:
-      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/tdtfl1cwkpgpyan4jejni_image.png",
-    url: "/markdown",
-  },
+  // {
+  //   subject: "Markdown",
+  //   thumbnail:
+  //     "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/tdtfl1cwkpgpyan4jejni_image.png",
+  //   url: "/markdown",
+  // },
   {
     subject: "Dynamic data",
     thumbnail: DynamicDataImg,
@@ -109,11 +108,11 @@ const features = [
     thumbnail: readonlyImg,
     url: "/read-only",
   },
-  {
-    subject: "Notion",
-    thumbnail: NotionBlockImg,
-    url: "/notion-like",
-  },
+  // {
+  //   subject: "Notion",
+  //   thumbnail: NotionBlockImg,
+  //   url: "/notion-like",
+  // },
 ];
 
 export const Home = () => {
