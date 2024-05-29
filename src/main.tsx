@@ -144,7 +144,7 @@ export const navigation = [
   {
     name: "AI Assistant demo",
     path: "/ai-assistant",
-    element: <Customize />,
+    element: <Full />,
   },
   {
     name: "Responsive view",

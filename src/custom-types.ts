@@ -1,4 +1,4 @@
-import { BasicElement, TextElement } from "easy-email-pro-core";
+import { BasicElement, TextElement, ButtonElement } from "easy-email-pro-core";
 import { BasicEmailTemplate } from "easy-email-pro-editor";
 import { CustomBlockType } from "./examples/constant";
 import { PluginsCustomEditorTypes } from "easy-email-pro-theme";
@@ -39,6 +39,12 @@ export interface SimpleCustomElement extends BasicElement {
 }
 export interface SimpleCustomTextElement extends Omit<TextElement, "type"> {
   type: CustomType["SIMPLE_TEXT_CUSTOM_BLOCK"];
+}
+export interface SimpleCustomButtonElement extends Omit<ButtonElement, "type"> {
+  type: CustomType["SIMPLE_BUTTON_CUSTOM_BLOCK"];
+  data: {
+    content: string;
+  };
 }
 
 export interface DynamicCustomElement extends BasicElement {
@@ -85,7 +91,7 @@ declare module "easy-email-pro-core" {
       | MarketingShopwindowElement
       | CommonVideoElement
       | SimpleCustomTextElement
-      | SimpleCustomTextElement
+      | SimpleCustomButtonElement
       | CommonImageWithTextElement;
   }
 }

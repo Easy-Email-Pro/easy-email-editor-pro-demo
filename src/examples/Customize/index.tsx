@@ -23,6 +23,9 @@ import customizeCss from "./customize.scss?inline";
 import { ElementToolsInner } from "./ElementToolsInner";
 import { EditorTopBar } from "./EditorTopBar";
 
+// import overwrite panels
+import "./ElementPanels";
+
 const hoveringToolbar: ThemeConfigProps["hoveringToolbar"] = {
   list({ isCollapsed, selection, isFocus }) {
     if (isCollapsed) return [];
@@ -65,6 +68,8 @@ export default function MyEditor() {
     ElementToolsInner: ElementToolsInner,
     showDragMoveIcon: true,
     showInsertTips: true,
+    showSourceCode: true,
+    showLayer: true,
     hoveringToolbar,
   });
 

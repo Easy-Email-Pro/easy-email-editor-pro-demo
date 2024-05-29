@@ -43,6 +43,18 @@
             "attributes": {},
             "children": [
               {
+                "type": "simple_custom_button_block",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {},
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
                 "type": "standard-image",
                 "data": {},
                 "attributes": {

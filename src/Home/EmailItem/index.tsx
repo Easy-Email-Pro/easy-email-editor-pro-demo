@@ -1,18 +1,30 @@
 import React from "react";
 import styles from "./index.module.less";
+import { PageElement } from "easy-email-pro-core";
 
 export interface EmailItemProps {
   item: {
     id: string;
     subject: string;
     thumbnail: string;
+    content: PageElement;
     url?: string;
   };
+  onClick?: (item: {
+    id: string;
+    subject: string;
+    thumbnail: string;
+    content: PageElement;
+    url?: string;
+  }) => void;
 }
-export const EmailItem = ({ item }: EmailItemProps) => {
+export const EmailItem = ({ item, onClick }: EmailItemProps) => {
   return (
     <a
-      href={item.url ? item.url : `/template?id=${item.id}`}
+      href={
+        onClick ? undefined : item.url ? item.url : `/template?id=${item.id}`
+      }
+      onClick={() => onClick?.(item)}
       target="_blank"
       style={{ color: "#000" }}
     >

@@ -53,7 +53,7 @@ export const SimpleCustomBlock = createCustomBlock<SimpleCustomElement>({
             </mj-button>
           </mj-column>
         </mj-section>
-        <mj-section>
+        {/* <mj-section>
           <mj-column>
             <mj-text>
               <p style={{ color: "red", fontSize: 40 }}>dangerous code</p>
@@ -82,7 +82,7 @@ export const SimpleCustomBlock = createCustomBlock<SimpleCustomElement>({
               `}
             </mj-table>
           </mj-column>
-        </mj-section>
+        </mj-section> */}
       </mj-wrapper>
     );
   },

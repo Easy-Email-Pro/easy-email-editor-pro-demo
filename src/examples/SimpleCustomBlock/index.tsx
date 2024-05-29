@@ -24,10 +24,18 @@ import { SimpleCustomBlock } from "./custom";
 import { SimpleTextCustomBlock } from "./customText";
 import { CustomBlockType } from "../constant";
 import { useCompactMode } from "@/hooks/useCompactMode";
+import { SimpleButtonCustomBlock } from "./customButton";
+import { CustomButtonPanel } from "./customButton/Panel";
 
-BlockManager.registerBlocks([SimpleCustomBlock, SimpleTextCustomBlock]);
+BlockManager.registerBlocks([
+  SimpleCustomBlock,
+  SimpleTextCustomBlock,
+  SimpleButtonCustomBlock,
+]);
+
 ConfigPanelsMap[CustomBlockType.SIMPLE_CUSTOM_BLOCK] = CustomLogoPanel;
 ConfigPanelsMap[CustomBlockType.SIMPLE_TEXT_CUSTOM_BLOCK] = CustomTextPanel;
+ConfigPanelsMap[CustomBlockType.SIMPLE_BUTTON_CUSTOM_BLOCK] = CustomButtonPanel;
 
 const categories: ThemeConfigProps["categories"] = [
   {
@@ -179,6 +187,15 @@ const categories: ThemeConfigProps["categories"] = [
       },
       {
         type: CustomBlockType.SIMPLE_TEXT_CUSTOM_BLOCK,
+        icon: (
+          <IconFont
+            className={"block-list-grid-item-icon"}
+            iconName="icon-number"
+          />
+        ),
+      },
+      {
+        type: CustomBlockType.SIMPLE_BUTTON_CUSTOM_BLOCK,
         icon: (
           <IconFont
             className={"block-list-grid-item-icon"}
