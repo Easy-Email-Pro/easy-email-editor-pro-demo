@@ -10,7 +10,7 @@ import { ElementCategory } from "easy-email-pro-core";
 import React from "react";
 import { SimpleCustomTextElement } from "@/custom-types";
 
-const { ContentLeaf } = components;
+const { ContentLeaf, Text } = components;
 
 const defaultData = {
   attributes: {},
@@ -49,7 +49,7 @@ export const SimpleTextCustomBlock = createCustomBlock<SimpleCustomTextElement>(
       const { data, attributes } = node;
 
       return (
-        <mj-text
+        <Text
           {...attributes}
           children={node.children.map((item) => (
             <ContentLeaf node={item as TextNode} />

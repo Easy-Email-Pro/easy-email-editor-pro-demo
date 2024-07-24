@@ -45,6 +45,7 @@ import customizeCss from "./customize.scss?inline";
 import FullScreenLoading from "@/components/FullScreenLoading";
 import axios from "axios";
 import { EmailTemplates } from "@/components/EmailTemplates";
+import { Tutorial } from "@/components/Tutorial";
 
 PluginManager.registerPlugins([
   Countdown,
@@ -109,7 +110,7 @@ const mergetags: ThemeConfigProps["mergetags"] = [
     children: [
       {
         label: "Customer name",
-        value: "customer.name",
+        value: "customer.name | title_case",
       },
       {
         label: "Customer email",
@@ -146,7 +147,7 @@ const mergetagsData: ThemeConfigProps["mergetagsData"] = {
     total: "$100.00",
   },
   customer: {
-    name: "Ryan",
+    name: "john wilson",
     email: "easy-email-pro@example.com",
   },
   social: {
@@ -318,7 +319,7 @@ const categories: ThemeConfigProps["categories"] = [
         },
       },
       {
-        type: ElementType.STANDARD_TABLE,
+        type: ElementType.STANDARD_TABLE2,
         icon: (
           <IconFont
             className={"block-list-grid-item-icon"}
@@ -326,33 +327,152 @@ const categories: ThemeConfigProps["categories"] = [
           />
         ),
         payload: {
-          type: "standard-table",
-          data: {
-            code: `<tr>
-          <th style="border: 1px solid #cccccc;">Item</th>
-          <th style="border: 1px solid #cccccc;">Description</th>
-          <th style="border: 1px solid #cccccc;">Price</th>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #cccccc;">Product 1</td>
-          <td style="border: 1px solid #cccccc;">Product 1 description</td>
-          <td style="border: 1px solid #cccccc;">$10</td>
-        </tr>
-        <tr>
-          <td style="border: 1px solid #cccccc;">Product 2</td>
-          <td style="border: 1px solid #cccccc;">Product 2 description</td>
-          <td style="border: 1px solid #cccccc;">$20</td>
-        </tr>`,
-          },
+          type: "standard-table2",
+          data: {},
           attributes: {
-            "padding-top": "0px",
-            "padding-bottom": "0px",
-            "padding-left": "0px",
-            "padding-right": "0px",
-            cellpadding: "10px",
-            "font-size": "16px",
+            cellpadding: "20px",
+            "container-background-color": "#FFFFFF",
           },
-          children: [{ text: "" }],
+          children: [
+            {
+              type: "standard-table2-tr",
+              data: {},
+              attributes: {},
+              children: [
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              type: "standard-table2-tr",
+              data: {},
+              attributes: {},
+              children: [
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              type: "standard-table2-tr",
+              data: {},
+              attributes: {},
+              children: [
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+                {
+                  type: "standard-table2-td",
+                  data: {
+                    rowspan: 1,
+                    colspan: 1,
+                  },
+                  attributes: {},
+                  children: [
+                    {
+                      text: "",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       },
       {
@@ -629,6 +749,155 @@ const fonts = [
   },
 ];
 
+const optionsList = [
+  {
+    label: "Ask AI",
+    value: "Ask AI",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+      ];
+    },
+  },
+  {
+    label: "Summarize content",
+    value: "Summarize content",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Provide the key points and concepts in this content in a succinct summary. Context: ${text}`,
+        },
+      ];
+    },
+  },
+  {
+    label: "Improve writing",
+    value: "Improve writing",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Rewrite this content with no spelling mistakes, proper grammar, and with more descriptive language, using best writing practices without losing the original meaning. Context: ${text}`,
+        },
+      ];
+    },
+  },
+  {
+    label: "Simplify language",
+    value: "Simplify language",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Rewrite this content with simplified language and reduce the complexity of the writing, so that the content is easier to understand. Context: ${text}`,
+        },
+      ];
+    },
+  },
+  {
+    label: "Expand upon",
+    value: "Expand upon",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Expand upon this content with descriptive language and more detailed explanations, to make the writing easier to understand and increase the length of the content. Context: ${text}`,
+        },
+      ];
+    },
+  },
+  {
+    label: "Trim content",
+    value: "Trim content",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Remove any repetitive, redundant, or non-essential writing in this content without changing the meaning or losing any key information. Context: ${text}`,
+        },
+      ];
+    },
+  },
+];
+
 export default function MyEditor() {
   const [theme, setTheme] = React.useState<string>("green");
   const [compact, setCompact] = useState(false);
@@ -737,6 +1006,7 @@ export default function MyEditor() {
         );
         return { content: data.content, role: data.role };
       },
+      // options: optionsList,
     };
   }, []);
 
@@ -791,10 +1061,11 @@ export default function MyEditor() {
 
   return (
     <EmailEditorProvider {...config}>
-      <EditorHeader
-        extra={
-          <Space>
-            {/* <Button onClick={() => setCompact((v) => !v)}>
+      <Tutorial>
+        <EditorHeader
+          extra={
+            <Space>
+              {/* <Button onClick={() => setCompact((v) => !v)}>
               <div
                 style={{
                   width: 150,
@@ -812,7 +1083,7 @@ export default function MyEditor() {
                 </Space>
               </div>
             </Button> */}
-            {/* <Select
+              {/* <Select
               style={{ width: 120 }}
               value={hoveringToolbarPosition}
               onChange={setHoveringToolbarPosition}
@@ -823,62 +1094,63 @@ export default function MyEditor() {
                 { label: "Page", value: "page" },
               ]}
             ></Select> */}
-            <Select
-              style={{ width: 120 }}
-              value={theme}
-              onChange={setTheme}
-              options={[
-                { label: "Retro", value: "retro" },
-                { label: "Purple", value: "purple" },
-                { label: "Blue", value: "blue" },
-                { label: "Green", value: "green" },
-                { label: "Red", value: "red" },
-              ]}
-              triggerElement={
+              <Select
+                style={{ width: 120 }}
+                value={theme}
+                onChange={setTheme}
+                options={[
+                  { label: "Retro", value: "retro" },
+                  { label: "Purple", value: "purple" },
+                  { label: "Blue", value: "blue" },
+                  { label: "Green", value: "green" },
+                  { label: "Red", value: "red" },
+                ]}
+                triggerElement={
+                  <Button>
+                    <strong>Theme Color</strong>
+                  </Button>
+                }
+              ></Select>
+              <EmailTemplates>
                 <Button>
-                  <strong>Theme Color</strong>
+                  <strong>Switch Template</strong>
                 </Button>
-              }
-            ></Select>
-            <EmailTemplates>
-              <Button>
-                <strong>Switch Template</strong>
-              </Button>
-            </EmailTemplates>
-            <TranslationSelect lang={lang} />
-            <Select
-              triggerElement={
-                <Button>
-                  <strong>Localization</strong>
-                </Button>
-              }
-              style={{ width: 120 }}
-              value={lang}
-              onChange={setLang}
-              options={Object.keys(localsData).map((item) => {
-                return {
-                  label: item,
-                  value: item,
-                };
-              })}
-            ></Select>
-          </Space>
-        }
-      />
+              </EmailTemplates>
+              <TranslationSelect lang={lang} />
+              <Select
+                triggerElement={
+                  <Button>
+                    <strong>Localization</strong>
+                  </Button>
+                }
+                style={{ width: 120 }}
+                value={lang}
+                onChange={setLang}
+                options={Object.keys(localsData).map((item) => {
+                  return {
+                    label: item,
+                    value: item,
+                  };
+                })}
+              ></Select>
+            </Space>
+          }
+        />
 
-      <Layout.Content>
-        <Retro.Layout>
-          <style id="customize-css">{customizeCss}</style>
-        </Retro.Layout>
-      </Layout.Content>
-      <AssetManagerModal
-        key={lang}
-        accept={accept}
-        visible={visible}
-        setVisible={setVisible}
-        onSelect={changeRef.current}
-      />
-      <style>{matchThemeStyle}</style>
+        <Layout.Content>
+          <Retro.Layout>
+            <style id="customize-css">{customizeCss}</style>
+          </Retro.Layout>
+        </Layout.Content>
+        <AssetManagerModal
+          key={lang}
+          accept={accept}
+          visible={visible}
+          setVisible={setVisible}
+          onSelect={changeRef.current}
+        />
+        <style>{matchThemeStyle}</style>
+      </Tutorial>
     </EmailEditorProvider>
   );
 }

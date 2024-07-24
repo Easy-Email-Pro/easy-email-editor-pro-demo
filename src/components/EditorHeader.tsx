@@ -26,6 +26,7 @@ import { Uploader } from "@/utils/Uploader";
 import { pick } from "lodash";
 import { ReactEditor, useSlate } from "slate-react";
 import { useSearchParams } from "react-router-dom";
+import { SendEmailModal } from "./SendEmailModal";
 
 export const EditorHeader = (props: {
   extra?: React.ReactNode;
@@ -129,8 +130,12 @@ export const EditorHeader = (props: {
     });
 
     const html = mjml(mjmlStr).html;
+    const finalMergeTag = PluginManager.renderWithData(html, mergetagsData);
     navigator.clipboard.writeText(html);
-    saveAs(new Blob([html], { type: "text/html" }), "easy-email-pro.html");
+    saveAs(
+      new Blob([finalMergeTag], { type: "text/html" }),
+      "easy-email-pro.html"
+    );
   };
 
   const onImportMJML = async () => {
@@ -150,6 +155,40 @@ export const EditorHeader = (props: {
           }
           try {
             const pageData = mjmlToJson(evt.target.result as any);
+            resolve([file.name, pageData]);
+          } catch (error) {
+            reject();
+          }
+        };
+        reader.readAsText(file);
+      }
+    );
+
+    reset({
+      subject: pageData[0],
+      content: pageData[1],
+    });
+  };
+
+  const onImportMJMLJSON = async () => {
+    const uploader = new Uploader(() => Promise.resolve(""), {
+      accept: "application/json",
+      limit: 1,
+    });
+
+    const [file] = await uploader.chooseFile();
+    const reader = new FileReader();
+    const pageData = await new Promise<[string, EmailTemplate["content"]]>(
+      (resolve, reject) => {
+        reader.onload = function (evt) {
+          if (!evt.target) {
+            reject();
+            return;
+          }
+          try {
+            const pageData = mjmlToJson(
+              JSON.parse(evt.target.result as any) as any
+            );
             resolve([file.name, pageData]);
           } catch (error) {
             reject();
@@ -289,6 +328,9 @@ export const EditorHeader = (props: {
                         <Menu.Item key="MJML" onClick={onImportMJML}>
                           Import from MJML
                         </Menu.Item>
+                        <Menu.Item key="MJML-JSON" onClick={onImportMJMLJSON}>
+                          Import from MJML JSON
+                        </Menu.Item>
 
                         <Menu.Item key="JSON" onClick={onImportJSON}>
                           Import from JSON
@@ -339,7 +381,7 @@ export const EditorHeader = (props: {
                 {/* <Button disabled={!dirty} onClick={() => submit()}>
                   <strong>Submit</strong>
                 </Button> */}
-                {/* <SendEmailModal /> */}
+                {isDev && <SendEmailModal />}
                 <Button
                   target="_blank"
                   href="https://docs.easyemail.pro/docs/intro?utm_source=demo"

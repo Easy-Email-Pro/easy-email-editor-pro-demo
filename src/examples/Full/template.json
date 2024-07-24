@@ -129,7 +129,7 @@
                     "attributes": {},
                     "children": [
                       {
-                        "text": "customer.name"
+                        "text": "customer.name | title_case"
                       }
                     ]
                   },
@@ -222,6 +222,452 @@
             },
             "data": {},
             "children": [
+              {
+                "type": "standard-table2",
+                "data": {
+                  "first_row_header": true
+                },
+                "attributes": {
+                  "cellpadding": "10px",
+                  "text-align": "center",
+                  "container-background-color": "#FFFFFF",
+                  "table-layout": "fixed",
+                  "padding-left": "5px",
+                  "padding-right": "5px",
+                  "align": "left",
+                  "font-size": "14px"
+                },
+                "children": [
+                  {
+                    "type": "standard-table2-tr",
+                    "data": {},
+                    "attributes": {
+                      "background-color": "#7daa55"
+                    },
+                    "children": [
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "Item",
+                            "bold": true,
+                            "fontSize": "18px"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 2
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "Description",
+                            "fontSize": "18px",
+                            "bold": true
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "Price",
+                            "bold": true,
+                            "fontSize": "18px"
+                          },
+                          {
+                            "bold": true,
+                            "fontSize": "16px",
+                            "text": "   "
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "Action",
+                            "bold": true,
+                            "fontSize": "18px"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-table2-tr",
+                    "data": {},
+                    "attributes": {
+                      "background-color": "#e4efda"
+                    },
+                    "children": [
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "Basic "
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 2
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Suitable for individuals"
+                              }
+                            ],
+                            "attributes": {
+                              "style": "text-align:left;"
+                            },
+                            "data": {
+                              "tagName": "div"
+                            }
+                          },
+                          {
+                            "type": "html-block-node",
+                            "attributes": {
+                              "style": "text-align:left;"
+                            },
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "children": [
+                              {
+                                "text": "Offering all fundamental features."
+                              }
+                            ]
+                          },
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": ""
+                              }
+                            ],
+                            "attributes": {},
+                            "data": {
+                              "tagName": "div"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "$50/month"
+                              }
+                            ],
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {}
+                          },
+                          {
+                            "type": "html-block-node",
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {
+                              "style": "text-align:center;"
+                            },
+                            "children": [
+                              {
+                                "text": "$500/year "
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Start trial",
+                                "link": {
+                                  "href": "https://www.easyemail.pro/?#pricing",
+                                  "blank": true
+                                }
+                              }
+                            ],
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {
+                              "style": "text-align:center;"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-table2-tr",
+                    "data": {},
+                    "attributes": {},
+                    "children": [
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "Premium "
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 2
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Ideal for small businesses or teams, with added localization and advanced features."
+                              }
+                            ],
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {
+                              "style": "text-align:left;"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "$100/month"
+                              }
+                            ],
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {}
+                          },
+                          {
+                            "type": "html-block-node",
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {
+                              "style": "text-align:center;"
+                            },
+                            "children": [
+                              {
+                                "text": "$1000/year "
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Start trial",
+                                "link": {
+                                  "href": "https://www.easyemail.pro/?#pricing",
+                                  "blank": true
+                                }
+                              }
+                            ],
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {
+                              "style": "text-align:center;"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-table2-tr",
+                    "data": {},
+                    "attributes": {
+                      "background-color": "#e4efda"
+                    },
+                    "children": [
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "text": "Enterprise "
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 2
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Perfect for medium to large enterprises, including all features and customizable services."
+                              }
+                            ],
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {
+                              "style": "text-align:left;"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "$200/month"
+                              }
+                            ],
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {}
+                          },
+                          {
+                            "type": "html-block-node",
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {
+                              "style": "text-align:center;"
+                            },
+                            "children": [
+                              {
+                                "text": "$2000/year "
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Start trial",
+                                "link": {
+                                  "href": "https://www.easyemail.pro/?#pricing",
+                                  "blank": true
+                                }
+                              }
+                            ],
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "attributes": {
+                              "style": "text-align:center;"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
               {
                 "type": "standard-button",
                 "data": {
@@ -653,7 +1099,8 @@
     ],
     "attributes": {
       "background-color": "#8C9A80",
-      "content-background-color": "#263D29"
+      "content-background-color": "#263D29",
+      "link-color": "#4a90e2"
     }
   }
 }

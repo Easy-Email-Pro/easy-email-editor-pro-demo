@@ -1,8 +1,15 @@
 import { CustomBlockType } from "@/examples/constant";
-import { createCustomBlock, t, mergeBlock } from "easy-email-pro-core";
+import {
+  createCustomBlock,
+  t,
+  mergeBlock,
+  components,
+} from "easy-email-pro-core";
 import { ElementCategory } from "easy-email-pro-core";
 import React from "react";
 import { SimpleCustomElement } from "@/custom-types";
+
+const { Style, Wrapper } = components;
 
 const defaultData = {
   attributes: {
@@ -40,8 +47,8 @@ export const SimpleCustomBlock = createCustomBlock<SimpleCustomElement>({
     const { data, attributes } = node;
 
     return (
-      <mj-wrapper {...node.attributes}>
-        <mj-section>
+      <Wrapper {...node.attributes}>
+        <mj-section css-class="custom-section">
           <mj-column>
             <mj-image
               padding="0px 0px 0px 0px"
@@ -53,6 +60,11 @@ export const SimpleCustomBlock = createCustomBlock<SimpleCustomElement>({
             </mj-button>
           </mj-column>
         </mj-section>
+        <Style>{`
+        .custom-section {
+          border: 1px solid #000;
+        }
+        `}</Style>
         {/* <mj-section>
           <mj-column>
             <mj-text>
@@ -83,7 +95,7 @@ export const SimpleCustomBlock = createCustomBlock<SimpleCustomElement>({
             </mj-table>
           </mj-column>
         </mj-section> */}
-      </mj-wrapper>
+      </Wrapper>
     );
   },
 });

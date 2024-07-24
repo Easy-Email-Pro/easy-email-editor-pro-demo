@@ -3,7 +3,6 @@ import { t } from "easy-email-pro-core";
 import { useSelectedNode, ActiveTabKeys } from "easy-email-pro-editor";
 import { Path } from "slate";
 import {
-  ResponsiveTabs,
   AttributesPanelWrapper,
   CollapseWrapper,
   AttributeField,
@@ -13,20 +12,7 @@ import React from "react";
 export const CustomButtonPanel = ({ nodePath }: { nodePath: Path }) => {
   return (
     <AttributesPanelWrapper>
-      <ResponsiveTabs
-        desktop={
-          <AttributesContainer
-            mode={ActiveTabKeys.DESKTOP}
-            nodePath={nodePath}
-          />
-        }
-        mobile={
-          <AttributesContainer
-            mode={ActiveTabKeys.MOBILE}
-            nodePath={nodePath}
-          />
-        }
-      />
+      <AttributesContainer mode={ActiveTabKeys.DESKTOP} nodePath={nodePath} />
     </AttributesPanelWrapper>
   );
 };

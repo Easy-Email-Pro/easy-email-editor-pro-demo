@@ -47,6 +47,6 @@ export const SimpleButtonCustomBlock =
     render(params) {
       const { node } = params;
 
-      return <mj-button>{node.data.content}</mj-button>;
+      return <Button>{node.data.content}</Button>;
     },
   });
