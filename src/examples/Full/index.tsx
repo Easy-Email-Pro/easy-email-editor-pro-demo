@@ -109,7 +109,7 @@ const mergetags: ThemeConfigProps["mergetags"] = [
     children: [
       {
         label: "Customer name",
-        value: "customer.name",
+        value: "customer.name | title_case",
       },
       {
         label: "Customer email",
@@ -146,7 +146,7 @@ const mergetagsData: ThemeConfigProps["mergetagsData"] = {
     total: "$100.00",
   },
   customer: {
-    name: "Ryan",
+    name: "john wilson",
     email: "easy-email-pro@example.com",
   },
   social: {
@@ -629,6 +629,155 @@ const fonts = [
   },
 ];
 
+const optionsList = [
+  {
+    label: "Ask AI",
+    value: "Ask AI",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+      ];
+    },
+  },
+  {
+    label: "Summarize content",
+    value: "Summarize content",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Provide the key points and concepts in this content in a succinct summary. Context: ${text}`,
+        },
+      ];
+    },
+  },
+  {
+    label: "Improve writing",
+    value: "Improve writing",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Rewrite this content with no spelling mistakes, proper grammar, and with more descriptive language, using best writing practices without losing the original meaning. Context: ${text}`,
+        },
+      ];
+    },
+  },
+  {
+    label: "Simplify language",
+    value: "Simplify language",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Rewrite this content with simplified language and reduce the complexity of the writing, so that the content is easier to understand. Context: ${text}`,
+        },
+      ];
+    },
+  },
+  {
+    label: "Expand upon",
+    value: "Expand upon",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Expand upon this content with descriptive language and more detailed explanations, to make the writing easier to understand and increase the length of the content. Context: ${text}`,
+        },
+      ];
+    },
+  },
+  {
+    label: "Trim content",
+    value: "Trim content",
+    getMessages(text: string) {
+      return [
+        {
+          role: "system",
+          content: "Answer the question based on the context below.",
+        },
+        {
+          role: "system",
+          content: "The response should be in HTML format.",
+        },
+        {
+          role: "system",
+          content:
+            "The response should preserve any HTML formatting, links, and styles in the context.",
+        },
+        {
+          role: "user",
+          content: `Question: Remove any repetitive, redundant, or non-essential writing in this content without changing the meaning or losing any key information. Context: ${text}`,
+        },
+      ];
+    },
+  },
+];
+
 export default function MyEditor() {
   const [theme, setTheme] = React.useState<string>("green");
   const [compact, setCompact] = useState(false);
@@ -737,6 +886,7 @@ export default function MyEditor() {
         );
         return { content: data.content, role: data.role };
       },
+      // options: optionsList,
     };
   }, []);
 

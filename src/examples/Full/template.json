@@ -129,7 +129,7 @@
                     "attributes": {},
                     "children": [
                       {
-                        "text": "customer.name"
+                        "text": "customer.name | title_case"
                       }
                     ]
                   },
