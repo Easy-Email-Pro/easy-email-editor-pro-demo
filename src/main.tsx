@@ -79,6 +79,13 @@ const TemplateEditor = React.lazy(
 );
 const Studio = React.lazy(() => import("./examples/Studio/index"));
 
+const StudioCustomField = React.lazy(
+  () => import("./examples/StudioCustomField/index")
+);
+const StudioCustomFieldEditor = React.lazy(
+  () => import("./examples/StudioCustomField/editor")
+);
+
 export const navigation = [
   {
     name: "Full",
@@ -86,31 +93,12 @@ export const navigation = [
     element: <Full />,
   },
 
-  // {
-  //   name: "Markdown",
-  //   path: "/markdown",
-  //   element: <Markdown />,
-  // },
-  // {
-  //   name: "Notion-like(processing)",
-  //   path: "/notion-like",
-  //   element: <Minimalist />,
-  // },
-  {
-    name: "Simple",
-    path: "/simple",
-    element: <Simple />,
-  },
   {
     name: "Customize",
     path: "/customize",
     element: <Customize />,
   },
-  {
-    name: "GlobalVariables",
-    path: "/global-variables",
-    element: <GlobalVariables />,
-  },
+
   {
     name: "UniversalElement",
     path: "/universal-element",
@@ -120,11 +108,6 @@ export const navigation = [
     name: "UniversalElement2",
     path: "/universal-element2",
     element: <UniversalElement2 />,
-  },
-  {
-    name: "SideBar",
-    path: "/side-bar",
-    element: <SideBar />,
   },
   {
     name: "ColorTheme",
@@ -147,9 +130,34 @@ export const navigation = [
     element: <Full />,
   },
   {
+    name: "Studio",
+    path: "/studio",
+    element: <Studio />,
+  },
+  {
+    name: "StudioCustomField",
+    path: "/studio-custom-field",
+    element: <StudioCustomField />,
+  },
+  {
+    name: "StudioCustomFieldEditor",
+    path: "/studio-custom-field-editor",
+    element: <StudioCustomFieldEditor />,
+  },
+  {
     name: "Responsive view",
     path: "/responsive-view",
     element: <ResponsiveView />,
+  },
+  {
+    name: "SideBar",
+    path: "/side-bar",
+    element: <SideBar />,
+  },
+  {
+    name: "Simple",
+    path: "/simple",
+    element: <Simple />,
   },
   {
     name: "Simple custom block",
@@ -171,6 +179,11 @@ export const navigation = [
     name: "Read only",
     path: "/read-only",
     element: <ReadOnly />,
+  },
+  {
+    name: "GlobalVariables",
+    path: "/global-variables",
+    element: <GlobalVariables />,
   },
 ];
 
@@ -197,12 +210,6 @@ const router = createBrowserRouter([
     name: "Share",
     path: "/share",
     element: <TemplateEditor />,
-  },
-
-  {
-    name: "Studio",
-    path: "/studio",
-    element: <Studio />,
   },
 ]);
 

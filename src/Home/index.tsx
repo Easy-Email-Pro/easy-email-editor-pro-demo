@@ -25,7 +25,6 @@ import { useEffect } from "react";
 import axios from "axios";
 import { PageElement } from "easy-email-pro-core";
 import FullScreenLoading from "@/components/FullScreenLoading";
-import { SharedComponents } from "easy-email-pro-theme";
 
 const features = [
   {
@@ -109,6 +108,7 @@ const features = [
     thumbnail: readonlyImg,
     url: "/read-only",
   },
+
   // {
   //   subject: "Notion",
   //   thumbnail: NotionBlockImg,
@@ -189,21 +189,17 @@ export const Home = () => {
                 </span>
               }
             >
-              <SharedComponents.FullHeightOverlayScrollbars
-                height={`calc(100vh - 180px)`}
-              >
-                <Card style={{ backgroundColor: "#fff" }}>
-                  <Grid.Row>
-                    {features.map((item, index) => {
-                      return (
-                        <Grid.Col xs={1} sm={1} md={4} lg={6}>
-                          <EmailItem item={item} />
-                        </Grid.Col>
-                      );
-                    })}
-                  </Grid.Row>
-                </Card>
-              </SharedComponents.FullHeightOverlayScrollbars>
+              <Card style={{ backgroundColor: "#fff" }}>
+                <Grid.Row>
+                  {features.map((item, index) => {
+                    return (
+                      <Grid.Col xs={1} sm={1} md={4} lg={6}>
+                        <EmailItem item={item as any} />
+                      </Grid.Col>
+                    );
+                  })}
+                </Grid.Row>
+              </Card>
             </Tabs.TabPane>
             <Tabs.TabPane
               key={"Templates"}

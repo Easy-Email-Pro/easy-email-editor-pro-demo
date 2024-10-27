@@ -50,7 +50,8 @@ export const ProductsSheet: React.FC<
     loading: boolean;
     pagination?: PaginationProps;
     children: React.ReactNode;
-  } & ProductRecommendationProps
+    type?: "radio" | "checkbox";
+  } & Omit<ProductRecommendationProps, "selectedIds">
 > = (props) => {
   const [keyword, setKeyword] = useState("");
   const [visible, setVisible] = useState(false);
@@ -118,7 +119,7 @@ export const ProductsSheet: React.FC<
             ...props.pagination,
           }}
           rowSelection={{
-            type: "checkbox",
+            type: props.type || "checkbox",
             selectedRowKeys: props.productIds,
             onSelectAll(selected, selectedRows: ProductItem[]) {
               if (selected) {

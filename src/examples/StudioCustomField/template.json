@@ -1,0 +1,344 @@
+{
+  "subject": "Blank",
+  "content": {
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      },
+      "blockAttributes": {
+        "standard-paragraph": {
+          "color": "#FFFFFF"
+        }
+      }
+    },
+    "type": "page",
+    "children": [
+      {
+        "type": "section_widget",
+        "title": "Product",
+        "data": {
+          "description": "",
+          "config": [
+            {
+              "label": "Primary color",
+              "name": "primary-color",
+              "helpText": "",
+              "type": "color",
+              "description": "Primary color"
+            },
+            {
+              "label": "Product",
+              "name": "product",
+              "required": false,
+              "helpText": "",
+              "type": "product_picker"
+            },
+            {
+              "label": "Product Title",
+              "name": "product.title",
+              "required": false,
+              "helpText": "",
+              "type": "string"
+            },
+            {
+              "label": "Product Price",
+              "name": "product.price",
+              "required": false,
+              "helpText": "",
+              "type": "string"
+            },
+            {
+              "label": "Product Image",
+              "name": "product.image",
+              "required": false,
+              "helpText": "",
+              "type": "image"
+            }
+          ],
+          "input": {
+            "background-color": "red",
+            "primary-color": "#4a90e2",
+            "font-size": "18px",
+            "product": {
+              "id": "12",
+              "title": "Product #12",
+              "description": "This is a general product information description #12",
+              "price": "$532",
+              "comparePrice": "$582",
+              "image": "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116331/easy-email-pro/mrzhiom54uhmxu5fqfs8.png"
+            }
+          },
+          "name": "New widget"
+        },
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {
+              "background-repeat": "no-repeat",
+              "padding-left": "20px",
+              "padding-right": "20px"
+            },
+            "children": [
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "50%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "$var(product.image)",
+                      "padding-left": "10px",
+                      "padding-right": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "50%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "name": "Text",
+                    "type": "standard-h3",
+                    "data": {},
+                    "attributes": {
+                      "padding-top": "10px",
+                      "padding-bottom": "10px",
+                      "color": "#000000",
+                      "align": "left"
+                    },
+                    "children": [
+                      {
+                        "text": "$var(product.title)"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Text",
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-bottom": "20px",
+                      "color": "#788197",
+                      "align": "left"
+                    },
+                    "children": [
+                      {
+                        "text": "$var(product.description)"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Text",
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-bottom": "20px",
+                      "color": "#000000",
+                      "align": "left"
+                    },
+                    "children": [
+                      {
+                        "text": "$var(product.price)"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-button",
+                    "data": {
+                      "content": "Button"
+                    },
+                    "attributes": {
+                      "width": "100%",
+                      "background-color": "$var(primary-color)"
+                    },
+                    "children": [
+                      {
+                        "text": "Click"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "name": "Image with text"
+      },
+      {
+        "type": "section_widget",
+        "title": "Product",
+        "data": {
+          "description": "",
+          "config": [
+            {
+              "label": "Primary color",
+              "name": "primary-color",
+              "helpText": "",
+              "type": "color",
+              "description": "Primary color"
+            },
+            {
+              "label": "Product",
+              "name": "product",
+              "required": false,
+              "helpText": "",
+              "type": "product_picker"
+            },
+            {
+              "label": "Product Title",
+              "name": "product.title",
+              "required": false,
+              "helpText": "",
+              "type": "string"
+            },
+            {
+              "label": "Product Price",
+              "name": "product.price",
+              "required": false,
+              "helpText": "",
+              "type": "string"
+            },
+            {
+              "label": "Product Image",
+              "name": "product.image",
+              "required": false,
+              "helpText": "",
+              "type": "image"
+            }
+          ],
+          "input": {
+            "background-color": "red",
+            "primary-color": "#f7cc5a",
+            "font-size": "18px",
+            "product": {
+              "id": "12",
+              "title": "Product #12",
+              "description": "This is a general product information description #12",
+              "price": "$532",
+              "comparePrice": "$582",
+              "image": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ozcxlxxtgr7yefv2ly1bd_ovotc0-g7kx0kudbida9m.png"
+            }
+          },
+          "name": "New widget"
+        },
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {
+              "background-repeat": "no-repeat",
+              "padding-left": "20px",
+              "padding-right": "20px"
+            },
+            "children": [
+              {
+                "type": "standard-column",
+                "attributes": {},
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "$var(product.image)",
+                      "padding-left": "10px",
+                      "padding-right": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Text",
+                    "type": "standard-h3",
+                    "data": {},
+                    "attributes": {
+                      "padding-top": "10px",
+                      "padding-bottom": "10px",
+                      "color": "#000000",
+                      "align": "left"
+                    },
+                    "children": [
+                      {
+                        "text": "$var(product.title)"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Text",
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-bottom": "20px",
+                      "color": "#788197",
+                      "align": "left"
+                    },
+                    "children": [
+                      {
+                        "text": "$var(product.description)"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Text",
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-bottom": "20px",
+                      "color": "#000000",
+                      "align": "left"
+                    },
+                    "children": [
+                      {
+                        "text": "$var(product.price)"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "standard-button",
+                    "data": {
+                      "content": "Button"
+                    },
+                    "attributes": {
+                      "width": "100%",
+                      "background-color": "$var(primary-color)"
+                    },
+                    "children": [
+                      {
+                        "text": "Read more"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "name": "Image with text"
+      }
+    ],
+    "attributes": {
+      "background-color": "#f5f5f5",
+      "content-background-color": "#FFFFFF"
+    }
+  }
+}

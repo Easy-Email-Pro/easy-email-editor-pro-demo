@@ -319,6 +319,12 @@ export const EditorHeader = (props: {
           extra={
             <div style={{ marginRight: 0 }}>
               <Space>
+                <Button
+                  icon={<IconMenu />}
+                  onClick={() => setCollapsed((v) => !v)}
+                >
+                  <strong>Examples</strong>
+                </Button>
                 {props?.extra}
 
                 {!props.hideImport && isDev && (

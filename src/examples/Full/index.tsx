@@ -63,14 +63,17 @@ const mergetags: ThemeConfigProps["mergetags"] = [
       {
         label: "Red",
         value: "colors.red",
+        type: "text",
       },
       {
         label: "Yellow",
         value: "colors.yellow",
+        type: "text",
       },
       {
         label: "Blue",
         value: "colors.blue",
+        type: "text",
       },
     ],
   },
@@ -81,10 +84,12 @@ const mergetags: ThemeConfigProps["mergetags"] = [
       {
         label: "Order number",
         value: "order.number",
+        type: "text",
       },
       {
         label: "Order total",
         value: "order.total",
+        type: "text",
       },
     ],
   },
@@ -111,10 +116,43 @@ const mergetags: ThemeConfigProps["mergetags"] = [
       {
         label: "Customer name",
         value: "customer.name | title_case",
+        type: "text",
       },
       {
         label: "Customer email",
         value: "customer.email",
+        type: "text",
+      },
+      {
+        label: "Customer country",
+        value: "customer.country",
+        type: "condition",
+      },
+      {
+        label: "Customer sex",
+        value: "customer.sex",
+        type: "condition",
+      },
+    ],
+  },
+  {
+    label: "Product",
+    value: "",
+    children: [
+      {
+        label: "Product list",
+        value: "products",
+        type: "repeat",
+      },
+      {
+        label: "Product title",
+        value: "item.title",
+        type: "text",
+      },
+      {
+        label: "Product price",
+        value: "item.price",
+        type: "text",
       },
     ],
   },
@@ -149,6 +187,8 @@ const mergetagsData: ThemeConfigProps["mergetagsData"] = {
   customer: {
     name: "john wilson",
     email: "easy-email-pro@example.com",
+    country: "Canada",
+    sex: "female",
   },
   social: {
     facebook:
@@ -251,6 +291,68 @@ const categories: ThemeConfigProps["categories"] = [
             iconName="icon-social"
           />
         ),
+        payload: {
+          type: "standard-social",
+          data: {},
+          attributes: {
+            spacing: "8px",
+            "icon-size": "30px",
+            mode: "horizontal",
+          },
+          children: [
+            {
+              data: {},
+              type: "standard-social-element",
+              children: [
+                {
+                  text: "",
+                },
+              ],
+              attributes: {
+                src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
+                href: "",
+                "padding-left": "0px",
+                "padding-right": "0px",
+                "padding-top": "0px",
+                "padding-bottom": "0px",
+              },
+            },
+            {
+              data: {},
+              type: "standard-social-element",
+              children: [
+                {
+                  text: "",
+                },
+              ],
+              attributes: {
+                src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
+                href: "",
+                "padding-left": "8px",
+                "padding-right": "0px",
+                "padding-top": "0px",
+                "padding-bottom": "0px",
+              },
+            },
+            {
+              data: {},
+              type: "standard-social-element",
+              children: [
+                {
+                  text: "",
+                },
+              ],
+              attributes: {
+                src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908543/clgnivsuj0018z9ltiixmxf6k/wtefhsfwaapcdbz7knqw.png",
+                href: "",
+                "padding-left": "8px",
+                "padding-right": "0px",
+                "padding-top": "0px",
+                "padding-bottom": "0px",
+              },
+            },
+          ],
+        },
       },
       {
         type: ElementType.STANDARD_HERO,
@@ -1039,6 +1141,8 @@ export default function MyEditor() {
     showLayer: true,
     showPreview: true,
     showSidebar: true,
+    showPreviousLevelIcon: true,
+    showBlockPaths: true,
     showTextHTMLMode: true,
     showSelectFileButton: true,
     compact: compact,
