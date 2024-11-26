@@ -1,10 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import * as Sentry from "@sentry/react";
 import { Home } from "./Home";
 
-import posthog from "posthog-js";
 import { nanoid } from "nanoid";
 
 const getClientId = () => {
@@ -18,29 +16,6 @@ const getClientId = () => {
 
   return userId;
 };
-
-if (process.env.NODE_ENV === "production") {
-  posthog.init("phc_Yn1dsJedTJquMn5XSDrahqAn0etHoRbUMoUP3y0GumU", {
-    api_host: "https://app.posthog.com",
-  });
-
-  const email = new URLSearchParams(location.search || "").get("email");
-
-  posthog.identify(getClientId(), {
-    email: email,
-  });
-
-  Sentry.init({
-    dsn: "https://70c370f4840742e68a4135c9615859e3@o1071232.ingest.sentry.io/4505312761937920",
-
-    // Performance Monitoring
-    tracesSampleRate: 1.0, // Capture 100% of the transactions, reduce in production!
-    // Session Replay
-    replaysSessionSampleRate: 1.0, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
-    replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-    integrations: [new Sentry.Replay()],
-  });
-}
 
 const Full = React.lazy(() => import("./examples/Full/index"));
 const Simple = React.lazy(() => import("./examples/Simple/index"));
@@ -63,6 +38,9 @@ const ResponsiveView = React.lazy(
 );
 const SimpleCustomBlock = React.lazy(
   () => import("./examples/SimpleCustomBlock/index")
+);
+const CustomElementComponent = React.lazy(
+  () => import("./examples/CustomElementComponent/index")
 );
 const DynamicCustomBlock = React.lazy(
   () => import("./examples/DynamicCustomBlock/index")
@@ -163,6 +141,11 @@ export const navigation = [
     name: "Simple custom block",
     path: "/simple-custom-block",
     element: <SimpleCustomBlock />,
+  },
+  {
+    name: "Custom element component",
+    path: "/custom-element-component",
+    element: <CustomElementComponent />,
   },
   {
     name: "Dynamic custom block",

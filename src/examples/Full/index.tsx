@@ -5,6 +5,7 @@ import {
   TextFormat,
 } from "easy-email-pro-editor";
 import {
+  EditorContextProps,
   IconFont,
   Retro,
   ThemeConfigProps,
@@ -1013,6 +1014,8 @@ export default function MyEditor() {
       "container"
     );
 
+  const editorInstance = useRef<EditorContextProps | null>(null);
+
   const hoveringToolbar: ThemeConfigProps["hoveringToolbar"] = useMemo(() => {
     return {
       list({ isCollapsed, selection, isFocus }) {
@@ -1088,6 +1091,7 @@ export default function MyEditor() {
 
   const onSubmit: ThemeConfigProps["onSubmit"] = async (values, editor) => {
     console.log(values, editor);
+    console.log("editorInstance", editorInstance.current);
   };
 
   const onChange: ThemeConfigProps["onChange"] = async (values, editor) => {
@@ -1123,6 +1127,7 @@ export default function MyEditor() {
   }, []);
 
   const config = Retro.useCreateConfig({
+    instanceRef: editorInstance,
     clientId: process.env.CLIENT_ID!,
     height: "calc(100vh - 66px)",
     onUpload,
@@ -1237,6 +1242,13 @@ export default function MyEditor() {
                   };
                 })}
               ></Select>
+              <Button
+                onClick={() => {
+                  editorInstance.current?.submit();
+                }}
+              >
+                Save
+              </Button>
             </Space>
           }
         />
