@@ -28,7 +28,6 @@ const headerElement: Element = {
       data: {},
       children: [
         {
-          name: "Text",
           type: "standard-paragraph",
           data: {},
           attributes: {},
@@ -59,7 +58,6 @@ const footerElement: Element = {
       data: {},
       children: [
         {
-          name: "Text",
           type: "standard-paragraph",
           data: {},
           attributes: {},

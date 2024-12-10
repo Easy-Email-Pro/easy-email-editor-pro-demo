@@ -1033,6 +1033,7 @@ export default function MyEditor() {
           TextFormat.ALIGN,
           TextFormat.LIST,
           TextFormat.LINK,
+          TextFormat.IMAGE,
           TextFormat.MERGETAG,
           TextFormat.REMOVE_FORMAT,
         ];
