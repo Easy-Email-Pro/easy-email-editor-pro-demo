@@ -264,7 +264,7 @@
                         "type": "standard-table2-td",
                         "data": {
                           "rowspan": 1,
-                          "colspan": 2
+                          "colspan": 1
                         },
                         "attributes": {},
                         "children": [
@@ -328,57 +328,7 @@
                         "attributes": {},
                         "children": [
                           {
-                            "text": "Basic "
-                          }
-                        ]
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 2
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": "Suitable for individuals"
-                              }
-                            ],
-                            "attributes": {
-                              "style": "text-align:left;"
-                            },
-                            "data": {
-                              "tagName": "div"
-                            }
-                          },
-                          {
-                            "type": "html-block-node",
-                            "attributes": {
-                              "style": "text-align:left;"
-                            },
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "children": [
-                              {
-                                "text": "Offering all fundamental features."
-                              }
-                            ]
-                          },
-                          {
-                            "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": ""
-                              }
-                            ],
-                            "attributes": {},
-                            "data": {
-                              "tagName": "div"
-                            }
+                            "text": "Nike Dunk Low "
                           }
                         ]
                       },
@@ -392,16 +342,48 @@
                         "children": [
                           {
                             "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": "$50/month"
-                              }
-                            ],
+                            "attributes": {
+                              "style": "text-align:left;"
+                            },
                             "data": {
                               "tagName": "div"
                             },
-                            "attributes": {}
-                          },
+                            "children": [
+                              {
+                                "text": ""
+                              },
+                              {
+                                "type": "html-node",
+                                "data": {
+                                  "tagName": "img"
+                                },
+                                "attributes": {
+                                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/sx9iemawisklnrsn_nx4f_image.png",
+                                  "width": "120px",
+                                  "height": "120px",
+                                  "style": "max-width:100%;display:inline-block;"
+                                },
+                                "children": [
+                                  {
+                                    "text": ""
+                                  }
+                                ]
+                              },
+                              {
+                                "text": ""
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "standard-table2-td",
+                        "data": {
+                          "rowspan": 1,
+                          "colspan": 1
+                        },
+                        "attributes": {},
+                        "children": [
                           {
                             "type": "html-block-node",
                             "data": {
@@ -412,7 +394,7 @@
                             },
                             "children": [
                               {
-                                "text": "$500/year "
+                                "text": "HK$999"
                               }
                             ]
                           }
@@ -430,10 +412,21 @@
                             "type": "html-block-node",
                             "children": [
                               {
-                                "text": "Start trial",
-                                "link": {
-                                  "href": "https://www.easyemail.pro/?#pricing",
-                                  "blank": true
+                                "type": "html-block-node",
+                                "children": [
+                                  {
+                                    "text": "Buy",
+                                    "link": {
+                                      "href": "https://www.nike.com.hk/product/HQ4345-300/detail.htm",
+                                      "blank": true
+                                    }
+                                  }
+                                ],
+                                "data": {
+                                  "tagName": "div"
+                                },
+                                "attributes": {
+                                  "style": "text-align:center;"
                                 }
                               }
                             ],
@@ -462,7 +455,7 @@
                         "attributes": {},
                         "children": [
                           {
-                            "text": "Premium "
+                            "text": "Sabrina 2 EP"
                           }
                         ]
                       },
@@ -470,7 +463,7 @@
                         "type": "standard-table2-td",
                         "data": {
                           "rowspan": 1,
-                          "colspan": 2
+                          "colspan": 1
                         },
                         "attributes": {},
                         "children": [
@@ -478,7 +471,27 @@
                             "type": "html-block-node",
                             "children": [
                               {
-                                "text": "Ideal for small businesses or teams, with added localization and advanced features."
+                                "text": ""
+                              },
+                              {
+                                "type": "html-node",
+                                "data": {
+                                  "tagName": "img"
+                                },
+                                "attributes": {
+                                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/1lfgm24de1_nve5jz8b5e_image.png",
+                                  "width": "120px",
+                                  "height": "120px",
+                                  "style": "max-width:100%;display:inline-block;"
+                                },
+                                "children": [
+                                  {
+                                    "text": ""
+                                  }
+                                ]
+                              },
+                              {
+                                "text": ""
                               }
                             ],
                             "data": {
@@ -500,18 +513,6 @@
                         "children": [
                           {
                             "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": "$100/month"
-                              }
-                            ],
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {}
-                          },
-                          {
-                            "type": "html-block-node",
                             "data": {
                               "tagName": "div"
                             },
@@ -520,7 +521,7 @@
                             },
                             "children": [
                               {
-                                "text": "$1000/year "
+                                "text": "HK$899"
                               }
                             ]
                           }
@@ -538,9 +539,9 @@
                             "type": "html-block-node",
                             "children": [
                               {
-                                "text": "Start trial",
+                                "text": "Buy",
                                 "link": {
-                                  "href": "https://www.easyemail.pro/?#pricing",
+                                  "href": "https://www.nike.com.hk/product/HQ4345-300/detail.htm",
                                   "blank": true
                                 }
                               }
@@ -572,7 +573,7 @@
                         "attributes": {},
                         "children": [
                           {
-                            "text": "Enterprise "
+                            "text": "Nike Vaporfly 3"
                           }
                         ]
                       },
@@ -580,7 +581,7 @@
                         "type": "standard-table2-td",
                         "data": {
                           "rowspan": 1,
-                          "colspan": 2
+                          "colspan": 1
                         },
                         "attributes": {},
                         "children": [
@@ -588,7 +589,27 @@
                             "type": "html-block-node",
                             "children": [
                               {
-                                "text": "Perfect for medium to large enterprises, including all features and customizable services."
+                                "text": ""
+                              },
+                              {
+                                "type": "html-node",
+                                "data": {
+                                  "tagName": "img"
+                                },
+                                "attributes": {
+                                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/kcb_901pyt2rxsckj52xp_image.png",
+                                  "width": "120px",
+                                  "height": "120px",
+                                  "style": "max-width:100%;display:inline-block;"
+                                },
+                                "children": [
+                                  {
+                                    "text": ""
+                                  }
+                                ]
+                              },
+                              {
+                                "text": ""
                               }
                             ],
                             "data": {
@@ -610,18 +631,6 @@
                         "children": [
                           {
                             "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": "$200/month"
-                              }
-                            ],
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {}
-                          },
-                          {
-                            "type": "html-block-node",
                             "data": {
                               "tagName": "div"
                             },
@@ -630,7 +639,7 @@
                             },
                             "children": [
                               {
-                                "text": "$2000/year "
+                                "text": "HK$1,699"
                               }
                             ]
                           }
@@ -648,9 +657,9 @@
                             "type": "html-block-node",
                             "children": [
                               {
-                                "text": "Start trial",
+                                "text": "Buy",
                                 "link": {
-                                  "href": "https://www.easyemail.pro/?#pricing",
+                                  "href": "https://www.nike.com.hk/product/HJ7040-300/detail.htm",
                                   "blank": true
                                 }
                               }

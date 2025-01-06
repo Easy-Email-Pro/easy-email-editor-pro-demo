@@ -5,6 +5,7 @@ import {
   Retro,
   ThemeConfigProps,
   useEditorContext,
+  mjmlToJson,
 } from "easy-email-pro-theme";
 import "easy-email-pro-theme/lib/style.css";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
@@ -387,6 +388,7 @@ const SaveAndShareButton = () => {
   const [loading, setLoading] = useState(false);
 
   const id = params.get("id") || "";
+  const gid = params.get("gid") || "";
   const { values, reset } = useEditorContext();
 
   const onShare = async () => {
@@ -447,9 +449,10 @@ const TemplateEditorContainer = () => {
   } | null>(null);
 
   const id = params.get("id") || "";
+  const gid = params.get("gid") || "";
 
   useEffect(() => {
-    if (!id) {
+    if (!id && !gid) {
       setData({
         subject: "Blank",
         content: {
@@ -494,20 +497,33 @@ const TemplateEditorContainer = () => {
       });
       return;
     }
-    axios
-      .get(`https://admin.easyemail.pro/api/email-template/${id}`, {
-        params: {
-          user_id:
-            location.pathname === "/share"
-              ? "clnu5hbaj000608mk27gof0y4"
-              : "clnl5a07900065zltiqvalojp",
-        },
-      })
-      .then(({ data }) => {
-        console.log(data);
-        setData(data);
-      });
-  }, [id]);
+    if (gid) {
+      axios
+        .get(
+          `https://api.github.com/repos/Easy-Email-Pro/email-templates/contents/${gid}`
+        )
+        .then(({ data }) => {
+          setData({
+            subject: data.name,
+            content: mjmlToJson(atob(data.content)),
+          });
+        });
+    } else if (id) {
+      axios
+        .get(`https://admin.easyemail.pro/api/email-template/${id}`, {
+          params: {
+            user_id:
+              location.pathname === "/share"
+                ? "clnu5hbaj000608mk27gof0y4"
+                : "clnl5a07900065zltiqvalojp",
+          },
+        })
+        .then(({ data }) => {
+          console.log(data);
+          setData(data);
+        });
+    }
+  }, [gid, id]);
 
   if (!data) return <FullScreenLoading isFullScreen></FullScreenLoading>;
   return <TemplateEditor data={data} />;

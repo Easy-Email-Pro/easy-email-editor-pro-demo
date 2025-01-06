@@ -27,6 +27,7 @@ import { pick } from "lodash";
 import { ReactEditor, useSlate } from "slate-react";
 import { useSearchParams } from "react-router-dom";
 import { SendEmailModal } from "./SendEmailModal";
+import { base64ToBlob, dom2Svg } from "@/utils/base64ToBlob";
 
 export const EditorHeader = (props: {
   extra?: React.ReactNode;
@@ -51,9 +52,9 @@ export const EditorHeader = (props: {
 
   const onExportImage = async () => {
     Message.loading("Loading...");
-    const html2canvas = (await import("html2canvas")).default;
     const container = document.createElement("div");
     container.style.position = "absolute";
+    container.style.width = "600px";
     container.style.left = "-9999px";
     const mjmlStr = EditorCore.toMJML({
       element: values.content,
@@ -69,13 +70,13 @@ export const EditorHeader = (props: {
     container.innerHTML = html;
     document.body.appendChild(container);
 
-    const blob = await new Promise<any>((resolve) => {
-      html2canvas(container, { useCORS: true }).then((canvas) => {
-        return canvas.toBlob(resolve, "png", 0.1);
-      });
+    const blob = await new Promise<any>(async (resolve) => {
+      const png = await base64ToBlob(await dom2Svg(container));
+      resolve(png);
     });
     saveAs(blob, "demo.png");
     Message.clear();
+    container.parentElement?.removeChild(container);
   };
   const onExportPDF = async () => {
     const printCSS = document.createElement("style");
