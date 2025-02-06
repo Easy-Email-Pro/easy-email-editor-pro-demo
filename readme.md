@@ -1,4 +1,9 @@
-## Getting Started
+## Live Demo
+
+Check out the live demo here https://demo.easyemail.pro/full
+
+
+## Introduction
 
 Easy-email-pro simplifies the creation of responsive email templates by combining the editing capabilities of SlateJS with the compatibility of MJML. With drag-and-drop functionality, inline editing, and keyboard shortcuts, users can easily design visually appealing and feature-rich email templates.
 
@@ -13,9 +18,14 @@ Build marketing campaigns, newsletters, or transactional emails effortlessly wit
   <img src="./templates.png" style="display:inline-block;width:98%"/>
 </div>
 
-## Live Demo
 
-Check out the live demo here https://demo.easyemail.pro/full
+## Getting Started
+Update `vite.config.ts`
+
+```js
+"process.env.CLIENT_ID": JSON.stringify('your_company_client_id'),
+```
+
 
 ```bash
 
