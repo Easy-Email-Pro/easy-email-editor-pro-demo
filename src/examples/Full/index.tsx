@@ -217,7 +217,7 @@ const mergetagsData: ThemeConfigProps["mergetagsData"] = {
   common: {
     unsubscribe: "http://www.easyemail.pro",
     website: "http://www.easyemail.pro",
-    logo: "http://res.cloudinary.com/djnkpbshx/image/upload/v1704018909/easy-email-pro-test/n3lcl4bo8lkezrtsgxz6.png?w=575",
+    logo: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/g3ehq-wtmes20zksyny0p_mv1spd10wcqm0wryjhusm.png",
   },
 };
 
@@ -310,7 +310,7 @@ const categories: ThemeConfigProps["categories"] = [
                 },
               ],
               attributes: {
-                src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
+                src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/psyz-f1z-ryy95lv2rh7g_image.png",
                 href: "",
                 "padding-left": "0px",
                 "padding-right": "0px",
@@ -327,7 +327,7 @@ const categories: ThemeConfigProps["categories"] = [
                 },
               ],
               attributes: {
-                src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
+                src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/rxxjzpus7vy2cxi0vp6hr_image.png",
                 href: "",
                 "padding-left": "8px",
                 "padding-right": "0px",
@@ -344,7 +344,7 @@ const categories: ThemeConfigProps["categories"] = [
                 },
               ],
               attributes: {
-                src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908543/clgnivsuj0018z9ltiixmxf6k/wtefhsfwaapcdbz7knqw.png",
+                src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/obdwqmxv5cljc16-ebnja_image.png",
                 href: "",
                 "padding-left": "8px",
                 "padding-right": "0px",
@@ -645,7 +645,7 @@ const categories: ThemeConfigProps["categories"] = [
           >
             <img
               style={{ width: "100%", height: "100%" }}
-              src="http://res.cloudinary.com/djnkpbshx/image/upload/v1701771089/easy-email-pro-test/dhl5nofsm0jbptap31fq.png"
+              src="https://cdn.shopify.com/s/files/1/0863/8971/9346/files/eqoutgspgtgzyuuyvvibr_image.png"
               alt=""
             />
           </div>
@@ -694,7 +694,7 @@ const categories: ThemeConfigProps["categories"] = [
                       type: "standard-image",
                       data: {},
                       attributes: {
-                        src: "https://res.cloudinary.com/djnkpbshx/image/upload/v1696845725/easy-email-pro-test/bjnjpwmqdunbwhgs6jdf.jpg",
+                        src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/itnjxrifbm1pdhztt7i2p_j4o0hgsbub-dyr4ibqa8t.png",
                         "border-radius": "50px",
                         "border-enabled": true,
                         "border-style": "solid",

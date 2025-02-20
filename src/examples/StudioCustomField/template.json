@@ -66,8 +66,9 @@
               "description": "This is a general product information description #12",
               "price": "$532",
               "comparePrice": "$582",
-              "image": "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116331/easy-email-pro/mrzhiom54uhmxu5fqfs8.png"
-            }
+              "image": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lzqtdy43rd793z26z8vxw_vow_gopf_7n99wx4qmozj.png"
+            },
+            "is_valid": true
           },
           "name": "New widget"
         },

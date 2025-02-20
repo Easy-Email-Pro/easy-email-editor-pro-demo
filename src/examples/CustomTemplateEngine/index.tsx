@@ -59,12 +59,12 @@ const mergetagsData = {
     {
       title: "#product 1",
       image:
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116371/easy-email-pro/as41p2ahhff377y8c9s8.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/llghcrwaextpwo9achp0d_7m3t7pdvklhfdpmejf7l6.png",
     },
     {
       title: "#product 2",
       image:
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116331/easy-email-pro/mrzhiom54uhmxu5fqfs8.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lzqtdy43rd793z26z8vxw_vow_gopf_7n99wx4qmozj.png",
     },
   ],
 };

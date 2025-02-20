@@ -152,11 +152,11 @@ export const Panel = ({ nodePath }: { nodePath: Path }) => {
       await new Promise((resolve) => setTimeout(resolve, 1000));
       const images = [
         "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116393/easy-email-pro/jwfkjrlq8izkekcx7ad9.png",
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116371/easy-email-pro/as41p2ahhff377y8c9s8.png",
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116331/easy-email-pro/mrzhiom54uhmxu5fqfs8.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/llghcrwaextpwo9achp0d_7m3t7pdvklhfdpmejf7l6.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lzqtdy43rd793z26z8vxw_vow_gopf_7n99wx4qmozj.png",
         "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116393/easy-email-pro/jwfkjrlq8izkekcx7ad9.png",
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116371/easy-email-pro/as41p2ahhff377y8c9s8.png",
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116331/easy-email-pro/mrzhiom54uhmxu5fqfs8.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/llghcrwaextpwo9achp0d_7m3t7pdvklhfdpmejf7l6.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lzqtdy43rd793z26z8vxw_vow_gopf_7n99wx4qmozj.png",
       ];
       const list = new Array(10).fill(true).map((_, index) => {
         const id = index + params.page * params.size;
