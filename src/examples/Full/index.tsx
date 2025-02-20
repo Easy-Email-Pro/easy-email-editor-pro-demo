@@ -193,9 +193,9 @@ const mergetagsData: ThemeConfigProps["mergetagsData"] = {
   },
   social: {
     facebook:
-      "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
+      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/rxxjzpus7vy2cxi0vp6hr_image.png",
     twitter:
-      "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
+      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/psyz-f1z-ryy95lv2rh7g_image.png",
   },
   products: [
     {
@@ -373,7 +373,7 @@ const categories: ThemeConfigProps["categories"] = [
             "padding-bottom": "50px",
             "background-image-enabled": true,
             "background-url":
-              "http://res.cloudinary.com/djnkpbshx/image/upload/v1698677931/easy-email-pro-test/t75ucncjgmm5vwp6r2s4.jpg",
+              "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/zfu_bicaklhcbrj4h7sja_piyfs3ypwezfgc4rkb-of.png",
             "background-position": "center center",
             mode: "fluid-height",
           },

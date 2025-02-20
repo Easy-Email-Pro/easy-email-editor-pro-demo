@@ -99,7 +99,7 @@ const defaultEmailElements: Array<UniversalElement> = [
                 "padding-bottom": "25px",
                 "padding-left": "25px",
                 "padding-right": "25px",
-                src: "http://res.cloudinary.com/djnkpbshx/image/upload/v1706006848/easy-email-pro-test/lm6rpd3kbmwzkmjtzmp0.jpg",
+                src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/4jycp-w7sipaiyrhoqb8u_wz56b028pdf6ttdbyqdgr.png",
               },
               children: [
                 {
@@ -112,7 +112,7 @@ const defaultEmailElements: Array<UniversalElement> = [
       ],
     },
     thumbnail:
-      "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070966/easy-email-pro-test/zpwiwmfzcyvbcjqwafdg.png",
+      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/gnpa3koxnhqeui7torrh7_image.png",
   },
   {
     id: "QyK-lke9oRYjKY7kXY2jm",
@@ -177,14 +177,14 @@ const defaultEmailElements: Array<UniversalElement> = [
       ],
     },
     thumbnail:
-      "http://res.cloudinary.com/djnkpbshx/image/upload/v1708425123/easy-email-pro-test/an5h4wm1i8gehgs5m7uc.png",
+      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/gsvk_yxpm7qdxql_gpxv8_image.png",
   },
 ];
 
 export const useUniversalElement = () => {
   const [universalElements, setUniversalElements] = useLocalStorage<
     UniversalElement[]
-  >("customElements", defaultEmailElements);
+  >("customElements2", defaultEmailElements);
 
   const customElements = useMemo(() => {
     const customElements =

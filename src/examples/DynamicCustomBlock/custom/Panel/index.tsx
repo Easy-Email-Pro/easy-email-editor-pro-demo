@@ -151,10 +151,10 @@ export const Panel = ({ nodePath }: { nodePath: Path }) => {
       setLoading(true);
       await new Promise((resolve) => setTimeout(resolve, 1000));
       const images = [
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116393/easy-email-pro/jwfkjrlq8izkekcx7ad9.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/w0ox4nmnmpsvx0m2gqak__d7_lnruhgkolsln-jqfub.png",
         "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/llghcrwaextpwo9achp0d_7m3t7pdvklhfdpmejf7l6.png",
         "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lzqtdy43rd793z26z8vxw_vow_gopf_7n99wx4qmozj.png",
-        "https://res.cloudinary.com/djnkpbshx/image/upload/v1688116393/easy-email-pro/jwfkjrlq8izkekcx7ad9.png",
+        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/w0ox4nmnmpsvx0m2gqak__d7_lnruhgkolsln-jqfub.png",
         "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/llghcrwaextpwo9achp0d_7m3t7pdvklhfdpmejf7l6.png",
         "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lzqtdy43rd793z26z8vxw_vow_gopf_7n99wx4qmozj.png",
       ];

@@ -221,7 +221,7 @@ const categories: ThemeConfigProps["categories"] = [
             "padding-bottom": "50px",
             "background-image-enabled": true,
             "background-url":
-              "http://res.cloudinary.com/djnkpbshx/image/upload/v1698677931/easy-email-pro-test/t75ucncjgmm5vwp6r2s4.jpg",
+              "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/zfu_bicaklhcbrj4h7sja_piyfs3ypwezfgc4rkb-of.png",
             "background-position": "center center",
             mode: "fluid-height",
           },

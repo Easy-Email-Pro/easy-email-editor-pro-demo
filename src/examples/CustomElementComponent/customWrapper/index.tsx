@@ -24,7 +24,7 @@ export const extraContent = (
       <Image
         padding="0px"
         width="150px"
-        src="https://www.easyemail.pro/_next/static/media/easy-email-pro.afb28576.svg"
+        src="https://cdn.shopify.com/s/files/1/0863/8971/9346/files/x8nchie0czsesem0vc7c8_image.png"
       />
     </Column>
   </Section>

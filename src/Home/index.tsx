@@ -98,12 +98,6 @@ const features = [
     url: "/universal-element2",
   },
   {
-    subject: "Global variables",
-    thumbnail:
-      "https://res.cloudinary.com/djnkpbshx/image/upload/v1688961440/easy-email-pro-test/ttvxbjvkr1x06bxyz1a5.png",
-    url: "/global-variables",
-  },
-  {
     subject: "ReadOnly Mode",
     thumbnail: readonlyImg,
     url: "/read-only",
