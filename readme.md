@@ -4,6 +4,10 @@ Easy-email-pro simplifies the creation of responsive email templates by combinin
 
 Build marketing campaigns, newsletters, or transactional emails effortlessly with Easy-email-pro. Create professional-grade responsive email templates efficiently.
 
+## Live Demo
+
+Check out the live demo here https://demo.easyemail.pro/full
+
 <div style="font-size:0">
   <img src="./desktop.png" style="display:inline-block;width:48%;margin-right:2%" />
   <img src="./mobile.png" style="display:inline-block;width:48%" />
@@ -13,9 +17,15 @@ Build marketing campaigns, newsletters, or transactional emails effortlessly wit
   <img src="./templates.png" style="display:inline-block;width:98%"/>
 </div>
 
-## Live Demo
+### Update client id
 
-Check out the live demo here https://demo.easyemail.pro/full
+Modify the following in vite.config.ts"
+
+```bash
+
+"process.env.CLIENT_ID": JSON.stringify('your client id'),
+
+```
 
 ```bash
 
