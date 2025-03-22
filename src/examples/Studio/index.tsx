@@ -1,451 +1,221 @@
-import { useMemo } from "react";
-import { EmailEditorProvider, EmailTemplate } from "easy-email-pro-editor";
-import {
-  IconFont,
-  Retro,
-  ThemeConfigProps,
-  useEditorContext,
-} from "easy-email-pro-theme";
-import "easy-email-pro-theme/lib/style.css";
-import "@arco-themes/react-easy-email-pro/css/arco.css";
+import { Button, Form, Message, Select } from "@arco-design/web-react";
+import React, { useState } from "react";
+import { WidgetElementEditor } from "./WidgetElementEditor";
+import { WidgetElementPreview } from "./WidgetElementPreview";
+import { IconCopy } from "@arco-design/web-react/icon";
+import { motion, AnimatePresence } from "framer-motion"; // 需要安装: npm install framer-motion
+import { SectionWidgetElement } from "easy-email-pro-core";
+import { EmailTemplate } from "easy-email-pro-editor";
+import { AttributeField, WidgetTypeOptions } from "easy-email-pro-theme";
 
-import data from "./template.json";
-import { EditorHeader } from "../../components/EditorHeader";
-import { useUpload } from "../../hooks/useUpload";
-import { Layout } from "@arco-design/web-react";
-import React from "react";
-import {
-  Countdown,
-  Shopwindow,
-  QRCode,
-  Video,
-  MarketingType,
-  CommonType,
-  ImageWithText,
-} from "easy-email-pro-kit";
-import { ElementType, PluginManager, t } from "easy-email-pro-core";
-import { useEffect } from "react";
-import { useState } from "react";
-import { Button } from "@arco-design/web-react";
-import { Message } from "@arco-design/web-react";
-import { Space } from "@arco-design/web-react";
+import simple from "./simple.json";
+import product from "./product1.json";
+import product2 from "./product2.json";
+import productList from "./productList.json";
+import { ProductPicker } from "./components/ProductPicker";
 
-PluginManager.registerPlugins([
-  Countdown,
-  Shopwindow,
-  QRCode,
-  Video,
-  ImageWithText,
-]);
+WidgetTypeOptions.push({
+  value: "product_picker",
+  label: "Product Picker",
+});
 
-const mergetags = [
-  {
-    label: "Color",
-    value: "",
-    children: [
-      {
-        label: "Red",
-        value: "colors.red",
-      },
-      {
-        label: "Yellow",
-        value: "colors.yellow",
-      },
-      {
-        label: "Blue",
-        value: "colors.blue",
-      },
-    ],
-  },
-  {
-    label: "Order",
-    value: "",
-    children: [
-      {
-        label: "Order number",
-        value: "order.number",
-      },
-      {
-        label: "Order total",
-        value: "order.total",
-      },
-    ],
-  },
-  {
-    label: "Customer",
-    value: "",
-    children: [
-      {
-        label: "Customer name",
-        value: "customer.name",
-      },
-      {
-        label: "Customer email",
-        value: "customer.email",
-      },
-    ],
-  },
-];
+WidgetTypeOptions.push({
+  value: "product_list_picker",
+  label: "Product List Picker",
+});
 
-const mergetagsData = {
-  order: {
-    number: "Shopify#1001",
-    total: "$100.00",
-  },
-  customer: {
-    name: "Ryan",
-    email: "easy-email-pro@example.com",
-  },
-  products: [
-    {
-      title: "#product 1",
-      image:
-        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jwbrgf-j9czz8k8qh3f2d_image.png",
-    },
-    {
-      title: "#product 2",
-      image:
-        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/3kcq5x39xga7wdbaprvb-_image.png",
-    },
-  ],
-  colors: {
-    red: "#ff0000",
-    yellow: "#ffff00",
-    blue: "#0000ff",
-  },
+const demoMap: Record<string, EmailTemplate> = {
+  simple: simple as EmailTemplate,
+  product: product as EmailTemplate,
+  product2: product2 as EmailTemplate,
+  productList: productList as EmailTemplate,
 };
 
-const categories: ThemeConfigProps["categories"] = [
-  {
-    get label() {
-      return t("Content");
-    },
-    active: true,
-    displayType: "grid",
-    blocks: [
-      {
-        type: ElementType.STANDARD_PARAGRAPH,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-text"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_IMAGE,
-        payload: {},
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-img"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_BUTTON,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-button"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_DIVIDER,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-divider"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_SPACER,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-spacing"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_NAVBAR,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-navbar"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_SOCIAL,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-social"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_HERO,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-hero"
-          />
-        ),
-        payload: {
-          type: "standard-hero",
-          data: {},
-          attributes: {
-            "background-width": "1080px",
-            "background-height": "721px",
-            "padding-top": "100px",
-            "padding-bottom": "50px",
-            "background-image-enabled": true,
-            "background-url":
-              "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/zfu_bicaklhcbrj4h7sja_piyfs3ypwezfgc4rkb-of.png",
-            "background-position": "center center",
-            mode: "fluid-height",
-          },
-          children: [
-            {
-              type: "standard-h1",
-              data: {},
-              attributes: {
-                color: "#FFFFFF",
-              },
-              children: [
-                {
-                  text: "We Serve Healthy & Delicious Foods",
-                },
-              ],
-            },
-            {
-              type: "standard-paragraph",
-              data: {},
-              attributes: {
-                color: "#FFFFFF",
-              },
-              children: [
-                {
-                  text: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
-                },
-              ],
-            },
-            {
-              type: "standard-button",
-              data: {
-                content: "Button",
-              },
-              attributes: {
-                "padding-top": "30px",
-                "padding-bottom": "30px",
-                "background-color": "#8b2a36",
-              },
-              children: [
-                {
-                  text: "Get Your Order Here!",
-                },
-              ],
-            },
-          ],
-        },
-      },
-      {
-        type: MarketingType.MARKETING_SHOPWINDOW,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-bag"
-          />
-        ),
-      },
-      {
-        type: MarketingType.MARKETING_COUNTDOWN,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-countdown"
-          />
-        ),
-      },
-      {
-        type: MarketingType.MARKETING_QR_CODE,
-        icon: (
-          <div className={"block-list-grid-item-icon"}>
-            <IconFont
-              className={"block-list-grid-item-icon"}
-              iconName="icon-qrcode"
-            />
-          </div>
-        ),
-      },
-      {
-        type: CommonType.COMMON_VIDEO,
-        icon: (
-          <div className={"block-list-grid-item-icon"}>
-            <IconFont
-              className={"block-list-grid-item-icon"}
-              iconName="icon-video"
-            />
-          </div>
-        ),
-      },
-      {
-        type: CommonType.COMMON_IMAGE_WITH_TEXT,
-        icon: (
-          <div className={"block-list-grid-item-icon"}>
-            <IconFont
-              className={"block-list-grid-item-icon"}
-              iconName="icon-hero"
-            />
-          </div>
-        ),
-      },
-    ],
-  },
-  {
-    get label() {
-      return t("Layout");
-    },
-    active: true,
-    displayType: "column",
-    blocks: [
-      {
-        get title() {
-          return t("1 column");
-        },
-        payload: [["100%"]],
-      },
-      {
-        get title() {
-          return t("2 column");
-        },
-        payload: [
-          ["50%", "50%"],
-          ["33%", "67%"],
-          ["67%", "33%"],
-          ["25%", "75%"],
-          ["75%", "25%"],
-        ],
-      },
-      {
-        get title() {
-          return t("3 column");
-        },
-        payload: [
-          ["33.33%", "33.33%", "33.33%"],
-          ["25%", "50%", "25%"],
-          ["25%", "25%", "50%"],
-          ["50%", "25%", "25%"],
-        ],
-      },
-      {
-        get title() {
-          return t("4 column");
-        },
-        payload: [["25%", "25%", "25%", "25%"]],
-      },
-    ],
-  },
-];
+const OldFieldItem = AttributeField.FieldItem;
+AttributeField.FieldItem = (props) => {
+  if (props.type === "product_picker") {
+    return <ProductPicker {...props} />;
+  }
+  if (props.type === "product_list_picker") {
+    return <ProductPicker {...props} multiple />;
+  }
+  return <OldFieldItem {...props} />;
+};
 
-export default function MyEditor() {
-  const { upload } = useUpload();
-  const [attributesVariables, setAttributesVariables] = useState({});
+export default function Studio() {
+  const [activeTab, setActiveTab] = useState<"create" | "preview">("create");
+  const [widgetElement, setWidgetElement] =
+    useState<SectionWidgetElement | null>(null);
 
-  const initialValues: EmailTemplate | null = useMemo(() => {
-    return {
-      subject: data.subject,
-      content: data.content as EmailTemplate["content"],
-    };
-  }, []);
+  const [selectedDemo, setSelectedDemo] = useState<string>("simple");
+  const [initialValues, setInitialValues] = useState<EmailTemplate>(
+    simple as EmailTemplate
+  );
 
-  const onUpload = (file: Blob): Promise<string> => {
-    return upload(file);
+  const handleChangeDemo = (value: string) => {
+    setInitialValues(demoMap[value]);
+
+    setSelectedDemo(value);
   };
-
-  const onSubmit = async (values: EmailTemplate) => {
-    console.log(values);
-  };
-
-  const config = Retro.useCreateConfig({
-    clientId: process.env.CLIENT_ID!,
-    height: "calc(100vh - 66px)",
-    onUpload,
-    initialValues: initialValues,
-    onSubmit: onSubmit,
-    mergetagsData: mergetagsData,
-    mergetags: mergetags,
-    categories,
-    unsplash: {
-      clientId: process.env.UNSPLASH_CLIENT_ID!,
-    },
-    showSourceCode: true,
-    showLayer: true,
-    widgetMode: true,
-    compact: false,
-    attributesVariables,
-  });
 
   return (
-    <EmailEditorProvider {...config}>
-      <EditorHeader extra={<CopyWidgetButton />} hideExport hideImport />
+    <div style={{ width: "100%", height: "100vh", overflow: "hidden" }}>
+      {/* Main content area */}
+      <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
+        {/* Custom tab navigation */}
+        <div
+          style={{
+            display: "flex",
+            backgroundColor: "#f5f5f5",
+            position: "relative",
+            padding: "0px 15px",
+            alignItems: "center",
+            justifyContent: "space-between",
+            height: "66px",
+          }}
+        >
+          <div style={{ paddingLeft: "15px" }}>
+            <Form.Item
+              label="Select demo"
+              layout="inline"
+              style={{ marginBottom: "0px" }}
+            >
+              <Select
+                style={{ width: "200px" }}
+                value={selectedDemo}
+                options={[
+                  { label: "Simple", value: "simple" },
+                  { label: "Product", value: "product" },
+                  { label: "Product2", value: "product2" },
+                  { label: "Product List", value: "productList" },
+                ]}
+                onChange={handleChangeDemo}
+              />
+            </Form.Item>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              backgroundColor: "#4169E1",
+              borderRadius: "9999px",
+              overflow: "hidden",
+              padding: "0",
+              boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+            }}
+          >
+            <div
+              style={{
+                padding: "10px 25px",
+                cursor: "pointer",
+                color: "#ffffff",
+                backgroundColor:
+                  activeTab === "create"
+                    ? "transparent"
+                    : "rgba(255,255,255,0.2)",
+                fontWeight: "500",
+                transition: "all 0.2s",
+                borderRight: "1px solid rgba(255,255,255,0.2)",
+              }}
+              onClick={() => setActiveTab("create")}
+            >
+              Create Widget
+            </div>
+            <div
+              style={{
+                padding: "10px 25px",
+                cursor: "pointer",
+                color: "#ffffff",
+                backgroundColor:
+                  activeTab === "preview"
+                    ? "transparent"
+                    : "rgba(255,255,255,0.2)",
+                fontWeight: "500",
+                transition: "all 0.2s",
+              }}
+              onClick={() => setActiveTab("preview")}
+            >
+              Preview Widget
+            </div>
+          </div>
 
-      <Layout.Content>
-        <Retro.Layout></Retro.Layout>
-      </Layout.Content>
-      <AttributesVariables setAttributesVariables={setAttributesVariables} />
-    </EmailEditorProvider>
+          {/* Extra button on the right */}
+          <div
+            style={{ paddingRight: "15px" }}
+            onClick={() => {
+              navigator.clipboard.writeText(JSON.stringify(widgetElement));
+              Message.success("Widget element copied to clipboard");
+            }}
+          >
+            <Button size="large" icon={<IconCopy />} type="primary">
+              Copy Widget
+            </Button>
+          </div>
+        </div>
+
+        <div
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            flex: 1,
+            height: "calc(100% - 66px)",
+          }}
+        >
+          <div style={{ position: "relative", width: "100%", height: "100%" }}>
+            <motion.div
+              animate={{
+                x: activeTab === "create" ? 0 : "-100%",
+                opacity: activeTab === "create" ? 1 : 0.8,
+              }}
+              initial={false}
+              transition={{
+                x: { type: "tween", ease: "easeInOut", duration: 0.3 },
+                opacity: { duration: 0.2 },
+              }}
+              style={{
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+                background: "#fff",
+                zIndex: activeTab === "create" ? 2 : 1,
+              }}
+            >
+              <WidgetElementEditor
+                key={selectedDemo}
+                initialValues={initialValues}
+                onChange={setWidgetElement}
+              />
+            </motion.div>
+
+            {/* 预览面板 */}
+            <motion.div
+              animate={{
+                x: activeTab === "preview" ? 0 : "100%",
+                opacity: activeTab === "preview" ? 1 : 0.8,
+              }}
+              initial={false}
+              transition={{
+                x: { type: "tween", ease: "easeInOut", duration: 0.3 },
+                opacity: { duration: 0.2 },
+              }}
+              style={{
+                position: "absolute",
+                width: "100%",
+                height: "100%",
+                background: "#fff",
+                zIndex: activeTab === "preview" ? 2 : 1,
+              }}
+            >
+              {widgetElement && (
+                <WidgetElementPreview
+                  key={selectedDemo}
+                  initialValues={initialValues}
+                  widgetElement={widgetElement}
+                />
+              )}
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
-
-const AttributesVariables = ({
-  setAttributesVariables,
-}: {
-  setAttributesVariables: React.Dispatch<React.SetStateAction<{}>>;
-}) => {
-  const { values } = useEditorContext();
-  const widgetElement = values.widgetElement;
-
-  useEffect(() => {
-    setAttributesVariables((old) => {
-      return {
-        ...old,
-        ...widgetElement?.data.input,
-      };
-    });
-  }, [setAttributesVariables, widgetElement?.data.input]);
-
-  return <></>;
-};
-
-const CopyWidgetButton = () => {
-  const { values } = useEditorContext();
-
-  return (
-    <Space>
-      <Button
-        target="_blank"
-        href="https://www.youtube.com/watch?v=A0w388JYpEU"
-      >
-        <strong>View Video</strong>
-      </Button>
-      <Button
-        onClick={() => {
-          navigator.clipboard.writeText(
-            JSON.stringify({
-              ...values.widgetElement,
-              children: values.content.children,
-            })
-          );
-          Message.success(`Copied`);
-        }}
-      >
-        <strong>Copy Widget</strong>
-      </Button>
-    </Space>
-  );
-};

@@ -38,24 +38,26 @@
                     "type": "standard-navbar-link",
                     "children": [
                       {
-                        "text": "Shop"
+                        "text": "About"
                       }
                     ],
                     "attributes": {
                       "href": ""
-                    }
+                    },
+                    "id": "zF2CErqYOdSoWie2HkVQG"
                   },
                   {
                     "data": {},
                     "type": "standard-navbar-link",
                     "children": [
                       {
-                        "text": "About"
+                        "text": "Shop"
                       }
                     ],
                     "attributes": {
                       "href": ""
-                    }
+                    },
+                    "id": "xDSwKFocxAKhpwlMFdw-F"
                   },
                   {
                     "data": {},
@@ -67,7 +69,8 @@
                     ],
                     "attributes": {
                       "href": ""
-                    }
+                    },
+                    "id": "mzpDcMZ-Pw1S1u6ED0qWl"
                   },
                   {
                     "data": {},
@@ -79,13 +82,17 @@
                     ],
                     "attributes": {
                       "href": ""
-                    }
+                    },
+                    "id": "MvaRiCXyjwinH2m6nb30u"
                   }
-                ]
+                ],
+                "id": "DkixzoL-7JcEGkTwTD7AI"
               }
-            ]
+            ],
+            "id": "pdyLaY2ktmZBbklcaaS34"
           }
-        ]
+        ],
+        "id": "WQtH7lNIDjDrnuPfOWn_Z"
       },
       {
         "type": "standard-section",
@@ -110,7 +117,8 @@
                   {
                     "text": "JOIN US FOR A FEAST ON"
                   }
-                ]
+                ],
+                "id": "twgC8mIFz-BavwwjExIGl"
               },
               {
                 "name": "Text",
@@ -129,50 +137,103 @@
                     "attributes": {},
                     "children": [
                       {
-                        "text": "customer.name | title_case"
+                        "text": "customer.name"
                       }
-                    ]
+                    ],
+                    "id": "5KdTodfhIBQ53MjRfRwfu"
                   },
                   {
                     "text": " "
                   }
-                ]
+                ],
+                "id": "3c1aXTEuRmeDN8Bbaml_Y"
               }
-            ]
+            ],
+            "id": "hvWLlz3kCNXv0ab0zBzW9"
           }
-        ]
+        ],
+        "id": "pzpO4dCi__Lpv3HWHJnM7"
       },
       {
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "padding-top": "0px"
+          "padding-top": "0px",
+          "padding-bottom": "0px",
+          "padding-left": "0px",
+          "padding-right": "0px"
         },
         "children": [
           {
             "type": "standard-column",
-            "attributes": {
-              "width": "480px"
-            },
+            "attributes": {},
             "data": {},
             "children": [
               {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
+                "type": "marketing-countdown-v2",
                 "attributes": {
-                  "padding-left": "20px",
-                  "padding-right": "20px"
+                  "padding-top": "30px",
+                  "padding-bottom": "30px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "background-color": "#ffffff",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/e3fzfumbcugzep8boksj2_countdown.gif",
+                  "text-color": "#000000"
+                },
+                "data": {
+                  "remainingTime": 24,
+                  "unit": "hour",
+                  "style": "elegant",
+                  "styleOptions": {
+                    "elegant": {
+                      "borderColor": "black"
+                    }
+                  }
                 },
                 "children": [
                   {
-                    "text": "From hearty stews and comforting shepherd's pie to classic fish and chips, we have something to satisfy every appetite."
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "color": "#333333",
+                      "font-size": "24px",
+                      "font-family": "serif",
+                      "align": "center",
+                      "line-height": "1.2"
+                    },
+                    "children": [
+                      {
+                        "text": "Black Friday Event"
+                      }
+                    ],
+                    "id": "d3FeFDioJEVf_cOWvO8QO"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "color": "#666666",
+                      "font-size": "16px",
+                      "align": "center"
+                    },
+                    "children": [
+                      {
+                        "text": "Exclusive offers available for a limited time only"
+                      }
+                    ],
+                    "id": "cxbIpbfLTu5D5QaLVwPbP"
                   }
-                ]
+                ],
+                "id": "tUAiyFJ7zFZPsauEEf3Vo",
+                "mobileAttributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/njcbeycjmlulhlbzrsnx4_countdown.gif"
+                }
               }
-            ]
+            ],
+            "id": "kWZ9gROtBQRjpLVLXkHKf"
           }
-        ]
+        ],
+        "id": "d-CshLoW4UL7E8JLf2KRE"
       },
       {
         "type": "standard-section",
@@ -204,11 +265,14 @@
                   {
                     "text": ""
                   }
-                ]
+                ],
+                "id": "HoWrHWnYey24h4sc6M3y5"
               }
-            ]
+            ],
+            "id": "6h5p-LyxZvF5t1mWlHG_z"
           }
-        ]
+        ],
+        "id": "o1COMbQsyx6sD8KmBpp2Z"
       },
       {
         "type": "standard-section",
@@ -258,7 +322,8 @@
                             "bold": true,
                             "fontSize": "18px"
                           }
-                        ]
+                        ],
+                        "id": "HVaEKr8PNu-A3s3z3Ti_q"
                       },
                       {
                         "type": "standard-table2-td",
@@ -273,7 +338,8 @@
                             "fontSize": "18px",
                             "bold": true
                           }
-                        ]
+                        ],
+                        "id": "nRtOvynwJDo2n_ZZzKxAt"
                       },
                       {
                         "type": "standard-table2-td",
@@ -293,7 +359,8 @@
                             "fontSize": "16px",
                             "text": "   "
                           }
-                        ]
+                        ],
+                        "id": "1gtNteye4DjeLDOfN31ho"
                       },
                       {
                         "type": "standard-table2-td",
@@ -308,9 +375,11 @@
                             "bold": true,
                             "fontSize": "18px"
                           }
-                        ]
+                        ],
+                        "id": "G7N4yEUxoZ5G2bQ6zBHzu"
                       }
-                    ]
+                    ],
+                    "id": "fGFwjWgXjdQznohjAZyE_"
                   },
                   {
                     "type": "standard-table2-tr",
@@ -330,7 +399,8 @@
                           {
                             "text": "Nike Dunk Low "
                           }
-                        ]
+                        ],
+                        "id": "tPdNicS0zTnU0HrGz_8_J"
                       },
                       {
                         "type": "standard-table2-td",
@@ -367,14 +437,17 @@
                                   {
                                     "text": ""
                                   }
-                                ]
+                                ],
+                                "id": "SO9OSX-B8RKXqKsvg3GHn"
                               },
                               {
                                 "text": ""
                               }
-                            ]
+                            ],
+                            "id": "XwdEvfLdYKCAdeaU28IfQ"
                           }
-                        ]
+                        ],
+                        "id": "QUH_eN8xzAQNqLL07BZls"
                       },
                       {
                         "type": "standard-table2-td",
@@ -396,9 +469,11 @@
                               {
                                 "text": "HK$999"
                               }
-                            ]
+                            ],
+                            "id": "HzlKGQju5405nvYONteNE"
                           }
-                        ]
+                        ],
+                        "id": "voX4QAhHtU3OPw4TV6ks9"
                       },
                       {
                         "type": "standard-table2-td",
@@ -427,7 +502,8 @@
                                 },
                                 "attributes": {
                                   "style": "text-align:center;"
-                                }
+                                },
+                                "id": "QkqVzbKav83eoJduEvW3v"
                               }
                             ],
                             "data": {
@@ -435,11 +511,14 @@
                             },
                             "attributes": {
                               "style": "text-align:center;"
-                            }
+                            },
+                            "id": "jY03RvPhp3MRXv40ZAg13"
                           }
-                        ]
+                        ],
+                        "id": "zNQGhiPWngaXItiheXjo8"
                       }
-                    ]
+                    ],
+                    "id": "ktErIV0DafEuNS_OdYmXL"
                   },
                   {
                     "type": "standard-table2-tr",
@@ -457,7 +536,8 @@
                           {
                             "text": "Sabrina 2 EP"
                           }
-                        ]
+                        ],
+                        "id": "F1rRfghPu3eGLsZ4-Rwjc"
                       },
                       {
                         "type": "standard-table2-td",
@@ -488,7 +568,8 @@
                                   {
                                     "text": ""
                                   }
-                                ]
+                                ],
+                                "id": "ApL2_FIu_kYORkjWDj-er"
                               },
                               {
                                 "text": ""
@@ -499,9 +580,11 @@
                             },
                             "attributes": {
                               "style": "text-align:left;"
-                            }
+                            },
+                            "id": "D_1pBvBrl4Y9LNVn4Cjq5"
                           }
-                        ]
+                        ],
+                        "id": "y2IpHGdtJyLl_jgaNJpF3"
                       },
                       {
                         "type": "standard-table2-td",
@@ -523,9 +606,11 @@
                               {
                                 "text": "HK$899"
                               }
-                            ]
+                            ],
+                            "id": "UzcqLSDvLJ4p4Qbv7DO4b"
                           }
-                        ]
+                        ],
+                        "id": "GicXvIP0TKWUh9YbvjA-W"
                       },
                       {
                         "type": "standard-table2-td",
@@ -551,11 +636,14 @@
                             },
                             "attributes": {
                               "style": "text-align:center;"
-                            }
+                            },
+                            "id": "A4Z0Z5cDE5v3rtB-9smI1"
                           }
-                        ]
+                        ],
+                        "id": "fpP6bVN2wIguHeronfNwv"
                       }
-                    ]
+                    ],
+                    "id": "qa6dsB5YrosiDhW1NhHr6"
                   },
                   {
                     "type": "standard-table2-tr",
@@ -575,7 +663,8 @@
                           {
                             "text": "Nike Vaporfly 3"
                           }
-                        ]
+                        ],
+                        "id": "bEayzhJtrnEKHyYYutAkG"
                       },
                       {
                         "type": "standard-table2-td",
@@ -606,7 +695,8 @@
                                   {
                                     "text": ""
                                   }
-                                ]
+                                ],
+                                "id": "eFLb918p1bH0-C-NISfYL"
                               },
                               {
                                 "text": ""
@@ -617,9 +707,11 @@
                             },
                             "attributes": {
                               "style": "text-align:left;"
-                            }
+                            },
+                            "id": "YhI-ryLrMdxFeoM7UVk5n"
                           }
-                        ]
+                        ],
+                        "id": "phf_ts9AhvbD-9wFtkAVr"
                       },
                       {
                         "type": "standard-table2-td",
@@ -641,9 +733,11 @@
                               {
                                 "text": "HK$1,699"
                               }
-                            ]
+                            ],
+                            "id": "2Hvp4-xauKJiD4XNl6eiJ"
                           }
-                        ]
+                        ],
+                        "id": "pOsITrMTVQrbsQ-ha9H2C"
                       },
                       {
                         "type": "standard-table2-td",
@@ -669,13 +763,17 @@
                             },
                             "attributes": {
                               "style": "text-align:center;"
-                            }
+                            },
+                            "id": "563d-4so-Gt7X-MzcczOF"
                           }
-                        ]
+                        ],
+                        "id": "ULkyZVzuCc_HsYOh_s0lZ"
                       }
-                    ]
+                    ],
+                    "id": "BpZiJ7BT57AphYDUj8ENs"
                   }
-                ]
+                ],
+                "id": "0MrAhVbZYRksKB8-7or0t"
               },
               {
                 "type": "standard-button",
@@ -691,7 +789,8 @@
                   {
                     "text": "Book a table"
                   }
-                ]
+                ],
+                "id": "0oJKtyGnWHxEyaXbRO141"
               },
               {
                 "type": "standard-button",
@@ -711,266 +810,14 @@
                   {
                     "text": "Book a table"
                   }
-                ]
+                ],
+                "id": "MncrR3EyPXPwHek3fpdig"
               }
-            ]
+            ],
+            "id": "_SQwBhWlqVOFT8VfRVXK7"
           }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-color": "#FFFFFF",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {
-                  "align": "left",
-                  "color": "#000000",
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px"
-                },
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
-                      }
-                    ],
-                    "attributes": {},
-                    "data": {
-                      "tagName": "div"
-                    }
-                  },
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "attributes": {},
-                    "data": {
-                      "tagName": "div"
-                    }
-                  },
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": "View drink menu",
-                        "bold": true
-                      }
-                    ],
-                    "attributes": {},
-                    "data": {
-                      "tagName": "div"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-image",
-                "data": {},
-                "attributes": {
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px",
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/4jycp-w7sipaiyrhoqb8u_wz56b028pdf6ttdbyqdgr.png"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-color": "#ffffff",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-divider",
-                "data": {},
-                "attributes": {},
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-color": "#FFFFFF",
-          "direction": "rtl",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "name": "Text",
-                "type": "standard-paragraph",
-                "data": {},
-                "attributes": {
-                  "align": "left",
-                  "color": "#000000",
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px"
-                },
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
-                      }
-                    ],
-                    "attributes": {},
-                    "data": {
-                      "tagName": "div"
-                    }
-                  },
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "attributes": {},
-                    "data": {
-                      "tagName": "div"
-                    }
-                  },
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": "View drink menu",
-                        "bold": true
-                      }
-                    ],
-                    "attributes": {},
-                    "data": {
-                      "tagName": "div"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-image",
-                "data": {},
-                "attributes": {
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px",
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/4rvx54snmbxawroqspd2f_image.png"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "standard-section",
-        "data": {},
-        "attributes": {
-          "background-color": "#ffffff",
-          "padding-top": "0px",
-          "padding-bottom": "0px"
-        },
-        "children": [
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-divider",
-                "data": {},
-                "attributes": {},
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ]
-              }
-            ]
-          }
-        ]
+        ],
+        "id": "3vZdi3H6kQMs4WkJscCjr"
       },
       {
         "type": "standard-section",
@@ -1010,7 +857,8 @@
                     "attributes": {},
                     "data": {
                       "tagName": "div"
-                    }
+                    },
+                    "id": "p4qnrpCiYuDZeDTncbrr-"
                   },
                   {
                     "type": "html-block-node",
@@ -1023,9 +871,11 @@
                     "attributes": {},
                     "data": {
                       "tagName": "div"
-                    }
+                    },
+                    "id": "7ue1MuyvSFnCoON5U_HyD"
                   }
-                ]
+                ],
+                "id": "FX1r77baMDO46CiyrVxEO"
               },
               {
                 "type": "standard-button",
@@ -1040,9 +890,11 @@
                   {
                     "text": "VIEW DRINK"
                   }
-                ]
+                ],
+                "id": "1QBa-8CPTmjcmedShfPV5"
               }
-            ]
+            ],
+            "id": "YzPhgwcau2PgxLLvk4wna"
           },
           {
             "type": "standard-column",
@@ -1066,11 +918,14 @@
                   {
                     "text": ""
                   }
-                ]
+                ],
+                "id": "biZp_ubvIOFBHyYmB_YpI"
               }
-            ]
+            ],
+            "id": "q9rpNtf71QwiJN8K6soff"
           }
-        ]
+        ],
+        "id": "no4rpwhDLMnzwOxwxb7Ws"
       },
       {
         "type": "standard-section",
@@ -1108,7 +963,8 @@
                       "padding-right": "0px",
                       "padding-top": "0px",
                       "padding-bottom": "0px"
-                    }
+                    },
+                    "id": "T58ai-mjXtkW4mXzmNazv"
                   },
                   {
                     "data": {},
@@ -1125,7 +981,8 @@
                       "padding-right": "0px",
                       "padding-top": "0px",
                       "padding-bottom": "0px"
-                    }
+                    },
+                    "id": "ZA8PJkaNehjnKAvk_mtuq"
                   },
                   {
                     "data": {},
@@ -1142,9 +999,11 @@
                       "padding-right": "0px",
                       "padding-top": "0px",
                       "padding-bottom": "0px"
-                    }
+                    },
+                    "id": "eV6cJVzjejuuM_Mq_iSru"
                   }
-                ]
+                ],
+                "id": "g0T7SeVJH_brXR9yuxGTU"
               },
               {
                 "name": "Text",
@@ -1162,17 +1021,21 @@
                       "blank": true
                     }
                   }
-                ]
+                ],
+                "id": "se-3EkMe1Af9DXuFubRvA"
               }
-            ]
+            ],
+            "id": "WUdhV2Llnh4hzkhDyxAd1"
           }
-        ]
+        ],
+        "id": "Mw93902KnsxxsKJ5vcm5t"
       }
     ],
     "attributes": {
       "background-color": "#8C9A80",
       "content-background-color": "#263D29",
       "link-color": "#4a90e2"
-    }
+    },
+    "id": "DnWP8fKH9a3AAZtF9c1Zy"
   }
 }

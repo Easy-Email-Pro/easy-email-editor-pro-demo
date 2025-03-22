@@ -1,0 +1,31 @@
+import { ElementType } from "easy-email-pro-core";
+import { Hero } from "./Hero";
+import { Text } from "./Text";
+import { Button } from "./Button";
+import { Image } from "./Image";
+import { Divider } from "./Divider";
+import { Navbar } from "./Navbar";
+import { Social } from "./Social";
+import { Spacer } from "./Spacer";
+import { ElementStyles } from "easy-email-pro-theme";
+import { KitElementType } from "easy-email-pro-kit";
+import { Shopwindow } from "./Shopwindow";
+import { Countdown } from "./Countdown";
+import { QRCode } from "./QRCode";
+import { Table } from "./Table";
+import { Video } from "./Video";
+
+// register elements styles
+ElementStyles[ElementType.STANDARD_HERO] = Hero;
+ElementStyles[ElementType.STANDARD_PARAGRAPH] = Text;
+ElementStyles[ElementType.STANDARD_BUTTON] = Button;
+ElementStyles[ElementType.STANDARD_IMAGE] = Image;
+ElementStyles[ElementType.STANDARD_DIVIDER] = Divider;
+ElementStyles[ElementType.STANDARD_NAVBAR] = Navbar;
+ElementStyles[ElementType.STANDARD_SOCIAL] = Social;
+ElementStyles[ElementType.STANDARD_SPACER] = Spacer;
+ElementStyles[KitElementType.MARKETING_SHOPWINDOW] = Shopwindow;
+ElementStyles[KitElementType.MARKETING_COUNTDOWN_V2] = Countdown;
+ElementStyles[KitElementType.MARKETING_QR_CODE] = QRCode;
+ElementStyles[ElementType.STANDARD_TABLE2] = Table;
+ElementStyles[KitElementType.COMMON_VIDEO] = Video;

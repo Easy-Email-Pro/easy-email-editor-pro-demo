@@ -8,14 +8,16 @@ import {
   Modal,
   PageHeader,
   Space,
+  Tooltip,
   Typography,
 } from "@arco-design/web-react";
-import { IconLeft, IconMenu } from "@arco-design/web-react/icon";
+import { IconMenu, IconLeft } from "@arco-design/web-react/icon";
 import React from "react";
 import { EmailTemplate, useEditorProps } from "easy-email-pro-editor";
 import { mjmlToJson, useEditorContext } from "easy-email-pro-theme";
 import {
   EditorCore,
+  PageElement,
   PluginManager,
   easyEmailToEasyEmailPro,
 } from "easy-email-pro-core";
@@ -28,6 +30,16 @@ import { ReactEditor, useSlate } from "slate-react";
 import { useSearchParams } from "react-router-dom";
 import { SendEmailModal } from "./SendEmailModal";
 import { base64ToBlob, dom2Svg } from "@/utils/base64ToBlob";
+import {
+  Menu as LucideMenu,
+  Import,
+  HelpCircle,
+  Rocket,
+  Download,
+  Settings,
+} from "lucide-react";
+import { EditorConfigModal } from "./EditorConfigModal";
+import { EmailList } from "./EmailList";
 
 export const EditorHeader = (props: {
   extra?: React.ReactNode;
@@ -282,6 +294,20 @@ export const EditorHeader = (props: {
     });
   };
 
+  const onSwitchTemplate = (item: {
+    id: string;
+    subject: string;
+    thumbnail: string;
+    content: PageElement;
+    url?: string | undefined;
+  }) => {
+    reset({
+      content: item.content,
+      subject: item.subject,
+    });
+    setCollapsed(true);
+  };
+
   return (
     <>
       <div style={{ position: "relative" }}>
@@ -320,13 +346,22 @@ export const EditorHeader = (props: {
           extra={
             <div style={{ marginRight: 0 }}>
               <Space>
-                <Button
-                  icon={<IconMenu />}
-                  onClick={() => setCollapsed((v) => !v)}
-                >
-                  <strong>Examples</strong>
-                </Button>
-                {props?.extra}
+                <Tooltip content="Editor Configuration">
+                  <EditorConfigModal>
+                    <Button icon={<Settings size={16} />}>
+                      <strong>&nbsp;Configuration</strong>
+                    </Button>
+                  </EditorConfigModal>
+                </Tooltip>
+
+                <Tooltip content="Examples">
+                  <Button
+                    icon={<LucideMenu size={16} />}
+                    onClick={() => setCollapsed((v) => !v)}
+                  >
+                    <strong>&nbsp;Features & templates</strong>
+                  </Button>
+                </Tooltip>
 
                 {!props.hideImport && isDev && (
                   <Dropdown
@@ -379,65 +414,46 @@ export const EditorHeader = (props: {
                       </Menu>
                     }
                   >
-                    <Button>
-                      <strong>Export</strong>
+                    <Button icon={<Download size={16} />}>
+                      <strong>&nbsp;Export</strong>
                     </Button>
                   </Dropdown>
                 )}
-
                 {/* <Button disabled={!dirty} onClick={() => submit()}>
                   <strong>Submit</strong>
                 </Button> */}
                 {isDev && <SendEmailModal />}
                 <Button
+                  icon={<HelpCircle size={20} />}
                   target="_blank"
                   href="https://docs.easyemail.pro/docs/intro?utm_source=demo"
                 >
-                  <strong>Docs</strong>
+                  <strong>&nbsp;Documentation</strong>
                 </Button>
                 <Button
+                  icon={<Rocket size={20} />}
                   target="_blank"
                   href="https://www.easyemail.pro/?#trial?utm_source=demo"
                 >
-                  <strong>Start Trial</strong>
+                  <strong>&nbsp;Start Trial</strong>
                 </Button>
+
+                {props?.extra}
                 <div />
               </Space>
             </div>
           }
         />
-        <Layout.Sider
-          theme="dark"
-          onCollapse={setCollapsed}
-          collapsed={collapsed}
-          width={250}
-          collapsible
-          style={{
-            position: "fixed",
-            top: 64,
-            left: 0,
-            height: "100vh",
-            zIndex: 100,
-            maxWidth: collapsed ? 0 : 250,
-          }}
+        <Modal
+          visible={!collapsed}
+          onCancel={() => setCollapsed(true)}
+          style={{ width: "90vw", height: "90vh", overflow: "auto" }}
+          footer={null}
         >
-          <Menu theme="dark">
-            <Menu.Item key={"Home"}>
-              <a href={"/"} style={{ display: "block" }}>
-                <IconLeft /> Back to Home
-              </a>
-            </Menu.Item>
-            {navigation.map((item, index) => {
-              return (
-                <Menu.Item key={index.toString()}>
-                  <a href={item.path} style={{ display: "block" }}>
-                    {item.name}
-                  </a>
-                </Menu.Item>
-              );
-            })}
-          </Menu>
-        </Layout.Sider>
+          <div style={{ backgroundColor: "#fff", padding: 16, height: "100%" }}>
+            <EmailList onClick={onSwitchTemplate} />
+          </div>
+        </Modal>
       </div>
 
       <style>{`

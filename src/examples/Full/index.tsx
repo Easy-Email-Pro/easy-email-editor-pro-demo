@@ -9,7 +9,6 @@ import {
   IconFont,
   Retro,
   ThemeConfigProps,
-  useEditorContext,
 } from "easy-email-pro-theme";
 import "easy-email-pro-theme/lib/style.css";
 
@@ -22,16 +21,17 @@ import colorGreenStyle from "@arco-themes/react-easy-email-pro-green/css/arco.cs
 import data from "./template.json";
 import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
-import { Button, Layout, Message, Modal, Select } from "@arco-design/web-react";
+import { Layout } from "@arco-design/web-react";
 import React from "react";
 import {
-  Countdown,
   Shopwindow,
   QRCode,
   Video,
   MarketingType,
   CommonType,
   ImageWithText,
+  CountdownV2,
+  Countdown,
 } from "easy-email-pro-kit";
 import { EditorCore, ElementType, PluginManager, t } from "easy-email-pro-core";
 import { useState } from "react";
@@ -40,15 +40,19 @@ import { useRef } from "react";
 import localsData from "easy-email-pro-localization/locales/locales.json";
 import { get } from "lodash";
 import { AssetManagerModal } from "./AssetManagerModal";
-import { Space } from "@arco-design/web-react";
 import { useUniversalElement } from "@/hooks/useUniversalElement";
 import customizeCss from "./customize.scss?inline";
+import customizeCss2 from "../Customize/customize.scss?inline";
 import FullScreenLoading from "@/components/FullScreenLoading";
 import axios from "axios";
-import { EmailTemplates } from "@/components/EmailTemplates";
 import { Tutorial } from "@/components/Tutorial";
+import { useEditorConfigStore } from "../../store/editorConfigStore";
+
+import { footerElement } from "../FrozenBlock";
+import { headerElement } from "../FrozenBlock";
 
 PluginManager.registerPlugins([
+  CountdownV2,
   Countdown,
   Shopwindow,
   QRCode,
@@ -56,170 +60,8 @@ PluginManager.registerPlugins([
   ImageWithText,
 ]);
 
-const mergetags: ThemeConfigProps["mergetags"] = [
-  {
-    label: "Color",
-    value: "",
-    children: [
-      {
-        label: "Red",
-        value: "colors.red",
-        type: "text",
-      },
-      {
-        label: "Yellow",
-        value: "colors.yellow",
-        type: "text",
-      },
-      {
-        label: "Blue",
-        value: "colors.blue",
-        type: "text",
-      },
-    ],
-  },
-  {
-    label: "Order",
-    value: "",
-    children: [
-      {
-        label: "Order number",
-        value: "order.number",
-        type: "text",
-      },
-      {
-        label: "Order total",
-        value: "order.total",
-        type: "text",
-      },
-    ],
-  },
-  {
-    label: "Social",
-    value: "",
-    children: [
-      {
-        label: "Facebook",
-        value: "social.facebook",
-        type: "image",
-      },
-      {
-        label: "Twitter",
-        value: "social.twitter",
-        type: "image",
-      },
-    ],
-  },
-  {
-    label: "Customer",
-    value: "",
-    children: [
-      {
-        label: "Customer name",
-        value: "customer.name | title_case",
-        type: "text",
-      },
-      {
-        label: "Customer email",
-        value: "customer.email",
-        type: "text",
-      },
-      {
-        label: "Customer country",
-        value: "customer.country",
-        type: "condition",
-      },
-      {
-        label: "Customer sex",
-        value: "customer.sex",
-        type: "condition",
-      },
-    ],
-  },
-  {
-    label: "Product",
-    value: "",
-    children: [
-      {
-        label: "Product list",
-        value: "products",
-        type: "repeat",
-      },
-      {
-        label: "Product title",
-        value: "item.title",
-        type: "text",
-      },
-      {
-        label: "Product price",
-        value: "item.price",
-        type: "text",
-      },
-    ],
-  },
-  {
-    label: "Common",
-    value: "",
-    children: [
-      {
-        label: "Unsubscribe link",
-        value: "common.unsubscribe",
-        type: "link",
-      },
-      {
-        label: "Company logo",
-        value: "common.logo",
-        type: "image",
-      },
-      {
-        label: "Website",
-        value: "common.website",
-        type: "link",
-      },
-    ],
-  },
-];
-
-const mergetagsData: ThemeConfigProps["mergetagsData"] = {
-  order: {
-    number: "Shopify#1001",
-    total: "$100.00",
-  },
-  customer: {
-    name: "john wilson",
-    email: "easy-email-pro@example.com",
-    country: "Canada",
-    sex: "female",
-  },
-  social: {
-    facebook:
-      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/rxxjzpus7vy2cxi0vp6hr_image.png",
-    twitter:
-      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/psyz-f1z-ryy95lv2rh7g_image.png",
-  },
-  products: [
-    {
-      title: "#product 1",
-      image:
-        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jwbrgf-j9czz8k8qh3f2d_image.png",
-    },
-    {
-      title: "#product 2",
-      image:
-        "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/3kcq5x39xga7wdbaprvb-_image.png",
-    },
-  ],
-  colors: {
-    red: "#ff0000",
-    yellow: "#ffff00",
-    blue: "#0000ff",
-  },
-  common: {
-    unsubscribe: "http://www.easyemail.pro",
-    website: "http://www.easyemail.pro",
-    logo: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/g3ehq-wtmes20zksyny0p_mv1spd10wcqm0wryjhusm.png",
-  },
-};
+// register elements styles
+import "./ElementStyleGallery";
 
 const categories: ThemeConfigProps["categories"] = [
   {
@@ -588,7 +430,7 @@ const categories: ThemeConfigProps["categories"] = [
         ),
       },
       {
-        type: MarketingType.MARKETING_COUNTDOWN,
+        type: MarketingType.MARKETING_COUNTDOWN_V2,
         icon: (
           <IconFont
             className={"block-list-grid-item-icon"}
@@ -607,17 +449,7 @@ const categories: ThemeConfigProps["categories"] = [
           </div>
         ),
       },
-      {
-        type: CommonType.COMMON_IMAGE_WITH_TEXT,
-        icon: (
-          <div className={"block-list-grid-item-icon"}>
-            <IconFont
-              className={"block-list-grid-item-icon"}
-              iconName="icon-article"
-            />
-          </div>
-        ),
-      },
+
       {
         type: CommonType.COMMON_VIDEO,
         icon: (
@@ -652,9 +484,8 @@ const categories: ThemeConfigProps["categories"] = [
         ),
         payload: {
           type: "wrapper_widget",
-          title: "New widget",
+          title: "Test Widget",
           data: {
-            name: "New widget",
             description: "Your custom widget",
             contentEditable: true,
             config: [
@@ -1002,10 +833,8 @@ const optionsList = [
 ];
 
 export default function MyEditor() {
-  const [theme, setTheme] = React.useState<string>("green");
-  const [compact, setCompact] = useState(false);
+  const editorConfig = useEditorConfigStore();
   const { upload } = useUpload();
-  const [lang, setLang] = useState<string>("en");
   const [accept, setAccept] = useState<string | undefined>(undefined);
   const [visible, setVisible] = useState(false);
   const { universalElementSetting } = useUniversalElement();
@@ -1058,6 +887,7 @@ export default function MyEditor() {
     };
   }, []);
 
+  const theme = editorConfig.theme;
   const matchThemeStyle = useMemo(() => {
     if (theme === "retro") {
       return retroStyle;
@@ -1135,31 +965,34 @@ export default function MyEditor() {
     initialValues: initialValues,
     onChange,
     onSubmit: onSubmit,
-    mergetagsData: mergetagsData,
-    mergetags: mergetags,
+    mergetagsData: editorConfig.mergetagsData,
+    mergetags: editorConfig.mergetags,
     categories,
     unsplash: {
       clientId: process.env.UNSPLASH_CLIENT_ID!,
     },
     hoveringToolbar: hoveringToolbar,
-    AIAssistant,
-    showSourceCode: true,
-    showLayer: true,
-    showPreview: true,
+    AIAssistant: editorConfig.showAIIntegration ? AIAssistant : undefined,
+    showSourceCode: editorConfig.showSourceCode,
+    showLayer: editorConfig.showLayer,
+    showPreview: editorConfig.showPreview,
     showSidebar: true,
     showPreviousLevelIcon: true,
-    showBlockPaths: true,
+    showBlockPaths: editorConfig.showBlockPaths,
     showTextHTMLMode: true,
     showSelectFileButton: true,
-    compact: compact,
+    compact: editorConfig.compactMode,
     handleUploadClick,
     universalElementSetting,
-    localeData: get(localsData, lang),
+    localeData: get(localsData, editorConfig.language),
     showDragMoveIcon: true,
     showInsertTips: true,
+    controller: editorConfig.controller,
     // sourceCodeEditable: false,
     fontList: fonts,
     // emptyPageElement: data2.content,
+    headerElement: editorConfig.showFrozenBlocks ? headerElement : undefined,
+    footerElement: editorConfig.showFrozenBlocks ? footerElement : undefined,
   });
 
   if (authState === "pending") {
@@ -1173,94 +1006,29 @@ export default function MyEditor() {
     <EmailEditorProvider {...config}>
       <Tutorial>
         <EditorHeader
-          extra={
-            <Space>
-              {/* <Button onClick={() => setCompact((v) => !v)}>
-              <div
-                style={{
-                  width: 150,
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <Space>
-                  <strong>Compact</strong>
-                  <Switch
-                    checkedText="True"
-                    uncheckedText="False"
-                    checked={compact}
-                  />
-                </Space>
-              </div>
-            </Button> */}
-              {/* <Select
-              style={{ width: 120 }}
-              value={hoveringToolbarPosition}
-              onChange={setHoveringToolbarPosition}
-              triggerElement={<Button>HoveringToolbar Position</Button>}
-              options={[
-                { label: "Selection", value: "selection" },
-                { label: "Container", value: "container" },
-                { label: "Page", value: "page" },
-              ]}
-            ></Select> */}
-              <Select
-                style={{ width: 120 }}
-                value={theme}
-                onChange={setTheme}
-                options={[
-                  { label: "Retro", value: "retro" },
-                  { label: "Purple", value: "purple" },
-                  { label: "Blue", value: "blue" },
-                  { label: "Green", value: "green" },
-                  { label: "Red", value: "red" },
-                ]}
-                triggerElement={
-                  <Button>
-                    <strong>Theme Color</strong>
-                  </Button>
-                }
-              ></Select>
-              <EmailTemplates>
-                <Button>
-                  <strong>Switch Template</strong>
-                </Button>
-              </EmailTemplates>
-              <TranslationSelect lang={lang} />
-              <Select
-                triggerElement={
-                  <Button>
-                    <strong>Localization</strong>
-                  </Button>
-                }
-                style={{ width: 120 }}
-                value={lang}
-                onChange={setLang}
-                options={Object.keys(localsData).map((item) => {
-                  return {
-                    label: item,
-                    value: item,
-                  };
-                })}
-              ></Select>
-              <Button
-                onClick={() => {
-                  editorInstance.current?.submit();
-                }}
-              >
-                Save
-              </Button>
-            </Space>
-          }
+        // extra={
+        //   <Space>
+        //     <Button
+        //       onClick={() => {
+        //         editorInstance.current?.submit();
+        //       }}
+        //     >
+        //       <strong>Save</strong>
+        //     </Button>
+        //   </Space>
+        // }
         />
 
         <Layout.Content>
           <Retro.Layout>
             <style id="customize-css">{customizeCss}</style>
+            {editorConfig.showCustomStyles && (
+              <style id="customize-css2">{customizeCss2}</style>
+            )}
           </Retro.Layout>
         </Layout.Content>
         <AssetManagerModal
-          key={lang}
+          key={editorConfig.language}
           accept={accept}
           visible={visible}
           setVisible={setVisible}
@@ -1271,67 +1039,3 @@ export default function MyEditor() {
     </EmailEditorProvider>
   );
 }
-
-const TranslationSelect = ({ lang }: { lang: string }) => {
-  const langRef = useRef(lang);
-  const { values, reset } = useEditorContext();
-  const onTranslate = async (targetLang: string) => {
-    Message.loading(`Translating...`);
-    const modal = Modal.info({
-      style: {
-        backgroundColor: "transparent",
-      },
-      maskClosable: false,
-      maskStyle: {
-        backgroundColor: "transparent",
-      },
-      content: <div></div>,
-      closable: false,
-      footer: null,
-      focusLock: true,
-      icon: null,
-    });
-    const newTemplate = await EditorCore.translate({
-      template: {
-        subject: values.subject,
-        content: values.content,
-      },
-      async translate(words) {
-        const { data } = await axios.post<Record<string, string>>(
-          `https://easy-email-pro-translate-test.vercel.app/api/public/translate`,
-          {
-            source: langRef.current,
-            target: targetLang,
-            words,
-          }
-        );
-        console.log(data);
-        return data;
-      },
-    });
-
-    reset(newTemplate);
-    langRef.current = targetLang;
-    Message.clear();
-    modal.close();
-  };
-
-  return (
-    <Select
-      style={{ width: 150 }}
-      value={lang}
-      onChange={onTranslate}
-      triggerElement={
-        <Button>
-          <strong>Translation</strong>
-        </Button>
-      }
-      options={Object.keys(localsData).map((item) => {
-        return {
-          label: `${item}`,
-          value: item,
-        };
-      })}
-    ></Select>
-  );
-};

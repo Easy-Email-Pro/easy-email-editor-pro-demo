@@ -13,6 +13,7 @@ import {
   MarketingQRCodeElement,
   CommonVideoElement,
   CommonImageWithTextElement,
+  MarketingCountdownElementV2,
 } from "easy-email-pro-kit";
 
 type CustomType = typeof CustomBlockType;
@@ -97,6 +98,7 @@ declare module "easy-email-pro-core" {
       | FrozenHeaderElement
       | FrozenFooterElement
       | MarketingCountdownElement
+      | MarketingCountdownElementV2
       | MarketingQRCodeElement
       | MarketingShopwindowElement
       | CommonVideoElement

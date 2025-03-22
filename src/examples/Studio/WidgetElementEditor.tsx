@@ -5,35 +5,43 @@ import {
   Retro,
   ThemeConfigProps,
   useEditorContext,
-  mjmlToJson,
 } from "easy-email-pro-theme";
 import "easy-email-pro-theme/lib/style.css";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 
 import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
-import { Button, Layout, Message } from "@arco-design/web-react";
+import { Layout } from "@arco-design/web-react";
 import React from "react";
-import { useSearchParams } from "react-router-dom";
 import {
   Countdown,
   Shopwindow,
   QRCode,
+  Video,
   MarketingType,
+  CommonType,
+  ImageWithText,
 } from "easy-email-pro-kit";
 import {
   ElementType,
-  PageElement,
   PluginManager,
+  SectionWidgetElement,
   t,
 } from "easy-email-pro-core";
-import { useCompactMode } from "@/hooks/useCompactMode";
 import { useEffect } from "react";
-import axios from "axios";
 import { useState } from "react";
-import FullScreenLoading from "@/components/FullScreenLoading";
+import { Button } from "@arco-design/web-react";
+import { Message } from "@arco-design/web-react";
+import { Space } from "@arco-design/web-react";
+import { cloneDeep } from "lodash";
 
-PluginManager.registerPlugins([Countdown, Shopwindow, QRCode]);
+PluginManager.registerPlugins([
+  Countdown,
+  Shopwindow,
+  QRCode,
+  Video,
+  ImageWithText,
+]);
 
 const mergetags = [
   {
@@ -279,6 +287,28 @@ const categories: ThemeConfigProps["categories"] = [
           </div>
         ),
       },
+      {
+        type: CommonType.COMMON_VIDEO,
+        icon: (
+          <div className={"block-list-grid-item-icon"}>
+            <IconFont
+              className={"block-list-grid-item-icon"}
+              iconName="icon-video"
+            />
+          </div>
+        ),
+      },
+      {
+        type: CommonType.COMMON_IMAGE_WITH_TEXT,
+        icon: (
+          <div className={"block-list-grid-item-icon"}>
+            <IconFont
+              className={"block-list-grid-item-icon"}
+              iconName="icon-hero"
+            />
+          </div>
+        ),
+      },
     ],
   },
   {
@@ -327,29 +357,24 @@ const categories: ThemeConfigProps["categories"] = [
   },
 ];
 
-const TemplateEditor = ({
-  data,
+export function WidgetElementEditor({
+  initialValues,
+  onChange,
 }: {
-  data: { content: EmailTemplate["content"]; subject: string };
-}) => {
+  initialValues: EmailTemplate;
+  onChange: (element: SectionWidgetElement) => void;
+}) {
   const { upload } = useUpload();
-
-  const initialValues: EmailTemplate | null = useMemo(() => {
-    return {
-      subject: data.subject,
-      content: data.content as EmailTemplate["content"],
-    };
-  }, [data]);
+  const [attributesVariables, setAttributesVariables] = useState({});
 
   const onUpload = (file: Blob): Promise<string> => {
     return upload(file);
   };
 
-  const onSubmit = (values: EmailTemplate) => {
+  const onSubmit = async (values: EmailTemplate) => {
     console.log(values);
   };
 
-  const compact = useCompactMode();
   const config = Retro.useCreateConfig({
     clientId: process.env.CLIENT_ID!,
     height: "calc(100vh - 66px)",
@@ -364,171 +389,65 @@ const TemplateEditor = ({
     },
     showSourceCode: true,
     showLayer: true,
-    compact,
-    showDragMoveIcon: true,
-    showInsertTips: true,
+
     showSidebar: true,
     showPreviousLevelIcon: true,
     showBlockPaths: true,
     showTextHTMLMode: true,
     showSelectFileButton: true,
+    showDragMoveIcon: true,
+    showInsertTips: true,
+    widgetMode: true,
+    compact: false,
+    attributesVariables,
   });
 
   return (
     <EmailEditorProvider {...config}>
-      <EditorHeader extra={<SaveAndShareButton />} />
-
       <Layout.Content>
         <Retro.Layout></Retro.Layout>
       </Layout.Content>
+      <AttributesVariables setAttributesVariables={setAttributesVariables} />
+      <AsyncWidgetElementEditor onChange={onChange} />
     </EmailEditorProvider>
   );
-};
+}
 
-const SaveAndShareButton = () => {
-  const isShare = location.pathname === "/share";
-  const [params] = useSearchParams();
-  const [loading, setLoading] = useState(false);
-
-  const id = params.get("id") || "";
-  const gid = params.get("gid") || "";
-  const { values, reset } = useEditorContext();
-
-  const onShare = async () => {
-    try {
-      setLoading(true);
-      if (!id) {
-        const { data } = await axios.post(
-          `https://admin.easyemail.pro/api/email-template`,
-          {
-            subject: values.subject,
-            content: values.content,
-            thumbnail:
-              "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/73aba2b0-4d98-4314-8a98-654598279ced.png",
-          },
-          {
-            params: {
-              user_id: "clnu5hbaj000608mk27gof0y4",
-            },
-          }
-        );
-
-        window.location.replace(`/share?id=${data.id}`);
-      } else {
-        const { data } = await axios.patch(
-          `https://admin.easyemail.pro/api/email-template/${id}`,
-          {
-            subject: values.subject,
-            content: values.content,
-          },
-          {
-            params: {
-              user_id: "clnu5hbaj000608mk27gof0y4",
-            },
-          }
-        );
-      }
-      await navigator.clipboard.writeText(location.href);
-      Message.success(`The link has been copied to the clipboard`);
-    } catch (error) {
-      Message.error(String(error));
-    }
-    setLoading(false);
-  };
-  if (!isShare) return null;
-  return (
-    <Button loading={loading} onClick={onShare}>
-      <strong>Save and share</strong>
-    </Button>
-  );
-};
-
-const TemplateEditorContainer = () => {
-  const [params] = useSearchParams();
-
-  const [data, setData] = useState<{
-    subject: string;
-    content: PageElement;
-  } | null>(null);
-
-  const id = params.get("id") || "";
-  const gid = params.get("gid") || "";
+const AttributesVariables = ({
+  setAttributesVariables,
+}: {
+  setAttributesVariables: React.Dispatch<React.SetStateAction<{}>>;
+}) => {
+  const { values } = useEditorContext();
+  const widgetElement = values.widgetElement;
 
   useEffect(() => {
-    if (!id && !gid) {
-      setData({
-        subject: "Blank",
-        content: {
-          data: {
-            breakpoint: "480px",
-            globalAttributes: {
-              "font-family": "Arial, sans-serif",
-            },
-          },
-          type: "page",
-          children: [
-            {
-              type: "standard-section",
-              data: {},
-              attributes: {},
-              children: [
-                {
-                  type: "standard-column",
-                  data: {},
-                  attributes: {},
-                  children: [
-                    {
-                      type: "placeholder",
-                      data: {},
-                      attributes: {},
-                      children: [
-                        {
-                          text: "",
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-          attributes: {
-            "background-color": "#f5f5f5",
-            "content-background-color": "#ffffff",
-          },
-        },
-      });
-      return;
-    }
-    if (gid) {
-      axios
-        .get(
-          `https://api.github.com/repos/Easy-Email-Pro/email-templates/contents/${gid}`
-        )
-        .then(({ data }) => {
-          setData({
-            subject: data.name,
-            content: mjmlToJson(atob(data.content)),
-          });
-        });
-    } else if (id) {
-      axios
-        .get(`https://admin.easyemail.pro/api/email-template/${id}`, {
-          params: {
-            user_id:
-              location.pathname === "/share"
-                ? "clnu5hbaj000608mk27gof0y4"
-                : "clnl5a07900065zltiqvalojp",
-          },
-        })
-        .then(({ data }) => {
-          setData(data);
-        });
-    }
-  }, [gid, id]);
+    setAttributesVariables((old) => {
+      return {
+        ...old,
+        ...widgetElement?.data.input,
+      };
+    });
+  }, [setAttributesVariables, widgetElement?.data.input]);
 
-  if (!data) return <FullScreenLoading isFullScreen></FullScreenLoading>;
-  return <TemplateEditor data={data} />;
+  return <></>;
 };
 
-export default TemplateEditorContainer;
+const AsyncWidgetElementEditor = ({
+  onChange,
+}: {
+  onChange: (element: SectionWidgetElement) => void;
+}) => {
+  const { values } = useEditorContext();
+
+  useEffect(() => {
+    onChange(
+      cloneDeep({
+        ...values.widgetElement,
+        children: values.content.children,
+      } as SectionWidgetElement)
+    );
+  }, [onChange, values.content.children, values.widgetElement]);
+
+  return <></>;
+};

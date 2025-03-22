@@ -66,29 +66,32 @@ importers:
         specifier: ^4.16.0
         version: 4.16.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-asset-manager:
-        specifier: 1.45.2
-        version: 1.45.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.49.1
+        version: 1.49.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-core:
-        specifier: 1.45.2
-        version: 1.45.2(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.49.1
+        version: 1.49.1(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-editor:
-        specifier: 1.45.2
-        version: 1.45.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.49.1
+        version: 1.49.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-kit:
-        specifier: 1.45.2
-        version: 1.45.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.49.1
+        version: 1.49.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-localization:
-        specifier: 1.45.2
-        version: 1.45.2
+        specifier: 1.49.1
+        version: 1.49.1
       easy-email-pro-plugins:
-        specifier: 1.45.2
-        version: 1.45.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.49.1
+        version: 1.49.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-theme:
-        specifier: 1.45.2
-        version: 1.45.2(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.49.1
+        version: 1.49.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       file-saver:
         specifier: ^2.0.5
         version: 2.0.5
+      framer-motion:
+        specifier: ^12.5.0
+        version: 12.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       he:
         specifier: ^1.2.0
         version: 1.2.0
@@ -104,6 +107,9 @@ importers:
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
+      lucide-react:
+        specifier: ^0.483.0
+        version: 0.483.0(react@18.2.0)
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -173,6 +179,9 @@ importers:
       vite-plugin-monaco-editor:
         specifier: ^1.1.0
         version: 1.1.0(monaco-editor@0.36.1)
+      zustand:
+        specifier: ^5.0.3
+        version: 5.0.3(@types/react@18.2.14)(immer@10.0.3)(react@18.2.0)
     devDependencies:
       '@types/file-saver':
         specifier: ^2.0.5
@@ -373,14 +382,20 @@ packages:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
 
+  '@dnd-kit/modifiers@9.0.0':
+    resolution: {integrity: sha512-ybiLc66qRGuZoC20wdSSG6pDXFikui/dCNGthxv4Ndy8ylErY0N3KVxY2bgo7AWwIbxDmXDg3ylAFmnrjcbVvw==}
+    peerDependencies:
+      '@dnd-kit/core': ^6.3.0
+      react: '>=16.8.0'
+
   '@dnd-kit/sortable@7.0.2':
     resolution: {integrity: sha512-wDkBHHf9iCi1veM834Gbk1429bd4lHX4RpAwT0y2cHLf246GAvU2sVw/oxWNpPKQNQRQaeGXhAVgrOl1IT+iyA==}
     peerDependencies:
       '@dnd-kit/core': ^6.0.7
       react: '>=16.8.0'
 
-  '@dnd-kit/utilities@3.2.1':
-    resolution: {integrity: sha512-OOXqISfvBw/1REtkSK2N3Fi2EQiLMlWUlqnOK/UpOISqBZPWpE6TqL+jcPtMOkE8TqYGiURvRdPSI9hltNUjEA==}
+  '@dnd-kit/utilities@3.2.2':
+    resolution: {integrity: sha512-+MKAJEOfaBe5SmV6t34p80MMKhjvUz0vRrvVJbPT0WElzaOJ/1xs+D+KDv+tD/NE5ujfrChEcshd4fLn0wpiqg==}
     peerDependencies:
       react: '>=16.8.0'
 
@@ -1326,45 +1341,46 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-asset-manager@1.45.2:
-    resolution: {integrity: sha512-qJstDLcVz3cir+Wazeax7W2jRUGdgGrgeWXOGsWwMpxshcQGPPAceTD04LXEd9BiRpttwNL/g7/UFiISgEw31g==}
+  easy-email-pro-asset-manager@1.49.1:
+    resolution: {integrity: sha512-nAqaVRTW596Tm9faIgeSgmPSDuKgrau6NyYuGwdUtn3arpWgAOMfjnS+j8o9PuWSJMmZn8aleair6N+Sc266UQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-core@1.45.2:
-    resolution: {integrity: sha512-rP8uLd7kXlvRwWzlTHMXWEgop1ZURHiMukC7XJ3PSRxSo4l0g4m9a8bgeON4aKgyjukgHfi8pXAyjuV38uHiyQ==}
+  easy-email-pro-core@1.49.1:
+    resolution: {integrity: sha512-7u/TksXIVvM4zBrrO9XipT7ELriSZZixVITPO7zJI532w0t3NTFjn7dL2+npZyYC/3jcf+8iuog93ei9cJePiQ==}
     peerDependencies:
       axios: ^1.4.0
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-editor@1.45.2:
-    resolution: {integrity: sha512-W8/KaxA5nzyRnUVeZWIbCisPpzLVlvVmcKFyZYXYBHT/vL6uVTyes1EeNRoykgmeOAjGW0k4ln4C5CvojF0alQ==}
+  easy-email-pro-editor@1.49.1:
+    resolution: {integrity: sha512-K3qjlkepD6XUFKnkuywk+srXgXErHW46qIZVdbiLD3DwBFXV4Vp6OsiaRV7aJkE8/YQJQa1vojKkIICD2NIHUw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-kit@1.45.2:
-    resolution: {integrity: sha512-hed3FFP7pQ1IFTvwAdunkP4kD736cPH/gys8tXc/syiY5DqjlSTYfKsxkFrd8IMypc0Q7MFpi9rxodG+rCl+JA==}
+  easy-email-pro-kit@1.49.1:
+    resolution: {integrity: sha512-RFxE9qvJWUclDauyxQslN3k3TOvGJYUFWoGApmI6Q4ATeBmIlHURZN3ezNTzkLexqu8zQmUGUHhE5JJyH/t69g==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-localization@1.45.2:
-    resolution: {integrity: sha512-OapUbRVnGIg0RqhzSL0d7ZJjRqMhd2pQtF3/C7YhAfw8X9+R/3QSx8WMjDbi1LR1rodDXHaqlMkabLF3n9jm0g==}
+  easy-email-pro-localization@1.49.1:
+    resolution: {integrity: sha512-A84WXKAOrdBrOAYlgUVHQNM4dJk1A7TKw8YBE9iw/8ggd6eLBNsqDFjZ94QnNTNXrgHJsYHzEc52JYxsA+MIXg==}
 
-  easy-email-pro-plugins@1.45.2:
-    resolution: {integrity: sha512-oByRY2iRlcJ3l0bawRGz9IRp4E2Q5HmUPdfAYdcpXRLOx/tUKqB4ZmXkNyAE64SyQK0JGUYi6vgswMCQWu7Q4g==}
+  easy-email-pro-plugins@1.49.1:
+    resolution: {integrity: sha512-Xoqrqn5+siIiUd7p2/c/HXcZ6mN0vnr39ldUbQFR1z94sikSEt39u3RnynPyJ2E/xudBH83BtCPecKx6i/lfmw==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-theme@1.45.2:
-    resolution: {integrity: sha512-6EE0CKZ9AAmUQaqUNdzeICisgIaUwYtj2lOkMhlaww0T+l8lxeaS5KSrgHvXGUlt6YRuUmxsUCE0fGrGSlD0OA==}
+  easy-email-pro-theme@1.49.1:
+    resolution: {integrity: sha512-JKPEnNQxOAQiae49q8BpJFXCSgUg88vdTqXwTiM/sw3BeY4xKKTR8SG4+6JOR5mpIsnUGM83PDnOctk8kZjIpg==}
     peerDependencies:
       '@arco-design/web-react': ^2.46.3
       mjml-browser: ^4.14.1
+      nanoid: ^5.1.5
       react: ^18.2.0
       react-dom: ^18.2.0
 
@@ -1651,6 +1667,20 @@ packages:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
     engines: {node: '>= 6'}
 
+  framer-motion@12.5.0:
+    resolution: {integrity: sha512-buPlioFbH9/W7rDzYh1C09AuZHAk2D1xTA1BlounJ2Rb9aRg84OXexP0GLd+R83v0khURdMX7b5MKnGTaSg5iA==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   fs-extra@11.2.0:
     resolution: {integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==}
     engines: {node: '>=14.14'}
@@ -1691,10 +1721,12 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@9.3.2:
     resolution: {integrity: sha512-BTv/JhKXFEHsErMte/AnfiSv8yYOLLiyH2lTg8vn02O21zWFgHPTfxtgn1QRe7NRgggUhC8hacR2Re94svHqeA==}
@@ -1782,6 +1814,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -1942,6 +1975,11 @@ packages:
   lru-cache@7.18.3:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
+
+  lucide-react@0.483.0:
+    resolution: {integrity: sha512-WldsY17Qb/T3VZdMnVQ9C3DDIP7h1ViDTHVdVGnLZcvHNg30zH/MTQ04RTORjexoGmpsXroiQXZ4QyR0kBy0FA==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
   magic-string@0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
@@ -2169,6 +2207,12 @@ packages:
   monaco-editor@0.36.1:
     resolution: {integrity: sha512-/CaclMHKQ3A6rnzBzOADfwdSJ25BFoFT0Emxsc4zYVyav5SkK9iA6lEtIeuN/oRYbwPgviJT+t3l+sjFa28jYg==}
 
+  motion-dom@12.5.0:
+    resolution: {integrity: sha512-uH2PETDh7m+Hjd1UQQ56yHqwn83SAwNjimNPE/kC+Kds0t4Yh7+29rfo5wezVFpPOv57U4IuWved5d1x0kNhbQ==}
+
+  motion-utils@12.5.0:
+    resolution: {integrity: sha512-+hFFzvimn0sBMP9iPxBa9OtRX35ZQ3py0UHnb8U29VD+d8lQ8zH3dTygJWqK7av2v6yhg7scj9iZuvTS0f4+SA==}
+
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
@@ -2193,6 +2237,11 @@ packages:
   nanoid@4.0.2:
     resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
     engines: {node: ^14 || ^16 || >=18}
+    hasBin: true
+
+  nanoid@5.1.5:
+    resolution: {integrity: sha512-Ir/+ZpE9fDsNH0hQ3C68uyThDXzYcim2EqcZ8zn8Chtt1iylPT9xXJB0kPCnqzgcEGikO9RxSrh63MsmVCU7Fw==}
+    engines: {node: ^18 || >=20}
     hasBin: true
 
   needle@3.2.0:
@@ -2897,6 +2946,10 @@ packages:
   utrie@1.0.2:
     resolution: {integrity: sha512-1MLa5ouZiOmQzUbjbu9VmjLzn1QLXBhwpUa7kdLUQK+KQ5KA9I1vk5U4YHe/X2Ch7PYnJfWuWT+VbuxbGwljhw==}
 
+  uuid@11.1.0:
+    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+    hasBin: true
+
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
@@ -3065,6 +3118,24 @@ packages:
 
   zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+
+  zustand@5.0.3:
+    resolution: {integrity: sha512-14fwWQtU3pH4dE0dOpdMiWjddcH+QzKIgk1cl8epwSE7yag43k/AD/m4L6+K7DytAOr9gGBe3/EXj9g7cdostg==}
+    engines: {node: '>=12.20.0'}
+    peerDependencies:
+      '@types/react': '>=18.0.0'
+      immer: '>=9.0.6'
+      react: '>=18.0.0'
+      use-sync-external-store: '>=1.2.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      immer:
+        optional: true
+      react:
+        optional: true
+      use-sync-external-store:
+        optional: true
 
 snapshots:
 
@@ -3274,19 +3345,26 @@ snapshots:
   '@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@dnd-kit/accessibility': 3.0.1(react@18.2.0)
-      '@dnd-kit/utilities': 3.2.1(react@18.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+      tslib: 2.6.0
+
+  '@dnd-kit/modifiers@9.0.0(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
+      react: 18.2.0
       tslib: 2.6.0
 
   '@dnd-kit/sortable@7.0.2(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@dnd-kit/utilities': 3.2.1(react@18.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       react: 18.2.0
       tslib: 2.6.0
 
-  '@dnd-kit/utilities@3.2.1(react@18.2.0)':
+  '@dnd-kit/utilities@3.2.2(react@18.2.0)':
     dependencies:
       react: 18.2.0
       tslib: 2.6.0
@@ -4266,14 +4344,14 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       uuid: 8.3.2
 
-  easy-email-pro-asset-manager@1.45.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-asset-manager@1.49.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       cropperjs: 1.6.1
       react: 18.2.0
       react-cropper: 2.3.3(react@18.2.0)
       react-dom: 18.2.0(react@18.2.0)
 
-  easy-email-pro-core@1.45.2(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-core@1.49.1(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@types/crypto-js': 4.1.1
       '@types/gif.js': 0.2.2
@@ -4289,13 +4367,14 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  easy-email-pro-editor@1.45.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-editor@1.49.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       axios: 1.4.0
       color: 4.2.3
       he: 1.2.0
       is-hotkey: 0.2.0
       lodash: 4.17.21
+      nanoid: 5.1.5
       overlayscrollbars: 1.13.3
       overlayscrollbars-react: 0.3.0(overlayscrollbars@1.13.3)(react@18.2.0)
       parse5: 7.1.2
@@ -4305,7 +4384,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  easy-email-pro-kit@1.45.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-kit@1.49.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@types/gif.js': 0.2.2
       '@types/mjml': 4.7.1
@@ -4315,9 +4394,9 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  easy-email-pro-localization@1.45.2: {}
+  easy-email-pro-localization@1.49.1: {}
 
-  easy-email-pro-plugins@1.45.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-plugins@1.49.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@emoji-mart/data': 1.1.2
       '@emoji-mart/react': 1.1.1(emoji-mart@5.5.2)(react@18.2.0)
@@ -4325,12 +4404,13 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  easy-email-pro-theme@1.45.2(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-theme@1.49.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@dnd-kit/modifiers': 9.0.0(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
-      '@dnd-kit/utilities': 3.2.1(react@18.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       '@types/gif.js': 0.2.2
       '@types/react': 18.2.14
       axios: 1.4.0
@@ -4340,17 +4420,20 @@ snapshots:
       html2canvas: 1.4.1
       is-hotkey: 0.2.0
       lodash: 4.17.21
+      lucide-react: 0.483.0(react@18.2.0)
       mjml-browser: 4.14.1
       mobx: 6.9.0
       mobx-react: 7.6.0(mobx@6.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       modern-gif: 1.1.5
       monaco-editor: 0.36.1
+      nanoid: 4.0.2
       overlayscrollbars: 1.13.3
       overlayscrollbars-react: 0.3.0(overlayscrollbars@1.13.3)(react@18.2.0)
       react: 18.2.0
       react-beautiful-dnd: 13.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-dom: 18.2.0(react@18.2.0)
       react-masonry-component: 6.3.0(react@18.2.0)
+      uuid: 11.1.0
     transitivePeerDependencies:
       - debug
       - react-native
@@ -4611,6 +4694,15 @@ snapshots:
       asynckit: 0.4.0
       combined-stream: 1.0.8
       mime-types: 2.1.35
+
+  framer-motion@12.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      motion-dom: 12.5.0
+      motion-utils: 12.5.0
+      tslib: 2.6.0
+    optionalDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
 
   fs-extra@11.2.0:
     dependencies:
@@ -4945,6 +5037,10 @@ snapshots:
       yallist: 4.0.0
 
   lru-cache@7.18.3: {}
+
+  lucide-react@0.483.0(react@18.2.0):
+    dependencies:
+      react: 18.2.0
 
   magic-string@0.27.0:
     dependencies:
@@ -5343,6 +5439,12 @@ snapshots:
 
   monaco-editor@0.36.1: {}
 
+  motion-dom@12.5.0:
+    dependencies:
+      motion-utils: 12.5.0
+
+  motion-utils@12.5.0: {}
+
   mri@1.2.0: {}
 
   ms@2.1.2: {}
@@ -5366,6 +5468,8 @@ snapshots:
   nanoid@3.3.6: {}
 
   nanoid@4.0.2: {}
+
+  nanoid@5.1.5: {}
 
   needle@3.2.0:
     dependencies:
@@ -6079,6 +6183,8 @@ snapshots:
     dependencies:
       base64-arraybuffer: 1.0.2
 
+  uuid@11.1.0: {}
+
   uuid@8.3.2: {}
 
   uzip@0.20201231.0: {}
@@ -6218,3 +6324,9 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.22.4: {}
+
+  zustand@5.0.3(@types/react@18.2.14)(immer@10.0.3)(react@18.2.0):
+    optionalDependencies:
+      '@types/react': 18.2.14
+      immer: 10.0.3
+      react: 18.2.0
