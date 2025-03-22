@@ -12,7 +12,7 @@ import React from "react";
 import { Element } from "easy-email-pro-core";
 import { useCompactMode } from "@/hooks/useCompactMode";
 
-const headerElement: Element = {
+export const headerElement: Element = {
   type: "standard-section",
   data: {},
   attributes: {
@@ -42,7 +42,7 @@ const headerElement: Element = {
   ],
 };
 
-const footerElement: Element = {
+export const footerElement: Element = {
   type: "standard-section",
   data: {},
   attributes: {

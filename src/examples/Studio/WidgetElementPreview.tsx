@@ -1,14 +1,18 @@
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { EmailEditorProvider, EmailTemplate } from "easy-email-pro-editor";
-import { IconFont, Retro, ThemeConfigProps } from "easy-email-pro-theme";
+import {
+  IconFont,
+  Retro,
+  ThemeConfigProps,
+  useEditorContext,
+} from "easy-email-pro-theme";
 import "easy-email-pro-theme/lib/style.css";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
-import data from "./template.json";
-import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
 import { Layout } from "@arco-design/web-react";
 import React from "react";
-import { ElementType, t } from "easy-email-pro-core";
+import { ElementType, SectionWidgetElement, t } from "easy-email-pro-core";
+import { cloneDeep } from "lodash";
 
 const categories: ThemeConfigProps["categories"] = [
   {
@@ -196,15 +200,14 @@ const categories: ThemeConfigProps["categories"] = [
   },
 ];
 
-export default function MyEditor() {
+export function WidgetElementPreview({
+  widgetElement,
+  initialValues,
+}: {
+  widgetElement: SectionWidgetElement;
+  initialValues: EmailTemplate;
+}) {
   const { upload } = useUpload();
-
-  const initialValues: EmailTemplate | null = useMemo(() => {
-    return {
-      subject: data.subject,
-      content: data.content as EmailTemplate["content"],
-    };
-  }, []);
 
   const onUpload = (file: Blob): Promise<string> => {
     return upload(file);
@@ -232,11 +235,30 @@ export default function MyEditor() {
 
   return (
     <EmailEditorProvider {...config}>
-      <EditorHeader />
-
       <Layout.Content>
         <Retro.Layout></Retro.Layout>
       </Layout.Content>
+      <AsyncWidgetElementEditor widgetElement={widgetElement} />
     </EmailEditorProvider>
   );
 }
+
+const AsyncWidgetElementEditor = ({
+  widgetElement,
+}: {
+  widgetElement: SectionWidgetElement;
+}) => {
+  const { reset, values } = useEditorContext();
+
+  useEffect(() => {
+    const clonedWidgetElement = cloneDeep(values.content);
+    clonedWidgetElement.children = [widgetElement];
+
+    reset({
+      ...values,
+      content: clonedWidgetElement,
+    });
+  }, [widgetElement]);
+
+  return <></>;
+};
