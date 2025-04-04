@@ -991,6 +991,7 @@ export default function MyEditor() {
     // sourceCodeEditable: false,
     fontList: fonts,
     // emptyPageElement: data2.content,
+    dragoverType: editorConfig.dragoverType ? "line" : "placeholder",
     headerElement: editorConfig.showFrozenBlocks ? headerElement : undefined,
     footerElement: editorConfig.showFrozenBlocks ? footerElement : undefined,
   });
