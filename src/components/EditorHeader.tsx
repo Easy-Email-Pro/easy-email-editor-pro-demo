@@ -2,7 +2,6 @@ import {
   Button,
   Dropdown,
   Input,
-  Layout,
   Menu,
   Message,
   Modal,
@@ -11,7 +10,7 @@ import {
   Tooltip,
   Typography,
 } from "@arco-design/web-react";
-import { IconMenu, IconLeft } from "@arco-design/web-react/icon";
+import { IconMenu } from "@arco-design/web-react/icon";
 import React from "react";
 import { EmailTemplate, useEditorProps } from "easy-email-pro-editor";
 import { mjmlToJson, useEditorContext } from "easy-email-pro-theme";
@@ -21,7 +20,6 @@ import {
   PluginManager,
   easyEmailToEasyEmailPro,
 } from "easy-email-pro-core";
-import { navigation } from "../main";
 import mjml from "mjml-browser";
 import { saveAs } from "file-saver";
 import { Uploader } from "@/utils/Uploader";
@@ -32,7 +30,6 @@ import { SendEmailModal } from "./SendEmailModal";
 import { base64ToBlob, dom2Svg } from "@/utils/base64ToBlob";
 import {
   Menu as LucideMenu,
-  Import,
   HelpCircle,
   Rocket,
   Download,
@@ -67,7 +64,7 @@ export const EditorHeader = (props: {
     const container = document.createElement("div");
     container.style.position = "absolute";
     container.style.width = "600px";
-    container.style.left = "-9999px";
+    // container.style.left = "-9999px";
     const mjmlStr = EditorCore.toMJML({
       element: values.content,
       mode: "production",

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { WidgetElementEditor } from "./WidgetElementEditor";
 import { WidgetElementPreview } from "./WidgetElementPreview";
 import { IconCopy } from "@arco-design/web-react/icon";
-import { motion, AnimatePresence } from "framer-motion"; // 需要安装: npm install framer-motion
+import { motion } from "framer-motion"; // 需要安装: npm install framer-motion
 import { SectionWidgetElement } from "easy-email-pro-core";
 import { EmailTemplate } from "easy-email-pro-editor";
 import { AttributeField, WidgetTypeOptions } from "easy-email-pro-theme";

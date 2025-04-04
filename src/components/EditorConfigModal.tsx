@@ -98,6 +98,13 @@ export const EditorConfigModal = ({
         "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jeeyfekaje_mfugqqj63b_image.png",
     },
     {
+      key: "dragoverType",
+      title: "Dragover Style",
+      description: "Toggle between line and placeholder dragover styles",
+      stateKey: "dragoverType",
+      toggleFn: "toggleDragoverType",
+    },
+    {
       key: "showBlockPaths",
       title: "Show Block Paths",
       description: "Display block paths in the editor",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Tabs } from "@arco-design/web-react";
+import { Button } from "@arco-design/web-react";
 import { Layout } from "@arco-design/web-react";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 import { Space } from "@arco-design/web-react";

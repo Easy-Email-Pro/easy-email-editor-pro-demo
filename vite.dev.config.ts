@@ -13,8 +13,8 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    svgr({ exportAsDefault: true }),
-    monacoEditorPlugin({}),
+    svgr({ exportAsDefault: true }) as any,
+    monacoEditorPlugin({}) as any,
   ] as any,
   build: {
     emptyOutDir: true,
@@ -26,6 +26,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "mjml-browser": path.resolve("./node_modules/mjml-browser"),
+      "html-minifier-terser": path.resolve(
+        "./node_modules/html-minifier-terser/dist/htmlminifier.esm.bundle.js"
+      ),
       slate: path.resolve("./node_modules/slate"),
       react: path.resolve("./node_modules/react"),
       // "react-dom": path.resolve("./node_modules/react-dom"),

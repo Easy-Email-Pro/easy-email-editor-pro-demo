@@ -70,7 +70,9 @@
             },
             "is_valid": true
           },
-          "name": "New widget"
+          "name": "New widget",
+          "contentEditable": false,
+          "staticLogicEnabled": true
         },
         "attributes": {},
         "children": [
@@ -102,9 +104,11 @@
                       {
                         "text": ""
                       }
-                    ]
+                    ],
+                    "id": "srb-2KT5Lj21uAc2HUKHl"
                   }
-                ]
+                ],
+                "id": "LKcNMPzXILMVe3QfELHwo"
               },
               {
                 "type": "standard-column",
@@ -125,9 +129,10 @@
                     },
                     "children": [
                       {
-                        "text": "$var(product.title)"
+                        "text": "{{product.title}}"
                       }
-                    ]
+                    ],
+                    "id": "6Kqfi9XGiT2ml5GkNZTak"
                   },
                   {
                     "name": "Text",
@@ -140,9 +145,10 @@
                     },
                     "children": [
                       {
-                        "text": "$var(product.description)"
+                        "text": "{{product.description}}"
                       }
-                    ]
+                    ],
+                    "id": "usU5Mi8KmKmV7S2EzYnTl"
                   },
                   {
                     "name": "Text",
@@ -155,9 +161,10 @@
                     },
                     "children": [
                       {
-                        "text": "$var(product.price)"
+                        "text": "{{product.price}}"
                       }
-                    ]
+                    ],
+                    "id": "eVijjVWqnOE8Nt5Zr9B6V"
                   },
                   {
                     "type": "standard-button",
@@ -172,14 +179,18 @@
                       {
                         "text": "Click"
                       }
-                    ]
+                    ],
+                    "id": "gJ6CD1nws1mVGBwe2_4kz"
                   }
-                ]
+                ],
+                "id": "Dfj9pI1Nqd_irtLBNEFVx"
               }
-            ]
+            ],
+            "id": "4j9UcvX8NnUITstFY4pAa"
           }
         ],
-        "name": "Image with text"
+        "name": "Image with text",
+        "id": "7qnjetAX65RHAzGebZz6G"
       }
     ],
     "attributes": {

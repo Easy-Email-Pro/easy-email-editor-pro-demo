@@ -54,11 +54,32 @@
               "required": false,
               "helpText": "",
               "type": "image"
+            },
+            {
+              "label": "Button Text",
+              "name": "button_text",
+              "required": false,
+              "helpText": "",
+              "type": "string"
+            },
+            {
+              "label": "Show Title",
+              "name": "show_title",
+              "required": false,
+              "helpText": "",
+              "type": "switch"
+            },
+            {
+              "label": "Show Description",
+              "name": "show_description",
+              "required": false,
+              "helpText": "",
+              "type": "switch"
             }
           ],
           "input": {
             "background-color": "red",
-            "primary-color": "#f7cc5a",
+            "primary-color": "#4a90e2",
             "font-size": "18px",
             "product": {
               "id": "12",
@@ -66,10 +87,15 @@
               "description": "This is a general product information description #12",
               "price": "$532",
               "comparePrice": "$582",
-              "image": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ozcxlxxtgr7yefv2ly1bd_ovotc0-g7kx0kudbida9m.png"
-            }
+              "image": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/lzqtdy43rd793z26z8vxw_vow_gopf_7n99wx4qmozj.png"
+            },
+            "is_valid": true,
+            "show_title": true,
+            "show_description": true,
+            "button_text": "Buy Now"
           },
-          "name": "New widget"
+          "name": "New widget",
+          "staticLogicEnabled": true
         },
         "attributes": {},
         "children": [
@@ -84,7 +110,9 @@
             "children": [
               {
                 "type": "standard-column",
-                "attributes": {},
+                "attributes": {
+                  "width": "50%"
+                },
                 "data": {},
                 "children": [
                   {
@@ -99,8 +127,19 @@
                       {
                         "text": ""
                       }
-                    ]
-                  },
+                    ],
+                    "id": "srb-2KT5Lj21uAc2HUKHl"
+                  }
+                ],
+                "id": "LKcNMPzXILMVe3QfELHwo"
+              },
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "50%"
+                },
+                "data": {},
+                "children": [
                   {
                     "name": "Text",
                     "type": "standard-h3",
@@ -113,9 +152,26 @@
                     },
                     "children": [
                       {
-                        "text": "$var(product.title)"
+                        "text": "{{product.title}}"
                       }
-                    ]
+                    ],
+                    "id": "6Kqfi9XGiT2ml5GkNZTak",
+                    "logic": {
+                      "condition": {
+                        "groups": [
+                          {
+                            "symbol": "and",
+                            "groups": [
+                              {
+                                "left": "show_title",
+                                "operator": "truthy"
+                              }
+                            ]
+                          }
+                        ],
+                        "enabled": true
+                      }
+                    }
                   },
                   {
                     "name": "Text",
@@ -128,9 +184,26 @@
                     },
                     "children": [
                       {
-                        "text": "$var(product.description)"
+                        "text": "{{product.description}}"
                       }
-                    ]
+                    ],
+                    "id": "usU5Mi8KmKmV7S2EzYnTl",
+                    "logic": {
+                      "condition": {
+                        "groups": [
+                          {
+                            "symbol": "and",
+                            "groups": [
+                              {
+                                "left": "show_description",
+                                "operator": "truthy"
+                              }
+                            ]
+                          }
+                        ],
+                        "enabled": true
+                      }
+                    }
                   },
                   {
                     "name": "Text",
@@ -143,9 +216,10 @@
                     },
                     "children": [
                       {
-                        "text": "$var(product.price)"
+                        "text": "{{product.price}}"
                       }
-                    ]
+                    ],
+                    "id": "eVijjVWqnOE8Nt5Zr9B6V"
                   },
                   {
                     "type": "standard-button",
@@ -158,16 +232,20 @@
                     },
                     "children": [
                       {
-                        "text": "Read more"
+                        "text": "{{button_text}}"
                       }
-                    ]
+                    ],
+                    "id": "gJ6CD1nws1mVGBwe2_4kz"
                   }
-                ]
+                ],
+                "id": "Dfj9pI1Nqd_irtLBNEFVx"
               }
-            ]
+            ],
+            "id": "4j9UcvX8NnUITstFY4pAa"
           }
         ],
-        "name": "Image with text"
+        "name": "Image with text",
+        "id": "7qnjetAX65RHAzGebZz6G"
       }
     ],
     "attributes": {

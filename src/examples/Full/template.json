@@ -158,76 +158,30 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "padding-top": "0px",
-          "padding-bottom": "0px",
-          "padding-left": "0px",
-          "padding-right": "0px"
+          "padding-top": "0px"
         },
         "children": [
           {
             "type": "standard-column",
-            "attributes": {},
+            "attributes": {
+              "width": "480px"
+            },
             "data": {},
             "children": [
               {
-                "type": "marketing-countdown-v2",
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
                 "attributes": {
-                  "padding-top": "30px",
-                  "padding-bottom": "30px",
-                  "padding-left": "0px",
-                  "padding-right": "0px",
-                  "background-color": "#ffffff",
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/e3fzfumbcugzep8boksj2_countdown.gif",
-                  "text-color": "#000000"
-                },
-                "data": {
-                  "remainingTime": 24,
-                  "unit": "hour",
-                  "style": "elegant",
-                  "styleOptions": {
-                    "elegant": {
-                      "borderColor": "black"
-                    }
-                  }
+                  "padding-left": "20px",
+                  "padding-right": "20px"
                 },
                 "children": [
                   {
-                    "type": "standard-paragraph",
-                    "data": {},
-                    "attributes": {
-                      "color": "#333333",
-                      "font-size": "24px",
-                      "font-family": "serif",
-                      "align": "center",
-                      "line-height": "1.2"
-                    },
-                    "children": [
-                      {
-                        "text": "Black Friday Event"
-                      }
-                    ],
-                    "id": "d3FeFDioJEVf_cOWvO8QO"
-                  },
-                  {
-                    "type": "standard-paragraph",
-                    "data": {},
-                    "attributes": {
-                      "color": "#666666",
-                      "font-size": "16px",
-                      "align": "center"
-                    },
-                    "children": [
-                      {
-                        "text": "Exclusive offers available for a limited time only"
-                      }
-                    ],
-                    "id": "cxbIpbfLTu5D5QaLVwPbP"
+                    "text": "From hearty stews and comforting shepherd's pie to classic fish and chips, we have something to satisfy every appetite."
                   }
                 ],
-                "id": "tUAiyFJ7zFZPsauEEf3Vo",
-                "mobileAttributes": {
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/njcbeycjmlulhlbzrsnx4_countdown.gif"
-                }
+                "id": "vXd6kV8bI_7RX1uHnvSDa"
               }
             ],
             "id": "kWZ9gROtBQRjpLVLXkHKf"

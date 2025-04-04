@@ -450,12 +450,6 @@ const CopyWidgetButton = () => {
   return (
     <Space>
       <Button
-        target="_blank"
-        href="https://www.youtube.com/watch?v=A0w388JYpEU"
-      >
-        <strong>View Video</strong>
-      </Button>
-      <Button
         onClick={() => {
           navigator.clipboard.writeText(
             JSON.stringify({

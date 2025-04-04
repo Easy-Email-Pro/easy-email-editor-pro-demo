@@ -19,7 +19,8 @@ Check out the live demo here https://demo.easyemail.pro/full
 
 ### Update client id
 
-Modify the following in vite.config.ts"
+Modify the following in vite.config.ts", free user use client id
+"FREE"
 
 ```bash
 

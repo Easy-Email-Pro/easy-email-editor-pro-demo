@@ -63,6 +63,8 @@ PluginManager.registerPlugins([
 // register elements styles
 import "./ElementStyleGallery";
 
+const EmailSize = React.lazy(() => import("@/components/EmailSize"));
+
 const categories: ThemeConfigProps["categories"] = [
   {
     get label() {
@@ -991,8 +993,14 @@ export default function MyEditor() {
     // sourceCodeEditable: false,
     fontList: fonts,
     // emptyPageElement: data2.content,
+    dragoverType: editorConfig.dragoverType ? "line" : "placeholder",
     headerElement: editorConfig.showFrozenBlocks ? headerElement : undefined,
     footerElement: editorConfig.showFrozenBlocks ? footerElement : undefined,
+    autoScroll: true,
+    attributesVariables: {
+      "background-color": "red",
+      "font-size": "18px",
+    },
   });
 
   if (authState === "pending") {
@@ -1020,7 +1028,7 @@ export default function MyEditor() {
         />
 
         <Layout.Content>
-          <Retro.Layout>
+          <Retro.Layout tabRight={<EmailSize />}>
             <style id="customize-css">{customizeCss}</style>
             {editorConfig.showCustomStyles && (
               <style id="customize-css2">{customizeCss2}</style>

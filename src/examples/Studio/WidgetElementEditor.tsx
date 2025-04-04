@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { EmailEditorProvider, EmailTemplate } from "easy-email-pro-editor";
 import {
   IconFont,
@@ -9,7 +8,6 @@ import {
 import "easy-email-pro-theme/lib/style.css";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
 
-import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
 import { Layout } from "@arco-design/web-react";
 import React from "react";
@@ -30,9 +28,6 @@ import {
 } from "easy-email-pro-core";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Button } from "@arco-design/web-react";
-import { Message } from "@arco-design/web-react";
-import { Space } from "@arco-design/web-react";
 import { cloneDeep } from "lodash";
 
 PluginManager.registerPlugins([
