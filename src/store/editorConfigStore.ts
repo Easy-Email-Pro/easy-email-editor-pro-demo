@@ -21,6 +21,7 @@ interface EditorConfigState {
   showCustomStyles: boolean;
   showResponsivePreview: boolean;
   showFavorites: boolean;
+  dragoverType: boolean;
 
   // Theme and language
   theme: string;
@@ -43,6 +44,7 @@ interface EditorConfigState {
   toggleCustomStyles: (value?: boolean) => void;
   toggleResponsivePreview: (value?: boolean) => void;
   toggleFavorites: (value?: boolean) => void;
+  toggleDragoverType: (value?: boolean) => void;
 
   // Set actions
   setTheme: (theme: string) => void;
@@ -75,6 +77,7 @@ const defaultState: Partial<EditorConfigState> = {
   showCustomStyles: false,
   showResponsivePreview: true,
   showFavorites: true,
+  dragoverType: false,
   theme: "blue",
   language: "en",
 
@@ -233,7 +236,7 @@ export const useEditorConfigStore = create<EditorConfigState>()(
 
       toggleLayer: (value) =>
         set((state) => ({
-          showLayer: value !== undefined ? value : !state.showLayer,
+          showLayer: Boolean(value !== undefined ? value : !state.showLayer),
         })),
       togglePreview: (value) =>
         set((state) => ({
@@ -250,6 +253,10 @@ export const useEditorConfigStore = create<EditorConfigState>()(
       toggleSourceCode: (value) =>
         set((state) => ({
           showSourceCode: value !== undefined ? value : !state.showSourceCode,
+        })),
+      toggleDragoverType: (value) =>
+        set((state) => ({
+          dragoverType: value !== undefined ? value : !state.dragoverType,
         })),
       toggleCompactMode: (value) =>
         set((state) => ({
@@ -313,7 +320,11 @@ export const useEditorConfigStore = create<EditorConfigState>()(
             if (category.children) {
               // 使用严格相等比较关键属性
               category.children = category.children.filter(
-                (child) =>
+                (child: {
+                  label: string;
+                  value: string;
+                  type: string | undefined;
+                }) =>
                   !(
                     child.label === tag.label &&
                     child.value === tag.value &&

@@ -158,87 +158,144 @@
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "padding-top": "0px",
-          "padding-bottom": "0px",
-          "padding-left": "0px",
-          "padding-right": "0px"
+          "background-repeat": "no-repeat"
         },
         "children": [
           {
             "type": "standard-column",
-            "attributes": {},
+            "attributes": {
+              "width": "100%"
+            },
             "data": {},
             "children": [
               {
-                "type": "marketing-countdown-v2",
+                "type": "standard-divider",
+                "data": {},
                 "attributes": {
-                  "padding-top": "30px",
-                  "padding-bottom": "30px",
                   "padding-left": "0px",
                   "padding-right": "0px",
-                  "background-color": "#ffffff",
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/e3fzfumbcugzep8boksj2_countdown.gif",
-                  "text-color": "#000000"
-                },
-                "data": {
-                  "remainingTime": 24,
-                  "unit": "hour",
-                  "style": "elegant",
-                  "styleOptions": {
-                    "elegant": {
-                      "borderColor": "black"
-                    }
-                  }
+                  "border-color": "#ffffff",
+                  "border-width": "1px"
                 },
                 "children": [
                   {
-                    "type": "standard-paragraph",
-                    "data": {},
-                    "attributes": {
-                      "color": "#333333",
-                      "font-size": "24px",
-                      "font-family": "serif",
-                      "align": "center",
-                      "line-height": "1.2"
-                    },
-                    "children": [
-                      {
-                        "text": "Black Friday Event"
-                      }
-                    ],
-                    "id": "d3FeFDioJEVf_cOWvO8QO"
-                  },
-                  {
-                    "type": "standard-paragraph",
-                    "data": {},
-                    "attributes": {
-                      "color": "#666666",
-                      "font-size": "16px",
-                      "align": "center"
-                    },
-                    "children": [
-                      {
-                        "text": "Exclusive offers available for a limited time only"
-                      }
-                    ],
-                    "id": "cxbIpbfLTu5D5QaLVwPbP"
+                    "text": ""
                   }
                 ],
-                "id": "tUAiyFJ7zFZPsauEEf3Vo",
-                "mobileAttributes": {
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/njcbeycjmlulhlbzrsnx4_countdown.gif"
-                }
+                "id": "5gmWea-699lL804GpH18T"
               }
             ],
-            "id": "kWZ9gROtBQRjpLVLXkHKf"
+            "id": "f__3jwRPffTWfUV9U3v10"
           }
         ],
-        "id": "d-CshLoW4UL7E8JLf2KRE"
+        "id": "MbA_5tLM2yqabxbINxq7b"
+      },
+      {
+        "type": "marketing-countdown-v2",
+        "data": {
+          "remainingTime": 24,
+          "unit": "hour",
+          "style": "dark",
+          "styleOptions": {
+            "dark": {
+              "grid-color": "#40a225",
+              "shadow-color": "#141c12"
+            },
+            "minimal": {
+              "labelSize": "14px",
+              "numberSize": "24px",
+              "numberBackgroundColor": "white",
+              "numberBorderColor": "#e5e7eb"
+            },
+            "circular": {
+              "borderColor": "#14b8a6",
+              "borderWidth": "4px"
+            },
+            "colorful": {
+              "colors": {
+                "day": "#ec4899",
+                "hour": "#8b5cf6",
+                "minute": "#3b82f6",
+                "second": "#14b8a6"
+              }
+            },
+            "elegant": {
+              "borderColor": "black"
+            },
+            "promotional": {
+              "buttonText": "Shop Now",
+              "buttonColor": "#dc2626",
+              "backgroundColor": "#fee2e2",
+              "borderColor": "#fca5a5"
+            },
+            "modern": {
+              "numberContainerColor": "rgba(0, 0, 0, 0.5)",
+              "numberTopGradientStart": "#4b5563",
+              "numberTopGradientEnd": "#1f2937"
+            }
+          }
+        },
+        "attributes": {
+          "padding-top": "20px",
+          "padding-bottom": "20px",
+          "padding-left": "0px",
+          "padding-right": "0px",
+          "background-color": "#263D29",
+          "text-color": "#ffffff",
+          "background-color-gradient-enabled": false,
+          "background-color-gradient-end-color": "",
+          "background-color-gradient-direction": "",
+          "background-image-enabled": false,
+          "background-image": "",
+          "background-position": "center",
+          "background-repeat": "no-repeat",
+          "background-size": "cover",
+          "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/3klwbvzszusmnwjqwmrkd_countdown.gif"
+        },
+        "children": [
+          {
+            "type": "text",
+            "data": {},
+            "attributes": {
+              "color": "#ffffff",
+              "font-size": "32px",
+              "align": "center",
+              "line-height": "1.2"
+            },
+            "children": [
+              {
+                "text": "LIMITED TIME OFFER"
+              }
+            ],
+            "id": "Bqtf4I406iohNk4W0vjEK"
+          },
+          {
+            "type": "text",
+            "data": {},
+            "attributes": {
+              "color": "#ffffff",
+              "font-size": "32px",
+              "align": "center",
+              "padding-bottom": "20px"
+            },
+            "children": [
+              {
+                "text": "seven-day free trial"
+              }
+            ],
+            "id": "_24C7STS9teSdauH2O8VN"
+          }
+        ],
+        "id": "qph5vXWhtfaAZcRvSKRvt",
+        "mobileAttributes": {
+          "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/yccv9g6tn_dltpdkccpxt_countdown.gif"
+        }
       },
       {
         "type": "standard-section",
         "data": {},
         "attributes": {
+          "background-repeat": "no-repeat",
           "padding-top": "0px",
           "padding-bottom": "0px"
         },
@@ -251,573 +308,312 @@
             "data": {},
             "children": [
               {
-                "type": "standard-image",
+                "type": "standard-divider",
                 "data": {},
                 "attributes": {
-                  "padding": "0px 0px 0px 0px",
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/z1pyfnhqfawza_0nmoqpl_image.png",
-                  "padding-top": "0px",
-                  "padding-bottom": "0px",
                   "padding-left": "0px",
-                  "padding-right": "0px"
+                  "padding-right": "0px",
+                  "border-color": "#ffffff",
+                  "border-width": "1px"
                 },
                 "children": [
                   {
                     "text": ""
                   }
                 ],
-                "id": "HoWrHWnYey24h4sc6M3y5"
+                "id": "vojgs5cZRgF37ws46ywTx"
               }
             ],
-            "id": "6h5p-LyxZvF5t1mWlHG_z"
+            "id": "YmlHnKzYXFBU4Mi-eGWR5"
           }
         ],
-        "id": "o1COMbQsyx6sD8KmBpp2Z"
+        "id": "IKTYx45xRvDHSZoUkKOSF"
       },
       {
-        "type": "standard-section",
+        "type": "standard-wrapper",
         "data": {},
-        "attributes": {},
+        "attributes": {
+          "padding-bottom": "0px",
+          "padding-top": "0px",
+          "border-enabled": true,
+          "border-width": "1px",
+          "border-color": "#e5e7eb",
+          "border-radius": "8px"
+        },
         "children": [
           {
-            "type": "standard-column",
-            "attributes": {
-              "width": "100%"
-            },
+            "type": "standard-section",
             "data": {},
+            "attributes": {
+              "padding-bottom": "0px",
+              "background-color": "#f9fafb"
+            },
             "children": [
               {
-                "type": "standard-table2",
-                "data": {
-                  "first_row_header": true
-                },
+                "type": "standard-column",
                 "attributes": {
-                  "cellpadding": "10px",
-                  "text-align": "center",
-                  "container-background-color": "#FFFFFF",
-                  "table-layout": "fixed",
-                  "padding-left": "5px",
-                  "padding-right": "5px",
-                  "align": "left",
-                  "font-size": "14px"
+                  "width": "100%"
                 },
+                "data": {},
                 "children": [
                   {
-                    "type": "standard-table2-tr",
-                    "data": {},
-                    "attributes": {
-                      "background-color": "#7daa55"
-                    },
-                    "children": [
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "text": "Item",
-                            "bold": true,
-                            "fontSize": "18px"
-                          }
-                        ],
-                        "id": "HVaEKr8PNu-A3s3z3Ti_q"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "text": "Description",
-                            "fontSize": "18px",
-                            "bold": true
-                          }
-                        ],
-                        "id": "nRtOvynwJDo2n_ZZzKxAt"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "text": "Price",
-                            "bold": true,
-                            "fontSize": "18px"
-                          },
-                          {
-                            "bold": true,
-                            "fontSize": "16px",
-                            "text": "   "
-                          }
-                        ],
-                        "id": "1gtNteye4DjeLDOfN31ho"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "text": "Action",
-                            "bold": true,
-                            "fontSize": "18px"
-                          }
-                        ],
-                        "id": "G7N4yEUxoZ5G2bQ6zBHzu"
-                      }
-                    ],
-                    "id": "fGFwjWgXjdQznohjAZyE_"
-                  },
-                  {
-                    "type": "standard-table2-tr",
-                    "data": {},
-                    "attributes": {
-                      "background-color": "#e4efda"
-                    },
-                    "children": [
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "text": "Nike Dunk Low "
-                          }
-                        ],
-                        "id": "tPdNicS0zTnU0HrGz_8_J"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "attributes": {
-                              "style": "text-align:left;"
-                            },
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "children": [
-                              {
-                                "text": ""
-                              },
-                              {
-                                "type": "html-node",
-                                "data": {
-                                  "tagName": "img"
-                                },
-                                "attributes": {
-                                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/sx9iemawisklnrsn_nx4f_image.png",
-                                  "width": "120px",
-                                  "height": "120px",
-                                  "style": "max-width:100%;display:inline-block;"
-                                },
-                                "children": [
-                                  {
-                                    "text": ""
-                                  }
-                                ],
-                                "id": "SO9OSX-B8RKXqKsvg3GHn"
-                              },
-                              {
-                                "text": ""
-                              }
-                            ],
-                            "id": "XwdEvfLdYKCAdeaU28IfQ"
-                          }
-                        ],
-                        "id": "QUH_eN8xzAQNqLL07BZls"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {
-                              "style": "text-align:center;"
-                            },
-                            "children": [
-                              {
-                                "text": "HK$999"
-                              }
-                            ],
-                            "id": "HzlKGQju5405nvYONteNE"
-                          }
-                        ],
-                        "id": "voX4QAhHtU3OPw4TV6ks9"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "children": [
-                              {
-                                "type": "html-block-node",
-                                "children": [
-                                  {
-                                    "text": "Buy",
-                                    "link": {
-                                      "href": "https://www.nike.com.hk/product/HQ4345-300/detail.htm",
-                                      "blank": true
-                                    }
-                                  }
-                                ],
-                                "data": {
-                                  "tagName": "div"
-                                },
-                                "attributes": {
-                                  "style": "text-align:center;"
-                                },
-                                "id": "QkqVzbKav83eoJduEvW3v"
-                              }
-                            ],
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {
-                              "style": "text-align:center;"
-                            },
-                            "id": "jY03RvPhp3MRXv40ZAg13"
-                          }
-                        ],
-                        "id": "zNQGhiPWngaXItiheXjo8"
-                      }
-                    ],
-                    "id": "ktErIV0DafEuNS_OdYmXL"
-                  },
-                  {
-                    "type": "standard-table2-tr",
+                    "name": "Text",
+                    "type": "standard-paragraph",
                     "data": {},
                     "attributes": {},
                     "children": [
                       {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "text": "Sabrina 2 EP"
-                          }
-                        ],
-                        "id": "F1rRfghPu3eGLsZ4-Rwjc"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": ""
-                              },
-                              {
-                                "type": "html-node",
-                                "data": {
-                                  "tagName": "img"
-                                },
-                                "attributes": {
-                                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/1lfgm24de1_nve5jz8b5e_image.png",
-                                  "width": "120px",
-                                  "height": "120px",
-                                  "style": "max-width:100%;display:inline-block;"
-                                },
-                                "children": [
-                                  {
-                                    "text": ""
-                                  }
-                                ],
-                                "id": "ApL2_FIu_kYORkjWDj-er"
-                              },
-                              {
-                                "text": ""
-                              }
-                            ],
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {
-                              "style": "text-align:left;"
-                            },
-                            "id": "D_1pBvBrl4Y9LNVn4Cjq5"
-                          }
-                        ],
-                        "id": "y2IpHGdtJyLl_jgaNJpF3"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {
-                              "style": "text-align:center;"
-                            },
-                            "children": [
-                              {
-                                "text": "HK$899"
-                              }
-                            ],
-                            "id": "UzcqLSDvLJ4p4Qbv7DO4b"
-                          }
-                        ],
-                        "id": "GicXvIP0TKWUh9YbvjA-W"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": "Buy",
-                                "link": {
-                                  "href": "https://www.nike.com.hk/product/HQ4345-300/detail.htm",
-                                  "blank": true
-                                }
-                              }
-                            ],
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {
-                              "style": "text-align:center;"
-                            },
-                            "id": "A4Z0Z5cDE5v3rtB-9smI1"
-                          }
-                        ],
-                        "id": "fpP6bVN2wIguHeronfNwv"
+                        "text": "✂️"
                       }
                     ],
-                    "id": "qa6dsB5YrosiDhW1NhHr6"
+                    "id": "zOFrCbqOWQ9u-BqWboONe"
                   },
                   {
-                    "type": "standard-table2-tr",
+                    "name": "Text",
+                    "type": "standard-paragraph",
                     "data": {},
                     "attributes": {
-                      "background-color": "#e4efda"
+                      "color": "#000000",
+                      "font-size": "20px",
+                      "font-weight": "bold",
+                      "padding-bottom": "8px"
                     },
                     "children": [
                       {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "text": "Nike Vaporfly 3"
-                          }
-                        ],
-                        "id": "bEayzhJtrnEKHyYYutAkG"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": ""
-                              },
-                              {
-                                "type": "html-node",
-                                "data": {
-                                  "tagName": "img"
-                                },
-                                "attributes": {
-                                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/kcb_901pyt2rxsckj52xp_image.png",
-                                  "width": "120px",
-                                  "height": "120px",
-                                  "style": "max-width:100%;display:inline-block;"
-                                },
-                                "children": [
-                                  {
-                                    "text": ""
-                                  }
-                                ],
-                                "id": "eFLb918p1bH0-C-NISfYL"
-                              },
-                              {
-                                "text": ""
-                              }
-                            ],
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {
-                              "style": "text-align:left;"
-                            },
-                            "id": "YhI-ryLrMdxFeoM7UVk5n"
-                          }
-                        ],
-                        "id": "phf_ts9AhvbD-9wFtkAVr"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {
-                              "style": "text-align:center;"
-                            },
-                            "children": [
-                              {
-                                "text": "HK$1,699"
-                              }
-                            ],
-                            "id": "2Hvp4-xauKJiD4XNl6eiJ"
-                          }
-                        ],
-                        "id": "pOsITrMTVQrbsQ-ha9H2C"
-                      },
-                      {
-                        "type": "standard-table2-td",
-                        "data": {
-                          "rowspan": 1,
-                          "colspan": 1
-                        },
-                        "attributes": {},
-                        "children": [
-                          {
-                            "type": "html-block-node",
-                            "children": [
-                              {
-                                "text": "Buy",
-                                "link": {
-                                  "href": "https://www.nike.com.hk/product/HJ7040-300/detail.htm",
-                                  "blank": true
-                                }
-                              }
-                            ],
-                            "data": {
-                              "tagName": "div"
-                            },
-                            "attributes": {
-                              "style": "text-align:center;"
-                            },
-                            "id": "563d-4so-Gt7X-MzcczOF"
-                          }
-                        ],
-                        "id": "ULkyZVzuCc_HsYOh_s0lZ"
+                        "text": "Your Discount Code"
                       }
                     ],
-                    "id": "BpZiJ7BT57AphYDUj8ENs"
-                  }
-                ],
-                "id": "0MrAhVbZYRksKB8-7or0t"
-              },
-              {
-                "type": "standard-button",
-                "data": {
-                  "content": "Button"
-                },
-                "attributes": {
-                  "background-color": "#C5900C",
-                  "width": "100%",
-                  "font-size": "16px"
-                },
-                "children": [
+                    "id": "ph1W8jLn8188gRVjtz_Bc"
+                  },
                   {
-                    "text": "Book a table"
-                  }
-                ],
-                "id": "0oJKtyGnWHxEyaXbRO141"
-              },
-              {
-                "type": "standard-button",
-                "data": {
-                  "content": "Button"
-                },
-                "attributes": {
-                  "background-color": "#FCF0D3",
-                  "width": "100%",
-                  "font-size": "16px",
-                  "color": "#C5900C",
-                  "border-enabled": true,
-                  "border-color": "#C5900C",
-                  "border-width": "3px"
-                },
-                "children": [
+                    "name": "Text",
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "color": "#6b7280",
+                      "font-size": "14px",
+                      "padding-bottom": "20px"
+                    },
+                    "children": [
+                      {
+                        "type": "html-block-node",
+                        "children": [
+                          {
+                            "text": "Use this code at checkout to receive your discount"
+                          }
+                        ],
+                        "attributes": {},
+                        "data": {
+                          "tagName": "div"
+                        },
+                        "id": "5ZtU2avYUmK4znlBr_ZMg"
+                      }
+                    ],
+                    "id": "f8wWAh0tQUXTha_em0HQ3"
+                  },
                   {
-                    "text": "Book a table"
+                    "type": "standard-button",
+                    "data": {
+                      "content": "Button"
+                    },
+                    "attributes": {
+                      "border-enabled": true,
+                      "border-color": "#d1d5db",
+                      "border-width": "2px",
+                      "background-color": "#FFFFFF",
+                      "color": "#000000",
+                      "border-style": "dashed",
+                      "width": "100%",
+                      "font-size": "24px",
+                      "font-weight": "bold",
+                      "letter-spacing": "4px",
+                      "href": "https://www.easyemail.pro/"
+                    },
+                    "children": [
+                      {
+                        "text": "SAVE15NOW"
+                      }
+                    ],
+                    "id": "cuR86hPOgC3lbHzsEHS83"
                   }
                 ],
-                "id": "MncrR3EyPXPwHek3fpdig"
+                "id": "atTUkJLQbjb1CLYfrwFp4"
               }
             ],
-            "id": "_SQwBhWlqVOFT8VfRVXK7"
+            "id": "9qbZVbLn6WHg4Ievl3p1X"
+          },
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {
+              "background-repeat": "no-repeat",
+              "background-color": "#f9fafb"
+            },
+            "children": [
+              {
+                "type": "standard-group",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "standard-column",
+                    "attributes": {
+                      "width": "33.33%"
+                    },
+                    "data": {},
+                    "children": [
+                      {
+                        "name": "Text",
+                        "type": "standard-paragraph",
+                        "data": {},
+                        "attributes": {
+                          "color": "#6b7280",
+                          "font-size": "14px"
+                        },
+                        "children": [
+                          {
+                            "text": "Discount"
+                          }
+                        ],
+                        "id": "KT_vcm3bZwhtXsHsqGgkJ"
+                      },
+                      {
+                        "name": "Text",
+                        "type": "standard-paragraph",
+                        "data": {},
+                        "attributes": {
+                          "color": "#000000",
+                          "font-size": "14px"
+                        },
+                        "children": [
+                          {
+                            "text": "15% OFF"
+                          }
+                        ],
+                        "id": "HDhB2BHj-vae16EO91Gvf"
+                      }
+                    ],
+                    "id": "gpthZi3RtRO03DTI6H9Xe"
+                  },
+                  {
+                    "type": "standard-column",
+                    "attributes": {
+                      "width": "33.33%"
+                    },
+                    "data": {},
+                    "children": [
+                      {
+                        "name": "Text",
+                        "type": "standard-paragraph",
+                        "data": {},
+                        "attributes": {
+                          "color": "#6b7280",
+                          "font-size": "14px"
+                        },
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Minimum Order"
+                              }
+                            ],
+                            "attributes": {},
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "id": "eelFlSlEBmg8EUJThZyd0"
+                          }
+                        ],
+                        "id": "tdoeRk1j0cyQFg3gRHAaT"
+                      },
+                      {
+                        "name": "Text",
+                        "type": "standard-paragraph",
+                        "data": {},
+                        "attributes": {
+                          "color": "#000000",
+                          "font-size": "14px"
+                        },
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "$50"
+                              }
+                            ],
+                            "attributes": {},
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "id": "3OJ-KqjokvBnJ6PkEN-sk"
+                          }
+                        ],
+                        "id": "INlx9v-HkDKfQRuGkbi0H"
+                      }
+                    ],
+                    "id": "spx84zmcV48Hmo8ULIbTF"
+                  },
+                  {
+                    "type": "standard-column",
+                    "attributes": {
+                      "width": "33.33%"
+                    },
+                    "data": {},
+                    "children": [
+                      {
+                        "name": "Text",
+                        "type": "standard-paragraph",
+                        "data": {},
+                        "attributes": {
+                          "color": "#6b7280",
+                          "font-size": "14px"
+                        },
+                        "children": [
+                          {
+                            "text": "Expires"
+                          }
+                        ],
+                        "id": "hTE9njQbE3kl65ZRM9PXM"
+                      },
+                      {
+                        "name": "Text",
+                        "type": "standard-paragraph",
+                        "data": {},
+                        "attributes": {
+                          "color": "#000000",
+                          "font-size": "14px"
+                        },
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Dec 31, 2025"
+                              }
+                            ],
+                            "attributes": {},
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "id": "96lKgFfS45asKKgsd4s-P"
+                          }
+                        ],
+                        "id": "-Lc2BGEucKURpd5YUQb48"
+                      }
+                    ],
+                    "id": "uMnlcz0Uv8yZTQX8KgYjR"
+                  }
+                ],
+                "mobileAttributes": {},
+                "id": "gbaIruia-Mg9eOCKH07sv"
+              }
+            ],
+            "id": "CLTtMiY6dWj_fgd5TracL"
           }
         ],
-        "id": "3vZdi3H6kQMs4WkJscCjr"
+        "id": "F6SlqUfbwnNPbSEqkqnHB"
       },
       {
         "type": "standard-section",
@@ -858,7 +654,7 @@
                     "data": {
                       "tagName": "div"
                     },
-                    "id": "p4qnrpCiYuDZeDTncbrr-"
+                    "id": "nCQUU2V3s1CSQuiB78mpU"
                   },
                   {
                     "type": "html-block-node",
@@ -872,10 +668,10 @@
                     "data": {
                       "tagName": "div"
                     },
-                    "id": "7ue1MuyvSFnCoON5U_HyD"
+                    "id": "G-RGH7fCABJNqPfkmcxAV"
                   }
                 ],
-                "id": "FX1r77baMDO46CiyrVxEO"
+                "id": "ARWwUmZ915_oRMa-FP--s"
               },
               {
                 "type": "standard-button",
@@ -891,10 +687,10 @@
                     "text": "VIEW DRINK"
                   }
                 ],
-                "id": "1QBa-8CPTmjcmedShfPV5"
+                "id": "_Ev7uqOuPNnjCNjxnyvp1"
               }
             ],
-            "id": "YzPhgwcau2PgxLLvk4wna"
+            "id": "RcABWyV0GNVmkMw87N-p4"
           },
           {
             "type": "standard-column",
@@ -919,13 +715,13 @@
                     "text": ""
                   }
                 ],
-                "id": "biZp_ubvIOFBHyYmB_YpI"
+                "id": "UsXBN5uuRd64uqEFO2-CX"
               }
             ],
-            "id": "q9rpNtf71QwiJN8K6soff"
+            "id": "l7_Rp4I8jpnYUKfPIqEFR"
           }
         ],
-        "id": "no4rpwhDLMnzwOxwxb7Ws"
+        "id": "DMCku1ori3rdGaCTAszE6"
       },
       {
         "type": "standard-section",

@@ -4,7 +4,7 @@ import { cloneDeep, random, uniqueId } from "lodash";
 import React from "react";
 import { Node } from "slate";
 import { ReactEditor, useSlate } from "slate-react";
-import { useEditorState } from "easy-email-pro-editor";
+import { useSelectedNodePath } from "easy-email-pro-editor";
 import {
   AssetManager,
   AssetManagerProps,
@@ -30,7 +30,7 @@ export const AssetManagerModal = ({
   const { upload } = useUpload();
 
   const editor = useSlate();
-  const { selectedNodePath } = useEditorState();
+  const selectedNodePath = useSelectedNodePath();
 
   const onCreateFile: AssetManagerProps["onCreateFile"] = useCallback(
     async (item) => {
