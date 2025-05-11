@@ -62,6 +62,7 @@ PluginManager.registerPlugins([
 
 // register elements styles
 import "./ElementStyleGallery";
+import { TranslationSelect } from "@/components/TranslationSelect";
 
 const EmailSize = React.lazy(() => import("@/components/EmailSize"));
 
@@ -1001,6 +1002,8 @@ export default function MyEditor() {
       "background-color": "red",
       "font-size": "18px",
     },
+    enabledHtmlBlockNodeAlign: true,
+    enabledGradientImage: true,
   });
 
   if (authState === "pending") {
@@ -1014,17 +1017,7 @@ export default function MyEditor() {
     <EmailEditorProvider {...config}>
       <Tutorial>
         <EditorHeader
-        // extra={
-        //   <Space>
-        //     <Button
-        //       onClick={() => {
-        //         editorInstance.current?.submit();
-        //       }}
-        //     >
-        //       <strong>Save</strong>
-        //     </Button>
-        //   </Space>
-        // }
+          prefix={<TranslationSelect lang={editorConfig.language} />}
         />
 
         <Layout.Content>

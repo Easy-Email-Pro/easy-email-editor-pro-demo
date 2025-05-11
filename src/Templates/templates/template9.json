@@ -1,0 +1,293 @@
+{
+  "id": 9,
+  "subject": "Shop the deals that warms hearts.",
+  "thumbnail": "https://res.cloudinary.com/djnkpbshx/image/upload/v1688995623/easy-email-pro-test/qxg8z749esmulqptbnzg.png",
+  "content": {
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      }
+    },
+    "type": "page",
+    "children": [
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://res.cloudinary.com/djnkpbshx/image/upload/v1689070514/easy-email-pro-test/vwxrgxhvk0hfdnnimldj.png",
+                  "width": "66px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://d3k81ch9hvuctc.cloudfront.net/company/Pb3wug/images/0899cc25-2a5e-41a4-b9e8-f1ae2194f3a5.jpeg",
+                  "padding-left": "25px",
+                  "padding-right": "25px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "width": "100%",
+                  "background-color": "#ffffff",
+                  "border-enabled": true,
+                  "border-color": "#414141",
+                  "color": "#414141",
+                  "font-size": "16px"
+                },
+                "children": [
+                  {
+                    "text": "SHOP NOW"
+                  }
+                ]
+              },
+              {
+                "name": "Text",
+                "type": "standard-h1",
+                "data": {},
+                "attributes": {
+                  "font-size": "40px",
+                  "align": "center"
+                },
+                "children": [
+                  {
+                    "text": "Our Most Popular Plants"
+                  }
+                ]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-size": "18px",
+                  "letter-spacing": "1px",
+                  "padding-left": "50px",
+                  "padding-right": "50px",
+                  "color": "#333333"
+                },
+                "children": [
+                  {
+                    "text": "Don't just take our work for it, these specialty plants are getting rave reviews. Cacti, Rosettes, and Trailing, choose your type. Only $30."
+                  }
+                ],
+                "mobileAttributes": {
+                  "padding-left": "30px",
+                  "padding-right": "30px"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-repeat": "no-repeat",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-group",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "50%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://d3k81ch9hvuctc.cloudfront.net/company/Pb3wug/images/84d11dfe-5782-4bad-b20a-45dddabf4e5a.jpeg",
+                      "padding-right": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "50%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://d3k81ch9hvuctc.cloudfront.net/company/Pb3wug/images/62764ef7-5b77-44f4-be02-b559d93c9422.jpeg",
+                      "padding-left": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "mobileAttributes": {}
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-repeat": "no-repeat",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "100%"
+            },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "font-size": "16px",
+                  "color": "#333333"
+                },
+                "children": [
+                  {
+                    "text": "With your specialty plant purchase, you will receive an instructional care guide. This comprehensive guide is designed to provide you with all the necessary information to ensure the health and vitality of your new plant."
+                  }
+                ]
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "width": "100%",
+                  "background-color": "#ffffff",
+                  "border-enabled": true,
+                  "border-color": "#414141",
+                  "color": "#414141",
+                  "inner-padding-top": "10px",
+                  "inner-padding-bottom": "10px",
+                  "font-size": "16px"
+                },
+                "children": [
+                  {
+                    "text": "SHOP NOW"
+                  }
+                ]
+              },
+              {
+                "type": "standard-social",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
+                      "href": "",
+                      "padding-left": "0px",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
+                      "href": "",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908543/clgnivsuj0018z9ltiixmxf6k/wtefhsfwaapcdbz7knqw.png",
+                      "href": "",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "background-color": "#f5f5f5",
+      "content-background-color": "#ffffff"
+    }
+  }
+}

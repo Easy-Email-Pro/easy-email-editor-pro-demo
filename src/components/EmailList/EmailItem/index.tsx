@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.less";
 import { PageElement } from "easy-email-pro-core";
+import { pushEvent } from "@/utils/pushEvent";
 
 export interface EmailItemProps {
   item: {
@@ -24,7 +25,16 @@ export const EmailItem = ({ item, onClick }: EmailItemProps) => {
       href={
         onClick ? undefined : item.url ? item.url : `/template?id=${item.id}`
       }
-      onClick={() => onClick?.(item)}
+      onClick={() => {
+        pushEvent({
+          event: "email_item_click",
+          payload: {
+            id: item.id,
+            subject: item.subject,
+          },
+        });
+        onClick?.(item);
+      }}
       target="_blank"
       style={{ color: "#000" }}
     >

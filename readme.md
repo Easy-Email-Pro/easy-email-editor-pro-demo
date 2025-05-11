@@ -37,3 +37,6 @@ pnpm dev
 ```
 
 ### Open http://localhost:3000/simple
+
+We also have examples of Vue, nextjs and iframe integration, which you can find here
+(All examples)[https://github.com/orgs/Easy-Email-Pro/repositories]

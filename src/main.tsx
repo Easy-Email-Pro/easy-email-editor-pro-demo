@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./Home";
-
+import { Templates } from "./Templates";
+import "./global.css";
 import { nanoid } from "nanoid";
 
 const getClientId = () => {
@@ -63,6 +64,8 @@ const StudioCustomField = React.lazy(
 const StudioCustomFieldEditor = React.lazy(
   () => import("./examples/StudioCustomField/editor")
 );
+
+import ComponentsPage from "./ComponentsPage/index";
 
 export const navigation = [
   {
@@ -177,6 +180,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
+  {
+    name: "Templates",
+    path: "/templates",
+    element: <Templates />,
+  },
   // {
   //   name: "Template Engine",
   //   path: "/template-engine",
@@ -188,7 +196,11 @@ const router = createBrowserRouter([
     path: "/template",
     element: <TemplateEditor />,
   },
-
+  {
+    name: "Components",
+    path: "/components",
+    element: <ComponentsPage />,
+  },
   {
     name: "Share",
     path: "/share",
