@@ -12,7 +12,12 @@ import {
 } from "@arco-design/web-react";
 import { IconMenu } from "@arco-design/web-react/icon";
 import React from "react";
-import { EmailTemplate, useEditorProps } from "easy-email-pro-editor";
+import {
+  ActiveTabKeys,
+  EmailTemplate,
+  useEditorProps,
+  useEditorState,
+} from "easy-email-pro-editor";
 import { mjmlToJson, useEditorContext } from "easy-email-pro-theme";
 import {
   EditorCore,
@@ -37,6 +42,7 @@ import {
 } from "lucide-react";
 import { EditorConfigModal } from "./EditorConfigModal";
 import { EmailList } from "./EmailList";
+import { Node } from "slate";
 
 export const EditorHeader = (props: {
   extra?: React.ReactNode;
@@ -49,7 +55,9 @@ export const EditorHeader = (props: {
   const [visible, setVisible] = React.useState(false);
   const { values, submit, setFieldValue, mergetagsData, reset, dirty } =
     useEditorContext();
+  const { setActiveTab, activeTab } = useEditorState();
 
+  const activetabRef = React.useRef(ActiveTabKeys.DESKTOP);
   const onChange = (text: string) => {
     setFieldValue(null, "subject", text);
   };
@@ -61,31 +69,31 @@ export const EditorHeader = (props: {
 
   const onExportImage = async () => {
     Message.loading("Loading...");
-    const container = document.createElement("div");
-    container.style.position = "absolute";
-    container.style.width = "600px";
-    // container.style.left = "-9999px";
-    const mjmlStr = EditorCore.toMJML({
-      element: values.content,
-      mode: "production",
-      universalElements: universalElementSetting,
-    });
+    activetabRef.current = activeTab;
 
-    const html = PluginManager.renderWithData(
-      mjml(mjmlStr).html,
-      mergetagsData
-    );
+    setActiveTab(ActiveTabKeys.DESKTOP);
+    const container = ReactEditor.toDOMNode(editor, Node.get(editor, [0]));
 
-    container.innerHTML = html;
-    document.body.appendChild(container);
-
-    const blob = await new Promise<any>(async (resolve) => {
+    const blob1 = await new Promise<any>(async (resolve) => {
       const png = await base64ToBlob(await dom2Svg(container));
       resolve(png);
     });
-    saveAs(blob, "demo.png");
+    setActiveTab(ActiveTabKeys.MOBILE);
+    const container2 = ReactEditor.toDOMNode(editor, Node.get(editor, [0]));
+    const mobileContainer = document.createElement("div");
+    mobileContainer.style.width = "375px";
+    mobileContainer.appendChild(container2.cloneNode(true));
+    document.body.appendChild(mobileContainer);
+    const blob2 = await new Promise<any>(async (resolve) => {
+      const png = await base64ToBlob(await dom2Svg(mobileContainer));
+      resolve(png);
+    });
+    mobileContainer.parentElement?.removeChild(mobileContainer);
+    setActiveTab(activetabRef.current);
+
+    saveAs(blob1, "desktop.png");
+    saveAs(blob2, "mobile.png");
     Message.clear();
-    container.parentElement?.removeChild(container);
   };
   const onExportPDF = async () => {
     const printCSS = document.createElement("style");

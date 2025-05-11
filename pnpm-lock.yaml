@@ -66,26 +66,26 @@ importers:
         specifier: ^4.16.0
         version: 4.16.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-asset-manager:
-        specifier: 1.50.6
-        version: 1.50.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.50.8
+        version: 1.50.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-core:
-        specifier: 1.50.6
-        version: 1.50.6(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.50.8
+        version: 1.50.8(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-editor:
-        specifier: 1.50.6
-        version: 1.50.6(@types/react@18.2.14)(immer@10.0.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.50.8
+        version: 1.50.8(@types/react@18.2.14)(immer@10.0.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-kit:
-        specifier: 1.50.6
-        version: 1.50.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.50.8
+        version: 1.50.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-localization:
-        specifier: 1.50.6
-        version: 1.50.6
+        specifier: 1.50.8
+        version: 1.50.8
       easy-email-pro-plugins:
-        specifier: 1.50.6
-        version: 1.50.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.50.8
+        version: 1.50.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       easy-email-pro-theme:
-        specifier: 1.50.6
-        version: 1.50.6(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.50.8
+        version: 1.50.8(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       file-saver:
         specifier: ^2.0.5
         version: 2.0.5
@@ -1380,42 +1380,42 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-asset-manager@1.50.6:
-    resolution: {integrity: sha512-fTOBCvAa+57oPJ4uolfPzotGv/nqqfsQ0VW1W4F2T2yGOzt2ZtMEuDiMUTv73PGRSxM1n39IYDHBq1u72gi3xw==}
+  easy-email-pro-asset-manager@1.50.8:
+    resolution: {integrity: sha512-sMKlM85rjelGQ1EoI29LSDi4cvPxLrmCTiTNtAglEXnnszzmqox0XuH/rUdpAOMtqxi4o5GjdfOcr063pTXHjg==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-core@1.50.6:
-    resolution: {integrity: sha512-j7blsbkH1Wsymr9XPGxh7OkllZNaE1j3/Jb54dAqM1xbahFa3z5wzcK62F05YsEmn1ZLIi4sikJGiEWpzi0QlA==}
+  easy-email-pro-core@1.50.8:
+    resolution: {integrity: sha512-zanIQrok45kJSRlna0g9KCufnlMmCm8EICjOf/idX4WXzi6o/dxU+l9bM4DfNV3pmcrD/WxtHhDTe0VJ4c12iw==}
     peerDependencies:
       axios: ^1.4.0
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-editor@1.50.6:
-    resolution: {integrity: sha512-aKVdlL5XjzrSKZ4CjmQ6h1NBX8adyWA3boBNcHTzv6bwCfJAQa1bRFPQXLyTpusJcJQk4rT4KsQB5IT5WM2llA==}
+  easy-email-pro-editor@1.50.8:
+    resolution: {integrity: sha512-zAUYbUHNp2N1V7tlSEg6PNW49yNev6A/E3zmHSRyf3CP9WhzClJmi6ekkXdNeH7AUMBUP7SU0VeqKbE3gYuesQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-kit@1.50.6:
-    resolution: {integrity: sha512-k8szO8DMSWSTC0Q9NhQwq3fXhjKOYKi5pclhNLxoOimP2h+W0itXBifo1BpkFDFweXBOcYcIOFMOY1BgF4SGGw==}
+  easy-email-pro-kit@1.50.8:
+    resolution: {integrity: sha512-YArTmtNqKYyG9DOWxXRyQ2/uwUN+GFYgRpCpjyhgUR8bvoB+6bY4fLTtqcuyoLmimVlL2vxf88QVr/DREOvMVA==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-localization@1.50.6:
-    resolution: {integrity: sha512-teLXaQPq8n31e47Jyw/fUD5X4kNY9iGUhncu26vv/F0LUegofQgoXVTwMkwIuyvu4tloo05JoU3kMkODLXgO9Q==}
+  easy-email-pro-localization@1.50.8:
+    resolution: {integrity: sha512-TI2goBOpdjoLGRMcUjoSidUchZ83g0ZrLdJs6DKlVySWPU1wkoEeIvQAD9VjwWolELGRzOpMSVmP9JGrG+nefQ==}
 
-  easy-email-pro-plugins@1.50.6:
-    resolution: {integrity: sha512-+uS112Z7QP8ASRZAjZdefwQKdkQ41MJFz7siZXy+xqt485Zqt2wEGuOq2tx9tADq/MeeTc+5KHXXtvvraoX2Jg==}
+  easy-email-pro-plugins@1.50.8:
+    resolution: {integrity: sha512-Bc6/PHcVC0QIH2fYmSfSDdoveKWI5IJUS62jk9euo5Zs62cMlCgNh7L0gT4Ktq+ZsxdmngBEwS6vfGhs5kIxHQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-theme@1.50.6:
-    resolution: {integrity: sha512-IzwBkKD+g95IyfD3PIw/3UDr0owxA96NcdpiqCPpB3frl8ve894WMOFQa9iIuPgr/rEkviYLaepN3+lee4Aofw==}
+  easy-email-pro-theme@1.50.8:
+    resolution: {integrity: sha512-ASZN4UyIgUKZ3VnJXoHankArM3eFOdV2UEOh1hB2KKuu1MoIGimg4iKDtb1h/jHP3c9K1FZF6Jva6in9icrCDw==}
     peerDependencies:
       '@arco-design/web-react': ^2.46.3
       mjml-browser: ^4.14.1
@@ -4444,14 +4444,14 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       uuid: 8.3.2
 
-  easy-email-pro-asset-manager@1.50.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-asset-manager@1.50.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       cropperjs: 1.6.1
       react: 18.2.0
       react-cropper: 2.3.3(react@18.2.0)
       react-dom: 18.2.0(react@18.2.0)
 
-  easy-email-pro-core@1.50.6(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-core@1.50.8(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@types/crypto-js': 4.1.1
       '@types/gif.js': 0.2.2
@@ -4467,7 +4467,7 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  easy-email-pro-editor@1.50.6(@types/react@18.2.14)(immer@10.0.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-editor@1.50.8(@types/react@18.2.14)(immer@10.0.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       axios: 1.4.0
       color: 4.2.3
@@ -4488,7 +4488,7 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  easy-email-pro-kit@1.50.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-kit@1.50.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@types/gif.js': 0.2.2
       '@types/mjml': 4.7.1
@@ -4498,9 +4498,9 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  easy-email-pro-localization@1.50.6: {}
+  easy-email-pro-localization@1.50.8: {}
 
-  easy-email-pro-plugins@1.50.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-plugins@1.50.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@emoji-mart/data': 1.1.2
       '@emoji-mart/react': 1.1.1(emoji-mart@5.5.2)(react@18.2.0)
@@ -4508,7 +4508,7 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  easy-email-pro-theme@1.50.6(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-theme@1.50.8(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
