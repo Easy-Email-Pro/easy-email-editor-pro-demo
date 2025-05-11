@@ -12,7 +12,12 @@ import {
 } from "@arco-design/web-react";
 import { IconMenu } from "@arco-design/web-react/icon";
 import React from "react";
-import { EmailTemplate, useEditorProps } from "easy-email-pro-editor";
+import {
+  ActiveTabKeys,
+  EmailTemplate,
+  useEditorProps,
+  useEditorState,
+} from "easy-email-pro-editor";
 import { mjmlToJson, useEditorContext } from "easy-email-pro-theme";
 import {
   EditorCore,
@@ -25,20 +30,16 @@ import { saveAs } from "file-saver";
 import { Uploader } from "@/utils/Uploader";
 import { pick } from "lodash";
 import { ReactEditor, useSlate } from "slate-react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { SendEmailModal } from "./SendEmailModal";
 import { base64ToBlob, dom2Svg } from "@/utils/base64ToBlob";
-import {
-  Menu as LucideMenu,
-  HelpCircle,
-  Rocket,
-  Download,
-  Settings,
-} from "lucide-react";
+import { Menu as LucideMenu, Rocket, Download, Settings } from "lucide-react";
 import { EditorConfigModal } from "./EditorConfigModal";
 import { EmailList } from "./EmailList";
+import { Node } from "slate";
 
 export const EditorHeader = (props: {
+  prefix?: React.ReactNode;
   extra?: React.ReactNode;
   hideImport?: boolean;
   hideExport?: boolean;
@@ -46,10 +47,13 @@ export const EditorHeader = (props: {
   const editor = useSlate();
   const [collapsed, setCollapsed] = React.useState(true);
   const [text, setText] = React.useState("");
+  const navigate = useNavigate();
   const [visible, setVisible] = React.useState(false);
   const { values, submit, setFieldValue, mergetagsData, reset, dirty } =
     useEditorContext();
+  const { setActiveTab, activeTab } = useEditorState();
 
+  const activetabRef = React.useRef(ActiveTabKeys.DESKTOP);
   const onChange = (text: string) => {
     setFieldValue(null, "subject", text);
   };
@@ -61,31 +65,31 @@ export const EditorHeader = (props: {
 
   const onExportImage = async () => {
     Message.loading("Loading...");
-    const container = document.createElement("div");
-    container.style.position = "absolute";
-    container.style.width = "600px";
-    // container.style.left = "-9999px";
-    const mjmlStr = EditorCore.toMJML({
-      element: values.content,
-      mode: "production",
-      universalElements: universalElementSetting,
-    });
+    activetabRef.current = activeTab;
 
-    const html = PluginManager.renderWithData(
-      mjml(mjmlStr).html,
-      mergetagsData
-    );
+    setActiveTab(ActiveTabKeys.DESKTOP);
+    const container = ReactEditor.toDOMNode(editor, Node.get(editor, [0]));
 
-    container.innerHTML = html;
-    document.body.appendChild(container);
-
-    const blob = await new Promise<any>(async (resolve) => {
+    const blob1 = await new Promise<any>(async (resolve) => {
       const png = await base64ToBlob(await dom2Svg(container));
       resolve(png);
     });
-    saveAs(blob, "demo.png");
+    setActiveTab(ActiveTabKeys.MOBILE);
+    const container2 = ReactEditor.toDOMNode(editor, Node.get(editor, [0]));
+    const mobileContainer = document.createElement("div");
+    mobileContainer.style.width = "375px";
+    mobileContainer.appendChild(container2.cloneNode(true));
+    document.body.appendChild(mobileContainer);
+    const blob2 = await new Promise<any>(async (resolve) => {
+      const png = await base64ToBlob(await dom2Svg(mobileContainer));
+      resolve(png);
+    });
+    mobileContainer.parentElement?.removeChild(mobileContainer);
+    setActiveTab(activetabRef.current);
+
+    saveAs(blob1, "desktop.png");
+    saveAs(blob2, "mobile.png");
     Message.clear();
-    container.parentElement?.removeChild(container);
   };
   const onExportPDF = async () => {
     const printCSS = document.createElement("style");
@@ -309,8 +313,8 @@ export const EditorHeader = (props: {
     <>
       <div style={{ position: "relative" }}>
         <PageHeader
-          backIcon={<IconMenu />}
-          onBack={() => setCollapsed(!collapsed)}
+          backIcon
+          onBack={() => navigate("/")}
           className="editor-header"
           style={{
             backgroundColor: "rgb(var(--primary-6))",
@@ -343,6 +347,7 @@ export const EditorHeader = (props: {
           extra={
             <div style={{ marginRight: 0 }}>
               <Space>
+                {props.prefix}
                 <Tooltip content="Editor Configuration">
                   <EditorConfigModal>
                     <Button icon={<Settings size={16} />}>
@@ -420,12 +425,15 @@ export const EditorHeader = (props: {
                   <strong>Submit</strong>
                 </Button> */}
                 {isDev && <SendEmailModal />}
-                <Button
+                {/* <Button
                   icon={<HelpCircle size={20} />}
                   target="_blank"
                   href="https://docs.easyemail.pro/docs/intro?utm_source=demo"
                 >
                   <strong>&nbsp;Documentation</strong>
+                </Button> */}
+                <Button target="_blank" href="/components">
+                  <strong>&nbsp;Blocks</strong>
                 </Button>
                 <Button
                   icon={<Rocket size={20} />}

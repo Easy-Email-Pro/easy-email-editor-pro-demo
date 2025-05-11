@@ -1,11 +1,26 @@
-import { Space } from "@arco-design/web-react";
-import React from "react";
-import { SharedComponents } from "easy-email-pro-theme";
+import React, { useState } from "react";
+import {
+  Typography,
+  Space,
+  Button,
+  Card,
+  Grid,
+  Message,
+} from "@arco-design/web-react";
+import "@arco-design/web-react/dist/css/arco.css";
 import {
   BlockManager,
+  Element,
   ElementType,
   StandardTable2Element,
 } from "easy-email-pro-core";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { IconDown, IconUp } from "@arco-design/web-react/icon";
+import { Link } from "@arco-design/web-react";
+
+const { Title, Paragraph } = Typography;
+const { Row, Col } = Grid;
 
 const list: Array<{ thumbnail: string; payload: StandardTable2Element }> = [
   {
@@ -500,37 +515,143 @@ const list: Array<{ thumbnail: string; payload: StandardTable2Element }> = [
     } as StandardTable2Element,
   },
 ];
+export const Tables = () => {
+  const [expandedCodes, setExpandedCodes] = useState<Record<number, boolean>>(
+    {}
+  );
 
-export function Table() {
+  const getTableCode = (item: Element) => {
+    return JSON.stringify(item, null, 2);
+  };
+
+  const toggleCode = (index: number) => {
+    setExpandedCodes((prev) => ({
+      ...prev,
+      [index]: !prev[index],
+    }));
+  };
+
   return (
-    <Space direction="vertical" style={{ width: "100%" }}>
-      {list.map((item, index) => {
-        const blockDefinition = BlockManager.getBlockByType(
-          ElementType.STANDARD_TABLE2
-        );
+    <>
+      <div style={{ marginBottom: 24 }}>
+        <Title heading={2}>Tables</Title>
+        <Paragraph style={{ marginBottom: 0 }}>
+          Table components for displaying data in a structured format. View all
+          available MJML table attributes in the{" "}
+          <Link
+            href="https://documentation.mjml.io/#mj-table"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MJML Table documentation
+          </Link>
+          .
+        </Paragraph>
+      </div>
+      <Space direction="vertical" size="large" style={{ width: "100%" }}>
+        {list.map((item, index) => {
+          const blockDefinition = BlockManager.getBlockByType(
+            ElementType.STANDARD_TABLE2
+          );
 
-        const element = blockDefinition?.create(item.payload);
-
-        return (
-          <SharedComponents.DragItem key={index} element={element}>
-            <div
-              className="block-list-menu-popover-item"
+          const element = blockDefinition?.create(item.payload);
+          return (
+            <Card
+              key={index}
               style={{
-                width: "100%",
-                minHeight: 40,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                background: "var(--color-bg-2)",
               }}
             >
-              <img
-                src={item.thumbnail}
-                style={{ width: "100%", maxHeight: "100%" }}
-              />
-            </div>
-          </SharedComponents.DragItem>
-        );
-      })}
-    </Space>
+              {/* Table Preview */}
+              <div
+                style={{
+                  padding: "32px 16px",
+                  background: "var(--color-bg-1)",
+                  borderRadius: "4px",
+                  marginBottom: 16,
+                }}
+              >
+                <div
+                  style={{
+                    width: "100%",
+                    maxWidth: 600,
+                    margin: "0 auto",
+                    position: "relative",
+                  }}
+                >
+                  <img
+                    src={item.thumbnail}
+                    style={{
+                      width: "100%",
+                      borderRadius: 4,
+                    }}
+                    alt="Table preview"
+                  />
+                  <div
+                    style={{
+                      marginTop: 8,
+                      fontSize: 14,
+                      color: "var(--color-text-2)",
+                      textAlign: "center",
+                    }}
+                  >
+                    With header row layout
+                  </div>
+                </div>
+              </div>
+
+              {/* Code Display */}
+              <div>
+                <Row
+                  justify="space-between"
+                  align="center"
+                  style={{ marginBottom: expandedCodes[index] ? 12 : 0 }}
+                >
+                  <Col>
+                    <Space>
+                      <Button
+                        type="text"
+                        size="small"
+                        onClick={() => toggleCode(index)}
+                        style={{ padding: 0 }}
+                        icon={expandedCodes[index] ? <IconUp /> : <IconDown />}
+                      >
+                        {expandedCodes[index] ? "Hide Code" : "Show Code"}
+                      </Button>
+                      <Button
+                        type="text"
+                        size="small"
+                        onClick={() => {
+                          navigator.clipboard.writeText(getTableCode(element!));
+                          Message.success("Code copied to clipboard");
+                        }}
+                      >
+                        Copy Code
+                      </Button>
+                    </Space>
+                  </Col>
+                </Row>
+                {expandedCodes[index] && (
+                  <div style={{ marginTop: 16 }}>
+                    <SyntaxHighlighter
+                      language="json"
+                      style={vscDarkPlus}
+                      customStyle={{
+                        margin: 0,
+                        borderRadius: 4,
+                        fontSize: "13px",
+                        maxHeight: 300,
+                      }}
+                    >
+                      {getTableCode(element!)}
+                    </SyntaxHighlighter>
+                  </div>
+                )}
+              </div>
+            </Card>
+          );
+        })}
+      </Space>
+    </>
   );
-}
+};

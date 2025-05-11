@@ -1,0 +1,328 @@
+{
+  "id": 9,
+  "subject": "Shop the deals that warms hearts.",
+  "thumbnail": "https://res.cloudinary.com/djnkpbshx/image/upload/v1688995623/easy-email-pro-test/qxg8z749esmulqptbnzg.png",
+  "content": {
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      }
+    },
+    "type": "page",
+    "children": [
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-repeat": "no-repeat",
+          "padding-top": "20px",
+          "padding-bottom": "20px",
+          "vertical-align": "middle"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "33%",
+              "vertical-align": "middle"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://d3k81ch9hvuctc.cloudfront.net/company/Pb3wug/images/dadd1064-63a9-4c5b-9902-4a3d303b9b55.png",
+                  "width": "80px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "67%",
+              "vertical-align": "middle"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-navbar",
+                "data": {},
+                "attributes": {
+                  "font-size": "14px",
+                  "align": "center",
+                  "item-padding-left": "10px",
+                  "item-padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "Shop"
+                      }
+                    ],
+                    "attributes": {
+                      "href": "",
+                      "font-size": "14px",
+                      "padding-left": "10px",
+                      "padding-right": "10px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "About"
+                      }
+                    ],
+                    "attributes": {
+                      "href": "",
+                      "font-size": "14px",
+                      "padding-left": "10px",
+                      "padding-right": "10px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "Contact"
+                      }
+                    ],
+                    "attributes": {
+                      "href": "",
+                      "font-size": "14px",
+                      "padding-left": "10px",
+                      "padding-right": "10px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "Blog"
+                      }
+                    ],
+                    "attributes": {
+                      "href": "",
+                      "font-size": "14px",
+                      "padding-left": "10px",
+                      "padding-right": "10px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-image-enabled": true,
+          "background-url": "https://res.cloudinary.com/djnkpbshx/image/upload/v1688996944/easy-email-pro-test/crxfxyfmi2rh4h7dpfmy.png",
+          "padding-top": "100px",
+          "padding-bottom": "400px",
+          "background-position": "center center",
+          "background-size": "auto"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "font-size": "42px"
+                },
+                "children": [
+                  {
+                    "text": "LOOK WHAT'S BACK IN STOCK"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-repeat": "no-repeat",
+          "background-color": "#134312",
+          "padding-top": "40px",
+          "padding-bottom": "40px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "500px"
+            },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "color": "#ffffff"
+                },
+                "children": [
+                  {
+                    "text": "THE WAIT IS OVER"
+                  }
+                ]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "font-size": "24px",
+                  "color": "#ffffff"
+                },
+                "children": [
+                  {
+                    "text": "We've restocked"
+                  }
+                ]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "font-size": "16px",
+                  "color": "#ffffff"
+                },
+                "children": [
+                  {
+                    "text": "We know you've been waiting for this, and we appreciate your patience while we restock this best-seller."
+                  }
+                ]
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "background-color": "#CBB289",
+                  "font-size": "18px",
+                  "line-height": "120%",
+                  "inner-padding-left": "30px",
+                  "inner-padding-right": "30px",
+                  "padding-top": "20px"
+                },
+                "children": [
+                  {
+                    "text": "STOCK UP"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-repeat": "no-repeat"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "100%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-social",
+                "data": {},
+                "attributes": {
+                  "icon-size": "32px"
+                },
+                "children": [
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
+                      "href": "",
+                      "padding-left": "0px",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
+                      "href": "",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908543/clgnivsuj0018z9ltiixmxf6k/wtefhsfwaapcdbz7knqw.png",
+                      "href": "",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "background-color": "#8A601C",
+      "content-background-color": "#ffffff"
+    }
+  }
+}
