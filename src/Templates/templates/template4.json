@@ -1,0 +1,395 @@
+{
+  "id": 4,
+  "subject": "SPRING PREVIEW SALE",
+  "thumbnail": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/59f45ee9-4734-40b2-b3bb-78b99c95e108.png",
+  "content": {
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      },
+      "blockAttributes": {
+        "standard-paragraph": { "font-family": "Arial" },
+        "standard-h1": { "font-family": "Arial" },
+        "standard-h2": { "font-family": "Arial" },
+        "standard-h3": { "font-family": "Arial" },
+        "standard-h4": { "font-family": "Arial" }
+      }
+    },
+    "type": "page",
+    "children": [
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "src": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/c0ec350c-543a-455d-8514-1f950ddb996a.png",
+                  "width": "66px"
+                },
+                "children": [{ "text": "" }]
+              },
+              {
+                "type": "standard-navbar",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [{ "text": "Shop" }],
+                    "attributes": { "href": "" }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [{ "text": "About" }],
+                    "attributes": { "href": "" }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [{ "text": "Contact" }],
+                    "attributes": { "href": "" }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [{ "text": "Blog" }],
+                    "attributes": { "href": "" }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#FFDDDD",
+          "background-image-enabled": true,
+          "background-url": "https://d3k81ch9hvuctc.cloudfront.net/company/Pb3wug/images/1bf2aca6-ab12-4a00-bd0e-7541744230ad.png",
+          "padding-top": "50px",
+          "padding-bottom": "50px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": { "width": "100%" },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "letter-spacing": "5px",
+                  "font-size": "18px",
+                  "font-weight": "400"
+                },
+                "children": [{ "text": "SPRING PREVIEW SALE" }]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": { "font-size": "96px" },
+                "children": [{ "text": "25% OFF" }],
+                "mobileAttributes": { "font-size": "72px" }
+              },
+              {
+                "type": "standard-button",
+                "data": { "content": "Button" },
+                "attributes": {
+                  "background-color": "rgb(255, 221, 221)",
+                  "color": "rgb(25, 25, 25)",
+                  "border-enabled": true,
+                  "border-color": "rgb(25, 25, 25)",
+                  "border-width": "2px",
+                  "border-radius": "0px",
+                  "font-weight": "bold",
+                  "padding-top": "10px",
+                  "padding-bottom": "10px"
+                },
+                "children": [{ "text": "SIGN UP" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": { "width": "50%" },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "width": "270px",
+                  "src": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/a57d037c-11fe-46a9-bbd4-a06a5eda1050.png"
+                },
+                "children": [{ "text": "" }]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px"
+                },
+                "children": [{ "text": "Appliquéd tulle ballgown" }]
+              },
+              {
+                "type": "standard-button",
+                "data": { "content": "Button" },
+                "attributes": {
+                  "background-color": "rgb(255, 221, 221)",
+                  "color": "rgb(25, 25, 25)",
+                  "border-enabled": true,
+                  "border-color": "rgb(25, 25, 25)",
+                  "border-width": "2px",
+                  "border-radius": "0px",
+                  "font-weight": "bold"
+                },
+                "children": [{ "text": "View details" }]
+              }
+            ]
+          },
+          {
+            "type": "standard-column",
+            "attributes": { "width": "50%" },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "width": "270px",
+                  "src": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/ade00cb6-dcc6-4a10-8f8e-a650d7b98975.png"
+                },
+                "children": [{ "text": "" }]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px"
+                },
+                "children": [{ "text": "Appliquéd tulle ballgown" }]
+              },
+              {
+                "type": "standard-button",
+                "data": { "content": "Button" },
+                "attributes": {
+                  "background-color": "rgb(255, 221, 221)",
+                  "color": "rgb(25, 25, 25)",
+                  "border-enabled": true,
+                  "border-color": "rgb(25, 25, 25)",
+                  "border-width": "2px",
+                  "border-radius": "0px",
+                  "font-weight": "bold"
+                },
+                "children": [{ "text": "View details" }]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-top": "0px",
+          "padding-bottom": "0px",
+          "background-color": "rgb(255, 221, 221)",
+          "vertical-align": "middle"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": { "width": "50%", "vertical-align": "middle" },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "width": "300px",
+                  "src": "https://d3k81ch9hvuctc.cloudfront.net/company/S7EvMw/images/73bc94ca-26fe-4d6a-a078-29d8575bb2ad.png"
+                },
+                "children": [{ "text": "" }]
+              }
+            ]
+          },
+          {
+            "type": "standard-column",
+            "attributes": { "width": "50%", "vertical-align": "middle" },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px"
+                },
+                "children": [{ "text": "UP TO" }]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "font-size": "32px",
+                  "font-weight": "bold"
+                },
+                "children": [{ "text": "30% off" }]
+              },
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {},
+                "children": [{ "text": "regular bridesmaid's dresses" }]
+              },
+              {
+                "type": "standard-button",
+                "data": { "content": "Button" },
+                "attributes": {
+                  "background-color": "rgb(255, 221, 221)",
+                  "color": "rgb(25, 25, 25)",
+                  "border-enabled": true,
+                  "border-color": "rgb(25, 25, 25)",
+                  "border-width": "2px",
+                  "border-radius": "0px",
+                  "font-weight": "bold"
+                },
+                "children": [{ "text": "Browser" }]
+              }
+            ]
+          }
+        ],
+        "mobileAttributes": { "padding-top": "50px", "padding-bottom": "50px" }
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": { "width": "50%" },
+            "data": {},
+            "children": [
+              {
+                "name": "Text",
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": { "align": "left" },
+                "children": [
+                  { "text": "No longer want to receive these emails? " },
+                  { "text": "unsubscribe", "bold": true, "underline": true },
+                  { "text": "." }
+                ],
+                "mobileAttributes": { "align": "center" }
+              }
+            ]
+          },
+          {
+            "type": "standard-column",
+            "attributes": { "width": "50%" },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-social",
+                "data": {},
+                "attributes": { "icon-size": "30px", "align": "right" },
+                "children": [
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [{ "text": "" }],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
+                      "href": "",
+                      "padding-left": "0px",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [{ "text": "" }],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
+                      "href": "",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-social-element",
+                    "children": [{ "text": "" }],
+                    "attributes": {
+                      "src": "https://res.cloudinary.com/dfite2e16/image/upload/v1681908543/clgnivsuj0018z9ltiixmxf6k/wtefhsfwaapcdbz7knqw.png",
+                      "href": "",
+                      "padding-right": "0px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "attributes": {
+      "background-color": "#DDEBFF",
+      "content-background-color": "#FFFFFF"
+    }
+  }
+}

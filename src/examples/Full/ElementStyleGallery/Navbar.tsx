@@ -4,7 +4,6 @@ import { SharedComponents } from "easy-email-pro-theme";
 import {
   BlockManager,
   ElementType,
-  NavbarElement,
   StandardNavbarElement,
 } from "easy-email-pro-core";
 
