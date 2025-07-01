@@ -15,7 +15,7 @@ import "easy-email-pro-theme/lib/style.css";
 import retroStyle from "@arco-themes/react-easy-email-pro/css/arco.css?inline";
 import colorPurpleStyle from "@arco-themes/react-easy-email-pro-purple/css/arco.css?inline";
 import colorRedStyle from "@arco-themes/react-easy-email-pro-red/css/arco.css?inline";
-import colorBlueStyle from "@arco-themes/react-easy-email-pro-blue/css/arco.css?inline";
+import colorBlueStyle from "@arco-themes/react-easy-email-pro-sky/css/arco.css?inline";
 import colorGreenStyle from "@arco-themes/react-easy-email-pro-green/css/arco.css?inline";
 
 import data from "./template.json";
@@ -568,47 +568,103 @@ const categories: ThemeConfigProps["categories"] = [
       // },
     ],
   },
+
   {
     get label() {
       return t("Layout");
     },
     active: true,
-    displayType: "column",
+    displayType: "section",
     blocks: [
       {
         get title() {
           return t("1 column");
         },
-        payload: [["100%"]],
+        variants: [
+          {
+            sections: [{ columns: ["100%"] }],
+          },
+        ],
       },
       {
         get title() {
           return t("2 column");
         },
-        payload: [
-          ["50%", "50%"],
-          ["33%", "67%"],
-          ["67%", "33%"],
-          ["25%", "75%"],
-          ["75%", "25%"],
+        variants: [
+          {
+            sections: [{ columns: ["50%", "50%"] }],
+          },
+          {
+            sections: [{ columns: ["33%", "67%"] }],
+          },
+          {
+            sections: [{ columns: ["67%", "33%"] }],
+          },
+          {
+            sections: [{ columns: ["25%", "75%"] }],
+          },
+          {
+            sections: [{ columns: ["75%", "25%"] }],
+          },
         ],
       },
       {
         get title() {
           return t("3 column");
         },
-        payload: [
-          ["33.33%", "33.33%", "33.33%"],
-          ["25%", "50%", "25%"],
-          ["25%", "25%", "50%"],
-          ["50%", "25%", "25%"],
+
+        variants: [
+          {
+            sections: [{ columns: ["33.33%", "33.33%", "33.33%"] }],
+          },
+          {
+            sections: [{ columns: ["25%", "50%", "25%"] }],
+          },
+          {
+            sections: [{ columns: ["25%", "25%", "50%"] }],
+          },
+          {
+            sections: [{ columns: ["50%", "25%", "25%"] }],
+          },
         ],
       },
       {
         get title() {
           return t("4 column");
         },
-        payload: [["25%", "25%", "25%", "25%"]],
+
+        variants: [
+          {
+            sections: [{ columns: ["25%", "25%", "25%", "25%"] }],
+          },
+        ],
+      },
+      {
+        get title() {
+          return t("Multiple Sections");
+        },
+        variants: [
+          {
+            sections: [
+              {
+                columns: ["100%"],
+              },
+              {
+                columns: ["50%", "50%"],
+              },
+            ],
+          },
+          {
+            sections: [
+              {
+                columns: ["50%", "50%"],
+              },
+              {
+                columns: ["50%", "50%"],
+              },
+            ],
+          },
+        ],
       },
     ],
   },
