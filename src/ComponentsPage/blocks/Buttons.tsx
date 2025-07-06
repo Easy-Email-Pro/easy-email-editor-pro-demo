@@ -17,8 +17,9 @@ import { Link } from "@arco-design/web-react";
 const { Title, Paragraph } = Typography;
 const { Row, Col } = Grid;
 
-const buttonList: Array<{ payload: StandardButtonElement }> = [
+const buttonList: Array<{ payload: StandardButtonElement; title: string }> = [
   {
+    title: "Black Bold Button",
     payload: {
       type: "standard-button",
       data: {
@@ -50,6 +51,7 @@ const buttonList: Array<{ payload: StandardButtonElement }> = [
     },
   },
   {
+    title: "Outlined Light Button",
     payload: {
       type: "standard-button",
       data: {
@@ -81,6 +83,7 @@ const buttonList: Array<{ payload: StandardButtonElement }> = [
     },
   },
   {
+    title: "Black Rounded Button",
     payload: {
       type: "standard-button",
       data: {
@@ -112,6 +115,7 @@ const buttonList: Array<{ payload: StandardButtonElement }> = [
     },
   },
   {
+    title: "Minimal Outlined Button",
     payload: {
       type: "standard-button",
       data: {
@@ -139,6 +143,118 @@ const buttonList: Array<{ payload: StandardButtonElement }> = [
         },
       ],
       id: "xui1STkHwteb5GWnVlSkD",
+    },
+  },
+  {
+    title: "Dashed Outlined Button",
+    payload: {
+      type: "standard-button",
+      data: {
+        content: "Button",
+      },
+      attributes: {
+        "inner-padding-top": "10px",
+        "inner-padding-bottom": "10px",
+        "background-color": "#FFFFFF",
+        "border-enabled": true,
+        "border-width": "2px",
+        "border-color": "#000000",
+        "inner-padding-left": "20px",
+        "inner-padding-right": "20px",
+        "border-radius": "0px",
+        color: "#000000",
+        "line-height": "140%",
+        "padding-top": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "25px",
+        "padding-right": "25px",
+        "border-style": "dashed",
+        "font-size": "13px",
+      },
+      children: [
+        {
+          text: "View Details",
+        },
+      ],
+      id: "pLUtfis91QJXVEje4v1jA",
+    },
+  },
+  {
+    title: "Black Button with Right Icon",
+    payload: {
+      type: "standard-button",
+      data: {
+        content: "Button",
+      },
+      attributes: {
+        color: "#ffffff",
+        "inner-padding-top": "8px",
+        "inner-padding-bottom": "8px",
+        "background-color": "#000000",
+        "border-enabled": true,
+        "border-width": "6px",
+        "border-color": "#000000",
+        "inner-padding-left": "16px",
+        "inner-padding-right": "16px",
+        "border-radius": "6px",
+        "font-weight": "bold",
+        "padding-top": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "25px",
+        "padding-right": "25px",
+        "icon-enabled": true,
+        "icon-src":
+          "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/xmxnt4qg5xuogsoasxrfy_image.png",
+        "icon-position": "right",
+        "icon-vertical-align": "middle",
+        "icon-width": "13px",
+        "icon-height": "13px",
+      },
+      children: [
+        {
+          text: "Learn More",
+        },
+      ],
+      id: "yWitECXNJHbw5jKVtCyUP",
+    },
+  },
+  {
+    title: "Blue Button with Left Icon",
+    payload: {
+      type: "standard-button",
+      data: {
+        content: "Button",
+      },
+      attributes: {
+        color: "#ffffff",
+        "inner-padding-top": "8px",
+        "inner-padding-bottom": "8px",
+        "background-color": "rgb(59, 130, 246)",
+        "border-enabled": true,
+        "border-width": "6px",
+        "border-color": "rgb(59, 130, 246)",
+        "inner-padding-left": "16px",
+        "inner-padding-right": "16px",
+        "border-radius": "6px",
+        "font-weight": "bold",
+        "padding-top": "10px",
+        "padding-bottom": "10px",
+        "padding-left": "25px",
+        "padding-right": "25px",
+        "icon-enabled": true,
+        "icon-src":
+          "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/hwwypra6-ycqpmcyo1gxc_image.png",
+        "icon-position": "left",
+        "icon-vertical-align": "middle",
+        "icon-width": "13px",
+        "icon-height": "13px",
+      },
+      children: [
+        {
+          text: "Learn More",
+        },
+      ],
+      id: "yWitECXNJHbw5jKVtCyUP",
     },
   },
 ];
@@ -178,8 +294,31 @@ export const Buttons = () => {
       </div>
       <Space direction="vertical" size="large" style={{ width: "100%" }}>
         {buttonList.map((item, index) => {
+          const {
+            "icon-enabled": iconEnabled,
+            "icon-src": iconSrc,
+            "icon-position": iconPosition,
+            "icon-width": iconWidth,
+            "icon-height": iconHeight,
+            "icon-vertical-align": iconVerticalAlign,
+          } = item.payload.attributes;
+          const icon =
+            iconEnabled && iconSrc ? (
+              <img
+                src={iconSrc}
+                width={iconWidth}
+                height={iconHeight}
+                style={{
+                  width: iconWidth,
+                  height: iconHeight,
+                  display: "inline-block",
+                  verticalAlign: iconVerticalAlign,
+                }}
+              />
+            ) : null;
           return (
             <Card
+              title={item.title}
               key={index}
               style={{
                 background: "var(--color-bg-2)",
@@ -210,7 +349,9 @@ export const Buttons = () => {
                   }}
                 >
                   <a href="#" style={{ textDecoration: "none" }}>
+                    {iconPosition === "left" && <>{icon}&nbsp;</>}
                     {(item.payload.children[0] as any)?.text}
+                    {iconPosition === "right" && <>&nbsp;{icon}</>}
                   </a>
                 </div>
               </div>

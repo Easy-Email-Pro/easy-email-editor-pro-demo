@@ -1060,6 +1060,7 @@ export default function MyEditor() {
     },
     enabledHtmlBlockNodeAlign: true,
     enabledGradientImage: true,
+    enabledButtonIcon: true,
   });
 
   if (authState === "pending") {
