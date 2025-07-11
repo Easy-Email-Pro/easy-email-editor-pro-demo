@@ -101,49 +101,7 @@ const imgList: Array<{ payload: MarketingQRCodeElement }> = [
       id: "LIjUjfSM53z89pc-k4vpE",
     },
   },
-  {
-    payload: {
-      type: "marketing-qr-code",
-      data: {
-        text: "https://www.easyemail.pro",
-        logo: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/hwm526rq8_e9s0ynhimam_image.png",
-      },
-      attributes: {
-        "dot-color": "#6A0DAD",
-        "dot-color-2": "#9A48D0",
-        "dot-color-rotation": 90,
-        "dot-color-type": "gradient",
-        "dot-gradient-type": "radial",
-        "dot-type": "classy-rounded",
-        "corner-dot-color": "#6A0DAD",
-        "corner-dot-color-2": "#9A48D0",
-        "corner-square-color": "#6A0DAD",
-        "corner-square-color-2": "#9A48D0",
-        "corner-dot-color-rotation": 0,
-        "corner-dot-color-type": "gradient",
-        "corner-dot-gradient-type": "radial",
-        "corner-dot-type": "dot",
-        "corner-square-color-rotation": 0,
-        "corner-square-color-type": "gradient",
-        "corner-square-gradient-type": "radial",
-        "corner-square-type": "square",
-        "image-margin": 12,
-        "background-color": "#FFFFFF",
-        margin: 5,
-        "padding-top": "15px",
-        "padding-bottom": "15px",
-        "padding-left": "15px",
-        "padding-right": "15px",
-        src: "",
-      },
-      children: [
-        {
-          text: "",
-        },
-      ],
-      id: "n7dveM3wh0pqUvM9XX290",
-    },
-  },
+
   {
     payload: {
       type: "marketing-qr-code",

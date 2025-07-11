@@ -16,7 +16,8 @@
     "server": "npm run server:demo1 && npm run server:demo2",
     "typings": "",
     "update:slate": "pnpm --ignore-workspace add slate@latest slate-history@latest slate-react@latest",
-    "ins": "pnpm --ignore-workspace install"
+    "ins": "pnpm --ignore-workspace install",
+    "build:iife": "vite build --config vite.iife.config.ts"
   },
   "keywords": [],
   "author": "",

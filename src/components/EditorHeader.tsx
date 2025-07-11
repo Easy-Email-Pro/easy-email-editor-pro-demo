@@ -10,7 +10,6 @@ import {
   Tooltip,
   Typography,
 } from "@arco-design/web-react";
-import { IconMenu } from "@arco-design/web-react/icon";
 import React from "react";
 import {
   ActiveTabKeys,
@@ -30,7 +29,6 @@ import { saveAs } from "file-saver";
 import { Uploader } from "@/utils/Uploader";
 import { pick } from "lodash";
 import { ReactEditor, useSlate } from "slate-react";
-import { useNavigate, useSearchParams } from "react-router-dom";
 import { SendEmailModal } from "./SendEmailModal";
 import { base64ToBlob, dom2Svg } from "@/utils/base64ToBlob";
 import { Menu as LucideMenu, Rocket, Download, Settings } from "lucide-react";
@@ -47,7 +45,6 @@ export const EditorHeader = (props: {
   const editor = useSlate();
   const [collapsed, setCollapsed] = React.useState(true);
   const [text, setText] = React.useState("");
-  const navigate = useNavigate();
   const [visible, setVisible] = React.useState(false);
   const { values, submit, setFieldValue, mergetagsData, reset, dirty } =
     useEditorContext();
@@ -59,9 +56,8 @@ export const EditorHeader = (props: {
   };
 
   const { universalElementSetting } = useEditorProps();
-  const [params] = useSearchParams();
 
-  const isDev = params.get("dev") === "true";
+  const isDev = location.search.includes("dev=true");
 
   const onExportImage = async () => {
     Message.loading("Loading...");
@@ -314,7 +310,7 @@ export const EditorHeader = (props: {
       <div style={{ position: "relative" }}>
         <PageHeader
           backIcon
-          onBack={() => navigate("/")}
+          onBack={() => window.history.back()}
           className="editor-header"
           style={{
             backgroundColor: "rgb(var(--primary-6))",
