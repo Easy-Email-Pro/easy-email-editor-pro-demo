@@ -619,6 +619,14 @@ export const Discounts = () => {
                     src={item.thumbnail}
                     style={{
                       width: "100%",
+                      cursor: "pointer",
+                    }}
+                    onClick={() => {
+                      localStorage.setItem(
+                        "preview_block_json",
+                        getDiscountCode(element!)
+                      );
+                      window.open("/template?block_preview=true");
                     }}
                   />
                 </div>
@@ -652,6 +660,19 @@ export const Discounts = () => {
                         }}
                       >
                         Copy Code
+                      </Button>
+                      <Button
+                        type="text"
+                        size="small"
+                        onClick={() => {
+                          localStorage.setItem(
+                            "preview_block_json",
+                            getDiscountCode(element!)
+                          );
+                          window.open("/template?block_preview=true");
+                        }}
+                      >
+                        Preview
                       </Button>
                     </Space>
                   </Col>

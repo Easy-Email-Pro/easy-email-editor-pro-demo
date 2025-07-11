@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="Q1Ho4l_MisrhWICPx9nSROt67kdMbP1CeSS6fzLW_HM"
+    />
+    <title>Easy-email-pro demo</title>
+    <meta
+      name="description"
+      content="Easy-email-pro is a powerful online email editor designed specifically for responsive email design. With Easy-email-pro, you can effortlessly create email campaigns that adapt to different devices. It offers the convenience of importing and exporting MJML, as well as the option to export your designs as HTML. "
+    />
+    <link rel="stylesheet" href="./build/style.css" />
+    <script src="./build/easy-email-pro.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <header
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px 10px;
+          height: 50px;
+        "
+      >
+        <span>Easy-email-pro demo</span>
+        <div>
+          <button
+            class="arco-btn arco-btn-primary arco-btn-size-default arco-btn-shape-square easy-email-pro-preview-header-close-btn"
+            onclick="editorSwitchTemplate()"
+          >
+            Switch Template
+          </button>
+          <button
+            class="arco-btn arco-btn-primary arco-btn-size-default arco-btn-shape-square easy-email-pro-preview-header-close-btn"
+            onclick="editorSubmit()"
+          >
+            Submit
+          </button>
+        </div>
+      </header>
+      <div id="editor"></div>
+    </div>
+    <script>
+      var template1 = {
+        subject: "HAPPY BIRTHDAY",
+        content: {
+          data: {
+            breakpoint: "480px",
+            globalAttributes: {
+              "font-family": "Arial, sans-serif",
+            },
+          },
+          type: "page",
+          children: [
+            {
+              data: {},
+              type: "standard-section",
+              children: [
+                {
+                  data: {},
+                  type: "standard-column",
+                  children: [
+                    {
+                      data: {},
+                      type: "standard-image",
+                      children: [
+                        {
+                          text: "",
+                        },
+                      ],
+                      attributes: {
+                        src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/bjvhl5sjaggpmxijs3pw9_image.png",
+                        width: "66px",
+                        "padding-top": "0px",
+                        "padding-left": "0px",
+                        "padding-right": "0px",
+                        "padding-bottom": "0px",
+                      },
+                      id: "hWW7TTaol16hnY-wIred3",
+                    },
+                    {
+                      data: {},
+                      name: "Text",
+                      type: "standard-h2",
+                      children: [
+                        {
+                          text: "HAPPY BIRTHDAY",
+                        },
+                      ],
+                      attributes: {
+                        color: "#580162",
+                      },
+                      id: "mbds9eybHje4fsMEMBkmL",
+                    },
+                    {
+                      data: {},
+                      name: "Text",
+                      type: "standard-paragraph",
+                      children: [
+                        {
+                          type: "html-block-node",
+                          children: [
+                            {
+                              text: "We heard that it's your birthday! Do you know what that means?",
+                            },
+                          ],
+                          attributes: {},
+                          data: {
+                            tagName: "div",
+                          },
+                          id: "Bx8lGe4DR1r7iMrlsKcxJ",
+                        },
+                        {
+                          type: "html-block-node",
+                          children: [
+                            {
+                              text: "Today is all about YOU! 🎉",
+                            },
+                          ],
+                          attributes: {},
+                          data: {
+                            tagName: "div",
+                          },
+                          id: "mKt_UjnfDHEwfhVYrBzkV",
+                        },
+                      ],
+                      attributes: {},
+                      id: "lRhaOFYbMrU_5zo-H9zd4",
+                    },
+                  ],
+                  attributes: {},
+                  id: "6h0Yi2Nc1GFA_PA_Zb86b",
+                },
+              ],
+              attributes: {},
+              id: "ZfJlE1EhVeUVWGTcfqeOZ",
+            },
+            {
+              data: {},
+              type: "standard-section",
+              children: [
+                {
+                  data: {},
+                  type: "standard-column",
+                  children: [
+                    {
+                      data: {
+                        content: "Button",
+                      },
+                      type: "standard-button",
+                      children: [
+                        {
+                          text: "Coupon Code: TAKE20",
+                        },
+                      ],
+                      attributes: {
+                        color: "#000000",
+                        width: "100%",
+                        "font-size": "32px",
+                        "font-weight": "400",
+                        "border-color": "#7B0494",
+                        "border-style": "dashed",
+                        "border-width": "5px",
+                        "border-enabled": true,
+                        "background-color": "#FBE9FF",
+                        "inner-padding-top": "50px",
+                        "inner-padding-bottom": "50px",
+                      },
+                      id: "kzLbDI1PCobA7iW-YoG07",
+                    },
+                    {
+                      data: {
+                        content: "Button",
+                      },
+                      type: "standard-button",
+                      children: [
+                        {
+                          text: "Use your code",
+                        },
+                      ],
+                      attributes: {
+                        "font-weight": "bold",
+                        "padding-top": "20px",
+                        "padding-bottom": "20px",
+                        "background-color": "#580162",
+                      },
+                      id: "hENyoOwY2w-FnYya9XHC3",
+                    },
+                  ],
+                  attributes: {
+                    width: "100%",
+                  },
+                  id: "nGJwQN-38aPD1LLhoIaL5",
+                },
+              ],
+              attributes: {
+                "padding-top": "50px",
+                "border-style": "solid",
+                "background-url":
+                  "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/9ftxui9ponirpfnb-x6qu_image.png",
+                "border-enabled": false,
+                "padding-bottom": "50px",
+                "background-size": "cover",
+                "background-position": "top left",
+                "background-image-enabled": true,
+              },
+              id: "9LmJLRpJigwkTM16WME8Y",
+            },
+            {
+              data: {},
+              type: "standard-section",
+              children: [
+                {
+                  data: {},
+                  type: "standard-column",
+                  children: [
+                    {
+                      data: {},
+                      type: "standard-social",
+                      children: [
+                        {
+                          data: {},
+                          type: "standard-social-element",
+                          children: [
+                            {
+                              text: "",
+                            },
+                          ],
+                          attributes: {
+                            src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908489/clgnivsuj0018z9ltiixmxf6k/xkd0kfnytbfywsofk8t6.png",
+                            href: "",
+                            "padding-top": "0px",
+                            "padding-left": "0px",
+                            "padding-right": "0px",
+                            "padding-bottom": "0px",
+                          },
+                          id: "-dSTvpfjkNbJqBnRtnsIo",
+                        },
+                        {
+                          data: {},
+                          type: "standard-social-element",
+                          children: [
+                            {
+                              text: "",
+                            },
+                          ],
+                          attributes: {
+                            src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908521/clgnivsuj0018z9ltiixmxf6k/ulyduaza1votoacctoi3.png",
+                            href: "",
+                            "padding-top": "0px",
+                            "padding-left": "10px",
+                            "padding-right": "0px",
+                            "padding-bottom": "0px",
+                          },
+                          id: "LsdVdnfwqZEvRFHmSBnHa",
+                        },
+                        {
+                          data: {},
+                          type: "standard-social-element",
+                          children: [
+                            {
+                              text: "",
+                            },
+                          ],
+                          attributes: {
+                            src: "https://res.cloudinary.com/dfite2e16/image/upload/v1681908543/clgnivsuj0018z9ltiixmxf6k/wtefhsfwaapcdbz7knqw.png",
+                            href: "",
+                            "padding-top": "0px",
+                            "padding-left": "10px",
+                            "padding-right": "0px",
+                            "padding-bottom": "0px",
+                          },
+                          id: "aVwXsxHo7vTCg-39U5uxB",
+                        },
+                      ],
+                      attributes: {
+                        spacing: "10px",
+                        "icon-size": "30px",
+                      },
+                      id: "S46KeXlR5TyrdIAc0j_jj",
+                    },
+                    {
+                      data: {},
+                      type: "standard-divider",
+                      children: [
+                        {
+                          text: "",
+                        },
+                      ],
+                      attributes: {
+                        "border-color": "#C9CCCF",
+                        "border-style": "solid",
+                        "border-width": "1px",
+                        "padding-left": "0px",
+                        "padding-right": "0px",
+                      },
+                      id: "1p44B188YbJFhrTwe9s0n",
+                    },
+                    {
+                      data: {},
+                      name: "Text",
+                      type: "standard-paragraph",
+                      children: [
+                        {
+                          text: "No longer want to receive these emails? ",
+                        },
+                        {
+                          text: "unsubscribe",
+                          italic: true,
+                          underline: true,
+                        },
+                      ],
+                      attributes: {},
+                      id: "EFR-F7ELoK9tyhd-F0sIZ",
+                    },
+                  ],
+                  attributes: {
+                    width: "100%",
+                  },
+                  id: "Sm5GbRmfZZ_PKni6xPidw",
+                },
+              ],
+              attributes: {},
+              id: "ERXY6C2k6HQshQrlQc2-U",
+            },
+          ],
+          attributes: {
+            "background-color": "#AFAFF8",
+            "content-background-color": "#FFFFFF",
+          },
+          id: "IupQjVTUqaMJa6d646Gwu",
+        },
+      };
+
+      var template2 = {
+        subject: "CYBER MONDAY DEALS",
+        content: {
+          data: {
+            breakpoint: "480px",
+            globalAttributes: {
+              "font-family": "Arial, sans-serif",
+            },
+          },
+          type: "page",
+          children: [
+            {
+              type: "standard-section",
+              data: {},
+              attributes: {
+                "padding-top": "0px",
+                "padding-bottom": "0px",
+              },
+              children: [
+                {
+                  type: "standard-column",
+                  data: {},
+                  attributes: {},
+                  children: [
+                    {
+                      type: "standard-image",
+                      data: {},
+                      attributes: {
+                        width: "66px",
+                        src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/aq1_op7rdlrvr9szkal_e_image.png",
+                      },
+                      children: [
+                        {
+                          text: "",
+                        },
+                      ],
+                      id: "gXLkbcaZnYXPMu9VsTGRH",
+                    },
+                    {
+                      type: "standard-image",
+                      data: {},
+                      attributes: {
+                        src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/i7fwtcrzr8rwyf89_mzep_image.png",
+                        "padding-left": "0px",
+                        "padding-right": "0px",
+                        "padding-top": "0px",
+                        "padding-bottom": "0px",
+                      },
+                      children: [
+                        {
+                          text: "",
+                        },
+                      ],
+                      id: "Ee6p9uG8hkqRHDiHL0uaU",
+                    },
+                  ],
+                  id: "qTzzr76y_mvOyHXC5fhXH",
+                },
+              ],
+              id: "h0JyV7ngu93aNU-IxoH96",
+            },
+            {
+              type: "standard-section",
+              data: {},
+              attributes: {
+                "background-repeat": "no-repeat",
+                "background-color": "#F63F3F",
+              },
+              children: [
+                {
+                  type: "standard-column",
+                  attributes: {
+                    width: "50%",
+                  },
+                  data: {},
+                  children: [
+                    {
+                      name: "Text",
+                      type: "standard-h1",
+                      data: {},
+                      attributes: {
+                        "font-size": "40px",
+                        color: "#FFFFFF",
+                        "padding-top": "3px",
+                        "padding-bottom": "3px",
+                      },
+                      children: [
+                        {
+                          text: "CYBER MONDAY DEALS",
+                        },
+                      ],
+                      id: "vqIO4hxkgF7QnjWADtJSz",
+                    },
+                  ],
+                  id: "J3WBg3hCejwHa519e35_8",
+                },
+                {
+                  type: "standard-column",
+                  attributes: {
+                    width: "50%",
+                  },
+                  data: {},
+                  children: [
+                    {
+                      name: "Text",
+                      type: "standard-paragraph",
+                      data: {},
+                      attributes: {
+                        color: "#FFFFFF",
+                      },
+                      children: [
+                        {
+                          type: "html-block-node",
+                          children: [
+                            {
+                              text: "There's still time to save! ",
+                            },
+                          ],
+                          attributes: {},
+                          data: {
+                            tagName: "div",
+                          },
+                          id: "SnEuxtq_d1MPuv22Juvel",
+                        },
+                        {
+                          type: "html-block-node",
+                          children: [
+                            {
+                              text: "Up to 65% off while supplies last.",
+                            },
+                          ],
+                          attributes: {},
+                          data: {
+                            tagName: "div",
+                          },
+                          id: "23AC24f0FGShOxSvgOeaB",
+                        },
+                        {
+                          type: "html-block-node",
+                          children: [
+                            {
+                              text: "",
+                            },
+                          ],
+                          attributes: {},
+                          data: {
+                            tagName: "div",
+                          },
+                          id: "pN1T7OI4n2ZAQtHqbLHY3",
+                        },
+                        {
+                          type: "html-block-node",
+                          children: [
+                            {
+                              text: "Browse Deals",
+                              link: {
+                                href: "https://www.easyemail.pro/",
+                                blank: true,
+                              },
+                            },
+                          ],
+                          attributes: {},
+                          data: {
+                            tagName: "div",
+                          },
+                          id: "ipf9-KLkdl5rxPpMuP-O_",
+                        },
+                      ],
+                      id: "Na84UUXLZKnUHvsoO-xht",
+                    },
+                  ],
+                  id: "0y5QyeyCLUlgCYg_GrOK4",
+                },
+              ],
+              id: "R6hcIM125O-RsFN6wrQQo",
+            },
+            {
+              type: "standard-section",
+              data: {},
+              attributes: {
+                "background-repeat": "no-repeat",
+                "padding-top": "0px",
+                "padding-bottom": "0px",
+              },
+              children: [
+                {
+                  type: "standard-column",
+                  attributes: {
+                    width: "50%",
+                  },
+                  data: {},
+                  children: [
+                    {
+                      name: "Text",
+                      type: "standard-paragraph",
+                      data: {},
+                      attributes: {
+                        "padding-top": "40px",
+                        "padding-bottom": "20px",
+                        "font-size": "28px",
+                        align: "left",
+                      },
+                      children: [
+                        {
+                          text: "New deals added every hour.",
+                          bold: true,
+                        },
+                      ],
+                      id: "Uh4e6BYnbOj6aiLrWq7el",
+                    },
+                    {
+                      type: "standard-button",
+                      data: {
+                        content: "Button",
+                      },
+                      attributes: {
+                        "background-color": "#F63F3F",
+                        width: "100%",
+                        "inner-padding-top": "15px",
+                        "inner-padding-bottom": "15px",
+                        "padding-bottom": "30px",
+                      },
+                      children: [
+                        {
+                          text: "See More Savings ➜",
+                          bold: true,
+                        },
+                      ],
+                      id: "z6Egdnm8oCTPSbslc9tYM",
+                    },
+                  ],
+                  id: "GzGbN9HmoXqsNcv-adfCb",
+                },
+                {
+                  type: "standard-column",
+                  attributes: {
+                    width: "50%",
+                  },
+                  data: {},
+                  children: [
+                    {
+                      type: "standard-image",
+                      data: {},
+                      attributes: {
+                        width: "596px",
+                        src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/fhvqb2kbcr0jvozklocd_image.png",
+                        "padding-left": "0px",
+                        "padding-right": "0px",
+                        "padding-top": "0px",
+                        "padding-bottom": "0px",
+                        "fluid-on-mobile": "true",
+                      },
+                      children: [
+                        {
+                          text: "",
+                        },
+                      ],
+                      mobileAttributes: {},
+                      id: "1_4yi0j0OH6-tYIQI7frF",
+                    },
+                  ],
+                  id: "u7x_u7AFeNoJUSCx4iQoe",
+                },
+              ],
+              id: "kYrUH_UNWmkU199wuAaYc",
+            },
+            {
+              type: "standard-section",
+              data: {},
+              attributes: {
+                "background-repeat": "no-repeat",
+                "padding-top": "0px",
+                "padding-bottom": "0px",
+              },
+              children: [
+                {
+                  type: "standard-column",
+                  attributes: {
+                    width: "100%",
+                  },
+                  data: {},
+                  children: [
+                    {
+                      type: "standard-image",
+                      data: {},
+                      attributes: {
+                        src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/o_6sl7iartvwcmymd4egh_image.png",
+                        "padding-left": "0px",
+                        "padding-right": "0px",
+                        "padding-top": "0px",
+                        "padding-bottom": "0px",
+                      },
+                      children: [
+                        {
+                          text: "",
+                        },
+                      ],
+                      id: "fS7ltZuWts3NYHBs65feI",
+                    },
+                  ],
+                  id: "wm9PGQzzKIwdqerbwjl4E",
+                },
+              ],
+              id: "-uFqcpOEFOydv16JUaDVM",
+            },
+            {
+              type: "standard-section",
+              data: {},
+              attributes: {
+                "background-repeat": "no-repeat",
+              },
+              children: [
+                {
+                  type: "standard-column",
+                  attributes: {
+                    width: "100%",
+                  },
+                  data: {},
+                  children: [
+                    {
+                      name: "Text",
+                      type: "standard-paragraph",
+                      data: {},
+                      attributes: {},
+                      children: [
+                        {
+                          text: "No longer want to receive these emails? ",
+                        },
+                        {
+                          text: "unsubscribe",
+                          link: {
+                            href: "#",
+                            blank: true,
+                          },
+                        },
+                      ],
+                      id: "v0TItFZfRf167zhRy76OC",
+                    },
+                  ],
+                  id: "eM_BB1ZAkfBREozJrSqFB",
+                },
+              ],
+              id: "zSTNeml3BEiXEQ7rgGdmD",
+            },
+          ],
+          attributes: {
+            "background-color": "#f5f5f5",
+            "content-background-color": "#ffffff",
+          },
+          id: "zpDcJoRolVbsW3qihIN4I",
+        },
+      };
+    </script>
+
+    <script>
+      const editor = EasyEmailPro.initEditor("editor", {
+        clientId: "your-client-id",
+        height: "calc(100vh - 50px)",
+        initialValues: template1,
+        onUpload: (file) => {
+          // upload to your server
+          console.log("file: ", file);
+          return new Promise((resolve) => {
+            const url = URL.createObjectURL(file);
+            resolve(url);
+          });
+        },
+      });
+
+      console.log("editor: ", editor);
+
+      window.editorSubmit = () => {
+        console.log("JSON: ", editor.getJSON());
+        console.log("MJML: ", editor.getMJML());
+        // console.log("HTML: ", editor.getHTML());
+        // console.log(
+        //   "HTML with dynamic data: ",
+        //   editor.getHTMLWithDynamicData()
+        // );
+      };
+
+      window.editorSwitchTemplate = () => {
+        editor.switchTemplate(template2);
+      };
+    </script>
+  </body>
+</html>

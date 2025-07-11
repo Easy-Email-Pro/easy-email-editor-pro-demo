@@ -857,8 +857,16 @@ export const Reviews = () => {
                     style={{
                       width: "100%",
                       borderRadius: "4px",
+                      cursor: "pointer",
                     }}
                     alt="Review preview"
+                    onClick={() => {
+                      localStorage.setItem(
+                        "preview_block_json",
+                        getReviewCode(element!)
+                      );
+                      window.open("/template?block_preview=true");
+                    }}
                   />
                 </div>
               </div>
@@ -891,6 +899,19 @@ export const Reviews = () => {
                         }}
                       >
                         Copy Code
+                      </Button>
+                      <Button
+                        type="text"
+                        size="small"
+                        onClick={() => {
+                          localStorage.setItem(
+                            "preview_block_json",
+                            getReviewCode(element!)
+                          );
+                          window.open("/template?block_preview=true");
+                        }}
+                      >
+                        Preview
                       </Button>
                     </Space>
                   </Col>

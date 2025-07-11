@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card, Grid } from "@arco-design/web-react";
+import { Card, Grid } from "@arco-design/web-react";
 import { Layout } from "@arco-design/web-react";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
-import { Space } from "@arco-design/web-react";
-import Logo from "./easy-email-pro.svg";
 
-import { EmailList } from "@/components/EmailList";
 import { PageLayout } from "@/components/PageLayout";
 import { EmailItem } from "@/components/EmailList/EmailItem";
 import axios from "axios";

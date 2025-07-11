@@ -20,11 +20,19 @@ import {
   Shopwindow,
   QRCode,
   MarketingType,
+  Video,
+  ImageWithText,
+  CountdownV2,
 } from "easy-email-pro-kit";
 import {
+  BlockManager,
+  EditorCore,
   ElementType,
+  NodeUtils,
   PageElement,
   PluginManager,
+  StandardSectionElement,
+  StandardWrapperElement,
   t,
 } from "easy-email-pro-core";
 import { useCompactMode } from "@/hooks/useCompactMode";
@@ -33,7 +41,14 @@ import axios from "axios";
 import { useState } from "react";
 import FullScreenLoading from "@/components/FullScreenLoading";
 
-PluginManager.registerPlugins([Countdown, Shopwindow, QRCode]);
+PluginManager.registerPlugins([
+  CountdownV2,
+  Countdown,
+  Shopwindow,
+  QRCode,
+  Video,
+  ImageWithText,
+]);
 
 const mergetags = [
   {
@@ -445,6 +460,20 @@ const SaveAndShareButton = () => {
 
 const TemplateEditorContainer = () => {
   const [params] = useSearchParams();
+  const [authState, setAuthState] = useState<"pending" | "success" | "fail">(
+    "pending"
+  );
+  const isBlockPreview = params.get("block_preview") === "true";
+
+  useEffect(() => {
+    EditorCore.auth(process.env.CLIENT_ID!)
+      .then(() => {
+        setAuthState("success");
+      })
+      .catch(() => {
+        setAuthState("fail");
+      });
+  }, []);
 
   const [data, setData] = useState<{
     subject: string;
@@ -455,7 +484,64 @@ const TemplateEditorContainer = () => {
   const gid = params.get("gid") || "";
 
   useEffect(() => {
+    if (authState !== "success") return;
+
     if (!id && !gid) {
+      let block: StandardSectionElement | StandardWrapperElement = {
+        type: "standard-section",
+        data: {},
+        attributes: {},
+        children: [
+          {
+            type: "standard-column",
+            data: {},
+            attributes: {},
+            children: [
+              {
+                type: "placeholder",
+                data: {},
+                attributes: {},
+                children: [
+                  {
+                    text: "",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      };
+      if (isBlockPreview) {
+        const blockJson = localStorage.getItem("preview_block_json");
+        if (blockJson) {
+          block = JSON.parse(blockJson);
+
+          if (NodeUtils.isContentElement(block)) {
+            const sectionDefinition = BlockManager.getBlockByType(
+              ElementType.STANDARD_SECTION
+            );
+            const columnDefinition = BlockManager.getBlockByType(
+              ElementType.STANDARD_COLUMN
+            );
+            const textDefinition = BlockManager.getBlockByType(
+              ElementType.STANDARD_PARAGRAPH
+            );
+            block = sectionDefinition?.create({
+              children: [
+                columnDefinition?.create({
+                  children: [
+                    block,
+                    textDefinition.create({
+                      children: [{ text: "" }],
+                    }),
+                  ],
+                }),
+              ],
+            });
+          }
+        }
+      }
+
       setData({
         subject: "Blank",
         content: {
@@ -466,32 +552,7 @@ const TemplateEditorContainer = () => {
             },
           },
           type: "page",
-          children: [
-            {
-              type: "standard-section",
-              data: {},
-              attributes: {},
-              children: [
-                {
-                  type: "standard-column",
-                  data: {},
-                  attributes: {},
-                  children: [
-                    {
-                      type: "placeholder",
-                      data: {},
-                      attributes: {},
-                      children: [
-                        {
-                          text: "",
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
+          children: [block],
           attributes: {
             "background-color": "#f5f5f5",
             "content-background-color": "#ffffff",
@@ -525,8 +586,9 @@ const TemplateEditorContainer = () => {
           setData(data);
         });
     }
-  }, [gid, id]);
+  }, [authState, gid, id, isBlockPreview]);
 
+  console.log("data", data);
   if (!data) return <FullScreenLoading isFullScreen></FullScreenLoading>;
   return <TemplateEditor data={data} />;
 };

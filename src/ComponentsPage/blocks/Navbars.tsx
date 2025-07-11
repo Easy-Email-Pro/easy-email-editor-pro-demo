@@ -106,6 +106,12 @@ export const Navbars = () => {
     }));
   };
 
+  const handlePreview = (item: Element) => {
+    const code = getNavbarCode(item);
+    localStorage.setItem("preview_block_json", code);
+    window.open("/template?block_preview=true", "_blank");
+  };
+
   return (
     <>
       <div style={{ marginBottom: 24 }}>
@@ -147,7 +153,9 @@ export const Navbars = () => {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  cursor: "pointer",
                 }}
+                onClick={() => handlePreview(element)}
               >
                 <img
                   src={item.thumbnail}
@@ -186,6 +194,13 @@ export const Navbars = () => {
                         }}
                       >
                         Copy Code
+                      </Button>
+                      <Button
+                        type="text"
+                        size="small"
+                        onClick={() => handlePreview(element)}
+                      >
+                        Preview
                       </Button>
                     </Space>
                   </Col>

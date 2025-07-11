@@ -96,6 +96,12 @@ export const Images = () => {
     }));
   };
 
+  const handlePreview = (item: Element) => {
+    const code = getImageCode(item);
+    localStorage.setItem("preview_block_json", code);
+    window.open("/template?block_preview=true", "_blank");
+  };
+
   return (
     <>
       <div style={{ marginBottom: 24 }}>
@@ -144,7 +150,9 @@ export const Images = () => {
                       background: "var(--color-bg-1)",
                       borderRadius: "4px",
                       marginBottom: 16,
+                      cursor: "pointer",
                     }}
+                    onClick={() => handlePreview(item.payload)}
                   >
                     <img
                       src={item.payload.attributes.src}
@@ -190,6 +198,13 @@ export const Images = () => {
                             }}
                           >
                             Copy Code
+                          </Button>
+                          <Button
+                            type="text"
+                            size="small"
+                            onClick={() => handlePreview(item.payload)}
+                          >
+                            Preview
                           </Button>
                         </Space>
                       </Col>

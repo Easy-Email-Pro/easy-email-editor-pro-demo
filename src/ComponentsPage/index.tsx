@@ -31,6 +31,7 @@ import { TrustBadges } from "./blocks/composite/TrustBadges";
 import { Reviews } from "./blocks/composite/Reviews";
 import { PageLayout } from "@/components/PageLayout";
 import { pushEvent } from "@/utils/pushEvent";
+import { ProductCard } from "./blocks/composite/ProductCard";
 
 PluginManager.registerPlugins([
   CountdownV2,
@@ -69,6 +70,7 @@ const ComponentGroups = {
   composite: {
     title: "Composite",
     items: {
+      productCard: { label: "Product Card", component: <ProductCard /> },
       discount: { label: "Discount", component: <Discounts /> },
       review: { label: "Review", component: <Reviews /> },
       trustBadge: { label: "Trust Badge", component: <TrustBadges /> },

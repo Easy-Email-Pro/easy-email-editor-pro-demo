@@ -89,12 +89,18 @@ export const Shopwindows = () => {
     }));
   };
 
+  const handlePreview = (item: Element) => {
+    const code = getShopwindowCode(item);
+    localStorage.setItem("preview_block_json", code);
+    window.open("/template?block_preview=true", "_blank");
+  };
+
   return (
     <>
       <div style={{ marginBottom: 24 }}>
         <Title heading={2}>Shop Windows</Title>
         <Paragraph style={{ marginBottom: 0 }}>
-          Shop window components for displaying product galleries. .
+          Shop window components for displaying product galleries.
         </Paragraph>
       </div>
       <Space direction="vertical" size="large" style={{ width: "100%" }}>
@@ -117,7 +123,9 @@ export const Shopwindows = () => {
                   background: "var(--color-bg-1)",
                   borderRadius: "4px",
                   marginBottom: 16,
+                  cursor: "pointer",
                 }}
+                onClick={() => handlePreview(element!)}
               >
                 <div
                   style={{
@@ -177,6 +185,13 @@ export const Shopwindows = () => {
                         }}
                       >
                         Copy Code
+                      </Button>
+                      <Button
+                        type="text"
+                        size="small"
+                        onClick={() => handlePreview(element!)}
+                      >
+                        Preview
                       </Button>
                     </Space>
                   </Col>

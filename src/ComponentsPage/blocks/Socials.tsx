@@ -254,6 +254,12 @@ export const Socials = () => {
     }));
   };
 
+  const handlePreview = (item: Element) => {
+    const code = getSocialCode(item);
+    localStorage.setItem("preview_block_json", code);
+    window.open("/template?block_preview=true", "_blank");
+  };
+
   return (
     <>
       <div style={{ marginBottom: 24 }}>
@@ -292,7 +298,9 @@ export const Socials = () => {
                   background: "var(--color-bg-1)",
                   borderRadius: "4px",
                   marginBottom: 16,
+                  cursor: "pointer",
                 }}
+                onClick={() => handlePreview(element!)}
               >
                 <div
                   style={{
@@ -357,6 +365,13 @@ export const Socials = () => {
                         }}
                       >
                         Copy Code
+                      </Button>
+                      <Button
+                        type="text"
+                        size="small"
+                        onClick={() => handlePreview(element!)}
+                      >
+                        Preview
                       </Button>
                     </Space>
                   </Col>

@@ -275,6 +275,12 @@ export const Buttons = () => {
     }));
   };
 
+  const handlePreview = (item: Element) => {
+    const code = getButtonCode(item);
+    localStorage.setItem("preview_block_json", code);
+    window.open("/template?block_preview=true", "_blank");
+  };
+
   return (
     <>
       <div style={{ marginBottom: 24 }}>
@@ -334,7 +340,9 @@ export const Buttons = () => {
                   background: "var(--color-bg-1)",
                   borderRadius: "4px",
                   marginBottom: 16,
+                  cursor: "pointer",
                 }}
+                onClick={() => handlePreview(item.payload)}
               >
                 <div
                   style={{
@@ -385,6 +393,13 @@ export const Buttons = () => {
                         }}
                       >
                         Copy Code
+                      </Button>
+                      <Button
+                        type="text"
+                        size="small"
+                        onClick={() => handlePreview(item.payload)}
+                      >
+                        Preview
                       </Button>
                     </Space>
                   </Col>

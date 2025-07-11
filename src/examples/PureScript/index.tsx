@@ -1,5 +1,6 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import {
+  EmailEditorProps,
   EmailEditorProvider,
   EmailTemplate,
   TextFormat,
@@ -10,17 +11,8 @@ import {
   Retro,
   ThemeConfigProps,
 } from "easy-email-pro-theme";
+import "@arco-themes/react-easy-email-pro/css/arco.css";
 import "easy-email-pro-theme/lib/style.css";
-
-import retroStyle from "@arco-themes/react-easy-email-pro/css/arco.css?inline";
-import colorPurpleStyle from "@arco-themes/react-easy-email-pro-purple/css/arco.css?inline";
-import colorRedStyle from "@arco-themes/react-easy-email-pro-red/css/arco.css?inline";
-import colorBlueStyle from "@arco-themes/react-easy-email-pro-sky/css/arco.css?inline";
-import colorGreenStyle from "@arco-themes/react-easy-email-pro-green/css/arco.css?inline";
-
-import data from "./template.json";
-import { EditorHeader } from "../../components/EditorHeader";
-import { useUpload } from "../../hooks/useUpload";
 import { Layout } from "@arco-design/web-react";
 import React from "react";
 import {
@@ -35,21 +27,10 @@ import {
 } from "easy-email-pro-kit";
 import { EditorCore, ElementType, PluginManager, t } from "easy-email-pro-core";
 import { useState } from "react";
-import { useRef } from "react";
 
-import localsData from "easy-email-pro-localization/locales/locales.json";
-import { get } from "lodash";
-import { AssetManagerModal } from "./AssetManagerModal";
 import { useUniversalElement } from "@/hooks/useUniversalElement";
-import customizeCss from "./customize.scss?inline";
-import customizeCss2 from "../Customize/customize.scss?inline";
+import customizeCss from "../Full/customize.scss?inline";
 import FullScreenLoading from "@/components/FullScreenLoading";
-import axios from "axios";
-import { Tutorial } from "@/components/Tutorial";
-import { useEditorConfigStore } from "../../store/editorConfigStore";
-
-import { footerElement } from "../FrozenBlock";
-import { headerElement } from "../FrozenBlock";
 
 PluginManager.registerPlugins([
   CountdownV2,
@@ -60,9 +41,9 @@ PluginManager.registerPlugins([
   ImageWithText,
 ]);
 
-// register elements styles
-import "./ElementStyleGallery";
-import { TranslationSelect } from "@/components/TranslationSelect";
+import "../Full/ElementStyleGallery";
+import { Editor } from "slate";
+import { EditorMethod } from "./EditorMethod";
 
 const EmailSize = React.lazy(() => import("@/components/EmailSize"));
 
@@ -742,167 +723,44 @@ const fonts = [
   },
 ];
 
-const optionsList = [
-  {
-    label: "Ask AI",
-    value: "Ask AI",
-    getMessages(text: string) {
-      return [
-        {
-          role: "system",
-          content: "Answer the question based on the context below.",
-        },
-        {
-          role: "system",
-          content: "The response should be in HTML format.",
-        },
-        {
-          role: "system",
-          content:
-            "The response should preserve any HTML formatting, links, and styles in the context.",
-        },
-      ];
-    },
-  },
-  {
-    label: "Summarize content",
-    value: "Summarize content",
-    getMessages(text: string) {
-      return [
-        {
-          role: "system",
-          content: "Answer the question based on the context below.",
-        },
-        {
-          role: "system",
-          content: "The response should be in HTML format.",
-        },
-        {
-          role: "system",
-          content:
-            "The response should preserve any HTML formatting, links, and styles in the context.",
-        },
-        {
-          role: "user",
-          content: `Question: Provide the key points and concepts in this content in a succinct summary. Context: ${text}`,
-        },
-      ];
-    },
-  },
-  {
-    label: "Improve writing",
-    value: "Improve writing",
-    getMessages(text: string) {
-      return [
-        {
-          role: "system",
-          content: "Answer the question based on the context below.",
-        },
-        {
-          role: "system",
-          content: "The response should be in HTML format.",
-        },
-        {
-          role: "system",
-          content:
-            "The response should preserve any HTML formatting, links, and styles in the context.",
-        },
-        {
-          role: "user",
-          content: `Question: Rewrite this content with no spelling mistakes, proper grammar, and with more descriptive language, using best writing practices without losing the original meaning. Context: ${text}`,
-        },
-      ];
-    },
-  },
-  {
-    label: "Simplify language",
-    value: "Simplify language",
-    getMessages(text: string) {
-      return [
-        {
-          role: "system",
-          content: "Answer the question based on the context below.",
-        },
-        {
-          role: "system",
-          content: "The response should be in HTML format.",
-        },
-        {
-          role: "system",
-          content:
-            "The response should preserve any HTML formatting, links, and styles in the context.",
-        },
-        {
-          role: "user",
-          content: `Question: Rewrite this content with simplified language and reduce the complexity of the writing, so that the content is easier to understand. Context: ${text}`,
-        },
-      ];
-    },
-  },
-  {
-    label: "Expand upon",
-    value: "Expand upon",
-    getMessages(text: string) {
-      return [
-        {
-          role: "system",
-          content: "Answer the question based on the context below.",
-        },
-        {
-          role: "system",
-          content: "The response should be in HTML format.",
-        },
-        {
-          role: "system",
-          content:
-            "The response should preserve any HTML formatting, links, and styles in the context.",
-        },
-        {
-          role: "user",
-          content: `Question: Expand upon this content with descriptive language and more detailed explanations, to make the writing easier to understand and increase the length of the content. Context: ${text}`,
-        },
-      ];
-    },
-  },
-  {
-    label: "Trim content",
-    value: "Trim content",
-    getMessages(text: string) {
-      return [
-        {
-          role: "system",
-          content: "Answer the question based on the context below.",
-        },
-        {
-          role: "system",
-          content: "The response should be in HTML format.",
-        },
-        {
-          role: "system",
-          content:
-            "The response should preserve any HTML formatting, links, and styles in the context.",
-        },
-        {
-          role: "user",
-          content: `Question: Remove any repetitive, redundant, or non-essential writing in this content without changing the meaning or losing any key information. Context: ${text}`,
-        },
-      ];
-    },
-  },
-];
+export interface PureScriptEditorProps extends EmailEditorProps {
+  initialValues: EmailTemplate;
+  onSubmit: (values: EmailTemplate, editor: Editor) => void;
+  clientId: string;
+  height: string;
+  instance: {
+    getEditor: () => EmailEditorProps["instanceRef"] | null;
+  };
+}
 
-export default function MyEditor() {
-  const editorConfig = useEditorConfigStore();
-  const { upload } = useUpload();
-  const [accept, setAccept] = useState<string | undefined>(undefined);
-  const [visible, setVisible] = useState(false);
-  const { universalElementSetting } = useUniversalElement();
-  const [hoveringToolbarPosition, setHoveringToolbarPosition] =
-    useState<NonNullable<ThemeConfigProps["hoveringToolbar"]>["follow"]>(
-      "container"
-    );
-
+export function PureScriptEditor({
+  initialValues,
+  onSubmit,
+  clientId,
+  height,
+  instance,
+  ...restConfig
+}: PureScriptEditorProps) {
+  if (!clientId) {
+    throw new Error("clientId is required");
+  }
   const editorInstance = useRef<EditorContextProps | null>(null);
+  instance.getEditor = () => editorInstance;
+  const { universalElementSetting } = useUniversalElement();
+
+  const [authState, setAuthState] = useState<"pending" | "success" | "fail">(
+    "pending"
+  );
+
+  useEffect(() => {
+    EditorCore.auth(clientId)
+      .then(() => {
+        setAuthState("success");
+      })
+      .catch(() => {
+        setAuthState("fail");
+      });
+  }, [clientId]);
 
   const hoveringToolbar: ThemeConfigProps["hoveringToolbar"] = useMemo(() => {
     return {
@@ -926,142 +784,36 @@ export default function MyEditor() {
           TextFormat.REMOVE_FORMAT,
         ];
       },
-      follow: hoveringToolbarPosition,
+      follow: "container",
       iconSize: 14,
     };
-  }, [hoveringToolbarPosition]);
-
-  const changeRef = useRef<(url: string) => void>(() => {
-    //
-  });
-
-  const [authState, setAuthState] = useState<"pending" | "success" | "fail">(
-    "pending"
-  );
-
-  const initialValues: EmailTemplate | null = useMemo(() => {
-    return {
-      subject: data.subject,
-      content: data.content as EmailTemplate["content"],
-    };
-  }, []);
-
-  const theme = editorConfig.theme;
-  const matchThemeStyle = useMemo(() => {
-    if (theme === "retro") {
-      return retroStyle;
-    }
-    if (theme === "purple") {
-      return colorPurpleStyle;
-    }
-    if (theme === "green") {
-      return colorGreenStyle;
-    }
-    if (theme === "blue") {
-      return colorBlueStyle;
-    }
-    if (theme === "red") {
-      return colorRedStyle;
-    }
-    return "";
-  }, [theme]);
-
-  const handleUploadClick: ThemeConfigProps["handleUploadClick"] = ({
-    onChange,
-    accept,
-  }) => {
-    changeRef.current = onChange;
-    setAccept(accept);
-    setVisible(true);
-  };
-
-  const onUpload = (file: Blob): Promise<string> => {
-    return upload(file);
-  };
-
-  const onSubmit: ThemeConfigProps["onSubmit"] = async (values, editor) => {
-    console.log(values, editor);
-    console.log("editorInstance", editorInstance.current);
-  };
-
-  const onChange: ThemeConfigProps["onChange"] = async (values, editor) => {
-    console.log("onChange", values);
-  };
-
-  const AIAssistant: ThemeConfigProps["AIAssistant"] = useMemo(() => {
-    return {
-      async onGenerate(messages) {
-        const { data } = await axios.post<{ content: string; role: string }>(
-          `https://admin.easyemail.pro/api/ai`,
-          {
-            data: {
-              messages: messages,
-              model: "gpt-3.5-turbo",
-            },
-          }
-        );
-        return { content: data.content, role: data.role };
-      },
-      // options: optionsList,
-    };
-  }, []);
-
-  useEffect(() => {
-    EditorCore.auth(process.env.CLIENT_ID!)
-      .then(() => {
-        setAuthState("success");
-      })
-      .catch(() => {
-        setAuthState("fail");
-      });
   }, []);
 
   const config = Retro.useCreateConfig({
     instanceRef: editorInstance,
-    clientId: process.env.CLIENT_ID!,
-    height: "calc(100vh - 66px)",
-    onUpload,
+    clientId: clientId,
+    height,
     initialValues: initialValues,
-    onChange,
     onSubmit: onSubmit,
-    mergetagsData: editorConfig.mergetagsData,
-    mergetags: editorConfig.mergetags,
     categories,
-    unsplash: {
-      clientId: process.env.UNSPLASH_CLIENT_ID!,
-    },
     hoveringToolbar: hoveringToolbar,
-    AIAssistant: editorConfig.showAIIntegration ? AIAssistant : undefined,
-    showSourceCode: editorConfig.showSourceCode,
-    showLayer: editorConfig.showLayer,
-    showPreview: editorConfig.showPreview,
+    showLayer: true,
+    showPreview: true,
     showSidebar: true,
     showPreviousLevelIcon: true,
-    showBlockPaths: editorConfig.showBlockPaths,
+    showBlockPaths: true,
     showTextHTMLMode: true,
     showSelectFileButton: true,
-    showGenerateBlockImage: true,
-    compact: editorConfig.compactMode,
-    handleUploadClick,
     universalElementSetting,
-    localeData: get(localsData, editorConfig.language),
     showDragMoveIcon: true,
     showInsertTips: true,
-    controller: editorConfig.controller,
-    // sourceCodeEditable: false,
     fontList: fonts,
-    // emptyPageElement: data2.content,
-    dragoverType: editorConfig.dragoverType ? "line" : "placeholder",
-    headerElement: editorConfig.showFrozenBlocks ? headerElement : undefined,
-    footerElement: editorConfig.showFrozenBlocks ? footerElement : undefined,
+    dragoverType: "placeholder",
     autoScroll: true,
-    attributesVariables: {
-      "background-color": "red",
-      "font-size": "18px",
-    },
     enabledHtmlBlockNodeAlign: true,
     enabledGradientImage: true,
     enabledButtonIcon: true,
+    ...restConfig,
   });
 
   if (authState === "pending") {
@@ -1073,28 +825,12 @@ export default function MyEditor() {
 
   return (
     <EmailEditorProvider {...config}>
-      <Tutorial>
-        <EditorHeader
-          prefix={<TranslationSelect lang={editorConfig.language} />}
-        />
-
-        <Layout.Content>
-          <Retro.Layout tabRight={<EmailSize />}>
-            <style id="customize-css">{customizeCss}</style>
-            {editorConfig.showCustomStyles && (
-              <style id="customize-css2">{customizeCss2}</style>
-            )}
-          </Retro.Layout>
-        </Layout.Content>
-        <AssetManagerModal
-          key={editorConfig.language}
-          accept={accept}
-          visible={visible}
-          setVisible={setVisible}
-          onSelect={changeRef.current}
-        />
-        <style>{matchThemeStyle}</style>
-      </Tutorial>
+      <Layout.Content>
+        <Retro.Layout tabRight={<EmailSize />}>
+          <style id="customize-css">{customizeCss}</style>
+        </Retro.Layout>
+      </Layout.Content>
+      <EditorMethod />
     </EmailEditorProvider>
   );
 }
