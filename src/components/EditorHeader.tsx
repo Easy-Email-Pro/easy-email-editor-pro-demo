@@ -48,6 +48,9 @@ export const EditorHeader = (props: {
   const [visible, setVisible] = React.useState(false);
   const { values, submit, setFieldValue, mergetagsData, reset, dirty } =
     useEditorContext();
+
+  console.log("dirty", dirty);
+
   const { setActiveTab, activeTab } = useEditorState();
 
   const activetabRef = React.useRef(ActiveTabKeys.DESKTOP);
