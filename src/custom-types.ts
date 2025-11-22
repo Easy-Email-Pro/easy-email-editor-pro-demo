@@ -14,6 +14,12 @@ import {
   CommonVideoElement,
   CommonImageWithTextElement,
   MarketingCountdownElementV2,
+  AmpAccordionElement,
+  AmpCarouselElement,
+  AmpFormElement,
+  AmpProductElement,
+  AmpReviewsElement,
+  AmpLuckyWheelElement,
 } from "easy-email-pro-kit";
 
 type CustomType = typeof CustomBlockType;
@@ -105,7 +111,13 @@ declare module "easy-email-pro-core" {
       | SimpleCustomTextElement
       | SimpleCustomButtonElement
       | SimpleCustomWrapperElement
-      | CommonImageWithTextElement;
+      | CommonImageWithTextElement
+      | AmpAccordionElement
+      | AmpCarouselElement
+      | AmpFormElement
+      | AmpProductElement
+      | AmpReviewsElement
+      | AmpLuckyWheelElement;
   }
 }
 

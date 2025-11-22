@@ -1,3 +1,7 @@
+// Need to be introduced directly at the top of the entry file
+
+import '@arco-design/web-react/es/_util/react-19-adapter';
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -19,6 +23,7 @@ const getClientId = () => {
 };
 
 const Full = React.lazy(() => import("./examples/Full/index"));
+const AMP = React.lazy(() => import("./examples/AMP/index"));
 const Simple = React.lazy(() => import("./examples/Simple/index"));
 const Customize = React.lazy(() => import("./examples/Customize/index"));
 const SideBar = React.lazy(() => import("./examples/SideBar/index"));
@@ -47,8 +52,12 @@ const DynamicCustomBlock = React.lazy(
   () => import("./examples/DynamicCustomBlock/index")
 );
 const FrozenBlock = React.lazy(() => import("./examples/FrozenBlock/index"));
+const PageHeaderFooter = React.lazy(
+  () => import("./examples/PageHeaderFooter/index")
+);
 const ReadOnly = React.lazy(() => import("./examples/ReadOnly/index"));
-const Minimalist = React.lazy(() => import("./examples/Minimalist/index"));
+
+const Modern = React.lazy(() => import("./examples/Modern/index"));
 const Markdown = React.lazy(() => import("./examples/Markdown/index"));
 const GlobalVariables = React.lazy(
   () => import("./examples/GlobalVariables/index")
@@ -72,6 +81,11 @@ export const navigation = [
     name: "Full",
     path: "/full",
     element: <Full />,
+  },
+  {
+    name: "AMP",
+    path: "/amp-email",
+    element: <AMP />,
   },
 
   {
@@ -162,6 +176,11 @@ export const navigation = [
     element: <FrozenBlock />,
   },
   {
+    name: "Page Header & Footer",
+    path: "/page-header-footer",
+    element: <PageHeaderFooter />,
+  },
+  {
     name: "Read only",
     path: "/read-only",
     element: <ReadOnly />,
@@ -170,6 +189,11 @@ export const navigation = [
     name: "GlobalVariables",
     path: "/global-variables",
     element: <GlobalVariables />,
+  },
+  {
+    name: "Modern",
+    path: "/modern",
+    element: <Modern />,
   },
 ];
 
