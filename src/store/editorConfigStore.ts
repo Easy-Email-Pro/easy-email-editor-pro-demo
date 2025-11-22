@@ -77,7 +77,7 @@ const defaultState: Partial<EditorConfigState> = {
   showCustomStyles: false,
   showResponsivePreview: true,
   showFavorites: true,
-  dragoverType: false,
+  dragoverType: true,
   theme: "blue",
   language: "en",
 
@@ -378,3 +378,4 @@ export const useEditorConfigStore = create<EditorConfigState>()(
     }
   )
 );
+

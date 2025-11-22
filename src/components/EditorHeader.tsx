@@ -31,16 +31,24 @@ import { pick } from "lodash";
 import { ReactEditor, useSlate } from "slate-react";
 import { SendEmailModal } from "./SendEmailModal";
 import { base64ToBlob, dom2Svg } from "@/utils/base64ToBlob";
-import { Menu as LucideMenu, Rocket, Download, Settings } from "lucide-react";
+import {
+  Menu as LucideMenu,
+  Rocket,
+  Download,
+  Settings,
+  Shield,
+} from "lucide-react";
 import { EditorConfigModal } from "./EditorConfigModal";
 import { EmailList } from "./EmailList";
 import { Node } from "slate";
-
+import { useNavigate } from "react-router-dom";
 export const EditorHeader = (props: {
   prefix?: React.ReactNode;
   extra?: React.ReactNode;
   hideImport?: boolean;
   hideExport?: boolean;
+  showConfiguration?: boolean;
+  onSpamScoreClick?: () => void;
 }) => {
   const editor = useSlate();
   const [collapsed, setCollapsed] = React.useState(true);
@@ -49,7 +57,7 @@ export const EditorHeader = (props: {
   const { values, submit, setFieldValue, mergetagsData, reset, dirty } =
     useEditorContext();
   const { setActiveTab, activeTab } = useEditorState();
-
+  const navigate = useNavigate();
   const activetabRef = React.useRef(ActiveTabKeys.DESKTOP);
   const onChange = (text: string) => {
     setFieldValue(null, "subject", text);
@@ -67,7 +75,11 @@ export const EditorHeader = (props: {
     const container = ReactEditor.toDOMNode(editor, Node.get(editor, [0]));
 
     const blob1 = await new Promise<any>(async (resolve) => {
-      const png = await base64ToBlob(await dom2Svg(container));
+      const png = await base64ToBlob(
+        await dom2Svg(container, {
+          width: 600,
+        })
+      );
       resolve(png);
     });
     setActiveTab(ActiveTabKeys.MOBILE);
@@ -310,7 +322,7 @@ export const EditorHeader = (props: {
       <div style={{ position: "relative" }}>
         <PageHeader
           backIcon
-          onBack={() => window.history.back()}
+          onBack={() => navigate('/')}
           className="editor-header"
           style={{
             backgroundColor: "rgb(var(--primary-6))",
@@ -344,13 +356,15 @@ export const EditorHeader = (props: {
             <div style={{ marginRight: 0 }}>
               <Space>
                 {props.prefix}
-                <Tooltip content="Editor Configuration">
-                  <EditorConfigModal>
-                    <Button icon={<Settings size={16} />}>
-                      <strong>&nbsp;Configuration</strong>
-                    </Button>
-                  </EditorConfigModal>
-                </Tooltip>
+                {props.showConfiguration && (
+                  <Tooltip content="Editor Configuration">
+                    <EditorConfigModal>
+                      <Button icon={<Settings size={16} />}>
+                        <strong>&nbsp;Configuration</strong>
+                      </Button>
+                    </EditorConfigModal>
+                  </Tooltip>
+                )}
 
                 <Tooltip content="Examples">
                   <Button
@@ -416,6 +430,16 @@ export const EditorHeader = (props: {
                       <strong>&nbsp;Export</strong>
                     </Button>
                   </Dropdown>
+                )}
+                {props.onSpamScoreClick && (
+                  <Tooltip content="Spam Score">
+                    <Button
+                      icon={<Shield size={16} />}
+                      onClick={props.onSpamScoreClick}
+                    >
+                      <strong>&nbsp;Spam Score</strong>
+                    </Button>
+                  </Tooltip>
                 )}
                 {/* <Button disabled={!dirty} onClick={() => submit()}>
                   <strong>Submit</strong>

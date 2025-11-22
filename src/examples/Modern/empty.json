@@ -1,0 +1,155 @@
+{
+  "data": {
+    "breakpoint": "480px",
+    "globalAttributes": {
+      "font-family": "Arial, sans-serif"
+    },
+    "blockAttributes": {
+      "standard-paragraph": {
+        "color": "#122b49"
+      },
+      "standard-button": {
+        "background-color": "#122b49"
+      }
+    }
+  },
+  "type": "page",
+  "children": [
+    {
+      "type": "page-header",
+      "data": {
+        "content": [
+          {
+            "id": "4syHbXSuMcHXR7pbVn7DP",
+            "data": {},
+            "type": "standard-image",
+            "children": [
+              {
+                "text": ""
+              }
+            ],
+            "attributes": {
+              "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/xpuvalc1_9xr0iaov5_ix_image.png",
+              "href": "https://www.easyemail.pro/?utm_source=email",
+              "width": "200px"
+            }
+          }
+        ],
+        "editable": true
+      },
+      "attributes": {
+        "background-color": "#FFFFFF",
+        "padding-top": "12px",
+        "padding-bottom": "12px"
+      },
+      "children": [
+        {
+          "text": ""
+        }
+      ],
+      "id": "t0jWaycMQp1tfH1tJy2r6"
+    },
+    {
+      "type": "standard-section",
+      "data": {},
+      "attributes": {},
+      "children": [
+        {
+          "type": "standard-column",
+          "attributes": {
+            "width": "100%"
+          },
+          "data": {},
+          "children": [
+            {
+              "type": "placeholder",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "id": "A2nhM_8KIqsgR8Ux0tqXt"
+            }
+          ],
+          "id": "Hogdo_e7gVIOSUSnWbGxl"
+        }
+      ],
+      "id": "YGAyAS9Y3z2DlsuDembn0"
+    },
+    {
+      "type": "page-footer",
+      "data": {
+        "content": [
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {
+              "background-color": "#122b49",
+              "padding-top": "20px",
+              "padding-bottom": "20px",
+              "padding-left": "20px",
+              "padding-right": "20px"
+            },
+            "children": [
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "100%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "align": "center",
+                      "color": "#FFFFFF",
+                      "padding-bottom": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": "© 2026 Easy Email Pro. All rights reserved."
+                      }
+                    ],
+                    "id": "fkLl8tQMcO5U0B8d8Uc-0"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "align": "center",
+                      "color": "#FFFFFF"
+                    },
+                    "children": [
+                      {
+                        "text": "This is a fixed footer that cannot be deleted or moved, but you can edit the text and styles."
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "editable": true
+      },
+      "attributes": {
+        "background-color": "#4a90e2"
+      },
+      "children": [
+        {
+          "text": ""
+        }
+      ],
+      "id": "PXUF3lvbxOh6eNbDuZVgt"
+    }
+  ],
+  "attributes": {
+    "background-color": "#cecece",
+    "content-background-color": "#cdd4d2",
+    "link-color": "#4a90e2"
+  },
+  "id": "DnWP8fKH9a3AAZtF9c1Zy"
+}

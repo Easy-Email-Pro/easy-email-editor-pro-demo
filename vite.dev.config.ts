@@ -38,6 +38,10 @@ export default defineConfig({
         __dirname,
         "package.json"
       ), // 防止404 报错
+      "easy-email-pro-modern/lib/style.css": path.resolve(
+        __dirname,
+        "package.json"
+      ), // 防止404 报错
       "easy-email-pro-asset-manager/lib/style.css": path.resolve(
         __dirname,
         "package.json"
@@ -67,10 +71,7 @@ export default defineConfig({
         __dirname,
         "../packages/easy-email-pro-editor/src"
       ),
-      "easy-email-pro-theme": path.resolve(
-        __dirname,
-        "../packages/easy-email-pro-theme/src"
-      ),
+
       "@easy-email-pro-editor": path.resolve(
         __dirname,
         "../packages/easy-email-pro-editor/src"
@@ -91,9 +92,21 @@ export default defineConfig({
         __dirname,
         "../packages/easy-email-pro-asset-manager/src"
       ),
+      "easy-email-pro-theme": path.resolve(
+        __dirname,
+        "../packages/easy-email-pro-theme/src"
+      ),
       "@easy-email-pro-theme": path.resolve(
         __dirname,
         "../packages/easy-email-pro-theme/src"
+      ),
+      "easy-email-pro-modern": path.resolve(
+        __dirname,
+        "../packages/easy-email-pro-modern/src"
+      ),
+      "@easy-email-pro-modern": path.resolve(
+        __dirname,
+        "../packages/easy-email-pro-modern/src"
       ),
       "@": path.resolve("src"),
     },
