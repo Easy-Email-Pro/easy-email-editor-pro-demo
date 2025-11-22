@@ -387,6 +387,7 @@ const TemplateEditor = ({
     showBlockPaths: true,
     showTextHTMLMode: true,
     showSelectFileButton: true,
+    enabledAutoComplete: true,
   });
 
   return (

@@ -1,0 +1,998 @@
+{
+  "subject": "JOIN US FOR A FEAST ON",
+  "content": {
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      },
+      "blockAttributes": {
+        "standard-paragraph": {}
+      }
+    },
+    "type": "page",
+    "children": [
+      {
+        "type": "standard-image",
+        "data": {},
+        "attributes": {
+          "padding-top": "10px",
+          "padding-bottom": "10px",
+          "padding-left": "0px",
+          "padding-right": "0px",
+          "width": "150px",
+          "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/hrbtoi7miudar59sv37bj_image.png"
+        },
+        "children": [
+          {
+            "text": ""
+          }
+        ],
+        "id": "EJzMwJPBj5M7p3Zcik9r0"
+      },
+      {
+        "name": "Text",
+        "type": "standard-paragraph",
+        "data": {},
+        "attributes": {
+          "padding-top": "10px",
+          "padding-bottom": "10px",
+          "font-weight": "bold",
+          "font-size": "24px",
+          "color": "#000000"
+        },
+        "children": [
+          {
+            "type": "html-block-node",
+            "children": [
+              {
+                "text": "Step Into Style & Comfort!"
+              }
+            ],
+            "attributes": {},
+            "data": {
+              "tagName": "div"
+            },
+            "id": "XJ486KhTLFVx2E9EXHHzL"
+          }
+        ],
+        "id": "twgC8mIFz-BavwwjExIGl"
+      },
+      {
+        "name": "Text",
+        "type": "standard-paragraph",
+        "data": {},
+        "attributes": {
+          "padding-top": "10px",
+          "padding-bottom": "20px",
+          "font-weight": "bold",
+          "font-size": "18px",
+          "color": "#666666"
+        },
+        "children": [
+          {
+            "type": "html-block-node",
+            "children": [
+              {
+                "text": "Discover the Perfect Pair One for Your Journey. "
+              }
+            ],
+            "attributes": {},
+            "data": {
+              "tagName": "div"
+            },
+            "id": "JDzjTV-6b7Q7WjG9xAsGx"
+          }
+        ],
+        "id": "3ogTqa0z4aSkZQoapMhTR"
+      },
+      {
+        "type": "amp-carousel",
+        "data": {
+          "list": [
+            {
+              "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/nauku9wpvzwhhzsb-pbwb_image.png"
+            },
+            {
+              "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/8stuzr3hyatkdmlhowsqp_image.png"
+            },
+            {
+              "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/d6nsa-7ykzlwt3tbgunk_image.png"
+            }
+          ],
+          "showPreview": true,
+          "previewThumbBorderColor": "#ffae00",
+          "previewThumbBorderWidth": 3,
+          "fallback": true
+        },
+        "attributes": {
+          "width": "600",
+          "height": "400",
+          "layout": "responsive",
+          "autoplay": true,
+          "delay": 5000,
+          "loop": true,
+          "background-color": "#f5f5f5",
+          "caption-enabled": true,
+          "caption-background-color": "#000000",
+          "caption-background-opacity": 60,
+          "caption-color": "#ffffff",
+          "caption-text-align": "left",
+          "caption-height": "30",
+          "padding-top": "0px",
+          "padding-bottom": "12px",
+          "padding-left": "0px",
+          "padding-right": "0px"
+        },
+        "children": [
+          {
+            "text": ""
+          }
+        ],
+        "id": "5WJPlfZsiPPqlHIvG5ARI"
+      },
+      {
+        "type": "standard-paragraph",
+        "data": {},
+        "attributes": {
+          "padding-top": "20px",
+          "padding-bottom": "10px",
+          "padding-left": "10px",
+          "padding-right": "10px"
+        },
+        "children": [
+          {
+            "type": "html-block-node",
+            "children": [
+              {
+                "text": "Limited-Time Offers"
+              }
+            ],
+            "attributes": {},
+            "data": {
+              "tagName": "div"
+            },
+            "id": "_u0Rll0Vafc0Aa04zr7SK"
+          }
+        ],
+        "id": "x2PMau4mBSra4socj7BVQ"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "amp-product",
+                "data": {
+                  "list": [
+                    {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/bzb3l7xlkx7lujodgt_9i_image.png",
+                      "color": "#6e83b1",
+                      "alt": "Performance Running Sneakers",
+                      "href": "",
+                      "productName": "Performance Running Sneakers",
+                      "description": "Lightweight design with breathable support and all-day comfort",
+                      "price": "$99.00"
+                    },
+                    {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/cb_jxpbs1bymgxqgv5jyw_image.png",
+                      "color": "#a68fa9",
+                      "alt": "Performance Running Sneakers",
+                      "href": "",
+                      "productName": "Performance Running Sneakers",
+                      "description": "Lightweight design with breathable support and all-day comfort",
+                      "price": "$109.00"
+                    },
+                    {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/dviguixrrl-lupya1w_8c_image.png",
+                      "color": "#252521",
+                      "alt": "Performance Running Sneakers",
+                      "href": "",
+                      "productName": "Performance Running Sneakers",
+                      "description": "Lightweight design with breathable support and all-day comfort",
+                      "price": "$119.00"
+                    }
+                  ],
+                  "buttonText": "Shop now"
+                },
+                "attributes": {
+                  "layout": "responsive",
+                  "background-color": "#ffffff",
+                  "width": "600px",
+                  "height": "400px",
+                  "container-border-radius": 0,
+                  "button-color": "#ffffff",
+                  "button-width": 100,
+                  "product-name-color": "#1a1a2e",
+                  "product-description-color": "#6b7280",
+                  "product-price-color": "#374151",
+                  "padding-top": "20px",
+                  "padding-right": "10px",
+                  "padding-bottom": "20px",
+                  "padding-left": "20px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "suPjAj7IDZcoPE8i3Xqqt"
+              }
+            ],
+            "id": "z1AnBr9CIIRD1Zcw-B0dm"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "amp-product",
+                "data": {
+                  "list": [
+                    {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/nugdzbjmtksp9ji7pvjsb_image.png",
+                      "color": "#d4a7a4",
+                      "alt": "Performance Running Sneakers",
+                      "href": "",
+                      "productName": "Performance Running Sneakers",
+                      "description": "Lightweight design with breathable support and all-day comfort",
+                      "price": "$99.00"
+                    },
+                    {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/m0lvvgpkoucfpmg_tqplj_image.png",
+                      "color": "#f1b676",
+                      "alt": "Performance Running Sneakers",
+                      "href": "",
+                      "productName": "Performance Running Sneakers",
+                      "description": "Lightweight design with breathable support and all-day comfort",
+                      "price": "$109.00"
+                    }
+                  ],
+                  "buttonText": "Shop now"
+                },
+                "attributes": {
+                  "layout": "responsive",
+                  "background-color": "#ffffff",
+                  "width": "600px",
+                  "height": "400px",
+                  "container-border-radius": 0,
+                  "button-color": "#ffffff",
+                  "button-width": 100,
+                  "product-name-color": "#1a1a2e",
+                  "product-description-color": "#6b7280",
+                  "product-price-color": "#374151",
+                  "padding-top": "20px",
+                  "padding-right": "20px",
+                  "padding-bottom": "20px",
+                  "padding-left": "10px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "8rm3-IhxNEjvjGCqZBA0q"
+              }
+            ],
+            "id": "ePKJKbazRiDxBu-HqtwtM"
+          }
+        ],
+        "id": "wiNUz5iPb4ZtMu7SzbT77"
+      },
+      {
+        "type": "standard-wrapper",
+        "data": {},
+        "attributes": {
+          "background-repeat": "no-repeat",
+          "background-color": "#f5f5f5",
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-column",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "font-size": "32px"
+                    },
+                    "children": [
+                      {
+                        "text": "Spotted something of interest?"
+                      }
+                    ],
+                    "id": "8RpcCDuWKzPnkgkUlKhZe"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "color": "#3E3E3E",
+                      "font-weight": "300",
+                      "padding-left": "30px",
+                      "padding-right": "30px"
+                    },
+                    "children": [
+                      {
+                        "text": "You were checking out our latest styles. Need a size or fit? Shop online, visit a store, or call us."
+                      }
+                    ],
+                    "id": "GiMMoR2ePfxmHmbKE05lW"
+                  }
+                ],
+                "id": "rtwN-RcOvjxwRoni2V2yl"
+              }
+            ],
+            "id": "X4PLV9tAmqTd9CNHg3uVI"
+          },
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "33.33%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/x4i8emuymwfayd4fkg9dl_image.png",
+                      "width": "347px",
+                      "border-radius": "999px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "Kfaoso1I2OIlASwzMGSJD"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-left": "0px",
+                      "padding-right": "0px"
+                    },
+                    "children": [
+                      {
+                        "text": "Performance Running"
+                      }
+                    ],
+                    "id": "s09PZEc4qPgR8TgmrvfWd"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "color": "#3E3E3E"
+                    },
+                    "children": [
+                      {
+                        "text": "$99"
+                      }
+                    ],
+                    "id": "LsX5ylibqJp5aAaheqgSe"
+                  }
+                ],
+                "id": "mUofHANxOhsUL59YtPg6o"
+              },
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "33.33%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/bmic7v2xd5z5q-ga3qk4d_image.png",
+                      "width": "347px",
+                      "border-radius": "999px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "pRG9TKWXRphySNP86-g8E"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-left": "0px",
+                      "padding-right": "0px"
+                    },
+                    "children": [
+                      {
+                        "text": "Lifestyle Sneakers"
+                      }
+                    ],
+                    "id": "4POm4vtq_CKZJqZ1xOy3K"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "color": "#3E3E3E"
+                    },
+                    "children": [
+                      {
+                        "text": "$109"
+                      }
+                    ],
+                    "id": "ARWcfHcIBJ91Me_rYSJxJ"
+                  }
+                ],
+                "id": "HYRiX32aR0DdOOUehNWbr"
+              },
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "33.33%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/m9nqxv9t7gjowz4otwkf8_image.png",
+                      "width": "347px",
+                      "border-radius": "999px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "pFIdTeLhqhsx5liybeOaX"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-left": "0px",
+                      "padding-right": "0px"
+                    },
+                    "children": [
+                      {
+                        "text": "Trail Running"
+                      }
+                    ],
+                    "id": "Vb5qxfj7d1KIvfQfbFQRo"
+                  },
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "color": "#3E3E3E"
+                    },
+                    "children": [
+                      {
+                        "text": "$119"
+                      }
+                    ],
+                    "id": "vd5DswrwK-D0-C8tEOQ_w"
+                  }
+                ],
+                "id": "RG0rcRufVfyz7YveRXY-j"
+              }
+            ],
+            "id": "O9PC0M0F_0x6xCKw0qbwo"
+          }
+        ],
+        "id": "06T4dJKOTlBzZvHY455Zw"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-top": "24px",
+          "padding-bottom": "24px",
+          "padding-left": "20px",
+          "padding-right": "20px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "33.33%"
+            },
+            "children": [
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#1a1a2e",
+                  "font-size": "14px",
+                  "font-weight": "bold",
+                  "padding-top": "0px",
+                  "padding-bottom": "4px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "Free shipping"
+                  }
+                ],
+                "id": "ZB08spILPNmqJNxcdEnAG"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#6b7280",
+                  "font-size": "13px",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "On orders $50+"
+                  }
+                ],
+                "id": "JeKSyvAlc6OndVeBzxa5K"
+              }
+            ],
+            "id": "B7ZkHnflckk9-S8DgYKoq"
+          },
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "33.33%"
+            },
+            "children": [
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#1a1a2e",
+                  "font-size": "14px",
+                  "font-weight": "bold",
+                  "padding-top": "0px",
+                  "padding-bottom": "4px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "Easy returns"
+                  }
+                ],
+                "id": "sobBSmc8S8nJ__GKwEi_B"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#6b7280",
+                  "font-size": "13px",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "30-day hassle-free"
+                  }
+                ],
+                "id": "DyGkqYd0lOxl8DY8Gi7Ru"
+              }
+            ],
+            "id": "Mm7oM6LJyCU2vhOptwg47"
+          },
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "33.33%"
+            },
+            "children": [
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#1a1a2e",
+                  "font-size": "14px",
+                  "font-weight": "bold",
+                  "padding-top": "0px",
+                  "padding-bottom": "4px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "Expert support"
+                  }
+                ],
+                "id": "67jGG25ajxoNO6AnFDG6o"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#6b7280",
+                  "font-size": "13px",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "We're here to help"
+                  }
+                ],
+                "id": "bT4WW7-RVu6pbVcSJByRM"
+              }
+            ],
+            "id": "HZGMZJKhDLeBElUTzYdvv"
+          }
+        ],
+        "id": "blockComplex-threeFeatures"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#e9ecf1",
+          "padding-top": "24px",
+          "padding-bottom": "24px",
+          "padding-left": "20px",
+          "padding-right": "20px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "100%"
+            },
+            "children": [
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#1a1a2e",
+                  "font-size": "18px",
+                  "font-weight": "bold",
+                  "padding-top": "0px",
+                  "padding-bottom": "12px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "Questions? We're here to help."
+                  }
+                ],
+                "id": "WXEkOrJVBTI_oLIFLowIh"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#6b7280",
+                  "font-size": "14px",
+                  "font-weight": "normal",
+                  "padding-top": "0px",
+                  "padding-bottom": "12px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "Reply to this email or reach out anytime."
+                  }
+                ],
+                "id": "gmJzrcgpiKcWqv71gvhLS"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Contact us"
+                },
+                "attributes": {
+                  "align": "center",
+                  "background-color": "#6e83b1",
+                  "color": "#ffffff",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "inner-padding-top": "12px",
+                  "inner-padding-bottom": "12px",
+                  "inner-padding-left": "24px",
+                  "inner-padding-right": "24px"
+                },
+                "children": [
+                  {
+                    "text": "Contact us"
+                  }
+                ],
+                "id": "GvoguP5gTz6BIMc_A48Ey"
+              }
+            ],
+            "id": "p8bK0GbmpUYvnCB6T7zS5"
+          }
+        ],
+        "id": "saleCtaSection"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#f0f0f0",
+          "padding-top": "20px",
+          "padding-bottom": "20px",
+          "padding-left": "0px",
+          "padding-right": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "100%",
+              "vertical-align": "middle"
+            },
+            "children": [
+              {
+                "type": "standard-social",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "mode": "horizontal",
+                  "icon-size": "24px",
+                  "spacing": "10px",
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "type": "standard-social-element",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/4ek9funtmeftbezbha5sn_image.png",
+                      "href": "#",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px",
+                      "padding-left": "0px",
+                      "padding-right": "0px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "K-uLN3b6za4JYqwH2jTZX"
+                  },
+                  {
+                    "type": "standard-social-element",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/tmcjilyupo_fympgnxqa8_image.png",
+                      "href": "#",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px",
+                      "padding-left": "10px",
+                      "padding-right": "0px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "FF119BnKV93-j2t8mUG0V"
+                  },
+                  {
+                    "type": "standard-social-element",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/myrq7toueev-egzhzv98b_image.png",
+                      "href": "#",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px",
+                      "padding-left": "10px",
+                      "padding-right": "0px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "2GQdGI2lCxsdvDf8ZuJau"
+                  },
+                  {
+                    "type": "standard-social-element",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/owq0pdjxvuosl4uty2fma_image.png",
+                      "href": "#",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px",
+                      "padding-left": "10px",
+                      "padding-right": "0px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "iUknRKDcHiEY_GIhM2NO9"
+                  }
+                ],
+                "id": "zNOYM_GgSQsojigz6eR_k"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "color": "#666666",
+                  "font-size": "14px",
+                  "font-weight": "normal",
+                  "line-height": "1.5",
+                  "padding-top": "0px",
+                  "padding-bottom": "10px",
+                  "padding-left": "20px",
+                  "padding-right": "20px"
+                },
+                "children": [
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "SoleStride Athletics © 2024 SoleStride Athletics. All Rights Reserved."
+                      }
+                    ],
+                    "data": {
+                      "tagName": "div"
+                    },
+                    "attributes": {},
+                    "id": "4yQ6HClyVRXMpZbEFqGpZ"
+                  },
+                  {
+                    "type": "html-block-node",
+                    "data": {
+                      "tagName": "div"
+                    },
+                    "attributes": {},
+                    "id": "TNOvrN9F3rrHABUbTRZcW",
+                    "children": [
+                      {
+                        "text": "SoleStride HQ, 123 Athletic Way, Your City, State 12345"
+                      }
+                    ]
+                  }
+                ],
+                "id": "kIwSN6idG1frGYsApMu9R"
+              },
+              {
+                "type": "standard-navbar",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "color": "#9b9b9b",
+                  "item-padding-top": "10px",
+                  "item-padding-bottom": "10px"
+                },
+                "children": [
+                  {
+                    "type": "standard-navbar-link",
+                    "data": {},
+                    "attributes": {
+                      "color": "#9b9b9b",
+                      "href": "#",
+                      "padding-top": "10px",
+                      "padding-bottom": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": "Visit Us"
+                      }
+                    ],
+                    "id": "tdAm61TDEXIq-ZhhDR7TE"
+                  },
+                  {
+                    "type": "standard-navbar-link",
+                    "data": {},
+                    "attributes": {
+                      "color": "#9b9b9b",
+                      "href": "#",
+                      "padding-top": "10px",
+                      "padding-bottom": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": "Privacy Policy"
+                      }
+                    ],
+                    "id": "sjRxqneaGdiEf88TousiK"
+                  },
+                  {
+                    "type": "standard-navbar-link",
+                    "data": {},
+                    "attributes": {
+                      "color": "#9b9b9b",
+                      "href": "#",
+                      "padding-top": "10px",
+                      "padding-bottom": "10px"
+                    },
+                    "children": [
+                      {
+                        "text": "Terms of Use"
+                      }
+                    ],
+                    "id": "Tou_s3ZspRLGYCqD3zOZ7"
+                  }
+                ],
+                "id": "itBiYqCmjnJukKxdIvhvg"
+              }
+            ],
+            "id": "9y1g5Kw6y0O1R6xzn_ctf"
+          }
+        ],
+        "id": "X5ryH-EZCvEs1CUpH6f8M"
+      }
+    ],
+    "attributes": {
+      "background-color": "#f8f9fa",
+      "content-background-color": "#FFFFFF",
+      "link-color": "#4a90e2"
+    },
+    "id": "DnWP8fKH9a3AAZtF9c1Zy"
+  }
+}
