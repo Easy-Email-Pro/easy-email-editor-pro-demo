@@ -14,6 +14,12 @@ import { Countdown } from "./Countdown";
 import { QRCode } from "./QRCode";
 import { Table } from "./Table";
 import { Video } from "./Video";
+import { AmpAccordion } from "./AmpAccordion";
+import { AmpCarousel } from "./AmpCarousel";
+import { AmpForm } from "./AmpForm";
+import { AmpProduct } from "./AmpProduct";
+import { AmpReviews } from "./AmpReviews";
+import { AmpLuckyWheel } from "./AmpLuckyWheel";
 
 // register elements styles
 ElementStyles[ElementType.STANDARD_HERO] = Hero;
@@ -29,3 +35,9 @@ ElementStyles[KitElementType.MARKETING_COUNTDOWN_V2] = Countdown;
 ElementStyles[KitElementType.MARKETING_QR_CODE] = QRCode;
 ElementStyles[ElementType.STANDARD_TABLE2] = Table;
 ElementStyles[KitElementType.COMMON_VIDEO] = Video;
+ElementStyles[KitElementType.AMP_ACCORDION] = AmpAccordion;
+ElementStyles[KitElementType.AMP_CAROUSEL] = AmpCarousel;
+ElementStyles[KitElementType.AMP_FORM] = AmpForm;
+ElementStyles[KitElementType.AMP_PRODUCT] = AmpProduct;
+ElementStyles[KitElementType.AMP_REVIEWS] = AmpReviews;
+ElementStyles[KitElementType.AMP_LUCKY_WHEEL] = AmpLuckyWheel;

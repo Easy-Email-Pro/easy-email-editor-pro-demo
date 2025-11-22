@@ -228,6 +228,7 @@ export default function MyEditor() {
     compact: false,
     showDragMoveIcon: true,
     showInsertTips: true,
+    enabledAutoComplete: true,
   });
 
   return (

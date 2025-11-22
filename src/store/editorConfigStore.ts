@@ -59,7 +59,7 @@ interface EditorConfigState {
   addMergetagCategory: (category: MergetagItem) => void;
   addMergetagToCategory: (
     categoryIndex: number,
-    mergetag: MergetagItem
+    mergetag: MergetagItem,
   ) => void;
 }
 
@@ -77,7 +77,7 @@ const defaultState: Partial<EditorConfigState> = {
   showCustomStyles: false,
   showResponsivePreview: true,
   showFavorites: true,
-  dragoverType: false,
+  dragoverType: true,
   theme: "blue",
   language: "en",
 
@@ -188,6 +188,8 @@ const defaultState: Partial<EditorConfigState> = {
 
   // 默认 mergetagsData 数据
   mergetagsData: {
+    AMP_FORM_ACTION_URL: "https://admin.easyemail.pro/api/form",
+    AMP_REVIEWS_ACTION_URL: "https://admin.easyemail.pro/api/form",
     order: {
       number: "Shopify#1001",
       total: "$100.00",
@@ -329,7 +331,7 @@ export const useEditorConfigStore = create<EditorConfigState>()(
                     child.label === tag.label &&
                     child.value === tag.value &&
                     child.type === tag.type
-                  )
+                  ),
               );
             }
           }
@@ -375,6 +377,6 @@ export const useEditorConfigStore = create<EditorConfigState>()(
         mergetags: state.mergetags,
         mergetagsData: state.mergetagsData,
       }),
-    }
-  )
+    },
+  ),
 );

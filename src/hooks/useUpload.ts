@@ -36,7 +36,7 @@ export function useUpload() {
           file_name: get(file, "name", nanoid().toLocaleLowerCase() + ".png"),
           mime_type: blob.type,
         },
-      }
+      },
     );
     return res.data.url;
   }, []);

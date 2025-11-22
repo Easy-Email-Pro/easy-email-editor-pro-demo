@@ -1,0 +1,1162 @@
+{
+  "subject": "JOIN US FOR A FEAST ON",
+  "content": {
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      },
+      "blockAttributes": {
+        "standard-paragraph": {
+          "color": "#122b49"
+        },
+        "standard-button": {
+          "background-color": "#122b49"
+        }
+      }
+    },
+    "type": "page",
+    "children": [
+      {
+        "type": "page-header",
+        "data": {
+          "content": [
+            {
+              "id": "4syHbXSuMcHXR7pbVn7DP",
+              "data": {},
+              "type": "standard-image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "attributes": {
+                "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/xpuvalc1_9xr0iaov5_ix_image.png",
+                "href": "https://www.easyemail.pro/?utm_source=email",
+                "width": "200px"
+              }
+            }
+          ],
+          "editable": true
+        },
+        "attributes": {
+          "background-color": "#FFFFFF",
+          "padding-top": "12px",
+          "padding-bottom": "12px"
+        },
+        "children": [
+          {
+            "text": ""
+          }
+        ],
+        "id": "t0jWaycMQp1tfH1tJy2r6"
+      },
+      {
+        "type": "standard-navbar",
+        "data": {},
+        "attributes": {
+          "container-background-color": "#FFFFFF",
+          "font-size": "16px"
+        },
+        "children": [
+          {
+            "data": {},
+            "type": "standard-navbar-link",
+            "children": [
+              {
+                "text": "Shop"
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "font-size": "16px"
+            },
+            "id": "yxKjEGkkyWZeOM7fHCdKi"
+          },
+          {
+            "data": {},
+            "type": "standard-navbar-link",
+            "children": [
+              {
+                "text": "Best Seller"
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "font-size": "16px"
+            },
+            "id": "p3kOpd1MgpVtsWjrWPi2A"
+          },
+          {
+            "data": {},
+            "type": "standard-navbar-link",
+            "children": [
+              {
+                "text": "Blog"
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "font-size": "16px"
+            },
+            "id": "uiRpl8Wr5cufQCEgd-bzk"
+          },
+          {
+            "data": {},
+            "type": "standard-navbar-link",
+            "children": [
+              {
+                "text": "Contacts"
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "font-size": "16px"
+            },
+            "id": "PbA7dp0tcf3K9NDkwwozi"
+          }
+        ],
+        "id": "mmlp_LkieNtHXw5CCvLfB"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-top": "0px",
+          "padding-bottom": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "100%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-spacer",
+                "data": {},
+                "attributes": {},
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "S6oatp0hVNPs20_3BGZ8a"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "Eggstra - Eggstra",
+                        "italic": true,
+                        "fontSize": "24px"
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    },
+                    "id": "Y_6F3Dh7ApDCD0gdy6r-P"
+                  }
+                ],
+                "id": "kur3kvT_5ErVkb155jTyY"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "EASTER SALES",
+                        "fontSize": "48px",
+                        "bold": true
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    },
+                    "id": "zikLftd4MNgf1WU9z8AFS"
+                  }
+                ],
+                "id": "s1Nuv7Oh8y_cSp54pCgB3"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "3px",
+                  "padding-bottom": "3px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "30% OFF",
+                        "fontSize": "32px"
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    },
+                    "id": "2i6jL0simmjzGn5bcIdax"
+                  }
+                ],
+                "id": "G_uILkyOOO0HG91yaOZKo"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "background-color": "#cedde4",
+                  "color": "#122b49",
+                  "icon-enabled": false,
+                  "icon-src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/xmxnt4qg5xuogsoasxrfy_image.png",
+                  "icon-position": "right",
+                  "icon-vertical-align": "middle",
+                  "icon-width": "12px",
+                  "icon-height": "12px",
+                  "border-enabled": true,
+                  "border-color": "#122b49",
+                  "border-radius": "8px",
+                  "font-size": "18px",
+                  "inner-padding-top": "14px",
+                  "inner-padding-bottom": "14px",
+                  "inner-padding-left": "40px",
+                  "inner-padding-right": "40px"
+                },
+                "children": [
+                  {
+                    "text": "HURRY UP"
+                  }
+                ],
+                "id": "s49U1qejy1kbskCEhuIjH"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "25px",
+                  "padding-right": "25px"
+                },
+                "children": [
+                  {
+                    "type": "html-block-node",
+                    "children": [
+                      {
+                        "text": "Spring is in full bloom, and we're excited to bring you the latest beauty trends and essential products to help you look and feel your best this season. We have everything you need to achieve that fresh and glowing Easter look."
+                      }
+                    ],
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    },
+                    "id": "shj3xJdWmXK4ZEcdF-le3"
+                  }
+                ],
+                "id": "IE28t-aulHupLya9AnmrD"
+              },
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/3mxtdpu9y4ag-jwieii-g_image.png"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "5VXGtTrm32M1x6LJDPE5J"
+              }
+            ],
+            "id": "KyZ13tRh025DNw6Bvxy2A"
+          }
+        ],
+        "id": "huPNK-pj-ioTGvrk4DSq8"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#FFFFFF"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "100%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Easter day sales"
+                  }
+                ],
+                "id": "Jo3HH1rPOIvrNhkPk4lJY"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Get Your Glow on",
+                    "fontSize": "32px"
+                  }
+                ],
+                "id": "ud56A7QGO1-326Gm8MdFQ"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Our team of beauty experts have curated the best products for you, along with helpful tips and tricks to help you make the most out of your beauty routine."
+                  }
+                ],
+                "id": "5xEI-FLoOqSgBmh92aL5Z"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "border-radius": "8px",
+                  "font-size": "18px",
+                  "inner-padding-top": "14px",
+                  "inner-padding-bottom": "14px",
+                  "inner-padding-left": "40px",
+                  "inner-padding-right": "40px"
+                },
+                "children": [
+                  {
+                    "text": "Coupon Code: HAPPYEASTER"
+                  }
+                ],
+                "id": "1F9YU2bTSEXTM4-8SH0U3"
+              }
+            ],
+            "id": "jHqqQsiqFsOhWecVifFik"
+          }
+        ],
+        "id": "Oh5XfkFRdIQD9Ft1xfW9M"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#FFFFFF",
+          "padding-left": "10px",
+          "padding-right": "10px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/3ofcp4vqpeg8kkxfomc7s_image.png"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "Drvr1jpro_AnoygU9qwWV"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Face Oil",
+                    "fontSize": "24px"
+                  }
+                ],
+                "id": "5zXtPfhK8PIPe5SOURENT"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "The best face oils nourish the skin and provide other benefits, like antioxidant protection, anti-aging properties, and more."
+                  }
+                ],
+                "id": "0jnwxjEQeUQWSwKmZBZVu"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "font-size": "18px",
+                  "inner-padding-top": "14px",
+                  "inner-padding-bottom": "14px",
+                  "inner-padding-left": "40px",
+                  "inner-padding-right": "40px",
+                  "border-radius": "8px"
+                },
+                "children": [
+                  {
+                    "text": "SHOP NOW "
+                  }
+                ],
+                "id": "pp_YHkNap6cM_bH8iVycM"
+              }
+            ],
+            "id": "MZ13HPPtyvw3SP2D97Brv"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/b8sqbt34mkgjtznkaaxjj_image.png"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "rpLr8w8GKEvIpWESvao-X"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Face Cream",
+                    "fontSize": "24px"
+                  }
+                ],
+                "id": "iy_Rrd7A5XRjIhPy2sAgx"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Applying a face cream is a fundamental step in any beauty routine. Make sure you choose the right cream for your skin type."
+                  }
+                ],
+                "id": "r2NurpdTWFD_qfmT38QBq"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "font-size": "18px",
+                  "inner-padding-top": "14px",
+                  "inner-padding-bottom": "14px",
+                  "inner-padding-left": "40px",
+                  "inner-padding-right": "40px",
+                  "border-radius": "8px"
+                },
+                "children": [
+                  {
+                    "text": "SHOP NOW "
+                  }
+                ],
+                "id": "NN52LN6T9mv8CckzeK3GK"
+              }
+            ],
+            "id": "c08pHEauaf3gptsNMagRR"
+          }
+        ],
+        "id": "TxmF2_4QJc-eQZ4REP85k"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#FFFFFF",
+          "padding-left": "10px",
+          "padding-right": "10px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/yuxe08ouva6xr44worcub_image.png"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "BBAzKwKcDlJUCOg6GgL5i"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Contour Eye Cream",
+                    "fontSize": "24px"
+                  }
+                ],
+                "id": "YrclbnIJDp5afgH5m4JeL"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": " Our fragrance & cruelty free, powerfully targeted eye creams firm & revitalize your eyes."
+                  }
+                ],
+                "id": "idY1-xabqvp20V4M11Ir-"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "font-size": "18px",
+                  "inner-padding-top": "14px",
+                  "inner-padding-bottom": "14px",
+                  "inner-padding-left": "40px",
+                  "inner-padding-right": "40px",
+                  "border-radius": "8px"
+                },
+                "children": [
+                  {
+                    "text": "SHOP NOW "
+                  }
+                ],
+                "id": "0et-undSreXy_2P7nHazJ"
+              }
+            ],
+            "id": "jWgeGEZCx_cwgJ7jOgPTO"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/l5breqdnni-0xd6bbiluz_image.png"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "SH29JJKiv_ZdZ-UKa74FE"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Makeup Remover",
+                    "fontSize": "24px"
+                  }
+                ],
+                "id": "EaN-tJu8uKfrULvi_BZMv"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Among testers, 100% found that the balm washed off easily and didn’t cause breakouts or irritation."
+                  }
+                ],
+                "id": "TFJzR4vlME9a5I-AcS04I"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "font-size": "18px",
+                  "inner-padding-top": "14px",
+                  "inner-padding-bottom": "14px",
+                  "inner-padding-left": "40px",
+                  "inner-padding-right": "40px",
+                  "border-radius": "8px"
+                },
+                "children": [
+                  {
+                    "text": "SHOP NOW "
+                  }
+                ],
+                "id": "wXzk39tw627AwW-9iCa6N"
+              }
+            ],
+            "id": "m5g1hXTbEnpPbB11_ERN6"
+          }
+        ],
+        "id": "CNEYr1bttY-kOYzWXx7-S"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#d98483"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "33.33%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/gua2mfgxb_tdzifuamha9_image.png",
+                  "width": "64px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "4Ll7sARf-T9f_SYaGrlM6"
+              },
+              {
+                "type": "standard-spacer",
+                "data": {},
+                "attributes": {
+                  "height": "10px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "BUFmTfSO_rHMpkfguO4xD"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Cruelty Free",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "id": "pWSoNZUM3SdZ3DZ46QYv8"
+              }
+            ],
+            "id": "HiBIPdpbK8dTR80w3nl15"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "33.33%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/gua2mfgxb_tdzifuamha9_image.png",
+                  "width": "64px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "Uzo2wceBPsejDX5wdA39z"
+              },
+              {
+                "type": "standard-spacer",
+                "data": {},
+                "attributes": {
+                  "height": "10px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "UmzHOAvsNkxVepsrr2U1f"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "No Nasty Toxins",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "id": "obhLBiq2YhrS7XPeRxbq8"
+              }
+            ],
+            "id": "YbXH3VjEY3yJJtA-yjh4_"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "33.33%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/gua2mfgxb_tdzifuamha9_image.png",
+                  "width": "64px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "mLzkVELWLVBMMt-Qgz-8L"
+              },
+              {
+                "type": "standard-spacer",
+                "data": {},
+                "attributes": {
+                  "height": "10px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "jKtjRJCspSvPwPb6b48Rg"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "No Nasty Toxins",
+                    "color": "#FFFFFF"
+                  }
+                ],
+                "id": "YOc-8sil3DokgUUD0QF3K"
+              }
+            ],
+            "id": "bTjTzwooYQCZIxjgz3wU1"
+          }
+        ],
+        "id": "HsladNAlan8Jhe01MCGlY"
+      },
+      {
+        "type": "standard-paragraph",
+        "data": {},
+        "attributes": {
+          "padding-top": "10px",
+          "padding-bottom": "10px",
+          "padding-left": "10px",
+          "padding-right": "10px"
+        },
+        "children": [
+          {
+            "text": "Testimonials"
+          }
+        ],
+        "id": "NxjVxXQC2HfxWagCDpJEJ"
+      },
+      {
+        "type": "standard-paragraph",
+        "data": {},
+        "attributes": {
+          "padding-top": "10px",
+          "padding-bottom": "10px",
+          "padding-left": "10px",
+          "padding-right": "10px",
+          "font-size": "32px"
+        },
+        "children": [
+          {
+            "text": "What Our Customers Say"
+          }
+        ],
+        "id": "e7N0IWstmoP_8fY4aFKlh"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Lucas"
+                  }
+                ],
+                "id": "leebFGCdUTrJzPohiEjQe"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "I would highly recommend these products to anyone who is looking for high-quality skincare products that deliver real results."
+                  }
+                ],
+                "id": "KGeq4Ym-vzMc3mliUtFx2"
+              },
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/koqm6ekv3k2bljqxa7tpm_image.png",
+                  "width": "100px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "w2BB4WX9G2I9rjAwOVQlG"
+              }
+            ],
+            "id": "3z75DscW0MzK_gHBIHkE2"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Laura"
+                  }
+                ],
+                "id": "f2czocqiyEX5VlaW6XJll"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "The eye contour cream is a luxurious, rich cream that is specifically formulated for the delicate skin around the eyes. "
+                  }
+                ],
+                "id": "yJUxL7kVtH0LAR9oJVBMb"
+              },
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/wqtkvjyzvxscslqqmzbdg_image.png",
+                  "width": "100px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "0O6IZaBhYOVJAmAjkm-xW"
+              }
+            ],
+            "id": "ax5heVYy5Dp7fIrciIf7q"
+          }
+        ],
+        "id": "RLi6RJEHsGSb4rBV178It"
+      },
+      {
+        "type": "page-footer",
+        "data": {
+          "content": [
+            {
+              "type": "standard-section",
+              "data": {},
+              "attributes": {
+                "background-color": "#122b49",
+                "padding-top": "20px",
+                "padding-bottom": "20px",
+                "padding-left": "20px",
+                "padding-right": "20px"
+              },
+              "children": [
+                {
+                  "type": "standard-column",
+                  "attributes": {
+                    "width": "100%"
+                  },
+                  "data": {},
+                  "children": [
+                    {
+                      "type": "standard-paragraph",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "color": "#FFFFFF",
+                        "padding-bottom": "10px"
+                      },
+                      "children": [
+                        {
+                          "text": "© 2026 Easy Email Pro. All rights reserved."
+                        }
+                      ],
+                      "id": "fkLl8tQMcO5U0B8d8Uc-0"
+                    },
+                    {
+                      "type": "standard-paragraph",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "color": "#FFFFFF"
+                      },
+                      "children": [
+                        {
+                          "text": "This is a fixed footer that cannot be deleted or moved, but you can edit the text and styles."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "editable": true
+        },
+        "attributes": {
+          "background-color": "#4a90e2"
+        },
+        "children": [
+          {
+            "text": ""
+          }
+        ],
+        "id": "PXUF3lvbxOh6eNbDuZVgt"
+      }
+    ],
+    "attributes": {
+      "background-color": "#cecece",
+      "content-background-color": "#cdd4d2",
+      "link-color": "#4a90e2"
+    },
+    "id": "DnWP8fKH9a3AAZtF9c1Zy"
+  }
+}

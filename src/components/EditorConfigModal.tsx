@@ -149,6 +149,7 @@ export const EditorConfigModal = ({
     { label: "Blue", value: "blue" },
     { label: "Green", value: "green" },
     { label: "Red", value: "red" },
+    { label: "Local", value: "local" },
   ];
 
   return (

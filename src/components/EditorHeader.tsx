@@ -1,3 +1,4 @@
+/* eslint-disable no-async-promise-executor */
 import {
   Button,
   Dropdown,
@@ -31,16 +32,55 @@ import { pick } from "lodash";
 import { ReactEditor, useSlate } from "slate-react";
 import { SendEmailModal } from "./SendEmailModal";
 import { base64ToBlob, dom2Svg } from "@/utils/base64ToBlob";
-import { Menu as LucideMenu, Rocket, Download, Settings } from "lucide-react";
+import {
+  Menu as LucideMenu,
+  Rocket,
+  Download,
+  Settings,
+  Shield,
+} from "lucide-react";
 import { EditorConfigModal } from "./EditorConfigModal";
 import { EmailList } from "./EmailList";
 import { Node } from "slate";
+import { useNavigate } from "react-router-dom";
+import { mjml2amp, getImageUrlsForAmp } from "mjml2amp";
+
+/**
+ * Load each image URL and resolve with its natural width and height.
+ * Failed or cross-origin images are skipped (no entry in result).
+ */
+async function getImageDimensions(
+  urls: string[]
+): Promise<Record<string, { width: number; height: number; }>> {
+  const result: Record<string, { width: number; height: number; }> = {};
+  const list = Array.isArray(urls) ? urls : [];
+  await Promise.all(
+    list.map(
+      (url) =>
+        new Promise<void>((resolve) => {
+          const img = new Image();
+          img.onload = () => {
+            result[url] = {
+              width: img.naturalWidth,
+              height: img.naturalHeight,
+            };
+            resolve();
+          };
+          img.onerror = () => resolve();
+          img.src = url;
+        })
+    )
+  );
+  return result;
+}
 
 export const EditorHeader = (props: {
   prefix?: React.ReactNode;
   extra?: React.ReactNode;
   hideImport?: boolean;
   hideExport?: boolean;
+  showConfiguration?: boolean;
+  onSpamScoreClick?: () => void;
 }) => {
   const editor = useSlate();
   const [collapsed, setCollapsed] = React.useState(true);
@@ -49,11 +89,12 @@ export const EditorHeader = (props: {
   const { values, submit, setFieldValue, mergetagsData, reset, dirty } =
     useEditorContext();
   const { setActiveTab, activeTab } = useEditorState();
-
+  const navigate = useNavigate();
   const activetabRef = React.useRef(ActiveTabKeys.DESKTOP);
   const onChange = (text: string) => {
     setFieldValue(null, "subject", text);
   };
+
 
   const { universalElementSetting } = useEditorProps();
 
@@ -67,7 +108,11 @@ export const EditorHeader = (props: {
     const container = ReactEditor.toDOMNode(editor, Node.get(editor, [0]));
 
     const blob1 = await new Promise<any>(async (resolve) => {
-      const png = await base64ToBlob(await dom2Svg(container));
+      const png = await base64ToBlob(
+        await dom2Svg(container, {
+          width: 600,
+        })
+      );
       resolve(png);
     });
     setActiveTab(ActiveTabKeys.MOBILE);
@@ -119,6 +164,46 @@ export const EditorHeader = (props: {
     );
   };
 
+  const onExportAmpMJML = async () => {
+
+    const mjmlStr = EditorCore.toMJML({
+      element: values.content,
+      mode: "production",
+      universalElements: universalElementSetting,
+      beautify: true,
+      outputFormat: "amp-mjml",
+    });
+
+
+    navigator.clipboard.writeText(mjmlStr);
+    saveAs(new Blob([mjmlStr], { type: "text/html" }), "easy-email-pro.html");
+  };
+
+  const onExportAmpEmail = async () => {
+
+    const mjmlStr = EditorCore.toMJML({
+      element: values.content,
+      mode: "production",
+      universalElements: universalElementSetting,
+      beautify: true,
+      outputFormat: "amp-mjml",
+    });
+
+    const imageUrls = await getImageUrlsForAmp(mjmlStr);
+
+    const imageDimensions = await getImageDimensions(imageUrls);
+
+    const ampHtml = mjml2amp(mjmlStr, {
+      imageDimensions: imageDimensions,
+      imageDimensionsStrict: false
+    });
+
+    const finalHtml = PluginManager.renderWithData(ampHtml.html, mergetagsData);
+
+    navigator.clipboard.writeText(finalHtml);
+    saveAs(new Blob([finalHtml], { type: "text/html" }), "easy-email-pro.html");
+  };
+
   const onExportMJML = () => {
     const mjmlStr = EditorCore.toMJML({
       element: values.content,
@@ -140,10 +225,10 @@ export const EditorHeader = (props: {
     });
 
     const html = mjml(mjmlStr).html;
-    const finalMergeTag = PluginManager.renderWithData(html, mergetagsData);
-    navigator.clipboard.writeText(html);
+    const finalHtml = PluginManager.renderWithData(html, mergetagsData);
+    navigator.clipboard.writeText(finalHtml);
     saveAs(
-      new Blob([finalMergeTag], { type: "text/html" }),
+      new Blob([finalHtml], { type: "text/html" }),
       "easy-email-pro.html"
     );
   };
@@ -310,7 +395,7 @@ export const EditorHeader = (props: {
       <div style={{ position: "relative" }}>
         <PageHeader
           backIcon
-          onBack={() => window.history.back()}
+          onBack={() => navigate('/')}
           className="editor-header"
           style={{
             backgroundColor: "rgb(var(--primary-6))",
@@ -344,13 +429,15 @@ export const EditorHeader = (props: {
             <div style={{ marginRight: 0 }}>
               <Space>
                 {props.prefix}
-                <Tooltip content="Editor Configuration">
-                  <EditorConfigModal>
-                    <Button icon={<Settings size={16} />}>
-                      <strong>&nbsp;Configuration</strong>
-                    </Button>
-                  </EditorConfigModal>
-                </Tooltip>
+                {props.showConfiguration && (
+                  <Tooltip content="Editor Configuration">
+                    <EditorConfigModal>
+                      <Button icon={<Settings size={16} />}>
+                        <strong>&nbsp;Configuration</strong>
+                      </Button>
+                    </EditorConfigModal>
+                  </Tooltip>
+                )}
 
                 <Tooltip content="Examples">
                   <Button
@@ -400,6 +487,12 @@ export const EditorHeader = (props: {
                         <Menu.Item key="Export HTML" onClick={onExportHTML}>
                           Export HTML
                         </Menu.Item>
+                        <Menu.Item key="Export AMP Email" onClick={onExportAmpMJML}>
+                          Export AMP MJML
+                        </Menu.Item>
+                        <Menu.Item key="Export AMP Email" onClick={onExportAmpEmail}>
+                          Export AMP Email
+                        </Menu.Item>
                         <Menu.Item key="Export JSON" onClick={onExportJSON}>
                           Export JSON
                         </Menu.Item>
@@ -416,6 +509,16 @@ export const EditorHeader = (props: {
                       <strong>&nbsp;Export</strong>
                     </Button>
                   </Dropdown>
+                )}
+                {props.onSpamScoreClick && (
+                  <Tooltip content="Spam Score">
+                    <Button
+                      icon={<Shield size={16} />}
+                      onClick={props.onSpamScoreClick}
+                    >
+                      <strong>&nbsp;Spam Score</strong>
+                    </Button>
+                  </Tooltip>
                 )}
                 {/* <Button disabled={!dirty} onClick={() => submit()}>
                   <strong>Submit</strong>

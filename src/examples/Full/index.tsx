@@ -6,7 +6,6 @@ import {
 } from "easy-email-pro-editor";
 import {
   EditorContextProps,
-  IconFont,
   Retro,
   ThemeConfigProps,
 } from "easy-email-pro-theme";
@@ -17,23 +16,34 @@ import colorPurpleStyle from "@arco-themes/react-easy-email-pro-purple/css/arco.
 import colorRedStyle from "@arco-themes/react-easy-email-pro-red/css/arco.css?inline";
 import colorBlueStyle from "@arco-themes/react-easy-email-pro-sky/css/arco.css?inline";
 import colorGreenStyle from "@arco-themes/react-easy-email-pro-green/css/arco.css?inline";
+import colorLocalStyle from "../ColorTheme/theme.css?inline";
 
 import data from "./template.json";
 import { EditorHeader } from "../../components/EditorHeader";
 import { useUpload } from "../../hooks/useUpload";
-import { Layout } from "@arco-design/web-react";
+import {
+  Layout,
+  Modal,
+  Button,
+  Space,
+  Typography,
+} from "@arco-design/web-react";
 import React from "react";
 import {
   Shopwindow,
   QRCode,
   Video,
-  MarketingType,
-  CommonType,
   ImageWithText,
   CountdownV2,
   Countdown,
+  AmpAccordionPlugin,
+  AmpCarouselPlugin,
+  AmpFormPlugin,
+  AmpProductPlugin,
+  AmpReviewsPlugin,
+  AmpLuckyWheelPlugin,
 } from "easy-email-pro-kit";
-import { EditorCore, ElementType, PluginManager, t } from "easy-email-pro-core";
+import { EditorCore, PluginManager } from "easy-email-pro-core";
 import { useState } from "react";
 import { useRef } from "react";
 
@@ -45,7 +55,6 @@ import customizeCss from "./customize.scss?inline";
 import customizeCss2 from "../Customize/customize.scss?inline";
 import FullScreenLoading from "@/components/FullScreenLoading";
 import axios from "axios";
-import { Tutorial } from "@/components/Tutorial";
 import { useEditorConfigStore } from "../../store/editorConfigStore";
 
 import { footerElement } from "../FrozenBlock";
@@ -58,617 +67,23 @@ PluginManager.registerPlugins([
   QRCode,
   Video,
   ImageWithText,
+  AmpAccordionPlugin,
+  AmpCarouselPlugin,
+  AmpFormPlugin,
+  AmpProductPlugin,
+  AmpReviewsPlugin,
+  AmpLuckyWheelPlugin,
 ]);
 
 // register elements styles
 import "./ElementStyleGallery";
 import { TranslationSelect } from "@/components/TranslationSelect";
+import { Sparkles, Layout as LayoutIcon, Palette, Zap } from "lucide-react";
+import { prebuiltBlocks } from "./prebuiltBlocks";
+import { categories } from './categories';
 
 const EmailSize = React.lazy(() => import("@/components/EmailSize"));
 
-const categories: ThemeConfigProps["categories"] = [
-  {
-    get label() {
-      return t("Content");
-    },
-    active: true,
-    displayType: "grid",
-    blocks: [
-      {
-        type: ElementType.STANDARD_PARAGRAPH,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-text"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_IMAGE,
-        payload: {},
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-img"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_BUTTON,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-button"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_DIVIDER,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-divider"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_SPACER,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-spacing"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_NAVBAR,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-navbar"
-          />
-        ),
-      },
-      {
-        type: ElementType.STANDARD_SOCIAL,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-social"
-          />
-        ),
-        payload: {
-          type: "standard-social",
-          data: {},
-          attributes: {
-            spacing: "8px",
-            "icon-size": "30px",
-            mode: "horizontal",
-          },
-          children: [
-            {
-              data: {},
-              type: "standard-social-element",
-              children: [
-                {
-                  text: "",
-                },
-              ],
-              attributes: {
-                src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/psyz-f1z-ryy95lv2rh7g_image.png",
-                href: "",
-                "padding-left": "0px",
-                "padding-right": "0px",
-                "padding-top": "0px",
-                "padding-bottom": "0px",
-              },
-            },
-            {
-              data: {},
-              type: "standard-social-element",
-              children: [
-                {
-                  text: "",
-                },
-              ],
-              attributes: {
-                src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/rxxjzpus7vy2cxi0vp6hr_image.png",
-                href: "",
-                "padding-left": "8px",
-                "padding-right": "0px",
-                "padding-top": "0px",
-                "padding-bottom": "0px",
-              },
-            },
-            {
-              data: {},
-              type: "standard-social-element",
-              children: [
-                {
-                  text: "",
-                },
-              ],
-              attributes: {
-                src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/obdwqmxv5cljc16-ebnja_image.png",
-                href: "",
-                "padding-left": "8px",
-                "padding-right": "0px",
-                "padding-top": "0px",
-                "padding-bottom": "0px",
-              },
-            },
-          ],
-        },
-      },
-      {
-        type: ElementType.STANDARD_HERO,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-hero"
-          />
-        ),
-        payload: {
-          type: "standard-hero",
-          data: {},
-          attributes: {
-            "background-width": "1080px",
-            "background-height": "721px",
-            "padding-top": "100px",
-            "padding-bottom": "50px",
-            "background-image-enabled": true,
-            "background-url":
-              "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/zfu_bicaklhcbrj4h7sja_piyfs3ypwezfgc4rkb-of.png",
-            "background-position": "center center",
-            mode: "fluid-height",
-          },
-          children: [
-            {
-              type: "standard-h1",
-              data: {},
-              attributes: {
-                color: "#FFFFFF",
-              },
-              children: [
-                {
-                  text: "We Serve Healthy & Delicious Foods",
-                },
-              ],
-            },
-            {
-              type: "standard-paragraph",
-              data: {},
-              attributes: {
-                color: "#FFFFFF",
-              },
-              children: [
-                {
-                  text: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
-                },
-              ],
-            },
-            {
-              type: "standard-button",
-              data: {
-                content: "Button",
-              },
-              attributes: {
-                "padding-top": "30px",
-                "padding-bottom": "30px",
-                "background-color": "#8b2a36",
-              },
-              children: [
-                {
-                  text: "Get Your Order Here!",
-                },
-              ],
-            },
-          ],
-        },
-      },
-      {
-        type: ElementType.STANDARD_TABLE2,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-table"
-          />
-        ),
-        payload: {
-          type: "standard-table2",
-          data: {},
-          attributes: {
-            cellpadding: "20px",
-            "container-background-color": "#FFFFFF",
-          },
-          children: [
-            {
-              type: "standard-table2-tr",
-              data: {},
-              attributes: {},
-              children: [
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              type: "standard-table2-tr",
-              data: {},
-              attributes: {},
-              children: [
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              type: "standard-table2-tr",
-              data: {},
-              attributes: {},
-              children: [
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-                {
-                  type: "standard-table2-td",
-                  data: {
-                    rowspan: 1,
-                    colspan: 1,
-                  },
-                  attributes: {},
-                  children: [
-                    {
-                      text: "",
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-      },
-      {
-        type: MarketingType.MARKETING_SHOPWINDOW,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-bag"
-          />
-        ),
-      },
-      {
-        type: MarketingType.MARKETING_COUNTDOWN_V2,
-        icon: (
-          <IconFont
-            className={"block-list-grid-item-icon"}
-            iconName="icon-countdown"
-          />
-        ),
-      },
-      {
-        type: MarketingType.MARKETING_QR_CODE,
-        icon: (
-          <div className={"block-list-grid-item-icon"}>
-            <IconFont
-              className={"block-list-grid-item-icon"}
-              iconName="icon-qrcode"
-            />
-          </div>
-        ),
-      },
-
-      {
-        type: CommonType.COMMON_VIDEO,
-        icon: (
-          <div className={"block-list-grid-item-icon"}>
-            <IconFont
-              className={"block-list-grid-item-icon"}
-              iconName="icon-video"
-            />
-          </div>
-        ),
-      },
-      {
-        type: ElementType.WRAPPER_WIDGET,
-        icon: (
-          <div
-            style={{
-              position: "absolute",
-              width: "100%",
-              height: "100%",
-              left: 0,
-              top: 0,
-              borderRadius: 5,
-              overflow: "hidden",
-            }}
-          >
-            <img
-              style={{ width: "100%", height: "100%" }}
-              src="https://cdn.shopify.com/s/files/1/0863/8971/9346/files/eqoutgspgtgzyuuyvvibr_image.png"
-              alt=""
-            />
-          </div>
-        ),
-        payload: {
-          type: "wrapper_widget",
-          title: "Test Widget",
-          data: {
-            description: "Your custom widget",
-            contentEditable: true,
-            config: [
-              {
-                label: "Primary color",
-                name: "primary-color",
-                helpText: "",
-                type: "color",
-                description: "Primary color",
-              },
-              {
-                label: "Font Size",
-                name: "font-size",
-                helpText: "",
-                type: "pixel",
-              },
-            ],
-            input: {
-              "background-color": "red",
-              "primary-color": "#d3943c",
-              "font-size": "18px",
-            },
-          },
-          attributes: {},
-          children: [
-            {
-              type: "standard-section",
-              data: {},
-              attributes: {},
-              children: [
-                {
-                  type: "standard-column",
-                  data: {},
-                  attributes: {},
-                  children: [
-                    {
-                      type: "standard-image",
-                      data: {},
-                      attributes: {
-                        src: "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/itnjxrifbm1pdhztt7i2p_j4o0hgsbub-dyr4ibqa8t.png",
-                        "border-radius": "50px",
-                        "border-enabled": true,
-                        "border-style": "solid",
-                        "border-width": "5px",
-                        "border-color": "$var(primary-color)",
-                      },
-                      children: [{ text: "" }],
-                    },
-                    {
-                      type: "standard-button",
-                      data: { content: "Button" },
-                      attributes: {
-                        width: "100%",
-                        "background-color": "$var(primary-color)",
-                        "font-size": "$var(font-size)",
-                      },
-                      children: [{ text: "Click" }],
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-          name: "Image with text",
-        },
-      },
-      // {
-      //   type: CommonType.COMMON_IMAGE_WITH_TEXT,
-      //   icon: (
-      //     <div className={"block-list-grid-item-icon"}>
-      //       <IconFont
-      //         className={"block-list-grid-item-icon"}
-      //         iconName="icon-hero"
-      //       />
-      //     </div>
-      //   ),
-      // },
-    ],
-  },
-
-  {
-    get label() {
-      return t("Layout");
-    },
-    active: true,
-    displayType: "section",
-    blocks: [
-      {
-        get title() {
-          return t("1 column");
-        },
-        variants: [
-          {
-            sections: [{ columns: ["100%"] }],
-          },
-        ],
-      },
-      {
-        get title() {
-          return t("2 column");
-        },
-        variants: [
-          {
-            sections: [{ columns: ["50%", "50%"] }],
-          },
-          {
-            sections: [{ columns: ["33%", "67%"] }],
-          },
-          {
-            sections: [{ columns: ["67%", "33%"] }],
-          },
-          {
-            sections: [{ columns: ["25%", "75%"] }],
-          },
-          {
-            sections: [{ columns: ["75%", "25%"] }],
-          },
-        ],
-      },
-      {
-        get title() {
-          return t("3 column");
-        },
-
-        variants: [
-          {
-            sections: [{ columns: ["33.33%", "33.33%", "33.33%"] }],
-          },
-          {
-            sections: [{ columns: ["25%", "50%", "25%"] }],
-          },
-          {
-            sections: [{ columns: ["25%", "25%", "50%"] }],
-          },
-          {
-            sections: [{ columns: ["50%", "25%", "25%"] }],
-          },
-        ],
-      },
-      {
-        get title() {
-          return t("4 column");
-        },
-
-        variants: [
-          {
-            sections: [{ columns: ["25%", "25%", "25%", "25%"] }],
-          },
-        ],
-      },
-      {
-        get title() {
-          return t("Multiple Sections");
-        },
-        variants: [
-          {
-            sections: [
-              {
-                columns: ["100%"],
-              },
-              {
-                columns: ["50%", "50%"],
-              },
-            ],
-          },
-          {
-            sections: [
-              {
-                columns: ["50%", "50%"],
-              },
-              {
-                columns: ["50%", "50%"],
-              },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-];
 
 const fonts = [
   {
@@ -891,6 +306,8 @@ const optionsList = [
   },
 ];
 
+const MODERN_THEME_PROMO_KEY = "modern-theme-promo-shown";
+
 export default function MyEditor() {
   const editorConfig = useEditorConfigStore();
   const { upload } = useUpload();
@@ -901,6 +318,21 @@ export default function MyEditor() {
     useState<NonNullable<ThemeConfigProps["hoveringToolbar"]>["follow"]>(
       "container"
     );
+
+  // Modern Theme promo modal state
+  const [showPromoModal, setShowPromoModal] = useState(() => {
+    return !localStorage.getItem(MODERN_THEME_PROMO_KEY);
+  });
+
+  const handleTryModern = () => {
+    localStorage.setItem(MODERN_THEME_PROMO_KEY, "true");
+    window.location.href = "/modern";
+  };
+
+  const handleDismissPromo = () => {
+    localStorage.setItem(MODERN_THEME_PROMO_KEY, "true");
+    setShowPromoModal(false);
+  };
 
   const editorInstance = useRef<EditorContextProps | null>(null);
 
@@ -963,6 +395,9 @@ export default function MyEditor() {
     if (theme === "red") {
       return colorRedStyle;
     }
+    if (theme === "local") {
+      return colorLocalStyle;
+    }
     return "";
   }, [theme]);
 
@@ -991,7 +426,7 @@ export default function MyEditor() {
   const AIAssistant: ThemeConfigProps["AIAssistant"] = useMemo(() => {
     return {
       async onGenerate(messages) {
-        const { data } = await axios.post<{ content: string; role: string }>(
+        const { data } = await axios.post<{ content: string; role: string; }>(
           `https://admin.easyemail.pro/api/ai`,
           {
             data: {
@@ -1026,7 +461,7 @@ export default function MyEditor() {
     onSubmit: onSubmit,
     mergetagsData: editorConfig.mergetagsData,
     mergetags: editorConfig.mergetags,
-    categories,
+    categories: categories,
     unsplash: {
       clientId: process.env.UNSPLASH_CLIENT_ID!,
     },
@@ -1059,9 +494,12 @@ export default function MyEditor() {
       "background-color": "red",
       "font-size": "18px",
     },
+    enabledButtonIcon: true,
     enabledHtmlBlockNodeAlign: true,
     enabledGradientImage: true,
-    enabledButtonIcon: true,
+    enabledAutoComplete: true,
+    prebuiltBlocks: prebuiltBlocks,
+    enabledAmpEmail: true,
   });
 
   if (authState === "pending") {
@@ -1073,28 +511,200 @@ export default function MyEditor() {
 
   return (
     <EmailEditorProvider {...config}>
-      <Tutorial>
-        <EditorHeader
-          prefix={<TranslationSelect lang={editorConfig.language} />}
-        />
+      <EditorHeader
+        showConfiguration
+        prefix={<TranslationSelect lang={editorConfig.language} />}
+        extra={
+          <Button
+            type="primary"
+            onClick={handleTryModern}
+            style={{
+              background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              border: "none",
+            }}
+          >
+            <strong>Try Modern Theme</strong>
+          </Button>
+        }
+      />
 
-        <Layout.Content>
-          <Retro.Layout tabRight={<EmailSize />}>
-            <style id="customize-css">{customizeCss}</style>
-            {editorConfig.showCustomStyles && (
-              <style id="customize-css2">{customizeCss2}</style>
-            )}
-          </Retro.Layout>
-        </Layout.Content>
-        <AssetManagerModal
-          key={editorConfig.language}
-          accept={accept}
-          visible={visible}
-          setVisible={setVisible}
-          onSelect={changeRef.current}
-        />
-        <style>{matchThemeStyle}</style>
-      </Tutorial>
+      <Layout.Content>
+        <Retro.Layout tabRight={<EmailSize />}>
+          <style id="customize-css">{customizeCss}</style>
+          {editorConfig.showCustomStyles && (
+            <style id="customize-css2">{customizeCss2}</style>
+          )}
+        </Retro.Layout>
+      </Layout.Content>
+      <AssetManagerModal
+        key={editorConfig.language}
+        accept={accept}
+        visible={visible}
+        setVisible={setVisible}
+        onSelect={changeRef.current}
+      />
+      <style>{matchThemeStyle}</style>
+
+      {/* Modern Theme Promo Modal */}
+      <Modal
+        visible={showPromoModal}
+        onCancel={handleDismissPromo}
+        footer={null}
+        style={{ width: 520 }}
+        closable={true}
+        maskClosable={false}
+      >
+        <div style={{ textAlign: "center", padding: "20px 0" }}>
+          <div
+            style={{
+              width: 80,
+              height: 80,
+              borderRadius: "50%",
+              background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              margin: "0 auto 24px",
+            }}
+          >
+            <Sparkles size={40} color="#fff" />
+          </div>
+
+          <Typography.Title heading={4} style={{ marginBottom: 8 }}>
+            Try Modern Theme
+          </Typography.Title>
+          <Typography.Text type="secondary" style={{ fontSize: 14 }}>
+            A simplified editor designed for beginners with smart presets
+          </Typography.Text>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: 16,
+              margin: "32px 0",
+              textAlign: "left",
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+              <div
+                style={{
+                  width: 36,
+                  height: 36,
+                  borderRadius: 8,
+                  background: "rgba(102, 126, 234, 0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                }}
+              >
+                <Sparkles size={18} color="#667eea" />
+              </div>
+              <div>
+                <Typography.Text style={{ fontWeight: 600, display: "block" }}>
+                  Simplified
+                </Typography.Text>
+                <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+                  Less options, less confusion
+                </Typography.Text>
+              </div>
+            </div>
+
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+              <div
+                style={{
+                  width: 36,
+                  height: 36,
+                  borderRadius: 8,
+                  background: "rgba(102, 126, 234, 0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                }}
+              >
+                <Zap size={18} color="#667eea" />
+              </div>
+              <div>
+                <Typography.Text style={{ fontWeight: 600, display: "block" }}>
+                  Smart Presets
+                </Typography.Text>
+                <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+                  Pre-configured for quick start
+                </Typography.Text>
+              </div>
+            </div>
+
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+              <div
+                style={{
+                  width: 36,
+                  height: 36,
+                  borderRadius: 8,
+                  background: "rgba(102, 126, 234, 0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                }}
+              >
+                <Palette size={18} color="#667eea" />
+              </div>
+              <div>
+                <Typography.Text style={{ fontWeight: 600, display: "block" }}>
+                  Beginner Friendly
+                </Typography.Text>
+                <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+                  Easy to learn, easy to use
+                </Typography.Text>
+              </div>
+            </div>
+
+            <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+              <div
+                style={{
+                  width: 36,
+                  height: 36,
+                  borderRadius: 8,
+                  background: "rgba(102, 126, 234, 0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                }}
+              >
+                <LayoutIcon size={18} color="#667eea" />
+              </div>
+              <div>
+                <Typography.Text style={{ fontWeight: 600, display: "block" }}>
+                  Clean Interface
+                </Typography.Text>
+                <Typography.Text type="secondary" style={{ fontSize: 12 }}>
+                  Focus on what matters
+                </Typography.Text>
+              </div>
+            </div>
+          </div>
+
+          <Space size={16}>
+            <Button size="large" onClick={handleDismissPromo}>
+              Maybe Later
+            </Button>
+            <Button
+              type="primary"
+              size="large"
+              onClick={handleTryModern}
+              style={{
+                background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                border: "none",
+              }}
+            >
+              Try Modern Theme
+            </Button>
+          </Space>
+        </div>
+      </Modal>
     </EmailEditorProvider>
   );
 }
