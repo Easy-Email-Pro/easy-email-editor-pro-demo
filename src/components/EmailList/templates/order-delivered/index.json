@@ -1,0 +1,727 @@
+{
+  "subject": "Your order is at the door",
+  "content": {
+    "type": "page",
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      },
+      "headStyles": [],
+      "fonts": [],
+      "preheader": "Order #A48291 was delivered today at 2:14pm. Hope it arrived\r\n      happy."
+    },
+    "attributes": {
+      "margin-top": "0px",
+      "margin-bottom": "0px",
+      "background-color": "#fef9ef",
+      "width": "600px"
+    },
+    "children": [
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#fef9ef",
+          "background-image-enabled": true,
+          "padding-top": "24px",
+          "padding-bottom": "24px",
+          "padding-left": "32px",
+          "padding-right": "32px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ay830x-udlljmvkq1gdg5_image.png",
+                  "alt": "Logo",
+                  "width": "90px",
+                  "align": "center",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "gkME6zVltRkSIf01pCPId"
+              }
+            ],
+            "id": "ahJ2x5LgU0C-H8Gvg-Qgy"
+          }
+        ],
+        "id": "P6XJECsLaqxp_V8pZpZhJ"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#fef9ef",
+          "background-image-enabled": true,
+          "padding-top": "24px",
+          "padding-bottom": "8px",
+          "padding-left": "0px",
+          "padding-right": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-size": "56px",
+                  "padding-bottom": "14px",
+                  "color": "#d4a23c"
+                },
+                "children": [
+                  {
+                    "text": "✦"
+                  }
+                ],
+                "id": "i3zFC0XLPHrA5ENQQRNAP"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "font-weight": "600",
+                  "letter-spacing": "0.3em",
+                  "text-transform": "uppercase",
+                  "color": "#a08648",
+                  "padding-bottom": "14px"
+                },
+                "children": [
+                  {
+                    "text": "— Delivered —"
+                  }
+                ],
+                "id": "Ol1HkvDLxEy3aTkTAjNTg"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "44px",
+                  "line-height": "1.15",
+                  "color": "#2a2620",
+                  "font-weight": "500",
+                  "padding-bottom": "14px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "Knock knock —"
+                  }
+                ],
+                "id": "zHfNdwl-xEofkso0O6emZ"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "22px",
+                  "font-style": "italic",
+                  "line-height": "1.4",
+                  "color": "#574b3f",
+                  "padding-bottom": "8px"
+                },
+                "children": [
+                  {
+                    "text": "your order is at the door."
+                  }
+                ],
+                "id": "G-AKUuZQtfK_72Thv3Il3"
+              }
+            ],
+            "id": "wszbVeVb5ZL2CllzdX4b6"
+          }
+        ],
+        "id": "FC7AeeBQDeAsGLO_srLz_"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#fef9ef",
+          "background-image-enabled": true,
+          "padding-top": "20px",
+          "padding-bottom": "36px",
+          "padding-left": "0px",
+          "padding-right": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "14px",
+                  "line-height": "1.7",
+                  "color": "#574b3f",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": "Delivered today at "
+                  },
+                  {
+                    "type": "html-node",
+                    "data": {
+                      "tagName": "strong"
+                    },
+                    "attributes": {
+                      "style": "color: #2a2620"
+                    },
+                    "children": [
+                      {
+                        "text": "2:14pm"
+                      }
+                    ],
+                    "id": "bZbbcKlm4pD5jZqBoPw01"
+                  },
+                  {
+                    "text": " · Signed for, \"front porch\""
+                  }
+                ],
+                "id": "8wleyyEpis05C6CiEKCR9",
+                "mobileAttributes": {}
+              }
+            ],
+            "id": "-NAYsQB-cpKLKsR4lGFjM"
+          }
+        ],
+        "id": "HU4XE6TTUan0CZIHL_cJL"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-image-enabled": true,
+          "padding-top": "0px",
+          "padding-bottom": "0px",
+          "padding-left": "0px",
+          "padding-right": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/2v4jhycd1om0chpl8lxgv_image.png",
+                  "alt": "Package on porch",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "QI9VJEJl_2ngvKK5lHmtw"
+              }
+            ],
+            "id": "0zEqNHaFpChfDlTXFuQCx"
+          }
+        ],
+        "id": "PVe5bkHaAUYO4bbEG8vaI"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#ffffff",
+          "background-image-enabled": true,
+          "padding-top": "40px",
+          "padding-bottom": "16px",
+          "padding-left": "56px",
+          "padding-right": "56px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "26px",
+                  "line-height": "1.35",
+                  "color": "#2a2620",
+                  "padding-bottom": "14px"
+                },
+                "children": [
+                  {
+                    "text": "We hope it arrived "
+                  },
+                  {
+                    "type": "html-node",
+                    "data": {
+                      "tagName": "em"
+                    },
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": "just right"
+                      }
+                    ],
+                    "id": "mtw2y7BSJhwSHUauMKK0m"
+                  },
+                  {
+                    "text": "."
+                  }
+                ],
+                "id": "ZgxNFIgFNEyRrnrgSk8-c"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "14px",
+                  "line-height": "1.85",
+                  "color": "#574b3f"
+                },
+                "children": [
+                  {
+                    "text": "If anything's bent, broken, or just not what you hoped for — write back to this email. We read every reply, and we'll fix it. No restocking fees, ever."
+                  }
+                ],
+                "id": "uAe1KW3X2FLLu8IP7gEVB"
+              }
+            ],
+            "id": "8Qesi1NdPPKXF55UyIsZa"
+          }
+        ],
+        "id": "UbXyrvI-nXI23S9lbEWFp"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#ffffff",
+          "background-image-enabled": true,
+          "padding-top": "20px",
+          "padding-bottom": "32px",
+          "padding-left": "40px",
+          "padding-right": "40px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "50%",
+              "vertical-align": "middle",
+              "padding-top": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "6px",
+              "padding-right": "6px"
+            },
+            "children": [
+              {
+                "type": "standard-button",
+                "data": {},
+                "attributes": {
+                  "background-color": "#2a2620",
+                  "color": "#fef9ef",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "letter-spacing": "0.15em",
+                  "text-transform": "uppercase",
+                  "font-weight": "500",
+                  "border-radius": "2px",
+                  "href": "#",
+                  "width": "100%",
+                  "inner-padding-top": "14px",
+                  "inner-padding-bottom": "14px",
+                  "inner-padding-left": "12px",
+                  "inner-padding-right": "12px"
+                },
+                "children": [
+                  {
+                    "text": "Share a photo"
+                  }
+                ],
+                "id": "K9xQwxNA_1MYdx9rA0mxX"
+              }
+            ],
+            "id": "SKP12YVbJqIZFD8WfG5WK"
+          },
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "50%",
+              "vertical-align": "middle",
+              "padding-top": "0px",
+              "padding-bottom": "0px",
+              "padding-left": "6px",
+              "padding-right": "6px"
+            },
+            "children": [
+              {
+                "type": "standard-button",
+                "data": {},
+                "attributes": {
+                  "background-color": "#fef9ef",
+                  "color": "#2a2620",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "letter-spacing": "0.15em",
+                  "text-transform": "uppercase",
+                  "font-weight": "500",
+                  "border": "1px solid #2a2620",
+                  "border-radius": "2px",
+                  "href": "#",
+                  "width": "100%",
+                  "border-enabled": true,
+                  "inner-padding-top": "14px",
+                  "inner-padding-bottom": "14px",
+                  "inner-padding-left": "12px",
+                  "inner-padding-right": "12px"
+                },
+                "children": [
+                  {
+                    "text": "Need help?"
+                  }
+                ],
+                "id": "qnHFdRrwH_qPrVWJgkYiP"
+              }
+            ],
+            "id": "0EzQ641Zrq8e1KWPK68E3"
+          }
+        ],
+        "id": "k1PA0N-nDhz8vD4bnAQ_O"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#f4ecdc",
+          "background-image-enabled": true,
+          "padding-top": "40px",
+          "padding-bottom": "28px",
+          "padding-left": "40px",
+          "padding-right": "40px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "font-weight": "600",
+                  "letter-spacing": "0.3em",
+                  "text-transform": "uppercase",
+                  "color": "#a08648",
+                  "padding-bottom": "14px"
+                },
+                "children": [
+                  {
+                    "text": "— Tag us —"
+                  }
+                ],
+                "id": "SKHaTZXF-XDrvcw-Sfvpo"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "28px",
+                  "line-height": "1.3",
+                  "color": "#2a2620",
+                  "padding-bottom": "10px"
+                },
+                "children": [
+                  {
+                    "text": "@ariastudio"
+                  }
+                ],
+                "id": "jnmJ2JyO9HKBBFyOZqdNq"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "13px",
+                  "line-height": "1.7",
+                  "color": "#574b3f"
+                },
+                "children": [
+                  {
+                    "text": "We repost something every week. We'd love to see how it landed in your space."
+                  }
+                ],
+                "id": "E2y_8D5WpHE-aRBApbRI1"
+              }
+            ],
+            "id": "sISwFme5Fu7Outyba0XrJ"
+          }
+        ],
+        "id": "NY5S8H9a6Ylv7cWBIAzpA"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#f4ecdc",
+          "background-image-enabled": true,
+          "padding-top": "0px",
+          "padding-bottom": "32px",
+          "padding-left": "32px",
+          "padding-right": "32px"
+        },
+        "children": [
+          {
+            "type": "standard-group",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-column",
+                "data": {},
+                "attributes": {
+                  "width": "33%"
+                },
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/q5eftcvmjd4ixcwwio03q_image.png",
+                      "alt": "",
+                      "border-radius": "3px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px",
+                      "padding-left": "4px",
+                      "padding-right": "4px",
+                      "width": "400px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "P4MCgxB-FpjVlXYhjTiWs"
+                  }
+                ],
+                "id": "Ws3OAYwm7GXCdMw0qpLt_"
+              },
+              {
+                "type": "standard-column",
+                "data": {},
+                "attributes": {
+                  "width": "33%"
+                },
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/bq-demjkbwonovkaljjze_image.png",
+                      "alt": "",
+                      "border-radius": "3px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px",
+                      "padding-left": "4px",
+                      "padding-right": "4px",
+                      "width": "400px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "qzKt4q39Gbej3AMIT84yc"
+                  }
+                ],
+                "id": "kDS-al9_z_bUA3oi2Q8I5"
+              },
+              {
+                "type": "standard-column",
+                "data": {},
+                "attributes": {
+                  "width": "33%"
+                },
+                "children": [
+                  {
+                    "type": "standard-image",
+                    "data": {},
+                    "attributes": {
+                      "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/xcbrmqcbrypx7l99yat3j_image.png",
+                      "alt": "",
+                      "border-radius": "3px",
+                      "padding-top": "0px",
+                      "padding-bottom": "0px",
+                      "padding-left": "4px",
+                      "padding-right": "4px",
+                      "width": "400px"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "FX-r5fBT_b9Ed2j9Vaupb"
+                  }
+                ],
+                "id": "v5gYgnOUgS5rtJeQ1K6nu"
+              }
+            ],
+            "mobileAttributes": {},
+            "id": "4sMxGKZ1ylrT6mF2gjusv"
+          }
+        ],
+        "id": "rePhbWl0Xi4aBG4c8zFi7"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#2a2620",
+          "background-image-enabled": true,
+          "padding-top": "36px",
+          "padding-bottom": "36px",
+          "padding-left": "40px",
+          "padding-right": "40px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ay830x-udlljmvkq1gdg5_image.png",
+                  "alt": "Logo",
+                  "width": "90px",
+                  "align": "center",
+                  "padding-top": "0px",
+                  "padding-bottom": "14px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "vRDjpox4_uD5Z8HUtRHas"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "color": "#a89c84",
+                  "line-height": "1.7"
+                },
+                "children": [
+                  {
+                    "text": "Order #A48291 · "
+                  },
+                  {
+                    "text": "View invoice",
+                    "link": {
+                      "href": "#",
+                      "blank": false
+                    }
+                  },
+                  {
+                    "type": "html-node",
+                    "data": {
+                      "tagName": "br"
+                    },
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "GdCLQMQSMNhi_DH32HFq3"
+                  },
+                  {
+                    "text": "Reply to this email",
+                    "link": {
+                      "href": "#",
+                      "blank": false
+                    }
+                  },
+                  {
+                    "text": " · "
+                  },
+                  {
+                    "text": "Manage notifications",
+                    "link": {
+                      "href": "#",
+                      "blank": false
+                    }
+                  }
+                ],
+                "id": "pB0-VH0GrBxw-XzLtLwSt"
+              }
+            ],
+            "id": "rf6OpxOW860eUIEAjclPZ"
+          }
+        ],
+        "id": "EVb6V5G7SThW7URuzszUg"
+      }
+    ],
+    "id": "-VVTObHOLbEVTLQSFEsP1"
+  }
+}

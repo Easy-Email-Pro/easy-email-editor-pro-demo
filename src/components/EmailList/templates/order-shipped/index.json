@@ -1,0 +1,1017 @@
+{
+    "subject": "Your order is on the way",
+    "content": {
+      "type": "page",
+      "data": {
+        "breakpoint": "480px",
+        "globalAttributes": {
+          "font-family": "Arial, sans-serif"
+        },
+        "headStyles": [],
+        "fonts": [],
+        "preheader": "Order #A48291 shipped via FedEx · Arriving Thu, May 3"
+      },
+      "attributes": {
+        "margin-top": "0px",
+        "margin-bottom": "0px",
+        "background-color": "#f4f4f0",
+        "width": "600px"
+      },
+      "children": [
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#ffffff",
+            "border-bottom": "1px solid #ebe6dd",
+            "background-image-enabled": true,
+            "padding-top": "20px",
+            "padding-bottom": "20px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "vertical-align": "middle"
+              },
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/tcar7bs0zyl6i3oa2dr2u_image.png",
+                    "alt": "Logo",
+                    "width": "90px",
+                    "align": "left",
+                    "padding-top": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "k_zdf8GY9HSkYz3kyo3Bk"
+                }
+              ],
+              "id": "X55gUB2mUyz-jsMz5COlm"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "vertical-align": "middle"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "right",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "color": "#7a7468",
+                    "letter-spacing": "0.02em"
+                  },
+                  "children": [
+                    {
+                      "text": "Order #A48291"
+                    }
+                  ],
+                  "id": "VbBTP1rLk69a81i1MkqE1"
+                }
+              ],
+              "id": "8Vkq1uOo2QLX1YBY-4hRm"
+            }
+          ],
+          "id": "CHL--MAD_7tAs3j8a1NO2"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#5a7a4a",
+            "background-image-enabled": true,
+            "padding-top": "56px",
+            "padding-bottom": "48px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-size": "38px",
+                    "color": "#ffffff",
+                    "padding-bottom": "12px"
+                  },
+                  "children": [
+                    {
+                      "text": "→"
+                    }
+                  ],
+                  "id": "jG7Mo3Jcvh44DPVUquR0S"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "font-weight": "600",
+                    "letter-spacing": "0.3em",
+                    "text-transform": "uppercase",
+                    "color": "#d4e2c8",
+                    "padding-bottom": "14px"
+                  },
+                  "children": [
+                    {
+                      "text": "— Now in transit —"
+                    }
+                  ],
+                  "id": "II5s5QwBmKi8ghjMT1Afh"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "40px",
+                    "line-height": "1.15",
+                    "color": "#ffffff",
+                    "font-weight": "500",
+                    "padding-bottom": "16px"
+                  },
+                  "children": [
+                    {
+                      "text": "It's on the way."
+                    }
+                  ],
+                  "id": "BNaml-Lu3wi-TxrKXo_ma"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "14px",
+                    "line-height": "1.7",
+                    "color": "#d4e2c8"
+                  },
+                  "children": [
+                    {
+                      "text": "Arriving "
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "strong"
+                      },
+                      "attributes": {
+                        "style": "color: #ffffff"
+                      },
+                      "children": [
+                        {
+                          "text": "Thursday, May 3"
+                        }
+                      ],
+                      "id": "Bu1SO23WiS7Ax0TUOLwRy"
+                    },
+                    {
+                      "text": " by end of day"
+                    }
+                  ],
+                  "id": "Kx4-l1ySmdi6hQtznNVmk"
+                }
+              ],
+              "id": "Nsgm3KbU_Mus06xfSd5xL"
+            }
+          ],
+          "id": "QUQVj7KOa1A0Cgsmu7QBC"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#ffffff",
+            "background-image-enabled": true,
+            "padding-top": "36px",
+            "padding-bottom": "12px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "font-weight": "600",
+                    "letter-spacing": "0.2em",
+                    "text-transform": "uppercase",
+                    "color": "#7a7468",
+                    "padding-bottom": "22px"
+                  },
+                  "children": [
+                    {
+                      "text": "— Where it is now —"
+                    }
+                  ],
+                  "id": "g58BF-LEWvt2UccW2Yo8d"
+                }
+              ],
+              "id": "DMSNmrnShdUBSgvXlVryO"
+            }
+          ],
+          "id": "uubkmMPSwbpM5D5P2xpSh"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#ffffff",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "32px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-group",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "25%"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-size": "20px",
+                        "color": "#5a7a4a",
+                        "padding-bottom": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "●"
+                        }
+                      ],
+                      "id": "geRYS7Ng4UYalugL4HLk-"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "11px",
+                        "color": "#2d2d2d",
+                        "font-weight": "600",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": "Confirmed"
+                        }
+                      ],
+                      "id": "ClOfYcz21YyvTtSj-V11K"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "10px",
+                        "color": "#9a948a",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": "Apr 29"
+                        }
+                      ],
+                      "id": "SIWjvW6W7yr1jbuDYJg8C"
+                    }
+                  ],
+                  "id": "QcQLdVNld9O0cZLa3M6-X"
+                },
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "25%"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-size": "20px",
+                        "color": "#5a7a4a",
+                        "padding-bottom": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "●"
+                        }
+                      ],
+                      "id": "sFNtRgXMV3DjWPIRXBpTz"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "11px",
+                        "color": "#2d2d2d",
+                        "font-weight": "600",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": "Packed"
+                        }
+                      ],
+                      "id": "itH2UlEgocurz5OP6-cEm"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "10px",
+                        "color": "#9a948a",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": "Apr 30"
+                        }
+                      ],
+                      "id": "kpg1bJbXZ4hi__iMx2-d9"
+                    }
+                  ],
+                  "id": "hGaZIEsd4-jjB6-nhWu83"
+                },
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "25%"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-size": "20px",
+                        "color": "#5a7a4a",
+                        "padding-bottom": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "●"
+                        }
+                      ],
+                      "id": "aIuTcoeNeEdAtqJdhfqEn"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "11px",
+                        "color": "#2d2d2d",
+                        "font-weight": "600",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": "Shipped"
+                        }
+                      ],
+                      "id": "CnOm14xlzrDWrvUQzeB8r"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "10px",
+                        "color": "#5a7a4a",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": "May 1, 9:42am"
+                        }
+                      ],
+                      "id": "LFhA7ZwfGco6OGYE5mthL"
+                    }
+                  ],
+                  "id": "reD64JCeA1twmoV6ndpec"
+                },
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "25%"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-size": "20px",
+                        "color": "#d4cfc4",
+                        "padding-bottom": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "○"
+                        }
+                      ],
+                      "id": "hQZGSMghXCerY9Ovzo4iH"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "11px",
+                        "color": "#9a948a",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": "Delivered"
+                        }
+                      ],
+                      "id": "7liDkXAM0i5DuUAO9T8Xu"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "align": "center",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "10px",
+                        "color": "#bfb8ad",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": "May 3"
+                        }
+                      ],
+                      "id": "Jwb8bqqghw9uN_PrN8Thq"
+                    }
+                  ],
+                  "id": "2NIuxttJhd-iif8cSNXrc"
+                }
+              ],
+              "mobileAttributes": {},
+              "id": "sZIzpXx7s8S1JZQW4QtDM"
+            }
+          ],
+          "id": "2hK5pIV1y5mNWZSmZfJRe"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#faf8f3",
+            "border-top": "1px solid #ebe6dd",
+            "border-bottom": "1px solid #ebe6dd",
+            "background-image-enabled": true,
+            "padding-top": "28px",
+            "padding-bottom": "28px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "vertical-align": "middle"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "10px",
+                    "font-weight": "600",
+                    "letter-spacing": "0.2em",
+                    "text-transform": "uppercase",
+                    "color": "#7a7468"
+                  },
+                  "children": [
+                    {
+                      "text": "Carrier"
+                    }
+                  ],
+                  "id": "hk3jvOwxuydyGPAJ6BVv0"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "14px",
+                    "color": "#2d2d2d",
+                    "padding-top": "4px"
+                  },
+                  "children": [
+                    {
+                      "text": "FedEx Ground"
+                    }
+                  ],
+                  "id": "oq4E7YMVPhymWZrVI__zH"
+                }
+              ],
+              "id": "e_zqq3DD6CFFO66SppHJ8"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "vertical-align": "middle"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "10px",
+                    "font-weight": "600",
+                    "letter-spacing": "0.2em",
+                    "text-transform": "uppercase",
+                    "color": "#7a7468"
+                  },
+                  "children": [
+                    {
+                      "text": "Tracking number"
+                    }
+                  ],
+                  "id": "rJbg4csljzGWQYIy9y8ub"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "13px",
+                    "color": "#2d2d2d",
+                    "padding-top": "4px"
+                  },
+                  "children": [
+                    {
+                      "text": "7891 4426 8843"
+                    }
+                  ],
+                  "id": "VS9FO_GVFdwv9pUCSe9O6"
+                }
+              ],
+              "id": "Hbr4zNNS8lY4X9NrFdFBO"
+            }
+          ],
+          "id": "fH63p1UqI3SN2T2TaJFIp"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#ffffff",
+            "background-image-enabled": true,
+            "padding-top": "32px",
+            "padding-bottom": "32px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-button",
+                  "data": {},
+                  "attributes": {
+                    "background-color": "#2d2d2d",
+                    "color": "#ffffff",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "12px",
+                    "letter-spacing": "0.15em",
+                    "text-transform": "uppercase",
+                    "font-weight": "500",
+                    "border-radius": "2px",
+                    "href": "#",
+                    "inner-padding-top": "16px",
+                    "inner-padding-bottom": "16px",
+                    "inner-padding-left": "32px",
+                    "inner-padding-right": "32px"
+                  },
+                  "children": [
+                    {
+                      "text": "Track package"
+                    }
+                  ],
+                  "id": "Jmfld6ffHtdX4_4xtEhHW"
+                }
+              ],
+              "id": "X9r1nZ-I9Y2V9nkXhQq1p"
+            }
+          ],
+          "id": "226vVcxxDqv05a0LV4KHS"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#ffffff",
+            "border-top": "1px solid #ebe6dd",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "24px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "font-weight": "600",
+                    "letter-spacing": "0.2em",
+                    "text-transform": "uppercase",
+                    "color": "#7a7468",
+                    "padding-top": "32px",
+                    "padding-bottom": "14px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": "— What's in the box —"
+                    }
+                  ],
+                  "id": "zWEr8GidlyTCLJWpi1PMQ"
+                }
+              ],
+              "id": "ag4fu5rJ3nQYq-1BzH6GQ"
+            }
+          ],
+          "id": "gfUQfDAV24vAzPKU9MvH8"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#ffffff",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "12px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "33%"
+              },
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/dnzv0ng4b-yhmuhv1gk9g_image.png",
+                    "alt": "Throw",
+                    "border-radius": "3px",
+                    "padding-top": "0px",
+                    "padding-bottom": "8px",
+                    "padding-left": "4px",
+                    "padding-right": "4px",
+                    "width": "400px",
+                    "fluid-on-mobile": "true"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "jnmruTdv4WHB9DK8Ppxmo"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "14px",
+                    "color": "#2d2d2d"
+                  },
+                  "children": [
+                    {
+                      "text": "Linen Throw"
+                    }
+                  ],
+                  "id": "7mKt8yn1bP56lpcOHp015"
+                }
+              ],
+              "id": "zFohdBTBNt4pMqBMzEH0L"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "33%"
+              },
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/6rmdyh3i9osaaov8emu3b_image.png",
+                    "alt": "Mug",
+                    "border-radius": "3px",
+                    "padding-top": "0px",
+                    "padding-bottom": "8px",
+                    "padding-left": "4px",
+                    "padding-right": "4px",
+                    "width": "400px",
+                    "fluid-on-mobile": "true"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "kQ7pOU36Jpxu1y5clvgDJ"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "14px",
+                    "color": "#2d2d2d"
+                  },
+                  "children": [
+                    {
+                      "text": "Stoneware Mug × 2"
+                    }
+                  ],
+                  "id": "hFHph3mL_e0Nb0strZ5-g"
+                }
+              ],
+              "id": "UESkl3gfg_NvQqRh-WOVT"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "33%"
+              },
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/verdrxz5t6uhpfv5af7ub_image.png",
+                    "alt": "Coasters",
+                    "border-radius": "3px",
+                    "padding-top": "0px",
+                    "padding-bottom": "8px",
+                    "padding-left": "4px",
+                    "padding-right": "4px",
+                    "width": "400px",
+                    "fluid-on-mobile": "true"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "jeZND_uAPzNvY8N8MbT5s"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "14px",
+                    "color": "#2d2d2d"
+                  },
+                  "children": [
+                    {
+                      "text": "Cork Coasters"
+                    }
+                  ],
+                  "id": "aWxtzPyHo9JrrX29GHG1l"
+                }
+              ],
+              "id": "eWIf8Exo_LjtpWtNBf7GB"
+            }
+          ],
+          "id": "dnTo8EgUm2VeVhrtaTdOW"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#ffffff",
+            "border-top": "1px solid #ebe6dd",
+            "background-image-enabled": true,
+            "padding-top": "32px",
+            "padding-bottom": "36px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "18px",
+                    "font-style": "italic",
+                    "color": "#2d2d2d",
+                    "padding-bottom": "6px"
+                  },
+                  "children": [
+                    {
+                      "text": "Won't be home?"
+                    }
+                  ],
+                  "id": "7AvCQN_bk5LVT5ncAOYcR"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "13px",
+                    "line-height": "1.7",
+                    "color": "#5a564f"
+                  },
+                  "children": [
+                    {
+                      "text": "FedEx will leave the package by your door if no one's there. "
+                    },
+                    {
+                      "text": "Update delivery instructions →",
+                      "link": {
+                        "href": "#",
+                        "blank": false
+                      }
+                    }
+                  ],
+                  "id": "Mhnr4I4ykxpJtv7Orj_W4"
+                }
+              ],
+              "id": "rh8ng4VlQD40jIVZnZ4IJ"
+            }
+          ],
+          "id": "nRJBvOTjZICBXrP0NTIas"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#2d2d2d",
+            "background-image-enabled": true,
+            "padding-top": "32px",
+            "padding-bottom": "32px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/kreuyhspsaxvynbgdyikl_image.png",
+                    "alt": "Logo",
+                    "width": "90px",
+                    "align": "center",
+                    "padding-top": "0px",
+                    "padding-bottom": "14px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "uKEWjfMzIKoQnwpJL5Q75"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "color": "#a89e90",
+                    "line-height": "1.7"
+                  },
+                  "children": [
+                    {
+                      "text": "Need help? "
+                    },
+                    {
+                      "text": "hello@yourbrand.com",
+                      "link": {
+                        "href": "#",
+                        "blank": false
+                      }
+                    }
+                  ],
+                  "id": "waV92JK4JZHPwKlGtC_Rc"
+                }
+              ],
+              "id": "9hHWb1KflCF-KNLU0is70"
+            }
+          ],
+          "id": "Zght76FaZWpcZhprj_V9K"
+        }
+      ],
+      "id": "gOHNg10rxOgyPPNd-70UX"
+    }
+  }

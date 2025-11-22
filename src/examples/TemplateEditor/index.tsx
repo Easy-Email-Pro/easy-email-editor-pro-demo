@@ -40,6 +40,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
 import FullScreenLoading from "@/components/FullScreenLoading";
+import { emailListTemplates } from "@/components/EmailList/templates";
 
 PluginManager.registerPlugins([
   CountdownV2,
@@ -387,6 +388,7 @@ const TemplateEditor = ({
     showBlockPaths: true,
     showTextHTMLMode: true,
     showSelectFileButton: true,
+    enabledAutoComplete: true,
   });
 
   return (
@@ -573,18 +575,15 @@ const TemplateEditorContainer = () => {
           });
         });
     } else if (id) {
-      axios
-        .get(`https://admin.easyemail.pro/api/email-template/${id}`, {
-          params: {
-            user_id:
-              location.pathname === "/share"
-                ? "clnu5hbaj000608mk27gof0y4"
-                : "clnl5a07900065zltiqvalojp",
-          },
-        })
-        .then(({ data }) => {
-          setData(data);
+      const template = emailListTemplates.find((item) => item.id === id);
+      if (template) {
+        setData({
+          subject: template.subject,
+          content: template.content,
         });
+      } else {
+        Message.error(`Template "${id}" was not found`);
+      }
     }
   }, [authState, gid, id, isBlockPreview]);
 

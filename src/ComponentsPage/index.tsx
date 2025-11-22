@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Typography, Space, Layout, Menu } from "@arco-design/web-react";
 import "@arco-design/web-react/dist/css/arco.css";
 import { Buttons } from "./blocks/Buttons";
@@ -32,6 +32,26 @@ import { Reviews } from "./blocks/composite/Reviews";
 import { PageLayout } from "@/components/PageLayout";
 import { pushEvent } from "@/utils/pushEvent";
 import { ProductCard } from "./blocks/composite/ProductCard";
+import { Headers } from "./blocks/prebuilt/Headers";
+import { Footers } from "./blocks/prebuilt/Footers";
+import { Ctas } from "./blocks/prebuilt/Ctas";
+import { Newsletters } from "./blocks/prebuilt/Newsletters";
+import { Features } from "./blocks/prebuilt/Features";
+import { Pricings } from "./blocks/prebuilt/Pricings";
+import { Faqs } from "./blocks/prebuilt/Faqs";
+import { Announcements } from "./blocks/prebuilt/Announcements";
+import { ProductSpotlights } from "./blocks/composite/ProductSpotlights";
+import { EventPromos } from "./blocks/composite/EventPromos";
+import { EditorialStories } from "./blocks/composite/EditorialStories";
+import { SeasonalSales } from "./blocks/composite/SeasonalSales";
+import { BrandStories } from "./blocks/composite/BrandStories";
+import { AppPromos } from "./blocks/composite/AppPromos";
+import { LoyaltyRewards } from "./blocks/composite/LoyaltyRewards";
+import { ShippingUpdates } from "./blocks/composite/ShippingUpdates";
+import { ComparisonBlocks } from "./blocks/composite/ComparisonBlocks";
+import { LookbookGrids } from "./blocks/composite/LookbookGrids";
+import { OrderReceipts } from "./blocks/composite/OrderReceipts";
+import { SurveyRatings } from "./blocks/composite/SurveyRatings";
 
 PluginManager.registerPlugins([
   CountdownV2,
@@ -74,6 +94,53 @@ const ComponentGroups = {
       discount: { label: "Discount", component: <Discounts /> },
       review: { label: "Review", component: <Reviews /> },
       trustBadge: { label: "Trust Badge", component: <TrustBadges /> },
+      header: { label: "Header", component: <Headers /> },
+      footer: { label: "Footer", component: <Footers /> },
+      cta: { label: "CTA", component: <Ctas /> },
+      newsletter: { label: "Newsletter", component: <Newsletters /> },
+      announcement: { label: "Announcement", component: <Announcements /> },
+      feature: { label: "Feature", component: <Features /> },
+      pricing: { label: "Pricing", component: <Pricings /> },
+      faq: { label: "FAQ", component: <Faqs /> },
+      productSpotlight: {
+        label: "Product Spotlight",
+        component: <ProductSpotlights />,
+      },
+      eventPromo: { label: "Event Promo", component: <EventPromos /> },
+      editorialStory: {
+        label: "Editorial Story",
+        component: <EditorialStories />,
+      },
+      seasonalSale: {
+        label: "Seasonal Sale",
+        component: <SeasonalSales />,
+      },
+      brandStory: { label: "Brand Story", component: <BrandStories /> },
+      appPromo: { label: "App Promo", component: <AppPromos /> },
+      loyaltyRewards: {
+        label: "Loyalty Rewards",
+        component: <LoyaltyRewards />,
+      },
+      shippingUpdate: {
+        label: "Shipping Update",
+        component: <ShippingUpdates />,
+      },
+      comparisonBlock: {
+        label: "Comparison Block",
+        component: <ComparisonBlocks />,
+      },
+      lookbookGrid: {
+        label: "Lookbook Grid",
+        component: <LookbookGrids />,
+      },
+      orderReceipt: {
+        label: "Order Receipt",
+        component: <OrderReceipts />,
+      },
+      surveyRating: {
+        label: "Survey Rating",
+        component: <SurveyRatings />,
+      },
     },
   },
 };
@@ -81,7 +148,22 @@ const ComponentGroups = {
 export default function ComponentsPage() {
   const [init, setInit] = useState(false);
 
-  const [selectedKey, setSelectedKey] = useState("button");
+  const [selectedKey, setSelectedKey] = useState("text");
+  const contentRef = useRef<HTMLDivElement | null>(null);
+  const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+  const componentItems = useMemo(
+    () =>
+      Object.entries(ComponentGroups).flatMap(([groupKey, group]) =>
+        Object.entries(group.items).map(([key, item]) => ({
+          groupKey,
+          key,
+          label: item.label,
+          component: item.component,
+        })),
+      ),
+    [],
+  );
 
   useEffect(() => {
     EditorCore.auth(process.env.CLIENT_ID as string).then(() => {
@@ -97,18 +179,65 @@ export default function ComponentsPage() {
       },
     });
     setSelectedKey(key);
+
+    sectionRefs.current[key]?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   };
 
-  const findSelectedComponent = () => {
-    for (const groupKey in ComponentGroups) {
-      const group = ComponentGroups[groupKey as keyof typeof ComponentGroups];
-      if (group.items[selectedKey as keyof typeof group.items]) {
-        return (group.items[selectedKey as keyof typeof group.items] as any)
-          .component;
+  useEffect(() => {
+    if (!init) return;
+
+    const scrollContainer = contentRef.current;
+    if (!scrollContainer) return;
+
+    let animationFrame = 0;
+
+    const updateSelectedKey = () => {
+      animationFrame = 0;
+      const containerTop = scrollContainer.getBoundingClientRect().top;
+      const activationOffset = 96;
+      let nextKey = componentItems[0]?.key ?? "text";
+      let closestDistance = Number.POSITIVE_INFINITY;
+
+      componentItems.forEach((item) => {
+        const section = sectionRefs.current[item.key];
+        if (!section) return;
+
+        const distance = section.getBoundingClientRect().top - containerTop;
+        if (distance <= activationOffset) {
+          nextKey = item.key;
+          closestDistance = 0;
+          return;
+        }
+
+        if (closestDistance !== 0 && distance < closestDistance) {
+          closestDistance = distance;
+          nextKey = item.key;
+        }
+      });
+
+      setSelectedKey((currentKey) =>
+        currentKey === nextKey ? currentKey : nextKey,
+      );
+    };
+
+    const handleScroll = () => {
+      if (animationFrame) return;
+      animationFrame = window.requestAnimationFrame(updateSelectedKey);
+    };
+
+    updateSelectedKey();
+    scrollContainer.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      scrollContainer.removeEventListener("scroll", handleScroll);
+      if (animationFrame) {
+        window.cancelAnimationFrame(animationFrame);
       }
-    }
-    return null;
-  };
+    };
+  }, [componentItems, init]);
 
   if (!init) {
     return <FullScreenLoading isFullScreen />;
@@ -159,9 +288,12 @@ export default function ComponentsPage() {
         </Sider>
         <Content>
           <div
+            ref={contentRef}
             style={{
               overflow: "auto",
               background: "#f5f5f5",
+              height: "100%",
+              scrollBehavior: "smooth",
             }}
           >
             <div className="container" style={{ padding: 24 }}>
@@ -170,7 +302,19 @@ export default function ComponentsPage() {
                 size="large"
                 style={{ width: "100%" }}
               >
-                {findSelectedComponent()}
+                {componentItems.map((item) => (
+                  <div
+                    key={`${item.groupKey}-${item.key}`}
+                    ref={(element) => {
+                      sectionRefs.current[item.key] = element;
+                    }}
+                    style={{
+                      scrollMarginTop: 24,
+                    }}
+                  >
+                    {item.component}
+                  </div>
+                ))}
               </Space>
             </div>
           </div>

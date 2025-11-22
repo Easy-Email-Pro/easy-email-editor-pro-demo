@@ -1,49 +1,92 @@
 import { Button, Grid, Space, Table, Typography } from "@arco-design/web-react";
-import { IconDelete } from "@arco-design/web-react/icon";
-import React, { useCallback, useMemo } from "react";
-import { IconDragDotVertical } from "@arco-design/web-react/icon";
+import { IconDelete, IconDragDotVertical } from "@arco-design/web-react/icon";
+import React, { useCallback, useMemo, createContext, useContext } from "react";
 import {
-  SortableContainer,
-  SortableElement,
-  SortableHandle,
-} from "react-sortable-hoc";
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+  DragEndEvent,
+} from "@dnd-kit/core";
+import {
+  arrayMove,
+  SortableContext,
+  sortableKeyboardCoordinates,
+  useSortable,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 import type { ColumnProps } from "@arco-design/web-react/es/Table";
 import { ProductsSheet } from "./ProductsSheet";
 import { ProductItem } from "..";
 import { t } from "easy-email-pro-core";
 import { ProductRecommendationProps } from ".";
 
-const DragHandle = SortableHandle(() => (
-  <IconDragDotVertical
-    style={{
-      cursor: "move",
-      color: "rgb(92 95 98)",
-      fontSize: 20,
-    }}
-  />
-));
+// Context to pass drag handle props to child components
+interface DragHandleContextValue {
+  listeners?: React.HTMLAttributes<HTMLElement>;
+  attributes?: React.HTMLAttributes<HTMLElement>;
+}
 
-const arrayMoveMutate = (array: Array<any>, from: number, to: number) => {
-  const startIndex = to < 0 ? array.length + to : to;
+const DragHandleContext = createContext<DragHandleContextValue>({});
 
-  if (startIndex >= 0 && startIndex < array.length) {
-    const item = array.splice(from, 1)[0];
-    array.splice(startIndex, 0, item);
-  }
+const DragHandle: React.FC = () => {
+  const { listeners, attributes } = useContext(DragHandleContext);
+  console.log(listeners, attributes);
+  return (
+    <div
+      {...listeners}
+      {...attributes}
+      style={{ cursor: "move", display: "flex", alignItems: "center" }}
+    >
+      <IconDragDotVertical
+        style={{
+          color: "rgb(92 95 98)",
+          fontSize: 20,
+        }}
+      />
+    </div>
+  );
 };
 
-const arrayMove = (array: Array<any>, from: number, to: number) => {
-  array = [...array];
-  arrayMoveMutate(array, from, to);
-  return array;
-};
+interface SortableRowProps {
+  id: string;
+  children: React.ReactNode;
+  [key: string]: unknown;
+}
 
-const SortableWrapper = SortableContainer((props: any) => {
-  return <tbody {...props} />;
-});
-const SortableItem = SortableElement((props: any) => {
-  return <tr {...props} />;
-});
+const SortableRow: React.FC<SortableRowProps> = ({ id, children, ...rest }) => {
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id });
+
+  const style: React.CSSProperties = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    opacity: isDragging ? 0.5 : 1,
+  };
+
+  const contextValue = useMemo(
+    () => ({ listeners, attributes }),
+    [listeners, attributes]
+  );
+
+  return (
+    <DragHandleContext.Provider value={contextValue}>
+      <tr {...rest} ref={setNodeRef} style={style} >
+
+        {children}
+      </tr>
+    </DragHandleContext.Provider>
+  );
+};
 
 export function ProductPicker(props: ProductRecommendationProps) {
   const selectedProducts = useMemo(
@@ -63,94 +106,113 @@ export function ProductPicker(props: ProductRecommendationProps) {
     [props]
   );
 
-  const columns: ColumnProps<ProductItem>[] = [
-    {
-      title: t("Content"),
-      render: (_, record) => {
-        return (
-          <Space>
-            <div
-              style={{
-                width: 40,
-                height: 40,
-                backgroundImage: `url(${record.image})`,
-                backgroundSize: "100%",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                border: "1px solid #e8e8e8",
-              }}
-            />
-            <Typography.Text ellipsis style={{ width: 150 }}>
-              {record.title}
-            </Typography.Text>
-          </Space>
-        );
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 5,
       },
-    },
-    {
-      title: t("Action"),
-      render: (_, record) => {
-        return (
-          <Grid.Row style={{ flexWrap: "nowrap" }} justify="end" align="center">
-            <Button
-              onClick={() => onDeleteItem(record.id)}
-              icon={
-                <IconDelete style={{ fontSize: 20, color: "rgb(92 95 98)" }} />
-              }
-            />
-            <Grid.Col span={3} />
-            <DragHandle />
-          </Grid.Row>
-        );
-      },
-    },
-  ];
-
-  const onSortEnd = ({
-    oldIndex,
-    newIndex,
-  }: {
-    oldIndex: number;
-    newIndex: number;
-  }) => {
-    if (oldIndex !== newIndex) {
-      const newData = arrayMove(
-        [...props.selectedIds],
-        oldIndex,
-        newIndex
-      ).filter((el) => !!el);
-      props.onSelect(newData);
-    }
-  };
-
-  const DraggableContainer = (props: any) => (
-    <SortableWrapper
-      useDragHandle
-      onSortEnd={onSortEnd}
-      helperContainer={() =>
-        document.querySelector(".arco-drag-table-container-2 table tbody")
-      }
-      updateBeforeSortStart={({ node }) => {
-        const tds = node.querySelectorAll("td");
-        tds.forEach((td) => {
-          td.style.width = td.clientWidth + "px";
-        });
-      }}
-      {...props}
-    />
+    }),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
   );
 
-  const DraggableRow = (props: any) => {
-    const { record, index, ...rest } = props;
-    return <SortableItem index={index} {...rest} />;
-  };
+  const handleDragEnd = useCallback(
+    (event: DragEndEvent) => {
+      const { active, over } = event;
 
-  const components = {
-    body: {
-      tbody: DraggableContainer,
-      row: DraggableRow,
+      if (over && active.id !== over.id) {
+        const oldIndex = props.selectedIds.indexOf(active.id as string);
+        const newIndex = props.selectedIds.indexOf(over.id as string);
+
+        if (oldIndex !== -1 && newIndex !== -1) {
+          const newData = arrayMove(props.selectedIds, oldIndex, newIndex);
+          props.onSelect(newData);
+        }
+      }
     },
-  };
+    [props]
+  );
+
+  const columns: ColumnProps<ProductItem>[] = useMemo(
+    () => [
+      {
+        title: t("Content"),
+        render: (_: unknown, record: ProductItem) => {
+          return (
+            <Space>
+              <div
+                style={{
+                  width: 40,
+                  height: 40,
+                  backgroundImage: `url(${record.image})`,
+                  backgroundSize: "100%",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  border: "1px solid #e8e8e8",
+                }}
+              />
+              <Typography.Text ellipsis style={{ width: 150 }}>
+                {record.title}
+              </Typography.Text>
+            </Space>
+          );
+        },
+      },
+      {
+        title: t("Action"),
+        render: (_: unknown, record: ProductItem) => {
+          return (
+            <Grid.Row
+              style={{ flexWrap: "nowrap" }}
+              justify="end"
+              align="center"
+            >
+              <Button
+                onClick={() => onDeleteItem(record.id)}
+                icon={
+                  <IconDelete style={{ fontSize: 20, color: "rgb(92 95 98)" }} />
+                }
+              />
+              <Grid.Col span={3} />
+              <DragHandle />
+            </Grid.Row>
+          );
+        },
+      },
+    ],
+    [onDeleteItem]
+  );
+
+  const components = useMemo(
+    () => ({
+      body: {
+        tbody: (tbodyProps: React.HTMLAttributes<HTMLTableSectionElement>) => (
+          <tbody {...tbodyProps} />
+        ),
+        row: (rowProps: {
+          record?: ProductItem;
+          children?: React.ReactNode;
+          [key: string]: unknown;
+        }) => {
+          const { record, children, ...rest } = rowProps;
+          if (!record) {
+            return (
+              <tr {...(rest as React.HTMLAttributes<HTMLTableRowElement>)}>
+                {children}
+              </tr>
+            );
+          }
+          return (
+            <SortableRow id={record.id} {...rest}>
+              {children}
+            </SortableRow>
+          );
+        },
+      },
+    }),
+    []
+  );
 
   return (
     <>
@@ -171,18 +233,31 @@ export function ProductPicker(props: ProductRecommendationProps) {
             </Button>
           </ProductsSheet>
         </Grid.Row>
-        <Table
-          loading={props.loading}
-          rowKey="id"
-          showHeader={false}
-          border={false}
-          className="arco-drag-table-container-2"
-          components={components}
-          columns={columns}
-          data={selectedProducts}
-          pagination={false}
-        />
+        <DndContext
+          sensors={sensors}
+          collisionDetection={closestCenter}
+          onDragEnd={handleDragEnd}
+        >
+          <SortableContext
+            items={props.selectedIds}
+            strategy={verticalListSortingStrategy}
+          >
+            <Table
+              loading={props.loading}
+              rowKey="id"
+              showHeader={false}
+              border={false}
+              className="arco-drag-table-container-2"
+              components={components}
+              columns={columns}
+              data={selectedProducts}
+              pagination={false}
+            />
+          </SortableContext>
+        </DndContext>
       </div>
     </>
   );
 }
+
+

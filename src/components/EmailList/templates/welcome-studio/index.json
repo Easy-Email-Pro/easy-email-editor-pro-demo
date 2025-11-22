@@ -1,0 +1,1029 @@
+{
+    "subject": "Welcome to The Studio",
+    "content": {
+      "type": "page",
+      "data": {
+        "breakpoint": "480px",
+        "globalAttributes": {
+          "font-family": "Arial, sans-serif"
+        },
+        "headStyles": [],
+        "fonts": [],
+        "preheader": "10% off, early access to drops, free shipping over $80."
+      },
+      "attributes": {
+        "margin-top": "0px",
+        "margin-bottom": "0px",
+        "background-color": "#f5f1ea",
+        "width": "600px"
+      },
+      "children": [
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "20px",
+            "padding-bottom": "20px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/h0-_kpep07r_2mewbo_q7_image.png",
+                    "alt": "Logo",
+                    "width": "90px",
+                    "align": "center",
+                    "padding-top": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "LQ0lYSYqSXDK8ZIcAwgkd"
+                }
+              ],
+              "id": "kNzpmWarTTL2lgE4LLqiK"
+            }
+          ],
+          "id": "3_pYjjxxEdHfvAeidEtkN"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "32px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ap6h8yd7imfsd8ojyiwim_image.png",
+                    "alt": "Studio interior",
+                    "border-radius": "4px",
+                    "padding-top": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "LZXTQwJec4jue0sVSwn2z"
+                }
+              ],
+              "id": "E2cjJWQ_rl5tQONxYQxe3"
+            }
+          ],
+          "id": "QG0wTdcIMEa6Ky7ztBXT9"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "32px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "letter-spacing": "0.4em",
+                    "text-transform": "uppercase",
+                    "color": "#8a7d6e",
+                    "padding-bottom": "14px"
+                  },
+                  "children": [
+                    {
+                      "text": "— Welcome to —"
+                    }
+                  ],
+                  "id": "92V9Jp6eids1f8CQ9RPPg"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "56px",
+                    "line-height": "1.05",
+                    "color": "#3d3530",
+                    "font-weight": "400",
+                    "padding-bottom": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "em"
+                      },
+                      "attributes": {
+                        "style": "font-style: italic"
+                      },
+                      "children": [
+                        {
+                          "text": "The Studio,"
+                        }
+                      ],
+                      "id": "nUIdIpv3utPFxsR_Q-w7U"
+                    },
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "br"
+                      },
+                      "attributes": {},
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "lVm_R1L7mw2BVq7KNRO8C"
+                    },
+                    {
+                      "text": "est. 2019"
+                    }
+                  ],
+                  "id": "248kiSC2NDL7DUAi9_W3A"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "14px",
+                    "line-height": "1.7",
+                    "color": "#5a5246"
+                  },
+                  "children": [
+                    {
+                      "text": "A members club for people who care about the things they live with. Welcome — we're glad you're here."
+                    }
+                  ],
+                  "id": "pBMOUO8_pP9Aes8bSb6xI"
+                }
+              ],
+              "id": "-P417Q2Aoff2oxLWlI-UU"
+            }
+          ],
+          "id": "VGD5I6GqvcnoI-y0OsTcz"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#3d3530",
+            "background-image-enabled": true,
+            "padding-top": "36px",
+            "padding-bottom": "36px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "10px",
+                    "letter-spacing": "0.4em",
+                    "text-transform": "uppercase",
+                    "color": "#c5a572",
+                    "padding-bottom": "6px"
+                  },
+                  "children": [
+                    {
+                      "text": "Your member ID"
+                    }
+                  ],
+                  "id": "ux2_VThDxbWr593Nllfgk"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "16px",
+                    "color": "#f5f1ea",
+                    "letter-spacing": "0.2em",
+                    "padding-bottom": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "NC-0048291"
+                    }
+                  ],
+                  "id": "jzbp4BWvTNqe2sBiCB_j9"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "32px",
+                    "font-style": "italic",
+                    "color": "#f5f1ea",
+                    "padding-bottom": "6px"
+                  },
+                  "children": [
+                    {
+                      "text": "A small thank you"
+                    }
+                  ],
+                  "id": "EmRmXxKuXNEMsgy3YhJbX"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "13px",
+                    "color": "#c5a572",
+                    "padding-bottom": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "Use this code on your first order — it's good for 30 days."
+                    }
+                  ],
+                  "id": "wZJDl7BHnso4s3x2-pl78"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "span"
+                      },
+                      "attributes": {
+                        "style": "\n              display: inline-block;\n              padding: 14px 36px;\n              border: 1px dashed #c5a572;\n              font-family: \"JetBrains Mono\", Consolas, monospace;\n              font-size: 18px;\n              letter-spacing: 0.3em;\n              color: #c5a572;\n            "
+                      },
+                      "children": [
+                        {
+                          "text": "WELCOME10"
+                        }
+                      ],
+                      "id": "tpJMBJYw_falQ6q8Kxwdk"
+                    },
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "Jd-hGxmx3DOuT2aN64HCP"
+                }
+              ],
+              "id": "m-8aVPruqroQ562Lyg895"
+            }
+          ],
+          "id": "sboxLLPx232A3dIWEhKoE"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "48px",
+            "padding-bottom": "16px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "letter-spacing": "0.4em",
+                    "text-transform": "uppercase",
+                    "color": "#8a7d6e",
+                    "padding-bottom": "8px"
+                  },
+                  "children": [
+                    {
+                      "text": "As a member"
+                    }
+                  ],
+                  "id": "nGWzgr-EeOxjOrDhB5mp1"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "28px",
+                    "font-style": "italic",
+                    "color": "#3d3530"
+                  },
+                  "children": [
+                    {
+                      "text": "A few good things."
+                    }
+                  ],
+                  "id": "0bgLY87eFn_svNpE7Wwoo"
+                }
+              ],
+              "id": "zDQ2mZVwRCJ5hS6_avYg5"
+            }
+          ],
+          "id": "L8AFur6VWcoQgi2zuHtwG"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "16px",
+            "padding-bottom": "16px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "20%",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "34px",
+                    "font-style": "italic",
+                    "color": "#c5a572",
+                    "padding-top": "4px"
+                  },
+                  "children": [
+                    {
+                      "text": "i."
+                    }
+                  ],
+                  "id": "cNSV2pez7Hlg_9bYaUyR_"
+                }
+              ],
+              "id": "XonbfNSjTqjtQoHT8otHB"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "80%",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "15px",
+                    "font-weight": "600",
+                    "color": "#3d3530",
+                    "padding-bottom": "4px"
+                  },
+                  "children": [
+                    {
+                      "text": "Early access to every drop"
+                    }
+                  ],
+                  "id": "mZMtHlyKA9Nui6xift1fM"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "13px",
+                    "line-height": "1.65",
+                    "color": "#5a5246"
+                  },
+                  "children": [
+                    {
+                      "text": "48 hours before anyone else. Some pieces sell out before they go public."
+                    }
+                  ],
+                  "id": "UykqRGtv4qbVY9fFe7Ltz"
+                }
+              ],
+              "id": "HEZ_3othFGrcruFN4yY69"
+            }
+          ],
+          "id": "ECVtVLahn8-eoIc5Cb_CB"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "20%",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "34px",
+                    "font-style": "italic",
+                    "color": "#c5a572",
+                    "padding-top": "4px"
+                  },
+                  "children": [
+                    {
+                      "text": "ii."
+                    }
+                  ],
+                  "id": "MHi9ot_XGs1OImqjVXj2y"
+                }
+              ],
+              "id": "aBYeXAkbjN5UkAzwzAxx3"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "80%",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "15px",
+                    "font-weight": "600",
+                    "color": "#3d3530",
+                    "padding-bottom": "4px"
+                  },
+                  "children": [
+                    {
+                      "text": "Complimentary shipping over $80"
+                    }
+                  ],
+                  "id": "LIX56DhuarJUwhdbi5IPP"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "13px",
+                    "line-height": "1.65",
+                    "color": "#5a5246"
+                  },
+                  "children": [
+                    {
+                      "text": "In a recycled wool blanket, never plastic."
+                    }
+                  ],
+                  "id": "8Ki3kgBJuMN2lRQOKltO6"
+                }
+              ],
+              "id": "nxTMNAROGDO3Qe2crZlky"
+            }
+          ],
+          "id": "1OkgfHNsgmJRiXBaIj7oX"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "40px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "20%",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "34px",
+                    "font-style": "italic",
+                    "color": "#c5a572",
+                    "padding-top": "4px"
+                  },
+                  "children": [
+                    {
+                      "text": "iii."
+                    }
+                  ],
+                  "id": "lEf9LvzxJy8imYKuXKCy2"
+                }
+              ],
+              "id": "eYb6HM0NeMjT7d9HISy8R"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "80%",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "15px",
+                    "font-weight": "600",
+                    "color": "#3d3530",
+                    "padding-bottom": "4px"
+                  },
+                  "children": [
+                    {
+                      "text": "Workshop invitations"
+                    }
+                  ],
+                  "id": "EFIgksPe9lyJ7J07xN1Ge"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "13px",
+                    "line-height": "1.65",
+                    "color": "#5a5246"
+                  },
+                  "children": [
+                    {
+                      "text": "Pottery, weaving, woodwork — at our makers' studios in Brooklyn and Lisbon."
+                    }
+                  ],
+                  "id": "Gus_wgr6nmlmm-GXNSt2a"
+                }
+              ],
+              "id": "VB6xWasl9mKYk3rn8t4rh"
+            }
+          ],
+          "id": "Iin8UNxybVIcjDEd4c3_z"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "border-top": "1px solid #d8cfc0",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "16px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "letter-spacing": "0.4em",
+                    "text-transform": "uppercase",
+                    "color": "#8a7d6e",
+                    "padding-top": "40px",
+                    "padding-bottom": "8px"
+                  },
+                  "children": [
+                    {
+                      "text": "— Begin here —"
+                    }
+                  ],
+                  "id": "nyuYDWqjIfCpABm8_xYWL"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "28px",
+                    "font-style": "italic",
+                    "color": "#3d3530"
+                  },
+                  "children": [
+                    {
+                      "text": "A few makers we love"
+                    }
+                  ],
+                  "id": "hSqbByXSUz--nz8QFTFAw"
+                }
+              ],
+              "id": "AVqV-PUpIh0tj37BOSb8b"
+            }
+          ],
+          "id": "IlBFgmn91OHECjR_RVD0d"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "16px",
+            "padding-bottom": "16px",
+            "padding-left": "0px",
+            "padding-right": "0px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%"
+              },
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=600&q=80",
+                    "alt": "Hand-thrown ceramics",
+                    "padding-top": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "5px",
+                    "padding-right": "5px",
+                    "fluid-on-mobile": "true"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "POPdkAM1i0LB_WcY2_8hj"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "17px",
+                    "font-style": "italic",
+                    "color": "#3d3530",
+                    "padding-top": "14px",
+                    "padding-bottom": "4px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": "Hand-thrown ceramics"
+                    }
+                  ],
+                  "id": "paWudLlY9koz-mFXL-5lH"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "10px",
+                    "color": "#8a7d6e",
+                    "letter-spacing": "0.2em",
+                    "text-transform": "uppercase",
+                    "padding-top": "0px",
+                    "padding-bottom": "12px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": "Maria · Lisbon"
+                    }
+                  ],
+                  "id": "PntElQ6g5DksJS3yGqnU7"
+                }
+              ],
+              "id": "zgmswiY97m-MWG9oqpvM_"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%"
+              },
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/metoplyhwhpm4_rs8lhc5_c27rs2rx1fnzighhuspnf.png",
+                    "alt": "Oak and ash furniture",
+                    "padding-top": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "5px",
+                    "padding-right": "5px",
+                    "fluid-on-mobile": "true"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "OnLtBHJwltsuXhSiI2oq4"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Cormorant Garamond, Georgia, serif",
+                    "font-size": "17px",
+                    "font-style": "italic",
+                    "color": "#3d3530",
+                    "padding-top": "14px",
+                    "padding-bottom": "4px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": "Oak &amp; ash furniture"
+                    }
+                  ],
+                  "id": "0DiX6-TlGc9flWmUdOy_E"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "10px",
+                    "color": "#8a7d6e",
+                    "letter-spacing": "0.2em",
+                    "text-transform": "uppercase",
+                    "padding-top": "0px",
+                    "padding-bottom": "12px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": "Henrik · Stockholm"
+                    }
+                  ],
+                  "id": "OhXzZYV77jwUP-x0KoLEJ"
+                }
+              ],
+              "id": "_DVwUPInbg3uhN-uFlwjK"
+            }
+          ],
+          "id": "HCgv18lAlho-ohcp6oend"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5f1ea",
+            "background-image-enabled": true,
+            "padding-top": "16px",
+            "padding-bottom": "56px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-button",
+                  "data": {},
+                  "attributes": {
+                    "background-color": "#3d3530",
+                    "color": "#f5f1ea",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "letter-spacing": "0.3em",
+                    "text-transform": "uppercase",
+                    "font-weight": "500",
+                    "border-radius": "0",
+                    "href": "#",
+                    "inner-padding-top": "18px",
+                    "inner-padding-bottom": "18px",
+                    "inner-padding-left": "44px",
+                    "inner-padding-right": "44px"
+                  },
+                  "children": [
+                    {
+                      "text": "Begin shopping →"
+                    }
+                  ],
+                  "id": "D4C-AxHgHxT6TZVneFc0K"
+                }
+              ],
+              "id": "6TF3LR6JBj-b9wSUKSU0P"
+            }
+          ],
+          "id": "8Er0mBVgSXvlPcijrjKTH"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#3d3530",
+            "background-image-enabled": true,
+            "padding-top": "36px",
+            "padding-bottom": "36px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/h0-_kpep07r_2mewbo_q7_image.png",
+                    "alt": "Logo",
+                    "width": "90px",
+                    "align": "center",
+                    "padding-top": "0px",
+                    "padding-bottom": "14px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "OZLab1MS-n01zTXYqcXfa"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "color": "#c5a572",
+                    "padding-bottom": "14px"
+                  },
+                  "children": [
+                    {
+                      "text": "Brooklyn · Lisbon · Online"
+                    }
+                  ],
+                  "id": "PSEvk6YJslMqsZV-7VKVJ"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "10px",
+                    "color": "#8a7d6e",
+                    "line-height": "1.7"
+                  },
+                  "children": [
+                    {
+                      "text": "Manage preferences",
+                      "link": {
+                        "href": "#",
+                        "blank": false
+                      }
+                    },
+                    {
+                      "text": " · "
+                    },
+                    {
+                      "text": "Unsubscribe",
+                      "link": {
+                        "href": "#",
+                        "blank": false
+                      }
+                    }
+                  ],
+                  "id": "AyVndD3dOl9WZPGEF0fZS"
+                }
+              ],
+              "id": "WS1RXMpsBD1cF4OVZczRN"
+            }
+          ],
+          "id": "ZwAG2_VijDHGFGIgaY_WV"
+        }
+      ],
+      "id": "BD6heidF8U4V2sUqYTYX9"
+    }
+  }

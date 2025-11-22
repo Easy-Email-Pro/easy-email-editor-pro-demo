@@ -1,21 +1,13 @@
 import React from "react";
-import { Button, Card, Grid } from "@arco-design/web-react";
+import { Card, Grid } from "@arco-design/web-react";
 import { Layout } from "@arco-design/web-react";
 import "@arco-themes/react-easy-email-pro/css/arco.css";
-import { Space } from "@arco-design/web-react";
-import Logo from "./easy-email-pro.svg";
 
-import { EmailList } from "@/components/EmailList";
 import { PageLayout } from "@/components/PageLayout";
 import { EmailItem } from "@/components/EmailList/EmailItem";
 import SimpleImg from "./images/simple.png";
-import UniversalImg from "./images/universal.png";
-import LocalizationImg from "./images/localization.png";
-import DynamicDataImg from "./images/dynamic-data.png";
 import ResponsiveViewImg from "./images/responsive.png";
 import DynamicCustomBlock from "./images/dynamic-block.png";
-import CustomizeImage from "./images/customize.png";
-import frozenImg from "./images/frozen.png";
 import studioImg from "./images/studio.png";
 import readonlyImg from "./images/readonly.png";
 
@@ -67,9 +59,9 @@ const features = [
     url: "/universal-element",
   },
   {
-    subject: "Universal elements 2",
-    thumbnail: UniversalImg,
-    url: "/universal-element2",
+    subject: "Modern ",
+    thumbnail: 'https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jjsa1t-wcev70i95tpqmy_image.png',
+    url: "/modern",
   },
   {
     subject: "ReadOnly Mode",
@@ -77,10 +69,10 @@ const features = [
     url: "/read-only",
   },
   {
-    subject: "Simple",
+    subject: "AMP",
     thumbnail:
-      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/xhqkdj1da7ssf7m-z8rbj_simple.png",
-    url: "/simple",
+      "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ovzn5deibk9sbcxsipxbs_vertical-version.jpg",
+    url: "/amp-email",
   },
 ];
 

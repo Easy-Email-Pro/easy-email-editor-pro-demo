@@ -1,0 +1,915 @@
+{
+    "subject": "Aero Pro has landed",
+    "content": {
+      "type": "page",
+      "data": {
+        "breakpoint": "480px",
+        "globalAttributes": {
+          "font-family": "Arial, sans-serif"
+        },
+        "headStyles": [],
+        "fonts": [],
+        "preheader": "The thinnest 14\" we've ever built. M5 silicon, 24 hours of\r\n      battery."
+      },
+      "attributes": {
+        "margin-top": "0px",
+        "margin-bottom": "0px",
+        "background-color": "#0a0a0c",
+        "width": "600px"
+      },
+      "children": [
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0a0a0c",
+            "border-bottom": "1px solid #1f1f23",
+            "background-image-enabled": true,
+            "padding-top": "18px",
+            "padding-bottom": "18px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "vertical-align": "middle"
+              },
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ay830x-udlljmvkq1gdg5_image.png",
+                    "alt": "Logo",
+                    "width": "90px",
+                    "align": "left",
+                    "padding-top": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "sX5MdFKBZnUlpY9KUfOCW"
+                }
+              ],
+              "id": "ZR0nb5lN8-hle_-a_WE6u"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "vertical-align": "middle"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "right",
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "10px",
+                    "color": "#fdf9f4",
+                    "letter-spacing": "0.05em"
+                  },
+                  "children": [
+                    {
+                      "text": "v3.0 · APR 29 · 09:00 PT"
+                    }
+                  ],
+                  "id": "mm-g4OxK1HEJwPLsWatuG"
+                }
+              ],
+              "id": "sgF2LCF0qIFLADao0iIXN"
+            }
+          ],
+          "id": "h1tUQKlOgZIDjPJQu__vK"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0a0a0c",
+            "background-image-enabled": true,
+            "padding-top": "72px",
+            "padding-bottom": "32px",
+            "padding-left": "0px",
+            "padding-right": "0px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "padding-bottom": "28px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "span"
+                      },
+                      "attributes": {
+                        "style": "\n              display: inline-block;\n              padding: 6px 12px;\n              background: rgba(110, 142, 251, 0.15);\n              border: 1px solid rgba(110, 142, 251, 0.4);\n              border-radius: 999px;\n              font-family: \"JetBrains Mono\", Consolas, monospace;\n              font-size: 11px;\n              color: #a8b8ff;\n              letter-spacing: 0.05em;\n            "
+                      },
+                      "children": [
+                        {
+                          "text": "● Now shipping"
+                        }
+                      ],
+                      "id": "rUsy0dGa-24zpiy7BhNKx"
+                    },
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "-RU7lA94iqIRVhN0sqzvB"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "62px",
+                    "line-height": "0.95",
+                    "color": "#ffffff",
+                    "font-weight": "600",
+                    "letter-spacing": "-0.04em",
+                    "padding-bottom": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "Aero Pro"
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "br"
+                      },
+                      "attributes": {},
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "wOJabsSJ-1wn-RPH1314_"
+                    },
+                    {
+                      "text": "has landed."
+                    }
+                  ],
+                  "id": "RNFbOVNawY0FLJQIXZpIz"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "16px",
+                    "line-height": "1.55",
+                    "color": "#a8a6a3",
+                    "padding-bottom": "36px"
+                  },
+                  "children": [
+                    {
+                      "text": "The thinnest 14\" we've ever built. M5 silicon, 24 hours of battery, and a display that disappears into anything you make."
+                    }
+                  ],
+                  "id": "a3LRn1C0kERBGCaHLKJFr"
+                }
+              ],
+              "id": "jjTvO8-9csVvgt656S6ro"
+            }
+          ],
+          "id": "yi9qz1shzPkJaLZhz-Pn6"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0a0a0c",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "16px",
+            "padding-left": "0px",
+            "padding-right": "0px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%"
+              },
+              "children": [
+                {
+                  "type": "standard-button",
+                  "data": {},
+                  "attributes": {
+                    "background-color": "#ffffff",
+                    "color": "#0a0a0c",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "14px",
+                    "font-weight": "600",
+                    "border-radius": "8px",
+                    "href": "#",
+                    "align": "left",
+                    "inner-padding-top": "14px",
+                    "inner-padding-bottom": "14px",
+                    "inner-padding-left": "28px",
+                    "inner-padding-right": "28px"
+                  },
+                  "children": [
+                    {
+                      "text": "Order now"
+                    }
+                  ],
+                  "id": "BHTlPFI-rgKwBRP43psxj"
+                }
+              ],
+              "id": "b2eH-RCEKQrTrPNAj55PV"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%"
+              },
+              "children": [
+                {
+                  "type": "standard-button",
+                  "data": {},
+                  "attributes": {
+                    "background-color": "transparent",
+                    "color": "#e8e6e3",
+                    "border": "1px solid #2a2a32",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "14px",
+                    "font-weight": "500",
+                    "border-radius": "8px",
+                    "href": "#",
+                    "align": "left",
+                    "border-enabled": true,
+                    "inner-padding-top": "14px",
+                    "inner-padding-bottom": "14px",
+                    "inner-padding-left": "28px",
+                    "inner-padding-right": "28px"
+                  },
+                  "children": [
+                    {
+                      "text": "Watch the film →"
+                    }
+                  ],
+                  "id": "AeV-x_LahlDP8LtuVcT3A"
+                }
+              ],
+              "id": "poYGd76gUR7cmAO326tMa"
+            }
+          ],
+          "id": "ekNUaegDIl83qozES6weh"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0a0a0c",
+            "background-image-enabled": true,
+            "padding-top": "16px",
+            "padding-bottom": "32px",
+            "padding-left": "24px",
+            "padding-right": "24px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jfbhmw9cb6zgj4ku6i3bz_tlf6jbukejtbsg-wh5xhq.png",
+                    "alt": "Aero Pro",
+                    "border-radius": "16px",
+                    "padding-top": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "SCZ-uWd_nsR6N714Og6S_"
+                }
+              ],
+              "id": "CNuvYIFtibWpw8M5F7W74"
+            }
+          ],
+          "id": "az8JfByFa2P2V1BRrvnC3"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0a0a0c",
+            "background-image-enabled": true,
+            "padding-top": "8px",
+            "padding-bottom": "16px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "11px",
+                    "color": "#6a6a72",
+                    "letter-spacing": "0.15em",
+                    "text-transform": "uppercase",
+                    "padding-bottom": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "// Specifications"
+                    }
+                  ],
+                  "id": "vjOTxOCJdErEsgrGwsGMf"
+                }
+              ],
+              "id": "wVoSd38wXsBUFg06aXo8i"
+            }
+          ],
+          "id": "NzLaQLa0UznwJiRr3q1yq"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0f0f12",
+            "border": "1px solid #1f1f23",
+            "border-radius": "8px",
+            "background-image-enabled": true,
+            "border-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "border-right": "1px solid #1f1f23",
+                "border-bottom": "1px solid #1f1f23"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "11px",
+                    "color": "#6a6a72",
+                    "letter-spacing": "0.05em",
+                    "padding-top": "18px",
+                    "padding-bottom": "18px",
+                    "padding-left": "20px",
+                    "padding-right": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "Chip"
+                    }
+                  ],
+                  "id": "dQ8Og3bKEKJ2gym7nBa17"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "18px",
+                    "color": "#ffffff",
+                    "font-weight": "500",
+                    "padding-top": "0px",
+                    "padding-bottom": "18px",
+                    "padding-left": "20px",
+                    "padding-right": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "M5 · 12-core"
+                    }
+                  ],
+                  "id": "liO4kL4vUg8foI5DAe6Uo"
+                }
+              ],
+              "id": "_sngYKMN3Nrwv_TBA_Qal"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "border-bottom": "1px solid #1f1f23"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "11px",
+                    "color": "#6a6a72",
+                    "letter-spacing": "0.05em",
+                    "padding-top": "18px",
+                    "padding-bottom": "18px",
+                    "padding-left": "20px",
+                    "padding-right": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "Display"
+                    }
+                  ],
+                  "id": "2w4XisN1YS06AcyP0LXWd"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "18px",
+                    "color": "#ffffff",
+                    "font-weight": "500",
+                    "padding-top": "0px",
+                    "padding-bottom": "18px",
+                    "padding-left": "20px",
+                    "padding-right": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "14.2\" Liquid Retina"
+                    }
+                  ],
+                  "id": "Rj2qCqLj1xNhqyhyXaQR8"
+                }
+              ],
+              "id": "9bw3qOK69MWPWb5aW-bJe"
+            }
+          ],
+          "id": "5SBrTb3XsPNjtbTMD0I9h"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0f0f12",
+            "border": "1px solid #1f1f23",
+            "border-top": "0",
+            "border-radius": "0 0 8px 8px",
+            "background-image-enabled": true,
+            "border-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%",
+                "border-right": "1px solid #1f1f23"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "11px",
+                    "color": "#6a6a72",
+                    "letter-spacing": "0.05em",
+                    "padding-top": "18px",
+                    "padding-bottom": "18px",
+                    "padding-left": "20px",
+                    "padding-right": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "Battery"
+                    }
+                  ],
+                  "id": "LOmNQz1OuLEqLMm8_HE0K"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "18px",
+                    "color": "#ffffff",
+                    "font-weight": "500",
+                    "padding-top": "0px",
+                    "padding-bottom": "18px",
+                    "padding-left": "20px",
+                    "padding-right": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "24 hours"
+                    }
+                  ],
+                  "id": "et_Z2oxVhMbHO0YUQxooC"
+                }
+              ],
+              "id": "ltKdzZNErPuY20j8CEZ1X"
+            },
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {
+                "width": "50%"
+              },
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "11px",
+                    "color": "#6a6a72",
+                    "letter-spacing": "0.05em",
+                    "padding-top": "18px",
+                    "padding-bottom": "18px",
+                    "padding-left": "20px",
+                    "padding-right": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "Weight"
+                    }
+                  ],
+                  "id": "4d0KN70pdB_w1ok1icVWg"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "18px",
+                    "color": "#ffffff",
+                    "font-weight": "500",
+                    "padding-top": "0px",
+                    "padding-bottom": "18px",
+                    "padding-left": "20px",
+                    "padding-right": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "1.21 kg"
+                    }
+                  ],
+                  "id": "TlXKt7CZbYqnhQjeS9Rhi"
+                }
+              ],
+              "id": "aTTDrSrJtrkN4j1SEf1ML"
+            }
+          ],
+          "id": "2PNsacD6i-oFbCYb97wst"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0a0a0c",
+            "border-top": "1px solid #1f1f23",
+            "background-image-enabled": true,
+            "padding-top": "40px",
+            "padding-bottom": "40px",
+            "padding-left": "0px",
+            "padding-right": "0px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "11px",
+                    "color": "#6a6a72",
+                    "letter-spacing": "0.15em",
+                    "text-transform": "uppercase",
+                    "padding-bottom": "14px"
+                  },
+                  "children": [
+                    {
+                      "text": "// Built for makers"
+                    }
+                  ],
+                  "id": "T_6B4V8Kk-7jAgEhBDGEG"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "22px",
+                    "color": "#ffffff",
+                    "line-height": "1.3",
+                    "padding-bottom": "14px",
+                    "letter-spacing": "-0.01em"
+                  },
+                  "children": [
+                    {
+                      "text": "Six years. Forty-three prototypes. One question: what does a laptop need to disappear?"
+                    }
+                  ],
+                  "id": "aCticXJleu5xihifspVml"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "14px",
+                    "line-height": "1.7",
+                    "color": "#a8a6a3"
+                  },
+                  "children": [
+                    {
+                      "text": "We're a 28-person studio in Stockholm. We make tools that get out of the way — quietly powered, repairable, made to last a decade."
+                    }
+                  ],
+                  "id": "sVWwAzK1IxxV6PSUPsQYG"
+                }
+              ],
+              "id": "rlBfv1OW5yySh6InnWX5W"
+            }
+          ],
+          "id": "6fas4tgw2ZEFflfBDguYi"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0a0a0c",
+            "border-top": "1px solid #1f1f23",
+            "background-image-enabled": true,
+            "padding-top": "32px",
+            "padding-bottom": "32px",
+            "padding-left": "0px",
+            "padding-right": "0px"
+          },
+          "children": [
+            {
+              "type": "standard-group",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "60%",
+                    "vertical-align": "middle"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-family": "JetBrains Mono, Consolas, monospace",
+                        "font-size": "11px",
+                        "color": "#6a6a72",
+                        "letter-spacing": "0.1em",
+                        "text-transform": "uppercase"
+                      },
+                      "children": [
+                        {
+                          "text": "Starting at"
+                        }
+                      ],
+                      "id": "_xm8w-5OJ20_dZxt4G5_Y"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "32px",
+                        "font-weight": "600",
+                        "color": "#ffffff",
+                        "letter-spacing": "-0.02em",
+                        "padding-top": "4px"
+                      },
+                      "children": [
+                        {
+                          "text": "$1,499 "
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "font-size: 14px; color: #6a6a72; font-weight: 400"
+                          },
+                          "children": [
+                            {
+                              "text": "or $42/mo"
+                            }
+                          ],
+                          "id": "o83NNnAyug-G5FoiH9J4i"
+                        },
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "MkrWFTqsx-JPvlZcbMPNh"
+                    }
+                  ],
+                  "id": "JzJ-yJixQjICON_fY_1KR"
+                },
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "40%",
+                    "vertical-align": "middle"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-button",
+                      "data": {},
+                      "attributes": {
+                        "background-color": "#6e8efb",
+                        "color": "#ffffff",
+                        "font-family": "Inter, sans-serif",
+                        "font-size": "13px",
+                        "font-weight": "600",
+                        "border-radius": "8px",
+                        "href": "#",
+                        "align": "right",
+                        "inner-padding-top": "12px",
+                        "inner-padding-bottom": "12px",
+                        "inner-padding-left": "24px",
+                        "inner-padding-right": "24px"
+                      },
+                      "children": [
+                        {
+                          "text": "Configure →"
+                        }
+                      ],
+                      "id": "EYXyOpdANCwzyIWe3MesH"
+                    }
+                  ],
+                  "id": "kTpzkJoiEoBTCHcnXkTR-"
+                }
+              ],
+              "mobileAttributes": {},
+              "id": "DwfdrfzNIuiNVGmOKZmrt"
+            }
+          ],
+          "id": "xMc0eh_PfVRjccsnKPOWC"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#0a0a0c",
+            "background-image-enabled": true,
+            "padding-top": "40px",
+            "padding-bottom": "32px",
+            "padding-left": "0px",
+            "padding-right": "0px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ay830x-udlljmvkq1gdg5_image.png",
+                    "alt": "Logo",
+                    "width": "90px",
+                    "align": "center",
+                    "padding-top": "0px",
+                    "padding-bottom": "16px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "CQ-UNw82U4wa3IkDtbvFO"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "JetBrains Mono, Consolas, monospace",
+                    "font-size": "10px",
+                    "letter-spacing": "0.1em",
+                    "color": "#6a6a72",
+                    "padding-bottom": "16px"
+                  },
+                  "children": [
+                    {
+                      "text": "Twitter · GitHub · Discord · YouTube"
+                    }
+                  ],
+                  "id": "PB54kRbs8-mPdPqtlzvi2"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "11px",
+                    "color": "#6a6a72",
+                    "line-height": "1.7"
+                  },
+                  "children": [
+                    {
+                      "text": "You're receiving product news from your brand."
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "br"
+                      },
+                      "attributes": {},
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "QG15Ia3vVwumjOAlj8n1x"
+                    },
+                    {
+                      "text": "548 Market St, San Francisco · "
+                    },
+                    {
+                      "text": "Unsubscribe",
+                      "link": {
+                        "href": "#",
+                        "blank": false
+                      }
+                    }
+                  ],
+                  "id": "mKXaFx5SUZoQwcarJC1CV"
+                }
+              ],
+              "id": "M9f2AstIsQSCj1s-Q3yMu"
+            }
+          ],
+          "id": "V_iKTdNNzn4lRTMq1Xhuv"
+        }
+      ],
+      "id": "JCHznQNtip8zb1ihMxUqw"
+    }
+  }

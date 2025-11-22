@@ -1,0 +1,1115 @@
+{
+    "subject": "Up to 40% off for 48 hours",
+    "content": {
+      "type": "page",
+      "data": {
+        "breakpoint": "480px",
+        "globalAttributes": {
+          "font-family": "Arial, sans-serif"
+        },
+        "headStyles": [],
+        "fonts": [],
+        "preheader": "Bestsellers, refills, and the new Velvet Serum — discounted for 48\r\n      hours."
+      },
+      "attributes": {
+        "margin-top": "0px",
+        "margin-bottom": "0px",
+        "background-color": "#fdf9f4",
+        "width": "600px"
+      },
+      "children": [
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#2a201a",
+            "background-image-enabled": true,
+            "padding-top": "14px",
+            "padding-bottom": "14px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "color": "#fdf9f4",
+                    "font-size": "11px",
+                    "letter-spacing": "0.2em",
+                    "text-transform": "uppercase",
+                    "font-family": "Inter, sans-serif"
+                  },
+                  "children": [
+                    {
+                      "text": "Free shipping over $50 · 30-day returns"
+                    }
+                  ],
+                  "id": "KPqrI0cEYftM_5KRSEtwA"
+                }
+              ],
+              "id": "VsiFLtV1jkJA6WG7Bzur9"
+            }
+          ],
+          "id": "f_TNyHQHQX3Wz0tmnso_q"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#fdf9f4",
+            "border-bottom": "1px solid #f0e8dd",
+            "background-image-enabled": true,
+            "padding-top": "28px",
+            "padding-bottom": "28px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jnejfwg4myxugu2u8d2uh_image.png",
+                    "alt": "Logo",
+                    "width": "300px",
+                    "align": "center",
+                    "padding-top": "0px",
+                    "padding-bottom": "0px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "yMk-dOnlUp0wQJFGpDQlv"
+                }
+              ],
+              "id": "SET-ZqJ2N9U7j6aDyCh0A"
+            }
+          ],
+          "id": "s5EC8UH0HJAjbypD3Vjn6"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5ead8",
+            "background-image-enabled": true,
+            "padding-top": "56px",
+            "padding-bottom": "48px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "color": "#c96442",
+                    "font-size": "11px",
+                    "letter-spacing": "0.4em",
+                    "text-transform": "uppercase",
+                    "font-weight": "500",
+                    "font-family": "Inter, sans-serif",
+                    "padding-bottom": "20px"
+                  },
+                  "children": [
+                    {
+                      "text": "★ 48 hours only ★"
+                    }
+                  ],
+                  "id": "ezvRbRLv2KWduLZ_0eCCv"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Fraunces, Georgia, serif",
+                    "font-size": "64px",
+                    "line-height": "1",
+                    "color": "#2a201a",
+                    "padding-bottom": "16px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "em"
+                      },
+                      "attributes": {
+                        "style": "font-style: italic"
+                      },
+                      "children": [
+                        {
+                          "text": "Up to"
+                        }
+                      ],
+                      "id": "yNXv0YdXQaB9SB1cS0Wp6"
+                    },
+                    {
+                      "text": " 40"
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "span"
+                      },
+                      "attributes": {
+                        "style": "font-size: 36px; vertical-align: top"
+                      },
+                      "children": [
+                        {
+                          "text": "%"
+                        }
+                      ],
+                      "id": "rs2h9GEQwlLC-yB8R0Yf7"
+                    },
+                    {
+                      "text": " off"
+                    }
+                  ],
+                  "id": "RSPONiqYzjyFWPoanvT1P"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "15px",
+                    "line-height": "1.6",
+                    "color": "#5a4a3a",
+                    "padding-bottom": "32px"
+                  },
+                  "children": [
+                    {
+                      "text": "Bestsellers, refills, and the new Velvet Serum — discounted while quantities last."
+                    }
+                  ],
+                  "id": "5YsmRTogu4zR4lftEXqwF"
+                },
+                {
+                  "type": "standard-button",
+                  "data": {},
+                  "attributes": {
+                    "background-color": "#c96442",
+                    "color": "#ffffff",
+                    "border-radius": "999px",
+                    "font-size": "13px",
+                    "letter-spacing": "0.15em",
+                    "text-transform": "uppercase",
+                    "font-weight": "600",
+                    "font-family": "Inter, sans-serif",
+                    "href": "#",
+                    "inner-padding-top": "18px",
+                    "inner-padding-bottom": "18px",
+                    "inner-padding-left": "44px",
+                    "inner-padding-right": "44px"
+                  },
+                  "children": [
+                    {
+                      "text": "Shop the sale →"
+                    }
+                  ],
+                  "id": "Q074HeihbStOG-3WLQAYv"
+                }
+              ],
+              "id": "jgJzNL4BEi6KSylS03IW8"
+            }
+          ],
+          "id": "rQFYKloMmkY3OiddeR5Ow"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#fdf9f4",
+            "background-image-enabled": true,
+            "padding-top": "32px",
+            "padding-bottom": "32px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-paragraph",
+                  "data": {},
+                  "attributes": {
+                    "padding-top": "10px",
+                    "padding-bottom": "10px",
+                    "padding-left": "10px",
+                    "padding-right": "10px",
+                    "font-size": "10px",
+                    "letter-spacing": "3px",
+                    "color": "#858280",
+                    "font-family": "Arial"
+                  },
+                  "children": [
+                    {
+                      "text": "USE CODE AT CHECKOUT"
+                    }
+                  ],
+                  "id": "SJ66lnZHoCSyts5-FJFEH"
+                },
+                {
+                  "type": "standard-button",
+                  "data": {
+                    "content": "Button"
+                  },
+                  "attributes": {
+                    "padding-top": "10px",
+                    "padding-bottom": "10px",
+                    "padding-left": "0px",
+                    "padding-right": "0px",
+                    "border-enabled": true,
+                    "border-color": "#c96441",
+                    "background-color": "#fdf9f4",
+                    "color": "#c96441",
+                    "font-size": "24px",
+                    "border-style": "dashed",
+                    "inner-padding-top": "30px",
+                    "inner-padding-bottom": "30px",
+                    "inner-padding-left": "64px",
+                    "inner-padding-right": "64px"
+                  },
+                  "children": [
+                    {
+                      "text": "SPRING40"
+                    }
+                  ],
+                  "id": "X3mLR1FMRsrgkSB-R1sfY"
+                }
+              ],
+              "id": "0pYPUp3u6UMUjj12aU_3q"
+            }
+          ],
+          "id": "JUElzotoeXZ9hWZ1GoTjf"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#fdf9f4",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "24px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-size": "11px",
+                    "letter-spacing": "0.3em",
+                    "text-transform": "uppercase",
+                    "color": "#7a6a5a",
+                    "font-family": "Inter, sans-serif",
+                    "padding-bottom": "8px"
+                  },
+                  "children": [
+                    {
+                      "text": "Most-loved"
+                    }
+                  ],
+                  "id": "7eL6ixzPQxuA-sBhVkuEU"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Fraunces, Georgia, serif",
+                    "font-size": "32px",
+                    "font-style": "italic",
+                    "color": "#2a201a"
+                  },
+                  "children": [
+                    {
+                      "text": "Best sellers"
+                    }
+                  ],
+                  "id": "8D1XkHSNWZFpT5O52pR0_"
+                }
+              ],
+              "id": "nQ_SWN3gXYYv3d3GoASdV"
+            }
+          ],
+          "id": "k4vMjQUA4P-Wu40UBv_vl"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#fdf9f4",
+            "background-image-enabled": true,
+            "padding-top": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "padding-right": "0px"
+          },
+          "children": [
+            {
+              "type": "standard-group",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "50%",
+                    "padding-left": "10px",
+                    "padding-right": "5px"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-image",
+                      "data": {},
+                      "attributes": {
+                        "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/wdago5b3f1ae5eqwcixi3_image.png",
+                        "alt": "Velvet Serum",
+                        "border-radius": "8px",
+                        "padding-top": "0px",
+                        "padding-bottom": "0px",
+                        "padding-left": "0px",
+                        "padding-right": "0px",
+                        "width": "533px"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "m5jS3plEOKiXjS3Co47Jz"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "14px",
+                        "font-weight": "600",
+                        "font-family": "Inter, sans-serif",
+                        "color": "#2a201a",
+                        "padding-top": "12px",
+                        "padding-bottom": "4px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "Velvet Serum"
+                        }
+                      ],
+                      "id": "txgTq_eVmnRvN_xY7I1wC"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "11px",
+                        "color": "#9a8a7a",
+                        "font-family": "Inter, sans-serif",
+                        "padding-top": "0px",
+                        "padding-bottom": "4px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "30 ml"
+                        }
+                      ],
+                      "id": "dHuPFXZwEagt5CpUufFsR"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "14px",
+                        "font-family": "Inter, sans-serif",
+                        "padding-top": "0px",
+                        "padding-bottom": "8px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "font-weight: 600; color: #c96442"
+                          },
+                          "children": [
+                            {
+                              "text": "$41"
+                            }
+                          ],
+                          "id": "uFpmeU2m9md0lvkT4ZAfY"
+                        },
+                        {
+                          "text": " "
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "\n              text-decoration: line-through;\n              color: #9a8a7a;\n              font-size: 12px;\n              margin-left: 6px;\n            "
+                          },
+                          "children": [
+                            {
+                              "text": "$68"
+                            }
+                          ],
+                          "id": "aBFyS65M_ywjbSoHVk2ts"
+                        },
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "8s3OHk4F5gZXnSP53vBaX"
+                    }
+                  ],
+                  "id": "xSGdXfywP-NZS4445p4zh"
+                },
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "50%",
+                    "padding-left": "5px",
+                    "padding-right": "10px"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-image",
+                      "data": {},
+                      "attributes": {
+                        "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/qdgr8qcn08oqq_m_ujulj_image.png",
+                        "alt": "Honey Cleanser",
+                        "border-radius": "8px",
+                        "padding-top": "0px",
+                        "padding-bottom": "0px",
+                        "padding-left": "0px",
+                        "padding-right": "0px",
+                        "width": "533px"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "N8xjIeMxJcls_To0WhzY7"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "14px",
+                        "font-weight": "600",
+                        "font-family": "Inter, sans-serif",
+                        "color": "#2a201a",
+                        "padding-top": "12px",
+                        "padding-bottom": "4px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "Honey Cleanser"
+                        }
+                      ],
+                      "id": "HkLD0clGaNU4wDlvF7roY"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "11px",
+                        "color": "#9a8a7a",
+                        "font-family": "Inter, sans-serif",
+                        "padding-top": "0px",
+                        "padding-bottom": "4px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "150 ml"
+                        }
+                      ],
+                      "id": "wG8iGzT1xqKRdDkdnDGGE"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "14px",
+                        "font-family": "Inter, sans-serif",
+                        "padding-top": "0px",
+                        "padding-bottom": "8px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "font-weight: 600; color: #c96442"
+                          },
+                          "children": [
+                            {
+                              "text": "$24"
+                            }
+                          ],
+                          "id": "AxGQ_vUFQVOqXlRiNNGFH"
+                        },
+                        {
+                          "text": " "
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "\n              text-decoration: line-through;\n              color: #9a8a7a;\n              font-size: 12px;\n              margin-left: 6px;\n            "
+                          },
+                          "children": [
+                            {
+                              "text": "$36"
+                            }
+                          ],
+                          "id": "01U8nr7GYIINUZHfc-zEU"
+                        },
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "4I7-JsVoSzca30q_UcLht"
+                    }
+                  ],
+                  "id": "h-nvHLLdKxCNVhSWBnY-4"
+                }
+              ],
+              "mobileAttributes": {},
+              "id": "e5bu-qKxbhlr_YZM-ZNNn"
+            }
+          ],
+          "id": "n5nXybBd2YWOiK1eNdqr2"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#fdf9f4",
+            "background-image-enabled": true,
+            "padding-top": "8px",
+            "padding-bottom": "40px",
+            "padding-left": "0px",
+            "padding-right": "0px"
+          },
+          "children": [
+            {
+              "type": "standard-group",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "50%",
+                    "padding-left": "10px",
+                    "padding-right": "5px"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-image",
+                      "data": {},
+                      "attributes": {
+                        "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jgwuczwqbqek2yvxcpp0x_image.png",
+                        "alt": "Rose Mist",
+                        "border-radius": "8px",
+                        "padding-top": "0px",
+                        "padding-bottom": "0px",
+                        "padding-left": "0px",
+                        "padding-right": "0px",
+                        "width": "533px"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "IRFWHX8dbjjHwfYRl9SN1"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "14px",
+                        "font-weight": "600",
+                        "font-family": "Inter, sans-serif",
+                        "color": "#2a201a",
+                        "padding-top": "12px",
+                        "padding-bottom": "4px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "Rose Mist"
+                        }
+                      ],
+                      "id": "KsGDw_3SPDkCPTwKFUgAx"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "11px",
+                        "color": "#9a8a7a",
+                        "font-family": "Inter, sans-serif",
+                        "padding-top": "0px",
+                        "padding-bottom": "4px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "100 ml"
+                        }
+                      ],
+                      "id": "2jlNdQT_kEzIVkUJHB00S"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "14px",
+                        "font-family": "Inter, sans-serif",
+                        "padding-top": "0px",
+                        "padding-bottom": "8px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "font-weight: 600; color: #c96442"
+                          },
+                          "children": [
+                            {
+                              "text": "$18"
+                            }
+                          ],
+                          "id": "F721slPd_Bq71zTSOvVxQ"
+                        },
+                        {
+                          "text": " "
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "\n              text-decoration: line-through;\n              color: #9a8a7a;\n              font-size: 12px;\n              margin-left: 6px;\n            "
+                          },
+                          "children": [
+                            {
+                              "text": "$28"
+                            }
+                          ],
+                          "id": "2Q5WW3bYBIoqBGcquDedp"
+                        },
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "IEkh0sxq6rSdUIBnrncgz"
+                    }
+                  ],
+                  "id": "6LelY-jGNtPVlfFV4xGwX"
+                },
+                {
+                  "type": "standard-column",
+                  "data": {},
+                  "attributes": {
+                    "width": "50%",
+                    "padding-left": "5px",
+                    "padding-right": "10px"
+                  },
+                  "children": [
+                    {
+                      "type": "standard-image",
+                      "data": {},
+                      "attributes": {
+                        "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/oremkfwez99gogyzzbf11_1lz_dippgyc6lefkd-tho.png",
+                        "alt": "Lip Balm",
+                        "border-radius": "8px",
+                        "padding-top": "0px",
+                        "padding-bottom": "0px",
+                        "padding-left": "0px",
+                        "padding-right": "0px"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "Zl-ABGRJX6uBZ0xyIkR_k",
+                      "mobileAttributes": {}
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "14px",
+                        "font-weight": "600",
+                        "font-family": "Inter, sans-serif",
+                        "color": "#2a201a",
+                        "padding-top": "12px",
+                        "padding-bottom": "4px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "Lip Balm No.3"
+                        }
+                      ],
+                      "id": "3Iub2zVUjO6uzvLFT1SAU"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "11px",
+                        "color": "#9a8a7a",
+                        "font-family": "Inter, sans-serif",
+                        "padding-top": "0px",
+                        "padding-bottom": "4px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": "15 ml"
+                        }
+                      ],
+                      "id": "XrqMn0r4FGNJ9IRAKvJyl"
+                    },
+                    {
+                      "type": "standard-text",
+                      "data": {},
+                      "attributes": {
+                        "font-size": "14px",
+                        "font-family": "Inter, sans-serif",
+                        "padding-top": "0px",
+                        "padding-bottom": "8px",
+                        "padding-left": "8px",
+                        "padding-right": "8px"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "font-weight: 600; color: #c96442"
+                          },
+                          "children": [
+                            {
+                              "text": "$12"
+                            }
+                          ],
+                          "id": "Q0czZhEC1I1J2LIPrMHMK"
+                        },
+                        {
+                          "text": " "
+                        },
+                        {
+                          "type": "html-node",
+                          "data": {
+                            "tagName": "span"
+                          },
+                          "attributes": {
+                            "style": "\n              text-decoration: line-through;\n              color: #9a8a7a;\n              font-size: 12px;\n              margin-left: 6px;\n            "
+                          },
+                          "children": [
+                            {
+                              "text": "$18"
+                            }
+                          ],
+                          "id": "cX_evzDpkpjhKh3XdtgNP"
+                        },
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "N4fN68cGRIZyU69yCYhJ5"
+                    }
+                  ],
+                  "id": "dRJgGHpfiXIJkF5fhXoPo"
+                }
+              ],
+              "mobileAttributes": {},
+              "id": "QpRzz8eAIYAYs70O8BGqw"
+            }
+          ],
+          "id": "xtgdMb9sp7iYe-WV98a4z"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#f5ead8",
+            "background-image-enabled": true,
+            "padding-top": "40px",
+            "padding-bottom": "40px",
+            "padding-left": "40px",
+            "padding-right": "40px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-size": "11px",
+                    "letter-spacing": "0.3em",
+                    "text-transform": "uppercase",
+                    "color": "#c96442",
+                    "font-family": "Inter, sans-serif",
+                    "padding-bottom": "14px",
+                    "font-weight": "600"
+                  },
+                  "children": [
+                    {
+                      "text": "Our story"
+                    }
+                  ],
+                  "id": "A7i-J2qsdwz45inALVvMz"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Fraunces, Georgia, serif",
+                    "font-size": "24px",
+                    "font-style": "italic",
+                    "color": "#2a201a",
+                    "padding-bottom": "14px"
+                  },
+                  "children": [
+                    {
+                      "text": "Skincare, simply made."
+                    }
+                  ],
+                  "id": "F0LMlkpN0wP1kDz2BkGZe"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-family": "Inter, sans-serif",
+                    "font-size": "14px",
+                    "line-height": "1.7",
+                    "color": "#5a4a3a"
+                  },
+                  "children": [
+                    {
+                      "text": "We started in a Marseille kitchen in 2018. Today, every formula still ships from our small lab in Provence — six ingredients or fewer, no shortcuts."
+                    }
+                  ],
+                  "id": "RIyqzqKrQNLRQC1xt7jJQ"
+                }
+              ],
+              "id": "JgwUE1LMRZbbFiICHJM0q"
+            }
+          ],
+          "id": "KuAReykffe2C7Hkx4kgry"
+        },
+        {
+          "type": "standard-section",
+          "data": {},
+          "attributes": {
+            "background-color": "#fdf9f4",
+            "border-top": "1px solid #f0e8dd",
+            "background-image-enabled": true,
+            "padding-top": "32px",
+            "padding-bottom": "32px",
+            "padding-left": "32px",
+            "padding-right": "32px"
+          },
+          "children": [
+            {
+              "type": "standard-column",
+              "data": {},
+              "attributes": {},
+              "children": [
+                {
+                  "type": "standard-image",
+                  "data": {},
+                  "attributes": {
+                    "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jnejfwg4myxugu2u8d2uh_image.png",
+                    "alt": "Logo",
+                    "width": "90px",
+                    "align": "center",
+                    "padding-top": "0px",
+                    "padding-bottom": "14px",
+                    "padding-left": "0px",
+                    "padding-right": "0px"
+                  },
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "id": "zkg2DQr-huf3pdqWTGjlw"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-size": "10px",
+                    "letter-spacing": "0.15em",
+                    "text-transform": "uppercase",
+                    "color": "#7a6a5a",
+                    "font-family": "Inter, sans-serif",
+                    "padding-bottom": "12px"
+                  },
+                  "children": [
+                    {
+                      "text": "Instagram · TikTok · Pinterest"
+                    }
+                  ],
+                  "id": "wUBEnCG00h7AAhTb83Z0O"
+                },
+                {
+                  "type": "standard-text",
+                  "data": {},
+                  "attributes": {
+                    "align": "center",
+                    "font-size": "11px",
+                    "color": "#7a6a5a",
+                    "font-family": "Inter, sans-serif",
+                    "line-height": "1.7"
+                  },
+                  "children": [
+                    {
+                      "text": "Sale ends April 30, 11:59pm PT. Cannot be combined."
+                    },
+                    {
+                      "type": "html-node",
+                      "data": {
+                        "tagName": "br"
+                      },
+                      "attributes": {},
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "id": "e150HYFdx7WN3oJq_12KH"
+                    },
+                    {
+                      "text": "Unsubscribe",
+                      "link": {
+                        "href": "#",
+                        "blank": false
+                      }
+                    },
+                    {
+                      "text": " · "
+                    },
+                    {
+                      "text": "Update preferences",
+                      "link": {
+                        "href": "#",
+                        "blank": false
+                      }
+                    }
+                  ],
+                  "id": "GmJtBJNl2-CX0aDCOQ2fi"
+                }
+              ],
+              "id": "f8BSMSmQK7rcx4_hcqN_C"
+            }
+          ],
+          "id": "LIKgpWsAndgKT6hCK6Kdl"
+        }
+      ],
+      "id": "y6Gn7H32xoZrRerT55HqG"
+    }
+  }

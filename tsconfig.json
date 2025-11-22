@@ -32,7 +32,8 @@
       "easy-email-pro-kit": ["../packages/easy-email-pro-kit"],
       "easy-email-pro-core": ["../packages/easy-email-pro-core"],
       "easy-email-pro-theme": ["../packages/easy-email-pro-theme"],
-      "easy-email-pro-editor": ["../packages/easy-email-pro-editor"]
+      "easy-email-pro-editor": ["../packages/easy-email-pro-editor"],
+      "easy-email-pro-modern": ["../packages/easy-email-pro-modern"]
     }
   },
   "include": ["./src"]

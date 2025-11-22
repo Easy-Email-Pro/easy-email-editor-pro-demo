@@ -1,0 +1,787 @@
+{
+  "subject": "We miss you, Sarah",
+  "content": {
+    "type": "page",
+    "data": {
+      "breakpoint": "480px",
+      "globalAttributes": {
+        "font-family": "Arial, sans-serif"
+      },
+      "headStyles": [
+        {
+          "content": ".code-box div { border: 1px dashed #a87b78; }"
+        }
+      ],
+      "fonts": [],
+      "preheader": "We've been thinking about you. New things in the studio, and a code\r\n      inside."
+    },
+    "attributes": {
+      "margin-top": "0px",
+      "margin-bottom": "0px",
+      "background-color": "#efe4dc",
+      "width": "600px"
+    },
+    "children": [
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#efe4dc",
+          "background-image-enabled": true,
+          "padding-top": "24px",
+          "padding-bottom": "24px",
+          "padding-left": "32px",
+          "padding-right": "32px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ay830x-udlljmvkq1gdg5_image.png",
+                  "alt": "Logo",
+                  "width": "90px",
+                  "align": "center",
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "gytmBDYAjvSWGIYVp56YS"
+              }
+            ],
+            "id": "kQoQCtHwvMuW840Rs-bPQ"
+          }
+        ],
+        "id": "eh4LlgcxhiU7rU085514E"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#efe4dc",
+          "background-image-enabled": true,
+          "padding-top": "30px",
+          "padding-bottom": "10px",
+          "padding-left": "0px",
+          "padding-right": "0px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "font-weight": "500",
+                  "letter-spacing": "0.4em",
+                  "text-transform": "uppercase",
+                  "color": "#a8807a",
+                  "padding-bottom": "10px"
+                },
+                "children": [
+                  {
+                    "text": "— A short note —"
+                  }
+                ],
+                "id": "WND7Wg1ju_sZfxZzwNPtG"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "56px",
+                  "line-height": "1.1",
+                  "color": "#4a3838",
+                  "font-style": "italic",
+                  "font-weight": "400",
+                  "padding-bottom": "32px"
+                },
+                "children": [
+                  {
+                    "text": "we miss you,"
+                  },
+                  {
+                    "type": "html-node",
+                    "data": {
+                      "tagName": "br"
+                    },
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "gAGuKLWoYhuVOXzErLhEX"
+                  },
+                  {
+                    "text": "Sarah."
+                  }
+                ],
+                "id": "9pCYkMpZNOqLP7Auxqb5s"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "20px",
+                  "line-height": "1.5",
+                  "color": "#6e504e",
+                  "font-style": "italic"
+                },
+                "children": [
+                  {
+                    "text": "It's been about two months. The kettle is still on."
+                  }
+                ],
+                "id": "5TjAgsEvPN2iDx6IocRgB"
+              }
+            ],
+            "id": "WeQHittmCeFksyUfMUWaX"
+          }
+        ],
+        "id": "0TWDOj3TxnOQMmUa3DFve"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#efe4dc",
+          "background-image-enabled": true,
+          "padding-top": "32px",
+          "padding-bottom": "48px",
+          "padding-left": "30px",
+          "padding-right": "30px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "14px",
+                  "line-height": "1.85",
+                  "color": "#4a3838"
+                },
+                "children": [
+                  {
+                    "text": "A few things have happened since you were last here —"
+                  }
+                ],
+                "id": "I7cfoAySKmMAW8TxDZN6d"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "14px",
+                  "line-height": "1.95",
+                  "color": "#4a3838",
+                  "padding-top": "16px"
+                },
+                "children": [
+                  {
+                    "text": "— We launched a small ceramics line with a studio in Lisbon."
+                  },
+                  {
+                    "type": "html-node",
+                    "data": {
+                      "tagName": "br"
+                    },
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "l6tCBNO_k0NwIMh10L64N"
+                  },
+                  {
+                    "text": "— Linen pillowcases came back in (Ivory and Smoke)."
+                  },
+                  {
+                    "type": "html-node",
+                    "data": {
+                      "tagName": "br"
+                    },
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "1awTYpeAIlUa1Wrm-PinV"
+                  },
+                  {
+                    "text": "— And we're shipping carbon-neutral now, no surcharge."
+                  }
+                ],
+                "id": "Tbwq2L1Py3kprWwZekXNg"
+              }
+            ],
+            "id": "vXSCEb3V4VMvQPS_3d0tK"
+          }
+        ],
+        "id": "cNEUd3QKMfja25W243FT8"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#4a3838",
+          "background-image-enabled": true,
+          "padding-top": "48px",
+          "padding-bottom": "48px",
+          "padding-left": "56px",
+          "padding-right": "56px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "font-weight": "600",
+                  "letter-spacing": "0.3em",
+                  "text-transform": "uppercase",
+                  "color": "#d8a8a0",
+                  "padding-bottom": "14px"
+                },
+                "children": [
+                  {
+                    "text": "— On us, this week —"
+                  }
+                ],
+                "id": "DSP5vzpLFulzE-7YXN5NV"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "60px",
+                  "line-height": "1",
+                  "color": "#ffffff",
+                  "font-weight": "500",
+                  "padding-bottom": "14px"
+                },
+                "children": [
+                  {
+                    "text": "20% off"
+                  }
+                ],
+                "id": "8wr5mNyMI4dY3z308FlOA"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "20px",
+                  "font-style": "italic",
+                  "color": "#d8a8a0",
+                  "padding-bottom": "28px"
+                },
+                "children": [
+                  {
+                    "text": "— anything you've had your eye on —"
+                  }
+                ],
+                "id": "H2MJQ75bdXDWE1bOU1-SN"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "border-enabled": true,
+                  "border-color": "#a87b78",
+                  "background-color": "#4a3838",
+                  "border-style": "dashed",
+                  "border-width": "2px",
+                  "inner-padding-top": "20px",
+                  "inner-padding-bottom": "20px",
+                  "inner-padding-left": "50px",
+                  "inner-padding-right": "50px",
+                  "letter-spacing": "2px"
+                },
+                "children": [
+                  {
+                    "text": "MISS-YOU-20"
+                  }
+                ],
+                "id": "evss6-vGi94Pxw9Kz11qR"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "10px",
+                  "letter-spacing": "0.1em",
+                  "color": "#a87b78",
+                  "padding-top": "14px"
+                },
+                "children": [
+                  {
+                    "text": "VALID UNTIL SUNDAY"
+                  }
+                ],
+                "id": "QS5kVX5Qg11pMbeK317nU"
+              },
+              {
+                "type": "standard-button",
+                "data": {},
+                "attributes": {
+                  "background-color": "#ffffff",
+                  "color": "#4a3838",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "12px",
+                  "letter-spacing": "0.2em",
+                  "text-transform": "uppercase",
+                  "font-weight": "500",
+                  "border-radius": "2px",
+                  "href": "#",
+                  "inner-padding-top": "18px",
+                  "inner-padding-bottom": "18px",
+                  "inner-padding-left": "36px",
+                  "inner-padding-right": "36px",
+                  "padding-top": "30px"
+                },
+                "children": [
+                  {
+                    "text": "See what's new"
+                  }
+                ],
+                "id": "WF4HricNN88OL3SeBP-tO"
+              }
+            ],
+            "id": "fKG9sCDEJ_HfQH5nwMbv_"
+          }
+        ],
+        "id": "oH1U8ey0OrSa2chucrWN-"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#efe4dc",
+          "background-image-enabled": true,
+          "padding-top": "48px",
+          "padding-bottom": "24px",
+          "padding-left": "32px",
+          "padding-right": "32px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "font-weight": "600",
+                  "letter-spacing": "0.3em",
+                  "text-transform": "uppercase",
+                  "color": "#a8807a",
+                  "padding-bottom": "20px"
+                },
+                "children": [
+                  {
+                    "text": "— New, since you were last here —"
+                  }
+                ],
+                "id": "wxSJBr_ZD_kqlChdnD5te"
+              }
+            ],
+            "id": "62FdhvFGJ5P6WZ3or6mY6"
+          }
+        ],
+        "id": "IgsWXr_jWEN2H3Zf0wus7"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#efe4dc",
+          "background-image-enabled": true,
+          "padding-top": "0px",
+          "padding-bottom": "48px",
+          "padding-left": "32px",
+          "padding-right": "32px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "33%"
+            },
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/bq-demjkbwonovkaljjze_image.png",
+                  "alt": "Ceramics",
+                  "border-radius": "3px",
+                  "padding-top": "0px",
+                  "padding-bottom": "12px",
+                  "padding-left": "5px",
+                  "padding-right": "5px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "k-GLze4IYosMT53jM-G8m"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "14px",
+                  "font-style": "italic",
+                  "color": "#4a3838"
+                },
+                "children": [
+                  {
+                    "text": "Lisbon Ceramics"
+                  }
+                ],
+                "id": "cvI0nW-m_zQqyS1hu3UfY"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "color": "#8a6868"
+                },
+                "children": [
+                  {
+                    "text": "From $42"
+                  }
+                ],
+                "id": "j-G0-fQ2VsYtKvKwExjWc"
+              }
+            ],
+            "id": "iWfcd_KXSclKYwViGgKcV"
+          },
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "33%"
+            },
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/q5eftcvmjd4ixcwwio03q_image.png",
+                  "alt": "Linen",
+                  "border-radius": "3px",
+                  "padding-top": "0px",
+                  "padding-bottom": "12px",
+                  "padding-left": "5px",
+                  "padding-right": "5px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "6iQj0b7tGH1yxvWlkjI3r"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "14px",
+                  "font-style": "italic",
+                  "color": "#4a3838"
+                },
+                "children": [
+                  {
+                    "text": "Linen Pillows"
+                  }
+                ],
+                "id": "jc7Xko9NekZBzTZvV-xag"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "color": "#8a6868"
+                },
+                "children": [
+                  {
+                    "text": "$58"
+                  }
+                ],
+                "id": "ap4chp1pY5eOXim8uLUtW"
+              }
+            ],
+            "id": "8KAhiyu4azTlkVoGmMRFn"
+          },
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {
+              "width": "33%"
+            },
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/xcbrmqcbrypx7l99yat3j_image.png",
+                  "alt": "Throw",
+                  "border-radius": "3px",
+                  "padding-top": "0px",
+                  "padding-bottom": "12px",
+                  "padding-left": "5px",
+                  "padding-right": "5px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "0knbjHx7cmC-3i7AuP2-x"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "14px",
+                  "font-style": "italic",
+                  "color": "#4a3838"
+                },
+                "children": [
+                  {
+                    "text": "Mohair Throw"
+                  }
+                ],
+                "id": "1EeIu6UX67f7DAHZ_Ok-a"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "color": "#8a6868"
+                },
+                "children": [
+                  {
+                    "text": "$184"
+                  }
+                ],
+                "id": "ZmwofaARt8KrKBtEuWSzi"
+              }
+            ],
+            "id": "aapH1cU0E6-bUT_v7mvRz"
+          }
+        ],
+        "id": "JIWoZlRTbuR3ehpFflqII"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#efe4dc",
+          "background-image-enabled": true,
+          "padding-top": "0px",
+          "padding-bottom": "48px",
+          "padding-left": "56px",
+          "padding-right": "56px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Cormorant Garamond, Georgia, serif",
+                  "font-size": "18px",
+                  "font-style": "italic",
+                  "color": "#6e504e",
+                  "line-height": "1.55"
+                },
+                "children": [
+                  {
+                    "text": "If now isn't the moment — no hard feelings."
+                  },
+                  {
+                    "type": "html-node",
+                    "data": {
+                      "tagName": "br"
+                    },
+                    "attributes": {},
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ],
+                    "id": "pD1Ea8LVN_7Igt4El3tTL"
+                  },
+                  {
+                    "text": "Pause emails for 90 days",
+                    "link": {
+                      "href": "#",
+                      "blank": false
+                    }
+                  }
+                ],
+                "id": "xywZwtc4n3eZlVltvE_w9"
+              }
+            ],
+            "id": "SsC-AVBK7STAKTo3W94x-"
+          }
+        ],
+        "id": "00ZYrcB8eC1eCpflagrWo"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "background-color": "#4a3838",
+          "background-image-enabled": true,
+          "padding-top": "32px",
+          "padding-bottom": "32px",
+          "padding-left": "40px",
+          "padding-right": "40px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "data": {},
+            "attributes": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/ay830x-udlljmvkq1gdg5_image.png",
+                  "alt": "Logo",
+                  "width": "90px",
+                  "align": "center",
+                  "padding-top": "0px",
+                  "padding-bottom": "14px",
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "wzO_QIglRQH1gks3agcpw"
+              },
+              {
+                "type": "standard-text",
+                "data": {},
+                "attributes": {
+                  "align": "center",
+                  "font-family": "Inter, sans-serif",
+                  "font-size": "11px",
+                  "color": "#a87b78",
+                  "line-height": "1.7"
+                },
+                "children": [
+                  {
+                    "text": "Manage preferences",
+                    "link": {
+                      "href": "#",
+                      "blank": false
+                    }
+                  },
+                  {
+                    "text": " · "
+                  },
+                  {
+                    "text": "Unsubscribe",
+                    "link": {
+                      "href": "#",
+                      "blank": false
+                    }
+                  }
+                ],
+                "id": "AjjhEaS9l7aiVJvPMpIjB"
+              }
+            ],
+            "id": "ot6H_GS8mn6amYHOBhGdr"
+          }
+        ],
+        "id": "Xa4s9h9ALuKY0XnEWIKt2"
+      }
+    ],
+    "id": "PygBS1UU0jojQMlqEffvZ"
+  }
+}

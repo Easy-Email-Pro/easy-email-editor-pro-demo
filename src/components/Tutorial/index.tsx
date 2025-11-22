@@ -157,7 +157,7 @@ const TourProviderInteract = () => {
                       ele.click();
                     }
 
-                    setSelectedNodePath([0, 2, 0, 0]);
+                    setSelectedNodePath([0, 2]);
                     setCurrentStep((t) => t + 1);
                   }}
                   type="primary"
