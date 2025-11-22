@@ -17,6 +17,7 @@ import colorPurpleStyle from "@arco-themes/react-easy-email-pro-purple/css/arco.
 import colorRedStyle from "@arco-themes/react-easy-email-pro-red/css/arco.css?inline";
 import colorBlueStyle from "@arco-themes/react-easy-email-pro-sky/css/arco.css?inline";
 import colorGreenStyle from "@arco-themes/react-easy-email-pro-green/css/arco.css?inline";
+import colorLocalStyle from "../ColorTheme/theme.css?inline";
 
 import data from "./template.json";
 import { EditorHeader } from "../../components/EditorHeader";
@@ -963,6 +964,9 @@ export default function MyEditor() {
     if (theme === "red") {
       return colorRedStyle;
     }
+    if (theme === "local") {
+      return colorLocalStyle;
+    }
     return "";
   }, [theme]);
 
@@ -1062,6 +1066,7 @@ export default function MyEditor() {
     enabledHtmlBlockNodeAlign: true,
     enabledGradientImage: true,
     enabledButtonIcon: true,
+    enabledAutoComplete: true,
   });
 
   if (authState === "pending") {

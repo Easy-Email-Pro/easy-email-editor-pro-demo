@@ -9,35 +9,35 @@ importers:
   .:
     dependencies:
       '@arco-design/web-react':
-        specifier: ^2.46.3
-        version: 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^2.66.8
+        version: 2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@arco-themes/react-easy-email-pro':
         specifier: ^0.0.1
-        version: 0.0.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 0.0.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@arco-themes/react-easy-email-pro-blue':
         specifier: ^0.0.1
-        version: 0.0.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 0.0.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@arco-themes/react-easy-email-pro-green':
         specifier: ^0.0.2
-        version: 0.0.2(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 0.0.2(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@arco-themes/react-easy-email-pro-purple':
         specifier: ^0.0.1
-        version: 0.0.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 0.0.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@arco-themes/react-easy-email-pro-red':
         specifier: ^0.0.1
-        version: 0.0.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 0.0.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@arco-themes/react-easy-email-pro-sky':
         specifier: ^0.0.2
-        version: 0.0.2(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+        version: 0.0.2(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       '@reactour/tour':
         specifier: ^3.7.0
-        version: 3.7.0(react@18.2.0)
+        version: 3.7.0(react@19.2.0)
       '@sendgrid/mail':
         specifier: ^7.7.0
         version: 7.7.0
       '@sentry/react':
         specifier: ^7.54.0
-        version: 7.57.0(react@18.2.0)
+        version: 7.57.0(react@19.2.0)
       '@sentry/vite-plugin':
         specifier: ^2.10.0
         version: 2.10.0
@@ -70,34 +70,34 @@ importers:
         version: 2.0.2
       easy-email-core:
         specifier: ^4.16.0
-        version: 4.16.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 4.16.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       easy-email-pro-asset-manager:
-        specifier: 1.51.11
-        version: 1.51.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.53.1
+        version: 1.53.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       easy-email-pro-core:
-        specifier: 1.51.11
-        version: 1.51.11(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.53.1
+        version: 1.53.1(axios@1.4.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       easy-email-pro-editor:
-        specifier: 1.51.12
-        version: 1.51.12(@types/react@18.2.14)(immer@10.0.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.53.1
+        version: 1.53.1(@types/react@19.2.6)(immer@10.0.3)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       easy-email-pro-kit:
-        specifier: 1.51.11
-        version: 1.51.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.53.1
+        version: 1.53.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       easy-email-pro-localization:
-        specifier: 1.51.11
-        version: 1.51.11
+        specifier: 1.53.1
+        version: 1.53.1
       easy-email-pro-plugins:
-        specifier: 1.51.11
-        version: 1.51.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.53.1
+        version: 1.53.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       easy-email-pro-theme:
-        specifier: 1.51.11
-        version: 1.51.11(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 1.53.1
+        version: 1.53.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       file-saver:
         specifier: ^2.0.5
         version: 2.0.5
       framer-motion:
         specifier: ^12.5.0
-        version: 12.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 12.5.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       he:
         specifier: ^1.2.0
         version: 1.2.0
@@ -118,7 +118,7 @@ importers:
         version: 4.17.21
       lucide-react:
         specifier: ^0.483.0
-        version: 0.483.0(react@18.2.0)
+        version: 0.483.0(react@19.2.0)
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -133,7 +133,7 @@ importers:
         version: 6.9.0
       mobx-react:
         specifier: ^7.6.0
-        version: 7.6.0(mobx@6.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 7.6.0(mobx@6.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       monaco-editor:
         specifier: ^0.36.1
         version: 0.36.1
@@ -153,23 +153,23 @@ importers:
         specifier: ^22.7.0
         version: 22.7.0(typescript@4.9.5)
       react:
-        specifier: ^18.2.0
-        version: 18.2.0
+        specifier: ^19.2.0
+        version: 19.2.0
       react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
+        specifier: ^19.2.0
+        version: 19.2.0(react@19.2.0)
       react-router-dom:
         specifier: ^6.10.0
-        version: 6.14.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 6.14.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react-sortable-hoc:
         specifier: ^2.0.0
-        version: 2.0.0(prop-types@15.8.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 2.0.0(prop-types@15.8.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       react-syntax-highlighter:
         specifier: ^15.6.1
-        version: 15.6.1(react@18.2.0)
+        version: 15.6.1(react@19.2.0)
       react-use:
         specifier: ^17.4.0
-        version: 17.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 17.4.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       slate:
         specifier: ^0.101.5
         version: 0.101.5
@@ -178,7 +178,7 @@ importers:
         version: 0.100.0(slate@0.101.5)
       slate-react:
         specifier: ^0.101.6
-        version: 0.101.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.101.5)
+        version: 0.101.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(slate@0.101.5)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.1(@types/node@14.18.33)(typescript@4.9.5)
@@ -193,7 +193,7 @@ importers:
         version: 1.1.0(monaco-editor@0.36.1)
       zustand:
         specifier: ^5.0.3
-        version: 5.0.3(@types/react@18.2.14)(immer@10.0.3)(react@18.2.0)
+        version: 5.0.3(@types/react@19.2.6)(immer@10.0.3)(react@19.2.0)
     devDependencies:
       '@types/file-saver':
         specifier: ^2.0.5
@@ -211,14 +211,14 @@ importers:
         specifier: ^4.14.191
         version: 4.14.195
       '@types/react':
-        specifier: ^18.2.14
-        version: 18.2.14
+        specifier: ^19.2.6
+        version: 19.2.6
       '@types/react-dom':
-        specifier: ^18.0.10
-        version: 18.2.6
+        specifier: ^19.2.3
+        version: 19.2.3(@types/react@19.2.6)
       '@types/react-sortable-hoc':
         specifier: ^0.7.1
-        version: 0.7.1(prop-types@15.8.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 0.7.1(prop-types@15.8.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@vitejs/plugin-react':
         specifier: ^3.1.0
         version: 3.1.0(vite@4.3.9(@types/node@14.18.33)(less@4.1.3)(sass@1.63.6)(terser@5.39.0))
@@ -247,8 +247,8 @@ packages:
   '@arco-design/color@0.4.0':
     resolution: {integrity: sha512-s7p9MSwJgHeL8DwcATaXvWT3m2SigKpxx4JA1BGPHL4gfvaQsmQfrLBDpjOJFJuJ2jG2dMt3R3P8Pm9E65q18g==}
 
-  '@arco-design/web-react@2.49.2':
-    resolution: {integrity: sha512-oceXT0rgpitPwgXpSSjezfy7dzauCyeyviYGp9Dj/l2fftcAsYdjJnozbEBxuffQdpf+uIFVibbVwZ5jeZtyxg==}
+  '@arco-design/web-react@2.66.8':
+    resolution: {integrity: sha512-V2XDTqeSFq4g6Yk0tSEFO4SMPZ04cGNF6dKfFBM9drEpmj91cU1n9+rd3gmmtcJ2f3SOqbr0itnUsqBWGQ4PvQ==}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
@@ -931,8 +931,10 @@ packages:
   '@types/prop-types@15.7.5':
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  '@types/react-dom@18.2.6':
-    resolution: {integrity: sha512-2et4PDvg6PVCyS7fuTc4gPoksV58bW0RwSxWKcPRcHZf0PRUGq03TKcD/rUHe3azfV6/5/biUBJw+HhCQjaP0A==}
+  '@types/react-dom@19.2.3':
+    resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
+    peerDependencies:
+      '@types/react': ^19.2.0
 
   '@types/react-redux@7.1.25':
     resolution: {integrity: sha512-bAGh4e+w5D8dajd6InASVIyCo4pZLJ66oLb80F9OBLO1gKESbZcRCJpTT6uLXX+HAB57zw1WTdwJdAsewuTweg==}
@@ -946,6 +948,12 @@ packages:
 
   '@types/react@18.2.14':
     resolution: {integrity: sha512-A0zjq+QN/O0Kpe30hA1GidzyFjatVvrpIvWLxD+xv67Vt91TWWgco9IvrJBkeyHm1trGaFS/FSGqPlhyeZRm0g==}
+
+  '@types/react@18.3.27':
+    resolution: {integrity: sha512-cisd7gxkzjBKU2GgdYrTdtQx1SORymWyaAFhaxQPK9bYO9ot3Y5OikQRvY0VYQtvwjeQnizCINJAenh/V7MK2w==}
+
+  '@types/react@19.2.6':
+    resolution: {integrity: sha512-p/jUvulfgU7oKtj6Xpk8cA2Y1xKTtICGpJYeJXz2YVO2UcvjQgeRMLDGfDeqeRW2Ta+0QNFwcc8X3GH8SxZz6w==}
 
   '@types/scheduler@0.16.3':
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
@@ -1306,6 +1314,9 @@ packages:
   csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
 
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
+
   data-uri-to-buffer@6.0.2:
     resolution: {integrity: sha512-7hvf7/GW8e86rW0ptuwS3OcBGDjIi6SZva7hCyWC0yYry2cOPmLIjXAUHI6DK2HsnwJd9ifmt57i8eV2n4YNpw==}
     engines: {node: '>= 14'}
@@ -1415,42 +1426,42 @@ packages:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-asset-manager@1.51.11:
-    resolution: {integrity: sha512-dI17lCvzb+riX17AMxNli2pB5kEklM41MVq+/QpjevaCpvSo3y8psFUu0wD9UKtPkXMgB0CfeM7eWQItWcdG2Q==}
+  easy-email-pro-asset-manager@1.53.1:
+    resolution: {integrity: sha512-Rz4WPFyzTVY/nqmMYCQE7HsAhUzaiPDR+kuKlFr/ZbShzmciOJoFrizsGRq05znOXBz8ZeXONwFi30ubMssriQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-core@1.51.11:
-    resolution: {integrity: sha512-p5+RZMai6SQHN6kl+wvliNy8KG1/sCQgIu/dWVMVqf5XQ7Z7ETqCLAiKyW47EAxXG2GF2CPv1GsTwsfzY9cX7w==}
+  easy-email-pro-core@1.53.1:
+    resolution: {integrity: sha512-TZwE018SpY2dBP6Zt2MoPWWmFCIXMIDM4QaGRNqBR3JTWS56MnxuwsxWsXDIxF9fak6gl5y5zJ+2Pz1nfbi0Wg==}
     peerDependencies:
       axios: ^1.4.0
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-editor@1.51.12:
-    resolution: {integrity: sha512-ayFbMDWD9+zgTcPDgYBCKlkXFiuHFgK24G5yuI0zDtkBysKBoinicz7xB3dS74Znk6VnxZRZaBHJmkQyOHKEyg==}
+  easy-email-pro-editor@1.53.1:
+    resolution: {integrity: sha512-L02+9hJ78WqWGRyiQWIdrT2L2jeHrg66xqEkBVoppBuFnaWicKWt57VGN2qq+VURGx+eE99Qv1U1x2zD9B49gQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-kit@1.51.11:
-    resolution: {integrity: sha512-BAIsWUEP/W4Lezn1e4KXfiwMttVClm7IDSZEJAQZhqCahZA78/NqdL8Airs9ZKfHw2o0MH4XaIzcDFJQQaw9AQ==}
+  easy-email-pro-kit@1.53.1:
+    resolution: {integrity: sha512-s99koNhXekyTNsX7SkD40Ot0q8zYqNQjs0HsTd73Gh5O+aVTWeHUOVaQthh3WH/H0X8rhARHSu6AAMmXqhtdmQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-localization@1.51.11:
-    resolution: {integrity: sha512-5jpUVfIRLjQxVIlLxrrPPeBuEqws6QJGlNQ36FU2bcIeV6+yD+FNMj9530I5v6FU4U/iS8Gm5cJoZU1nCKojfA==}
+  easy-email-pro-localization@1.53.1:
+    resolution: {integrity: sha512-gDugQz/KfEoNL8UlTppGbpaM1UJMsDOtS7mLUqFpfBGjlqYsPFQqp4VScYAzGZomIVCavhvJFax4DY2OvQWvzw==}
 
-  easy-email-pro-plugins@1.51.11:
-    resolution: {integrity: sha512-VIyGpOEFX7Fes54K8TDm3TxehaAcf32dOo9jn1lKORlxMLw2jZIw96RVXysrT5g1OxOVCHBqljv+5IJuZv0uCw==}
+  easy-email-pro-plugins@1.53.1:
+    resolution: {integrity: sha512-vxDkbx33aQF9ghLbW/wrVW98gx0WDp3FKGzRC70y4avoCseTZMNuR/LbBbiPQBMhuUnEtZ1SsRzdBE1ViarsvQ==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
 
-  easy-email-pro-theme@1.51.11:
-    resolution: {integrity: sha512-CxC6TaGLibPxQKCdKlMv/9D6rzpAkcc/yrrF4DewD0s9cUt/pIwx1o3HPh0NA23eVCyR7FuQjqpwBMa0T3dH3g==}
+  easy-email-pro-theme@1.53.1:
+    resolution: {integrity: sha512-SGkWcq7u/9KLU3BAbG1YbbVhkS8d/keA57KWHIS8nR1sEKwckepo0ueOw2mhlfx9eMWg/ysSXRi8u0pPgHjF6Q==}
     peerDependencies:
       '@arco-design/web-react': ^2.46.3
       mjml-browser: ^4.14.1
@@ -1723,8 +1734,8 @@ packages:
   fizzy-ui-utils@2.0.7:
     resolution: {integrity: sha512-CZXDVXQ1If3/r8s0T+v+qVeMshhfcuq0rqIFgJnrtd+Bu8GmDmqMjntjUePypVtjHXKJ6V4sw9zeyox34n9aCg==}
 
-  focus-lock@0.11.6:
-    resolution: {integrity: sha512-KSuV3ur4gf2KqMNoZx3nXNVhqCkn42GuTYCX4tXPEwf0MjpFQmNMiN6m7dXaUXgIoivL6/65agoUMg4RLS0Vbg==}
+  focus-lock@1.3.6:
+    resolution: {integrity: sha512-Ik/6OCk9RQQ0T5Xw+hKNLWrjSMtv51dD4GRmJjbD5a58TIEpI5a5iXagKVl3Z5UuyslMCA8Xwnu76jQob62Yhg==}
     engines: {node: '>=10'}
 
   follow-redirects@1.15.2:
@@ -2639,26 +2650,26 @@ packages:
       react: ^16.8.5 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.5 || ^17.0.0 || ^18.0.0
 
-  react-clientside-effect@1.2.6:
-    resolution: {integrity: sha512-XGGGRQAKY+q25Lz9a/4EPqom7WRjz3z9R2k4jhVKA/puQFH/5Nt27vFZYql4m4NVNdUvX8PS3O7r/Zzm7cjUlg==}
+  react-clientside-effect@1.2.8:
+    resolution: {integrity: sha512-ma2FePH0z3px2+WOu6h+YycZcEvFmmxIlAb62cF52bG86eMySciO/EQZeQMXd07kPCYB0a1dWDT5J+KE9mCDUw==}
     peerDependencies:
-      react: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
 
   react-cropper@2.3.3:
     resolution: {integrity: sha512-zghiEYkUb41kqtu+2jpX2Ntigf+Jj1dF9ew4lAobPzI2adaPE31z0p+5TcWngK6TvmWQUwK3lj4G+NDh1PDQ1w==}
     peerDependencies:
       react: '>=17.0.2'
 
-  react-dom@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
+  react-dom@19.2.0:
+    resolution: {integrity: sha512-UlbRu4cAiGaIewkPyiRGJk0imDN2T3JjieT6spoL2UeSf5od4n5LB/mQ4ejmxhCFT1tYe8IvaFulzynWovsEFQ==}
     peerDependencies:
-      react: ^18.2.0
+      react: ^19.2.0
 
-  react-focus-lock@2.9.4:
-    resolution: {integrity: sha512-7pEdXyMseqm3kVjhdVH18sovparAzLg5h6WvIx7/Ck3ekjhrrDMEegHSa3swwC8wgfdd7DIdUVRGeiHT9/7Sgg==}
+  react-focus-lock@2.13.6:
+    resolution: {integrity: sha512-ehylFFWyYtBKXjAO9+3v8d0i+cnc1trGS0vlTGhzFW1vbFXVUTmR8s2tt/ZQG8x5hElg6rhENlLG1H3EZK0Llg==}
     peerDependencies:
-      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -2668,6 +2679,9 @@ packages:
 
   react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
+
+  react-is@18.3.1:
+    resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
   react-masonry-component@6.3.0:
     resolution: {integrity: sha512-4ZI78nxMfCpU5yQiS6Rup07Ju++YzcOGAyvbMcl2GfpZTw8GRwT548lkKr0PJarNicRV1qE2D/NiT26UPg1T7A==}
@@ -2733,8 +2747,8 @@ packages:
       react: ^16.8.0  || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0  || ^17.0.0 || ^18.0.0
 
-  react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  react@19.2.0:
+    resolution: {integrity: sha512-tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==}
     engines: {node: '>=0.10.0'}
 
   readdirp@3.6.0:
@@ -2805,8 +2819,8 @@ packages:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
     engines: {node: '>=v12.22.7'}
 
-  scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   screenfull@5.2.0:
     resolution: {integrity: sha512-9BakfsO2aUQN2K9Fdbj87RJIEZ82Q9IGim7FqM5OsebfoFC6ZHXgDq/KvniuLTPdeM8wY2o6Dj3WQ7KeQCj3cA==}
@@ -3076,12 +3090,12 @@ packages:
   urlpattern-polyfill@10.0.0:
     resolution: {integrity: sha512-H/A06tKD7sS1O1X2SshBVeA5FLycRpjqiBeqGKmBwBDBy28EnRjORxTNe269KSSr5un5qyWi1iL61wLxpd+ZOg==}
 
-  use-callback-ref@1.3.0:
-    resolution: {integrity: sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==}
+  use-callback-ref@1.3.3:
+    resolution: {integrity: sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -3091,12 +3105,12 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
-  use-sidecar@1.1.2:
-    resolution: {integrity: sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==}
+  use-sidecar@1.1.3:
+    resolution: {integrity: sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@types/react': ^16.9.0 || ^17.0.0 || ^18.0.0
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      '@types/react': '*'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -3310,7 +3324,7 @@ snapshots:
     dependencies:
       color: 3.2.1
 
-  '@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@arco-design/color': 0.4.0
       '@babel/runtime': 7.22.5
@@ -3320,39 +3334,40 @@ snapshots:
       dayjs: 1.11.8
       lodash: 4.17.21
       number-precision: 1.6.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-focus-lock: 2.9.4(@types/react@18.2.14)(react@18.2.0)
-      react-transition-group: 4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+      react-focus-lock: 2.13.6(@types/react@19.2.6)(react@19.2.0)
+      react-is: 18.3.1
+      react-transition-group: 4.4.5(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       resize-observer-polyfill: 1.5.1
       scroll-into-view-if-needed: 2.2.20
       shallowequal: 1.1.0
     transitivePeerDependencies:
       - '@types/react'
 
-  '@arco-themes/react-easy-email-pro-blue@0.0.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@arco-themes/react-easy-email-pro-blue@0.0.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
     dependencies:
-      '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@arco-design/web-react': 2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
 
-  '@arco-themes/react-easy-email-pro-green@0.0.2(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@arco-themes/react-easy-email-pro-green@0.0.2(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
     dependencies:
-      '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@arco-design/web-react': 2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
 
-  '@arco-themes/react-easy-email-pro-purple@0.0.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@arco-themes/react-easy-email-pro-purple@0.0.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
     dependencies:
-      '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@arco-design/web-react': 2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
 
-  '@arco-themes/react-easy-email-pro-red@0.0.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@arco-themes/react-easy-email-pro-red@0.0.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
     dependencies:
-      '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@arco-design/web-react': 2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
 
-  '@arco-themes/react-easy-email-pro-sky@0.0.2(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@arco-themes/react-easy-email-pro-sky@0.0.2(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
     dependencies:
-      '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@arco-design/web-react': 2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
 
-  '@arco-themes/react-easy-email-pro@0.0.1(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))':
+  '@arco-themes/react-easy-email-pro@0.0.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))':
     dependencies:
-      '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@arco-design/web-react': 2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
 
   '@babel/code-frame@7.22.5':
     dependencies:
@@ -3503,36 +3518,36 @@ snapshots:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
 
-  '@dnd-kit/accessibility@3.0.1(react@18.2.0)':
+  '@dnd-kit/accessibility@3.0.1(react@19.2.0)':
     dependencies:
-      react: 18.2.0
+      react: 19.2.0
       tslib: 2.6.0
 
-  '@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@dnd-kit/core@6.0.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@dnd-kit/accessibility': 3.0.1(react@18.2.0)
-      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      '@dnd-kit/accessibility': 3.0.1(react@19.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@19.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
       tslib: 2.6.0
 
-  '@dnd-kit/modifiers@9.0.0(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
+  '@dnd-kit/modifiers@9.0.0(@dnd-kit/core@6.0.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
-      react: 18.2.0
+      '@dnd-kit/core': 6.0.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@19.2.0)
+      react: 19.2.0
       tslib: 2.6.0
 
-  '@dnd-kit/sortable@7.0.2(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)':
+  '@dnd-kit/sortable@7.0.2(@dnd-kit/core@6.0.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)':
     dependencies:
-      '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
-      react: 18.2.0
+      '@dnd-kit/core': 6.0.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@19.2.0)
+      react: 19.2.0
       tslib: 2.6.0
 
-  '@dnd-kit/utilities@3.2.2(react@18.2.0)':
+  '@dnd-kit/utilities@3.2.2(react@19.2.0)':
     dependencies:
-      react: 18.2.0
+      react: 19.2.0
       tslib: 2.6.0
 
   '@edge-runtime/format@2.1.0': {}
@@ -3555,10 +3570,10 @@ snapshots:
 
   '@emoji-mart/data@1.1.2': {}
 
-  '@emoji-mart/react@1.1.1(emoji-mart@5.5.2)(react@18.2.0)':
+  '@emoji-mart/react@1.1.1(emoji-mart@5.5.2)(react@19.2.0)':
     dependencies:
       emoji-mart: 5.5.2
-      react: 18.2.0
+      react: 19.2.0
 
   '@esbuild/android-arm64@0.17.19':
     optional: true
@@ -3697,27 +3712,27 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@reactour/mask@1.1.0(react@18.2.0)':
+  '@reactour/mask@1.1.0(react@19.2.0)':
     dependencies:
-      '@reactour/utils': 0.5.0(react@18.2.0)
-      react: 18.2.0
+      '@reactour/utils': 0.5.0(react@19.2.0)
+      react: 19.2.0
 
-  '@reactour/popover@1.2.0(react@18.2.0)':
+  '@reactour/popover@1.2.0(react@19.2.0)':
     dependencies:
-      '@reactour/utils': 0.5.0(react@18.2.0)
-      react: 18.2.0
+      '@reactour/utils': 0.5.0(react@19.2.0)
+      react: 19.2.0
 
-  '@reactour/tour@3.7.0(react@18.2.0)':
+  '@reactour/tour@3.7.0(react@19.2.0)':
     dependencies:
-      '@reactour/mask': 1.1.0(react@18.2.0)
-      '@reactour/popover': 1.2.0(react@18.2.0)
-      '@reactour/utils': 0.5.0(react@18.2.0)
-      react: 18.2.0
+      '@reactour/mask': 1.1.0(react@19.2.0)
+      '@reactour/popover': 1.2.0(react@19.2.0)
+      '@reactour/utils': 0.5.0(react@19.2.0)
+      react: 19.2.0
 
-  '@reactour/utils@0.5.0(react@18.2.0)':
+  '@reactour/utils@0.5.0(react@19.2.0)':
     dependencies:
-      '@rooks/use-mutation-observer': 4.11.2(react@18.2.0)
-      react: 18.2.0
+      '@rooks/use-mutation-observer': 4.11.2(react@19.2.0)
+      react: 19.2.0
       resize-observer-polyfill: 1.5.1
 
   '@remix-run/router@1.7.0': {}
@@ -3730,9 +3745,9 @@ snapshots:
     optionalDependencies:
       rollup: 3.26.0
 
-  '@rooks/use-mutation-observer@4.11.2(react@18.2.0)':
+  '@rooks/use-mutation-observer@4.11.2(react@19.2.0)':
     dependencies:
-      react: 18.2.0
+      react: 19.2.0
 
   '@sendgrid/client@7.7.0':
     dependencies:
@@ -3820,13 +3835,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sentry/react@7.57.0(react@18.2.0)':
+  '@sentry/react@7.57.0(react@19.2.0)':
     dependencies:
       '@sentry/browser': 7.57.0
       '@sentry/types': 7.57.0
       '@sentry/utils': 7.57.0
       hoist-non-react-statics: 3.3.2
-      react: 18.2.0
+      react: 19.2.0
       tslib: 2.6.0
 
   '@sentry/replay@7.57.0':
@@ -3958,7 +3973,7 @@ snapshots:
 
   '@types/hoist-non-react-statics@3.3.1':
     dependencies:
-      '@types/react': 18.2.14
+      '@types/react': 19.2.6
       hoist-non-react-statics: 3.3.2
 
   '@types/html-minifier-terser@7.0.2': {}
@@ -4017,20 +4032,20 @@ snapshots:
 
   '@types/prop-types@15.7.5': {}
 
-  '@types/react-dom@18.2.6':
+  '@types/react-dom@19.2.3(@types/react@19.2.6)':
     dependencies:
-      '@types/react': 18.2.14
+      '@types/react': 19.2.6
 
   '@types/react-redux@7.1.25':
     dependencies:
       '@types/hoist-non-react-statics': 3.3.1
-      '@types/react': 18.2.14
+      '@types/react': 19.2.6
       hoist-non-react-statics: 3.3.2
       redux: 4.2.1
 
-  '@types/react-sortable-hoc@0.7.1(prop-types@15.8.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@types/react-sortable-hoc@0.7.1(prop-types@15.8.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
-      react-sortable-hoc: 2.0.0(prop-types@15.8.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-sortable-hoc: 2.0.0(prop-types@15.8.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     transitivePeerDependencies:
       - prop-types
       - react
@@ -4045,6 +4060,15 @@ snapshots:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
       csstype: 3.1.2
+
+  '@types/react@18.3.27':
+    dependencies:
+      '@types/prop-types': 15.7.5
+      csstype: 3.2.3
+
+  '@types/react@19.2.6':
+    dependencies:
+      csstype: 3.2.3
 
   '@types/scheduler@0.16.3': {}
 
@@ -4461,6 +4485,8 @@ snapshots:
 
   csstype@3.1.2: {}
 
+  csstype@3.2.3: {}
+
   data-uri-to-buffer@6.0.2: {}
 
   data-urls@5.0.0:
@@ -4508,7 +4534,7 @@ snapshots:
   dom-helpers@5.2.1:
     dependencies:
       '@babel/runtime': 7.22.5
-      csstype: 3.1.2
+      csstype: 3.2.3
 
   dom-serializer@1.4.1:
     dependencies:
@@ -4555,23 +4581,23 @@ snapshots:
 
   dotenv@16.4.7: {}
 
-  easy-email-core@4.16.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-core@4.16.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       he: 1.2.0
       js-beautify: 1.14.8
       lodash: 4.17.21
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
       uuid: 8.3.2
 
-  easy-email-pro-asset-manager@1.51.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-asset-manager@1.53.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       cropperjs: 1.6.1
-      react: 18.2.0
-      react-cropper: 2.3.3(react@18.2.0)
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-cropper: 2.3.3(react@19.2.0)
+      react-dom: 19.2.0(react@19.2.0)
 
-  easy-email-pro-core@1.51.11(axios@1.4.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-core@1.53.1(axios@1.4.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@types/crypto-js': 4.1.1
       '@types/gif.js': 0.2.2
@@ -4584,10 +4610,10 @@ snapshots:
       liquidjs: 10.8.3
       lodash: 4.17.21
       object-hash: 3.0.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
-  easy-email-pro-editor@1.51.12(@types/react@18.2.14)(immer@10.0.3)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-editor@1.53.1(@types/react@19.2.6)(immer@10.0.3)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       axios: 1.4.0
       color: 4.2.3
@@ -4596,47 +4622,47 @@ snapshots:
       lodash: 4.17.21
       nanoid: 5.1.5
       overlayscrollbars: 1.13.3
-      overlayscrollbars-react: 0.3.0(overlayscrollbars@1.13.3)(react@18.2.0)
+      overlayscrollbars-react: 0.3.0(overlayscrollbars@1.13.3)(react@19.2.0)
       parse5: 7.1.2
-      react: 18.2.0
+      react: 19.2.0
       react-attr-converter: 0.3.1
-      react-dom: 18.2.0(react@18.2.0)
-      zustand: 5.0.3(@types/react@18.2.14)(immer@10.0.3)(react@18.2.0)
+      react-dom: 19.2.0(react@19.2.0)
+      zustand: 5.0.3(@types/react@19.2.6)(immer@10.0.3)(react@19.2.0)
     transitivePeerDependencies:
       - '@types/react'
       - debug
       - immer
       - use-sync-external-store
 
-  easy-email-pro-kit@1.51.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-kit@1.53.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@types/gif.js': 0.2.2
       '@types/mjml': 4.7.1
       gif.js: 0.2.0
       modern-gif: 1.1.5
       qr-code-styling: 1.6.0-rc.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
-  easy-email-pro-localization@1.51.11: {}
+  easy-email-pro-localization@1.53.1: {}
 
-  easy-email-pro-plugins@1.51.11(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-plugins@1.53.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@emoji-mart/data': 1.1.2
-      '@emoji-mart/react': 1.1.1(emoji-mart@5.5.2)(react@18.2.0)
+      '@emoji-mart/react': 1.1.1(emoji-mart@5.5.2)(react@19.2.0)
       emoji-mart: 5.5.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
-  easy-email-pro-theme@1.51.11(@arco-design/web-react@2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  easy-email-pro-theme@1.53.1(@arco-design/web-react@2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(mjml-browser@4.14.1)(nanoid@4.0.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
-      '@arco-design/web-react': 2.49.2(@types/react@18.2.14)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@dnd-kit/modifiers': 9.0.0(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
-      '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
-      '@dnd-kit/utilities': 3.2.2(react@18.2.0)
+      '@arco-design/web-react': 2.66.8(@types/react@19.2.6)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@dnd-kit/core': 6.0.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@dnd-kit/modifiers': 9.0.0(@dnd-kit/core@6.0.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+      '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+      '@dnd-kit/utilities': 3.2.2(react@19.2.0)
       '@types/gif.js': 0.2.2
-      '@types/react': 18.2.14
+      '@types/react': 18.3.27
       axios: 1.4.0
       color: 4.2.3
       gif.js: 0.2.0
@@ -4644,19 +4670,19 @@ snapshots:
       html2canvas: 1.4.1
       is-hotkey: 0.2.0
       lodash: 4.17.21
-      lucide-react: 0.483.0(react@18.2.0)
+      lucide-react: 0.483.0(react@19.2.0)
       mjml-browser: 4.14.1
       mobx: 6.9.0
-      mobx-react: 7.6.0(mobx@6.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      mobx-react: 7.6.0(mobx@6.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       modern-gif: 1.1.5
       monaco-editor: 0.36.1
       nanoid: 4.0.2
       overlayscrollbars: 1.13.3
-      overlayscrollbars-react: 0.3.0(overlayscrollbars@1.13.3)(react@18.2.0)
-      react: 18.2.0
-      react-beautiful-dnd: 13.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react-dom: 18.2.0(react@18.2.0)
-      react-masonry-component: 6.3.0(react@18.2.0)
+      overlayscrollbars-react: 0.3.0(overlayscrollbars@1.13.3)(react@19.2.0)
+      react: 19.2.0
+      react-beautiful-dnd: 13.1.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react-dom: 19.2.0(react@19.2.0)
+      react-masonry-component: 6.3.0(react@19.2.0)
       uuid: 11.1.0
     transitivePeerDependencies:
       - debug
@@ -4905,7 +4931,7 @@ snapshots:
     dependencies:
       desandro-matches-selector: 2.0.2
 
-  focus-lock@0.11.6:
+  focus-lock@1.3.6:
     dependencies:
       tslib: 2.6.0
 
@@ -4925,14 +4951,14 @@ snapshots:
 
   format@0.2.2: {}
 
-  framer-motion@12.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  framer-motion@12.5.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       motion-dom: 12.5.0
       motion-utils: 12.5.0
       tslib: 2.6.0
     optionalDependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   fs-extra@11.2.0:
     dependencies:
@@ -5312,9 +5338,9 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  lucide-react@0.483.0(react@18.2.0):
+  lucide-react@0.483.0(react@19.2.0):
     dependencies:
-      react: 18.2.0
+      react: 19.2.0
 
   magic-string@0.27.0:
     dependencies:
@@ -5688,20 +5714,20 @@ snapshots:
 
   mkdirp@1.0.4: {}
 
-  mobx-react-lite@3.4.3(mobx@6.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  mobx-react-lite@3.4.3(mobx@6.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       mobx: 6.9.0
-      react: 18.2.0
+      react: 19.2.0
     optionalDependencies:
-      react-dom: 18.2.0(react@18.2.0)
+      react-dom: 19.2.0(react@19.2.0)
 
-  mobx-react@7.6.0(mobx@6.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  mobx-react@7.6.0(mobx@6.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       mobx: 6.9.0
-      mobx-react-lite: 3.4.3(mobx@6.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react: 18.2.0
+      mobx-react-lite: 3.4.3(mobx@6.9.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react: 19.2.0
     optionalDependencies:
-      react-dom: 18.2.0(react@18.2.0)
+      react-dom: 19.2.0(react@19.2.0)
 
   mobx@6.9.0: {}
 
@@ -5726,14 +5752,14 @@ snapshots:
   ms@2.1.3:
     optional: true
 
-  nano-css@5.3.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  nano-css@5.3.5(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       css-tree: 1.1.3
       csstype: 3.1.2
       fastest-stable-stringify: 2.0.2
       inline-style-prefixer: 6.0.4
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
       rtl-css-js: 1.16.1
       sourcemap-codec: 1.4.8
       stacktrace-js: 2.0.2
@@ -5803,10 +5829,10 @@ snapshots:
       fizzy-ui-utils: 2.0.7
       get-size: 2.0.3
 
-  overlayscrollbars-react@0.3.0(overlayscrollbars@1.13.3)(react@18.2.0):
+  overlayscrollbars-react@0.3.0(overlayscrollbars@1.13.3)(react@19.2.0):
     dependencies:
       overlayscrollbars: 1.13.3
-      react: 18.2.0
+      react: 19.2.0
 
   overlayscrollbars@1.13.3: {}
 
@@ -6022,53 +6048,54 @@ snapshots:
 
   react-attr-converter@0.3.1: {}
 
-  react-beautiful-dnd@13.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-beautiful-dnd@13.1.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@babel/runtime': 7.22.5
       css-box-model: 1.2.1
       memoize-one: 5.2.1
       raf-schd: 4.0.3
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-redux: 7.2.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+      react-redux: 7.2.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       redux: 4.2.1
-      use-memo-one: 1.1.3(react@18.2.0)
+      use-memo-one: 1.1.3(react@19.2.0)
     transitivePeerDependencies:
       - react-native
 
-  react-clientside-effect@1.2.6(react@18.2.0):
+  react-clientside-effect@1.2.8(react@19.2.0):
     dependencies:
       '@babel/runtime': 7.22.5
-      react: 18.2.0
+      react: 19.2.0
 
-  react-cropper@2.3.3(react@18.2.0):
+  react-cropper@2.3.3(react@19.2.0):
     dependencies:
       cropperjs: 1.6.1
-      react: 18.2.0
+      react: 19.2.0
 
-  react-dom@18.2.0(react@18.2.0):
+  react-dom@19.2.0(react@19.2.0):
     dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
+      react: 19.2.0
+      scheduler: 0.27.0
 
-  react-focus-lock@2.9.4(@types/react@18.2.14)(react@18.2.0):
+  react-focus-lock@2.13.6(@types/react@19.2.6)(react@19.2.0):
     dependencies:
       '@babel/runtime': 7.22.5
-      focus-lock: 0.11.6
+      focus-lock: 1.3.6
       prop-types: 15.8.1
-      react: 18.2.0
-      react-clientside-effect: 1.2.6(react@18.2.0)
-      use-callback-ref: 1.3.0(@types/react@18.2.14)(react@18.2.0)
-      use-sidecar: 1.1.2(@types/react@18.2.14)(react@18.2.0)
+      react: 19.2.0
+      react-clientside-effect: 1.2.8(react@19.2.0)
+      use-callback-ref: 1.3.3(@types/react@19.2.6)(react@19.2.0)
+      use-sidecar: 1.1.3(@types/react@19.2.6)(react@19.2.0)
     optionalDependencies:
-      '@types/react': 18.2.14
+      '@types/react': 19.2.6
 
   react-is@16.13.1: {}
 
   react-is@17.0.2: {}
 
-  react-masonry-component@6.3.0(react@18.2.0):
+  react-is@18.3.1: {}
+
+  react-masonry-component@6.3.0(react@19.2.0):
     dependencies:
       create-react-class: 15.7.0
       element-resize-detector: 1.2.4
@@ -6076,67 +6103,67 @@ snapshots:
       lodash: 4.17.21
       masonry-layout: 4.2.2
       prop-types: 15.8.1
-      react: 18.2.0
+      react: 19.2.0
 
-  react-redux@7.2.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-redux@7.2.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@babel/runtime': 7.22.5
       '@types/react-redux': 7.1.25
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 18.2.0
+      react: 19.2.0
       react-is: 17.0.2
     optionalDependencies:
-      react-dom: 18.2.0(react@18.2.0)
+      react-dom: 19.2.0(react@19.2.0)
 
   react-refresh@0.14.0: {}
 
-  react-router-dom@6.14.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-router-dom@6.14.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@remix-run/router': 1.7.0
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-router: 6.14.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+      react-router: 6.14.0(react@19.2.0)
 
-  react-router@6.14.0(react@18.2.0):
+  react-router@6.14.0(react@19.2.0):
     dependencies:
       '@remix-run/router': 1.7.0
-      react: 18.2.0
+      react: 19.2.0
 
-  react-sortable-hoc@2.0.0(prop-types@15.8.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-sortable-hoc@2.0.0(prop-types@15.8.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@babel/runtime': 7.22.5
       invariant: 2.2.4
       prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
-  react-syntax-highlighter@15.6.1(react@18.2.0):
+  react-syntax-highlighter@15.6.1(react@19.2.0):
     dependencies:
       '@babel/runtime': 7.22.5
       highlight.js: 10.7.3
       highlightjs-vue: 1.0.0
       lowlight: 1.20.0
       prismjs: 1.30.0
-      react: 18.2.0
+      react: 19.2.0
       refractor: 3.6.0
 
-  react-transition-group@4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-transition-group@4.4.5(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@babel/runtime': 7.22.5
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
-  react-universal-interface@0.6.2(react@18.2.0)(tslib@2.6.0):
+  react-universal-interface@0.6.2(react@19.2.0)(tslib@2.6.0):
     dependencies:
-      react: 18.2.0
+      react: 19.2.0
       tslib: 2.6.0
 
-  react-use@17.4.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  react-use@17.4.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@types/js-cookie': 2.2.7
       '@xobotyi/scrollbar-width': 1.9.5
@@ -6144,10 +6171,10 @@ snapshots:
       fast-deep-equal: 3.1.3
       fast-shallow-equal: 1.0.0
       js-cookie: 2.2.1
-      nano-css: 5.3.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      react-universal-interface: 0.6.2(react@18.2.0)(tslib@2.6.0)
+      nano-css: 5.3.5(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+      react-universal-interface: 0.6.2(react@19.2.0)(tslib@2.6.0)
       resize-observer-polyfill: 1.5.1
       screenfull: 5.2.0
       set-harmonic-interval: 1.0.1
@@ -6155,9 +6182,7 @@ snapshots:
       ts-easing: 0.2.0
       tslib: 2.6.0
 
-  react@18.2.0:
-    dependencies:
-      loose-envify: 1.4.0
+  react@19.2.0: {}
 
   readdirp@3.6.0:
     dependencies:
@@ -6218,9 +6243,7 @@ snapshots:
     dependencies:
       xmlchars: 2.2.0
 
-  scheduler@0.23.0:
-    dependencies:
-      loose-envify: 1.4.0
+  scheduler@0.27.0: {}
 
   screenfull@5.2.0: {}
 
@@ -6261,7 +6284,7 @@ snapshots:
       is-plain-object: 5.0.0
       slate: 0.101.5
 
-  slate-react@0.101.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(slate@0.101.5):
+  slate-react@0.101.6(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(slate@0.101.5):
     dependencies:
       '@juggle/resize-observer': 3.4.0
       '@types/is-hotkey': 0.1.10
@@ -6270,8 +6293,8 @@ snapshots:
       is-hotkey: 0.2.0
       is-plain-object: 5.0.0
       lodash: 4.17.21
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
       scroll-into-view-if-needed: 3.1.0
       slate: 0.101.5
       tiny-invariant: 1.3.1
@@ -6496,24 +6519,24 @@ snapshots:
 
   urlpattern-polyfill@10.0.0: {}
 
-  use-callback-ref@1.3.0(@types/react@18.2.14)(react@18.2.0):
+  use-callback-ref@1.3.3(@types/react@19.2.6)(react@19.2.0):
     dependencies:
-      react: 18.2.0
+      react: 19.2.0
       tslib: 2.6.0
     optionalDependencies:
-      '@types/react': 18.2.14
+      '@types/react': 19.2.6
 
-  use-memo-one@1.1.3(react@18.2.0):
+  use-memo-one@1.1.3(react@19.2.0):
     dependencies:
-      react: 18.2.0
+      react: 19.2.0
 
-  use-sidecar@1.1.2(@types/react@18.2.14)(react@18.2.0):
+  use-sidecar@1.1.3(@types/react@19.2.6)(react@19.2.0):
     dependencies:
       detect-node-es: 1.1.0
-      react: 18.2.0
+      react: 19.2.0
       tslib: 2.6.0
     optionalDependencies:
-      '@types/react': 18.2.14
+      '@types/react': 19.2.6
 
   utrie@1.0.2:
     dependencies:
@@ -6664,8 +6687,8 @@ snapshots:
 
   zod@3.22.4: {}
 
-  zustand@5.0.3(@types/react@18.2.14)(immer@10.0.3)(react@18.2.0):
+  zustand@5.0.3(@types/react@19.2.6)(immer@10.0.3)(react@19.2.0):
     optionalDependencies:
-      '@types/react': 18.2.14
+      '@types/react': 19.2.6
       immer: 10.0.3
-      react: 18.2.0
+      react: 19.2.0
