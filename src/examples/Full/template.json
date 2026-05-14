@@ -8,348 +8,174 @@
       },
       "blockAttributes": {
         "standard-paragraph": {
-          "color": "#FFFFFF"
+          "font-family": "serif,Arial"
+        },
+        "standard-h1": {
+          "font-family": ""
+        },
+        "standard-h2": {
+          "font-family": ""
+        },
+        "standard-h3": {
+          "font-family": ""
         }
       }
     },
     "type": "page",
     "children": [
       {
-        "type": "standard-navbar",
+        "type": "standard-section",
         "data": {},
         "attributes": {
-          "container-background-color": "#ffffff"
+          "padding-top": "0px",
+          "padding-bottom": "0px"
         },
         "children": [
           {
-            "data": {},
-            "type": "standard-navbar-link",
-            "children": [
-              {
-                "text": "About"
-              }
-            ],
-            "attributes": {
-              "href": ""
-            },
-            "id": "zF2CErqYOdSoWie2HkVQG"
-          },
-          {
-            "data": {},
-            "type": "standard-navbar-link",
-            "children": [
-              {
-                "text": "Shop"
-              }
-            ],
-            "attributes": {
-              "href": ""
-            },
-            "id": "xDSwKFocxAKhpwlMFdw-F"
-          },
-          {
-            "data": {},
-            "type": "standard-navbar-link",
-            "children": [
-              {
-                "text": "Contact"
-              }
-            ],
-            "attributes": {
-              "href": ""
-            },
-            "id": "mzpDcMZ-Pw1S1u6ED0qWl"
-          },
-          {
-            "data": {},
-            "type": "standard-navbar-link",
-            "children": [
-              {
-                "text": "Blog"
-              }
-            ],
-            "attributes": {
-              "href": ""
-            },
-            "id": "MvaRiCXyjwinH2m6nb30u"
-          }
-        ],
-        "id": "DkixzoL-7JcEGkTwTD7AI"
-      },
-      {
-        "name": "Text",
-        "type": "standard-paragraph",
-        "data": {},
-        "attributes": {
-          "padding-top": "20px",
-          "padding-bottom": "20px"
-        },
-        "children": [
-          {
-            "text": "JOIN US FOR A FEAST ON"
-          }
-        ],
-        "id": "twgC8mIFz-BavwwjExIGl"
-      },
-      {
-        "name": "Text",
-        "type": "standard-paragraph",
-        "data": {},
-        "attributes": {
-          "font-size": "36px"
-        },
-        "children": [
-          {
-            "text": "Hi, "
-          },
-          {
-            "type": "mergetag",
+            "type": "standard-column",
             "data": {},
             "attributes": {},
             "children": [
               {
-                "text": "customer.name"
-              }
-            ],
-            "id": "5KdTodfhIBQ53MjRfRwfu"
-          },
-          {
-            "text": " "
-          }
-        ],
-        "id": "3c1aXTEuRmeDN8Bbaml_Y"
-      },
-      {
-        "name": "Text",
-        "type": "standard-paragraph",
-        "data": {},
-        "attributes": {
-          "padding-left": "20px",
-          "padding-right": "20px",
-          "padding-top": "20px",
-          "padding-bottom": "20px"
-        },
-        "children": [
-          {
-            "text": "From hearty stews and comforting shepherd's pie to classic fish and chips, we have something to satisfy every appetite."
-          }
-        ],
-        "id": "vXd6kV8bI_7RX1uHnvSDa"
-      },
-      {
-        "type": "standard-image",
-        "data": {},
-        "attributes": {
-          "padding": "0px 0px 0px 0px",
-          "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/z1pyfnhqfawza_0nmoqpl_image.png",
-          "padding-top": "0px",
-          "padding-bottom": "0px",
-          "padding-left": "0px",
-          "padding-right": "0px"
-        },
-        "children": [
-          {
-            "text": ""
-          }
-        ],
-        "id": "HoWrHWnYey24h4sc6M3y5"
-      },
-      {
-        "type": "standard-table2",
-        "data": {
-          "first_row_header": true
-        },
-        "attributes": {
-          "cellpadding": "10px",
-          "text-align": "center",
-          "container-background-color": "#FFFFFF",
-          "table-layout": "fixed",
-          "padding-left": "5px",
-          "padding-right": "5px",
-          "align": "left",
-          "font-size": "14px"
-        },
-        "children": [
-          {
-            "type": "standard-table2-tr",
-            "data": {},
-            "attributes": {
-              "background-color": "#7daa55"
-            },
-            "children": [
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "font-size": "25px",
+                  "font-weight": "700",
+                  "color": "#1f2937"
                 },
-                "attributes": {},
                 "children": [
                   {
-                    "text": "Item",
-                    "bold": true,
-                    "fontSize": "18px"
+                    "text": "LUMINA"
                   }
                 ],
-                "id": "HVaEKr8PNu-A3s3z3Ti_q"
+                "id": "cCwG64F7LAa4LnCtmlfTQ"
               },
               {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
+                "type": "standard-navbar",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "item-padding-left": "15px",
+                  "item-padding-right": "15px",
+                  "font-size": "14px",
+                  "font-weight": "700"
                 },
-                "attributes": {},
                 "children": [
                   {
-                    "text": "Description",
-                    "fontSize": "18px",
-                    "bold": true
-                  }
-                ],
-                "id": "nRtOvynwJDo2n_ZZzKxAt"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
-                  {
-                    "text": "Price",
-                    "bold": true,
-                    "fontSize": "18px"
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "NEW IN"
+                      }
+                    ],
+                    "attributes": {
+                      "href": "",
+                      "padding-left": "15px",
+                      "padding-right": "15px",
+                      "font-size": "14px",
+                      "font-weight": "700"
+                    },
+                    "id": "HMAhL1hImBfWrGInEVfgQ"
                   },
                   {
-                    "bold": true,
-                    "fontSize": "16px",
-                    "text": "   "
-                  }
-                ],
-                "id": "1gtNteye4DjeLDOfN31ho"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "SHOP"
+                      }
+                    ],
+                    "attributes": {
+                      "href": "",
+                      "padding-left": "15px",
+                      "padding-right": "15px",
+                      "font-size": "14px",
+                      "font-weight": "700"
+                    },
+                    "id": "69Y1eNcoZXPjTCBbg_wL4"
+                  },
                   {
-                    "text": "Action",
-                    "bold": true,
-                    "fontSize": "18px"
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "BEST SELLERS"
+                      }
+                    ],
+                    "attributes": {
+                      "href": "",
+                      "padding-left": "15px",
+                      "padding-right": "15px",
+                      "font-size": "14px",
+                      "font-weight": "700"
+                    },
+                    "id": "0BQ7csrOL_3929Ytwfwl5"
+                  },
+                  {
+                    "data": {},
+                    "type": "standard-navbar-link",
+                    "children": [
+                      {
+                        "text": "SALE"
+                      }
+                    ],
+                    "attributes": {
+                      "href": "",
+                      "padding-left": "15px",
+                      "padding-right": "15px",
+                      "font-size": "14px",
+                      "font-weight": "700"
+                    },
+                    "id": "kUmsqEhG9h4BOjfyAUxWT"
                   }
                 ],
-                "id": "G7N4yEUxoZ5G2bQ6zBHzu"
+                "id": "t5u4dFNV-iLZFyOoPTqOV"
               }
             ],
-            "id": "fGFwjWgXjdQznohjAZyE_"
-          },
+            "id": "JDp8Q6Tn--9n_zcU6is5D"
+          }
+        ],
+        "id": "ysU-4Hd-s6UeWBxkSCy7M"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-top": "100px",
+          "padding-bottom": "100px",
+          "background-image-enabled": true,
+          "background-url": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/jzr-ybeslwgfd1zwcpnmu_image.png",
+          "padding-left": "30px",
+          "padding-right": "30px",
+          "background-size": "cover",
+          "background-color": "#dfdae7"
+        },
+        "children": [
           {
-            "type": "standard-table2-tr",
-            "data": {},
+            "type": "standard-column",
             "attributes": {
-              "background-color": "#e4efda"
+              "width": "100%"
             },
+            "data": {},
             "children": [
               {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "color": "#1f2937",
+                  "align": "left",
+                  "font-size": "47px",
+                  "line-height": "1.1"
                 },
-                "attributes": {},
-                "children": [
-                  {
-                    "text": "Nike Dunk Low "
-                  }
-                ],
-                "id": "tPdNicS0zTnU0HrGz_8_J"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "attributes": {
-                      "style": "text-align:left;"
-                    },
-                    "data": {
-                      "tagName": "div"
-                    },
-                    "children": [
-                      {
-                        "text": ""
-                      },
-                      {
-                        "type": "html-node",
-                        "data": {
-                          "tagName": "img"
-                        },
-                        "attributes": {
-                          "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/sx9iemawisklnrsn_nx4f_image.png",
-                          "width": "120px",
-                          "height": "120px",
-                          "style": "max-width:100%;display:inline-block;"
-                        },
-                        "children": [
-                          {
-                            "text": ""
-                          }
-                        ],
-                        "id": "SO9OSX-B8RKXqKsvg3GHn"
-                      },
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "id": "XwdEvfLdYKCAdeaU28IfQ"
-                  }
-                ],
-                "id": "QUH_eN8xzAQNqLL07BZls"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "data": {
-                      "tagName": "div"
-                    },
-                    "attributes": {
-                      "style": "text-align:center;"
-                    },
-                    "children": [
-                      {
-                        "text": "HK$999"
-                      }
-                    ],
-                    "id": "HzlKGQju5405nvYONteNE"
-                  }
-                ],
-                "id": "voX4QAhHtU3OPw4TV6ks9"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
                 "children": [
                   {
                     "type": "html-block-node",
@@ -358,337 +184,361 @@
                         "type": "html-block-node",
                         "children": [
                           {
-                            "text": "Buy",
-                            "link": {
-                              "href": "https://www.nike.com.hk/product/HQ4345-300/detail.htm",
-                              "blank": true
-                            }
+                            "text": "New season,"
                           }
                         ],
+                        "attributes": {},
                         "data": {
                           "tagName": "div"
                         },
-                        "attributes": {
-                          "style": "text-align:center;"
-                        },
-                        "id": "QkqVzbKav83eoJduEvW3v"
-                      }
-                    ],
-                    "data": {
-                      "tagName": "div"
-                    },
-                    "attributes": {
-                      "style": "text-align:center;"
-                    },
-                    "id": "jY03RvPhp3MRXv40ZAg13"
-                  }
-                ],
-                "id": "zNQGhiPWngaXItiheXjo8"
-              }
-            ],
-            "id": "ktErIV0DafEuNS_OdYmXL"
-          },
-          {
-            "type": "standard-table2-tr",
-            "data": {},
-            "attributes": {},
-            "children": [
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
-                  {
-                    "text": "Sabrina 2 EP"
-                  }
-                ],
-                "id": "F1rRfghPu3eGLsZ4-Rwjc"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": ""
+                        "id": "qGuDAh3pmNBWmBwaZQeue"
                       },
                       {
-                        "type": "html-node",
-                        "data": {
-                          "tagName": "img"
-                        },
-                        "attributes": {
-                          "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/1lfgm24de1_nve5jz8b5e_image.png",
-                          "width": "120px",
-                          "height": "120px",
-                          "style": "max-width:100%;display:inline-block;"
-                        },
+                        "type": "html-block-node",
                         "children": [
                           {
-                            "text": ""
+                            "text": "new inspiration"
                           }
                         ],
-                        "id": "ApL2_FIu_kYORkjWDj-er"
-                      },
-                      {
-                        "text": ""
+                        "attributes": {},
+                        "data": {
+                          "tagName": "div"
+                        },
+                        "id": "T9PGVz0Y3etkBpoT37ejI"
                       }
                     ],
+                    "attributes": {},
                     "data": {
                       "tagName": "div"
                     },
-                    "attributes": {
-                      "style": "text-align:left;"
-                    },
-                    "id": "D_1pBvBrl4Y9LNVn4Cjq5"
+                    "id": "q81BRe80H0Rwn1R0WygDo"
                   }
                 ],
-                "id": "y2IpHGdtJyLl_jgaNJpF3"
+                "id": "xe_IzV2pSiwARgR-qIYbt"
               },
               {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "color": "#000000",
+                  "align": "left",
+                  "font-size": "16px",
+                  "line-height": "1.5"
                 },
-                "attributes": {},
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "data": {
-                      "tagName": "div"
-                    },
-                    "attributes": {
-                      "style": "text-align:center;"
-                    },
-                    "children": [
-                      {
-                        "text": "HK$899"
-                      }
-                    ],
-                    "id": "UzcqLSDvLJ4p4Qbv7DO4b"
-                  }
-                ],
-                "id": "GicXvIP0TKWUh9YbvjA-W"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
                 "children": [
                   {
                     "type": "html-block-node",
                     "children": [
                       {
-                        "text": "Buy",
-                        "link": {
-                          "href": "https://www.nike.com.hk/product/HQ4345-300/detail.htm",
-                          "blank": true
-                        }
+                        "type": "html-block-node",
+                        "children": [
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "Fresh styles, thoughtful design,"
+                              }
+                            ],
+                            "attributes": {},
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "id": "f90DIIt8UKcChSvvlx1Qt"
+                          },
+                          {
+                            "type": "html-block-node",
+                            "children": [
+                              {
+                                "text": "made for your everyday"
+                              }
+                            ],
+                            "attributes": {},
+                            "data": {
+                              "tagName": "div"
+                            },
+                            "id": "dbWd9LL-zepPo8L2L7d5R"
+                          }
+                        ],
+                        "attributes": {},
+                        "data": {
+                          "tagName": "div"
+                        },
+                        "id": "F-8TH2Gq4QD5I0PoEVZ7R"
                       }
                     ],
+                    "attributes": {},
                     "data": {
                       "tagName": "div"
                     },
-                    "attributes": {
-                      "style": "text-align:center;"
-                    },
-                    "id": "A4Z0Z5cDE5v3rtB-9smI1"
+                    "id": "3y24-ZYKd_tUJpV3wbjh4"
                   }
                 ],
-                "id": "fpP6bVN2wIguHeronfNwv"
+                "id": "JMkYqJU8SnxAovw3MNbkN"
+              },
+              {
+                "type": "standard-button",
+                "data": {
+                  "content": "Button"
+                },
+                "attributes": {
+                  "padding-top": "30px",
+                  "padding-bottom": "30px",
+                  "background-color": "#000000",
+                  "align": "left"
+                },
+                "children": [
+                  {
+                    "text": "SHOP COLLECTION"
+                  }
+                ],
+                "id": "9WMZiMTrnlvIlz0Qm_X6e"
               }
             ],
-            "id": "qa6dsB5YrosiDhW1NhHr6"
-          },
+            "id": "M6FQ_y6NMRjxd_54z9QwZ"
+          }
+        ],
+        "id": "AyF0vxG0pAUKY_r7_h9ri",
+        "mobileAttributes": {
+          "background-image-enabled": true,
+          "background-position": "center center",
+          "background-size": "contain",
+          "background-url": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/obawqwlwrlkveldexyfar_image.png",
+          "padding-left": "20px",
+          "padding-right": "20px"
+        }
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {},
+        "children": [
           {
-            "type": "standard-table2-tr",
-            "data": {},
+            "type": "standard-column",
             "attributes": {
-              "background-color": "#e4efda"
+              "width": "100%"
             },
+            "data": {},
             "children": [
               {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "font-size": "29px"
                 },
-                "attributes": {},
                 "children": [
                   {
-                    "text": "Nike Vaporfly 3"
+                    "text": "Our bestsellers"
                   }
                 ],
-                "id": "bEayzhJtrnEKHyYYutAkG"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": ""
-                      },
-                      {
-                        "type": "html-node",
-                        "data": {
-                          "tagName": "img"
-                        },
-                        "attributes": {
-                          "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/kcb_901pyt2rxsckj52xp_image.png",
-                          "width": "120px",
-                          "height": "120px",
-                          "style": "max-width:100%;display:inline-block;"
-                        },
-                        "children": [
-                          {
-                            "text": ""
-                          }
-                        ],
-                        "id": "eFLb918p1bH0-C-NISfYL"
-                      },
-                      {
-                        "text": ""
-                      }
-                    ],
-                    "data": {
-                      "tagName": "div"
-                    },
-                    "attributes": {
-                      "style": "text-align:left;"
-                    },
-                    "id": "YhI-ryLrMdxFeoM7UVk5n"
-                  }
-                ],
-                "id": "phf_ts9AhvbD-9wFtkAVr"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "data": {
-                      "tagName": "div"
-                    },
-                    "attributes": {
-                      "style": "text-align:center;"
-                    },
-                    "children": [
-                      {
-                        "text": "HK$1,699"
-                      }
-                    ],
-                    "id": "2Hvp4-xauKJiD4XNl6eiJ"
-                  }
-                ],
-                "id": "pOsITrMTVQrbsQ-ha9H2C"
-              },
-              {
-                "type": "standard-table2-td",
-                "data": {
-                  "rowspan": 1,
-                  "colspan": 1
-                },
-                "attributes": {},
-                "children": [
-                  {
-                    "type": "html-block-node",
-                    "children": [
-                      {
-                        "text": "Buy",
-                        "link": {
-                          "href": "https://www.nike.com.hk/product/HJ7040-300/detail.htm",
-                          "blank": true
-                        }
-                      }
-                    ],
-                    "data": {
-                      "tagName": "div"
-                    },
-                    "attributes": {
-                      "style": "text-align:center;"
-                    },
-                    "id": "563d-4so-Gt7X-MzcczOF"
-                  }
-                ],
-                "id": "ULkyZVzuCc_HsYOh_s0lZ"
+                "id": "1WwA2t0UexmrbWLJSL9Bn"
               }
             ],
-            "id": "BpZiJ7BT57AphYDUj8ENs"
+            "id": "54PHRaaGxNug0cz4g9ZDs"
           }
         ],
-        "id": "0MrAhVbZYRksKB8-7or0t"
-      },
-      {
-        "type": "standard-button",
-        "data": {
-          "content": "Button"
-        },
-        "attributes": {
-          "background-color": "#C5900C",
-          "width": "100%",
-          "font-size": "16px",
-          "inner-padding-top": "10px",
-          "padding-top": "20px"
-        },
-        "children": [
-          {
-            "text": "Book a table"
-          }
-        ],
-        "id": "0oJKtyGnWHxEyaXbRO141"
-      },
-      {
-        "type": "standard-button",
-        "data": {
-          "content": "Button"
-        },
-        "attributes": {
-          "background-color": "#FCF0D3",
-          "width": "100%",
-          "font-size": "16px",
-          "color": "#C5900C",
-          "border-enabled": true,
-          "border-color": "#C5900C",
-          "border-width": "3px",
-          "padding-bottom": "20px"
-        },
-        "children": [
-          {
-            "text": "Book a table"
-          }
-        ],
-        "id": "MncrR3EyPXPwHek3fpdig"
+        "id": "PkeQr3VRGnbvSGNKNQGSD"
       },
       {
         "type": "standard-section",
         "data": {},
         "attributes": {
-          "background-color": "#FFFFFF",
+          "padding-left": "20px",
+          "padding-right": "20px"
+        },
+        "children": [
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "33.33%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/z8j3q5va8vyfd54-x4s6d_image.png",
+                  "fluid-on-mobile": "true"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "V4GM_8LfLa6CsWdFQ1UAQ"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Ridge Ceramic Vase"
+                  }
+                ],
+                "id": "2UROuxGf3sInvEznB0NvE"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "$42.00"
+                  }
+                ],
+                "id": "xFyOIU25dTseNRuUYXvRP"
+              }
+            ],
+            "id": "CfKr0YEuiCNZhS5iIQeY7"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "33.33%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/bwyhbi-ggz4uh_a-23g1l_image.png",
+                  "fluid-on-mobile": "true"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "l9UkkT5g1_UBOLtemxzMM"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Sage Candle"
+                  }
+                ],
+                "id": "4558dIsb9oqP2dBqppLfj"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "$36.00"
+                  }
+                ],
+                "id": "adeBZuVsFjZuF-6JUxdLV"
+              }
+            ],
+            "id": "BWZE7zGuLDO8lhP3xSS4u"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "33.33%"
+            },
+            "data": {},
+            "children": [
+              {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/doeqcnjgeptwb7ksu20cl_image.png",
+                  "fluid-on-mobile": "true"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "WtlE53EkqFNgB7Gcl9RJg"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "Marlo Table Lamp"
+                  }
+                ],
+                "id": "PXFMbAkNPNaziZZLNxc7u"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "10px",
+                  "padding-left": "10px",
+                  "padding-right": "10px"
+                },
+                "children": [
+                  {
+                    "text": "$68.00"
+                  }
+                ],
+                "id": "VJyuGuQPcxeD0D1IbWLt2"
+              }
+            ],
+            "id": "KsZZ2_zYCe8-zEYnne_Wn"
+          }
+        ],
+        "id": "tBOQNt1qZRpsT-C4w0nz7"
+      },
+      {
+        "type": "standard-section",
+        "data": {},
+        "attributes": {
+          "padding-left": "20px",
+          "padding-right": "20px",
           "padding-top": "0px",
           "padding-bottom": "0px"
         },
@@ -701,46 +551,110 @@
             "data": {},
             "children": [
               {
+                "type": "standard-image",
+                "data": {},
+                "attributes": {
+                  "padding-top": "0px",
+                  "padding-bottom": "0px",
+                  "padding-left": "10px",
+                  "padding-right": "10px",
+                  "width": "367px",
+                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/vw_5_ny93ktmz-tgxuv5a_image.png",
+                  "border-radius": "15px"
+                },
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ],
+                "id": "24A87krLINWaitgnP1Z1T",
+                "mobileAttributes": {
+                  "padding-left": "0px",
+                  "padding-right": "0px"
+                }
+              }
+            ],
+            "id": "DcP6Tr2AX9LEFA6DZ7faN"
+          },
+          {
+            "type": "standard-column",
+            "attributes": {
+              "width": "50%",
+              "padding-left": "30px"
+            },
+            "data": {},
+            "children": [
+              {
                 "type": "standard-paragraph",
                 "data": {},
                 "attributes": {
+                  "padding-top": "20px",
+                  "padding-bottom": "0px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "font-size": "29px",
                   "align": "left",
-                  "color": "#000000",
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px"
+                  "line-height": "1.1"
                 },
                 "children": [
                   {
                     "type": "html-block-node",
                     "children": [
                       {
-                        "text": "And of course, no Irish meal would be complete without a pint of Guinness or a dram of Irish whiskey to wash it down."
+                        "text": "Timeless "
                       }
                     ],
                     "attributes": {},
                     "data": {
                       "tagName": "div"
                     },
-                    "id": "p4qnrpCiYuDZeDTncbrr-"
+                    "id": "FOb-ltRyzg_wb7pyPWbig"
+                  },
+                  {
+                    "type": "html-block-node",
+                    "attributes": {},
+                    "data": {
+                      "tagName": "div"
+                    },
+                    "id": "Eeoatx-ketFMNVUmle6-J",
+                    "children": [
+                      {
+                        "text": "pieces,"
+                      }
+                    ]
                   },
                   {
                     "type": "html-block-node",
                     "children": [
                       {
-                        "text": "",
-                        "bold": true
+                        "text": "made to stay"
                       }
                     ],
                     "attributes": {},
                     "data": {
                       "tagName": "div"
                     },
-                    "id": "7ue1MuyvSFnCoON5U_HyD"
+                    "id": "W0R-zl9HqmKZQx9ZqT_98"
                   }
                 ],
-                "id": "FX1r77baMDO46CiyrVxEO"
+                "id": "XjD3qiwL2V4liGG9cEZdU"
+              },
+              {
+                "type": "standard-paragraph",
+                "data": {},
+                "attributes": {
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "align": "left"
+                },
+                "children": [
+                  {
+                    "text": "Thoughtful design and quality materials that bring beauty to the everyday."
+                  }
+                ],
+                "id": "vhkFMa8LQ-0i2Qzd5O10F"
               },
               {
                 "type": "standard-button",
@@ -748,49 +662,156 @@
                   "content": "Button"
                 },
                 "attributes": {
-                  "line-height": "130%",
-                  "background-color": "#000000"
+                  "padding-top": "10px",
+                  "padding-bottom": "10px",
+                  "padding-left": "0px",
+                  "padding-right": "0px",
+                  "background-color": "#000000",
+                  "align": "left"
                 },
                 "children": [
                   {
-                    "text": "VIEW DRINK"
+                    "text": "EXPLORE THE EDIT"
                   }
                 ],
-                "id": "1QBa-8CPTmjcmedShfPV5"
+                "id": "rJ7rH33r92OmDTvJC2gOv"
               }
             ],
-            "id": "YzPhgwcau2PgxLLvk4wna"
-          },
-          {
-            "type": "standard-column",
-            "attributes": {
-              "width": "50%"
-            },
-            "data": {},
-            "children": [
-              {
-                "type": "standard-image",
-                "data": {},
-                "attributes": {
-                  "padding-top": "25px",
-                  "padding-bottom": "25px",
-                  "padding-left": "25px",
-                  "padding-right": "25px",
-                  "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/gilztml2jyga1vfvfsn9s_image.png",
-                  "width": "250px"
-                },
-                "children": [
-                  {
-                    "text": ""
-                  }
-                ],
-                "id": "biZp_ubvIOFBHyYmB_YpI"
-              }
-            ],
-            "id": "q9rpNtf71QwiJN8K6soff"
+            "id": "XPV0S0PzeQuzqQBkV6Fsu"
           }
         ],
-        "id": "no4rpwhDLMnzwOxwxb7Ws"
+        "id": "imoQsGm6cVy1LlaTwOc4d"
+      },
+      {
+        "type": "standard-wrapper",
+        "data": {},
+        "attributes": {
+          "background-repeat": "no-repeat",
+          "padding-left": "20px",
+          "padding-right": "20px"
+        },
+        "children": [
+          {
+            "type": "standard-section",
+            "data": {},
+            "attributes": {
+              "background-color": "#efe9ff",
+              "background-image-enabled": false,
+              "background-url": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/q16fweuuy2-yqxjn0fgyt_image.png",
+              "background-size": "contain",
+              "border-radius": "8px"
+            },
+            "children": [
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "60%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-paragraph",
+                    "data": {},
+                    "attributes": {
+                      "padding-top": "0px",
+                      "padding-bottom": "0px",
+                      "padding-left": "10px",
+                      "padding-right": "10px",
+                      "align": "right",
+                      "font-size": "21px",
+                      "font-family": "inter",
+                      "color": "#282e46",
+                      "line-height": "1.1"
+                    },
+                    "children": [
+                      {
+                        "type": "html-block-node",
+                        "children": [
+                          {
+                            "text": "15% off your first order"
+                          }
+                        ],
+                        "attributes": {},
+                        "data": {
+                          "tagName": "div"
+                        },
+                        "id": "rf9JYNysHlWV-p6r_sqtS"
+                      },
+                      {
+                        "type": "html-block-node",
+                        "children": [
+                          {
+                            "text": "Sign up for our emails and enjoy ",
+                            "fontSize": "14px",
+                            "color": "#736e9a"
+                          }
+                        ],
+                        "attributes": {},
+                        "data": {
+                          "tagName": "div"
+                        },
+                        "id": "L1QwoFOCepil0iDHeCVAN"
+                      },
+                      {
+                        "type": "html-block-node",
+                        "attributes": {},
+                        "data": {
+                          "tagName": "div"
+                        },
+                        "id": "ZOXqtz0NBgAjIe0iZmcwk",
+                        "children": [
+                          {
+                            "text": "15% off your first order.",
+                            "fontSize": "14px",
+                            "color": "#736e9a"
+                          }
+                        ]
+                      }
+                    ],
+                    "id": "0BSuIfY3upCPvEAHO1OVQ",
+                    "mobileAttributes": {
+                      "align": "center"
+                    }
+                  }
+                ],
+                "id": "mGK-Iqv41lYDJowY-HPK2"
+              },
+              {
+                "type": "standard-column",
+                "attributes": {
+                  "width": "40%"
+                },
+                "data": {},
+                "children": [
+                  {
+                    "type": "standard-button",
+                    "data": {
+                      "content": "Button"
+                    },
+                    "attributes": {
+                      "padding-top": "10px",
+                      "padding-bottom": "10px",
+                      "padding-left": "0px",
+                      "padding-right": "0px",
+                      "background-color": "#6d3edb",
+                      "border-radius": "5px",
+                      "font-weight": "700"
+                    },
+                    "children": [
+                      {
+                        "text": "GET THE CODE"
+                      }
+                    ],
+                    "id": "ioZ8njBjM5-gf6f_pkTv3"
+                  }
+                ],
+                "id": "AomCuZ4p58fUbutEqdUds"
+              }
+            ],
+            "id": "VQOAYPTNyXKuh7ZbcQVh1"
+          }
+        ],
+        "id": "hfQxiBdqn9auPkVLzzIQt"
       },
       {
         "type": "standard-social",
@@ -812,14 +833,15 @@
               }
             ],
             "attributes": {
-              "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/psyz-f1z-ryy95lv2rh7g_image.png",
               "href": "",
               "padding-left": "0px",
               "padding-right": "0px",
               "padding-top": "0px",
-              "padding-bottom": "0px"
+              "padding-bottom": "0px",
+              "mode": "prebuilt",
+              "name": "instagram"
             },
-            "id": "T58ai-mjXtkW4mXzmNazv"
+            "id": "MEbNGHlShOc0988vfhac9"
           },
           {
             "data": {},
@@ -835,9 +857,11 @@
               "padding-left": "8px",
               "padding-right": "0px",
               "padding-top": "0px",
-              "padding-bottom": "0px"
+              "padding-bottom": "0px",
+              "mode": "prebuilt",
+              "name": "google"
             },
-            "id": "ZA8PJkaNehjnKAvk_mtuq"
+            "id": "GfQ9wOAhKNOOCHVwc9eKb"
           },
           {
             "data": {},
@@ -848,45 +872,203 @@
               }
             ],
             "attributes": {
-              "src": "https://cdn.shopify.com/s/files/1/0863/8971/9346/files/obdwqmxv5cljc16-ebnja_image.png",
               "href": "",
               "padding-left": "8px",
               "padding-right": "0px",
               "padding-top": "0px",
-              "padding-bottom": "0px"
+              "padding-bottom": "0px",
+              "mode": "prebuilt",
+              "name": "x"
             },
-            "id": "eV6cJVzjejuuM_Mq_iSru"
+            "id": "2yGnf7m4VRRi7GPZlQFtG"
+          },
+          {
+            "data": {},
+            "type": "standard-social-element",
+            "children": [
+              {
+                "text": ""
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "padding-left": "8px",
+              "padding-right": "0px",
+              "padding-top": "0px",
+              "padding-bottom": "0px",
+              "mode": "prebuilt",
+              "name": "pinterest"
+            },
+            "id": "yfE4U07hBpfQxSCBkdNbH"
           }
         ],
-        "id": "g0T7SeVJH_brXR9yuxGTU"
+        "id": "qJwe1MpNip2UFs0Op4rIU"
       },
       {
-        "name": "Text",
+        "type": "standard-divider",
+        "data": {},
+        "attributes": {
+          "padding-top": "10px",
+          "padding-bottom": "10px",
+          "padding-left": "0px",
+          "padding-right": "0px",
+          "border-width": "1px"
+        },
+        "children": [
+          {
+            "text": ""
+          }
+        ],
+        "id": "8kwE9WQ8BdW-uMeVYHbK8"
+      },
+      {
+        "type": "standard-navbar",
+        "data": {},
+        "attributes": {
+          "padding-top": "0px",
+          "padding-bottom": "0px",
+          "padding-left": "0px",
+          "padding-right": "0px",
+          "item-padding-left": "15px",
+          "item-padding-right": "15px",
+          "font-size": "14px",
+          "font-weight": "700"
+        },
+        "children": [
+          {
+            "data": {},
+            "type": "standard-navbar-link",
+            "children": [
+              {
+                "text": "NEW IN"
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "padding-left": "15px",
+              "padding-right": "15px",
+              "font-size": "14px",
+              "font-weight": "700"
+            },
+            "id": "q25if7fGsXeBrFSGxNS44"
+          },
+          {
+            "data": {},
+            "type": "standard-navbar-link",
+            "children": [
+              {
+                "text": "SHOP"
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "padding-left": "15px",
+              "padding-right": "15px",
+              "font-size": "14px",
+              "font-weight": "700"
+            },
+            "id": "ng1gEQB3tl8tlBPboL24k"
+          },
+          {
+            "data": {},
+            "type": "standard-navbar-link",
+            "children": [
+              {
+                "text": "BEST SELLERS"
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "padding-left": "15px",
+              "padding-right": "15px",
+              "font-size": "14px",
+              "font-weight": "700"
+            },
+            "id": "fucB8CrLaZeMjd4LctaZP"
+          },
+          {
+            "data": {},
+            "type": "standard-navbar-link",
+            "children": [
+              {
+                "text": "SALE"
+              }
+            ],
+            "attributes": {
+              "href": "",
+              "padding-left": "15px",
+              "padding-right": "15px",
+              "font-size": "14px",
+              "font-weight": "700"
+            },
+            "id": "XQDvaTAplCKgtXr7GM-uw"
+          }
+        ],
+        "id": "38Q0p3lg6-LPLa8NgaDdv"
+      },
+      {
         "type": "standard-paragraph",
         "data": {},
         "attributes": {
           "padding-top": "10px",
-          "padding-bottom": "20px"
+          "padding-bottom": "10px",
+          "padding-left": "10px",
+          "padding-right": "10px",
+          "color": "#667085",
+          "font-size": "14px"
         },
         "children": [
           {
-            "text": "No longer want to receive these emails? "
+            "type": "html-block-node",
+            "children": [
+              {
+                "text": "123 Design Way, San Francisco, CA 94107, USA"
+              }
+            ],
+            "attributes": {},
+            "data": {
+              "tagName": "div"
+            },
+            "id": "9oJfU8Vil7KJ0yAJJpeSC"
           },
           {
-            "text": "unsubscribe",
-            "link": {
-              "href": "#",
-              "blank": true
-            }
+            "type": "html-block-node",
+            "children": [
+              {
+                "text": "You're receiving this email because you signed up on our website."
+              }
+            ],
+            "attributes": {},
+            "data": {
+              "tagName": "div"
+            },
+            "id": "dv7fGRAlTgaC5w0fXorPh"
+          },
+          {
+            "type": "html-block-node",
+            "children": [
+              {
+                "text": "Unsubscribe",
+                "link": {
+                  "href": "{{ common.unsubscribe }}",
+                  "blank": true
+                }
+              }
+            ],
+            "attributes": {},
+            "data": {
+              "tagName": "div"
+            },
+            "id": "m17vgkqUKPIlmWS6Z-S5S"
           }
         ],
-        "id": "se-3EkMe1Af9DXuFubRvA"
+        "id": "hQl4GyHqf5zK6vrYRRdtD",
+        "mobileAttributes": {}
       }
     ],
     "attributes": {
-      "background-color": "#8C9A80",
-      "content-background-color": "#263D29",
-      "link-color": "#4a90e2"
+      "background-color": "#f5f5f5",
+      "content-background-color": "#ffffff"
     },
     "id": "DnWP8fKH9a3AAZtF9c1Zy"
   }
