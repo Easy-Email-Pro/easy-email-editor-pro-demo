@@ -450,7 +450,7 @@ export const EditorHeader = (props: {
                   </Button>
                 </Tooltip>
 
-                {!props.hideImport && (
+                {!props.hideImport && isDev && (
                   <Dropdown
                     droplist={
                       <Menu>

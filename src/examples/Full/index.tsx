@@ -84,7 +84,6 @@ import { categories } from './categories';
 
 const EmailSize = React.lazy(() => import("@/components/EmailSize"));
 
-
 const fonts = [
   {
     value: "Tangerine",
